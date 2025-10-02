@@ -1,0 +1,40 @@
+{
+  "name": "@dot-do/packages",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Public monorepo for miscellaneous npm packages with independent versioning",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dot-do/packages.git"
+  },
+  "author": "dot-do",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,mdx}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,mdx}\"",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.11.5",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "turbo": "^1.12.4",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.1"
+  }
+}
