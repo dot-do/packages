@@ -4,12 +4,12 @@
  * Thing and Relationship collection implementations for D1
  */
 
-import { eq, and, or, like, inArray, gt, gte, lt, lte, ne, desc, asc } from 'drizzle-orm'
+import { eq, and, like, inArray, gt, gte, lt, lte, ne, desc, asc } from 'drizzle-orm'
 import type { DrizzleD1Database } from 'drizzle-orm/d1'
 import { things as thingsTable, relationships as relationshipsTable, schema } from './schema.js'
 import type { ThingCollection, RelationshipCollection, Thing, Relationship, CreateThingInput, CreateRelationshipInput, ThingFilter, RelationshipFilter, ListOptions } from '../../types/index.js'
 import type { QueryBuilder } from '../../types/index.js'
-import { buildWhereConditions, slugify } from '../../core/utils.js'
+import { slugify } from '../../core/utils.js'
 
 /**
  * D1 Thing Collection Implementation

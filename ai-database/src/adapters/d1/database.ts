@@ -5,7 +5,7 @@
  */
 
 import { drizzle, type DrizzleD1Database } from 'drizzle-orm/d1'
-import { eq, and, inArray } from 'drizzle-orm'
+import { eq, and } from 'drizzle-orm'
 import { schema, things as thingsTable, relationships as relationshipsTable } from './schema.js'
 import { D1ThingCollection, D1RelationshipCollection } from './collections.js'
 import { D1QueryBuilder } from './query-builder.js'
@@ -289,7 +289,7 @@ class D1NamespacedThingCollection {
   private collection: D1ThingCollection
 
   constructor(
-    private db: DrizzleD1Database<typeof schema>,
+    _db: DrizzleD1Database<typeof schema>,
     readDb: DrizzleD1Database<typeof schema>,
     private ns: string
   ) {
@@ -338,7 +338,7 @@ class D1NamespacedRelationshipCollection {
   private collection: D1RelationshipCollection
 
   constructor(
-    private db: DrizzleD1Database<typeof schema>,
+    _db: DrizzleD1Database<typeof schema>,
     readDb: DrizzleD1Database<typeof schema>,
     private ns: string
   ) {

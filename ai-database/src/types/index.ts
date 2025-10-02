@@ -168,7 +168,7 @@ export interface RelationshipFilter {
 // ============================================================================
 
 export interface QueryBuilder<T = any> {
-  from(table: string): this
+  from?(table: string): this
   where(filter: Where): this
   limit(n: number): this
   offset(n: number): this

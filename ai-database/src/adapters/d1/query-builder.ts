@@ -4,7 +4,7 @@
  * General-purpose query builder for D1 database
  */
 
-import { eq, and, or, like, inArray, gt, gte, lt, lte, ne, desc, asc, SQL } from 'drizzle-orm'
+import { eq, and, like, inArray, gt, gte, lt, lte, ne, desc, asc, SQL } from 'drizzle-orm'
 import type { DrizzleD1Database } from 'drizzle-orm/d1'
 import { schema, things, relationships } from './schema.js'
 import type { QueryBuilder, Where } from '../../types/index.js'

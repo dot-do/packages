@@ -32,7 +32,12 @@
     "lint": "eslint src/",
     "db:generate": "drizzle-kit generate",
     "db:push:d1": "drizzle-kit push:d1",
-    "db:migrate": "tsx src/migrations/run.ts"
+    "db:migrate": "tsx src/migrations/run.ts",
+    "benchmark": "tsx benchmarks/runner.ts",
+    "benchmark:lookup": "tsx benchmarks/scenarios/simple-lookup.ts",
+    "benchmark:filter": "tsx benchmarks/scenarios/filtered-query.ts",
+    "benchmark:bulk": "tsx benchmarks/scenarios/bulk-insert.ts",
+    "benchmark:graph": "tsx benchmarks/scenarios/graph-traversal.ts"
   },
   "keywords": [
     "database",
