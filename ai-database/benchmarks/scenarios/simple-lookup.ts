@@ -4,7 +4,7 @@
  * Tests single-entity retrieval by ns:id
  */
 
-import type { Database } from '../../src/types/index.js'
+import type { Database } from '../types/index.js'
 
 export interface BenchmarkResult {
   name: string

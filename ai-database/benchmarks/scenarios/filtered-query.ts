@@ -4,7 +4,7 @@
  * Tests queries with WHERE conditions
  */
 
-import type { Database } from '../../src/types/index.js'
+import type { Database } from '../types/index.js'
 import type { BenchmarkResult } from './simple-lookup.js'
 
 /**

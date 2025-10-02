@@ -4,7 +4,7 @@
  * Tests throughput for bulk data insertion
  */
 
-import type { Database } from '../../src/types/index.js'
+import type { Database } from '../types/index.js'
 import type { BenchmarkResult } from './simple-lookup.js'
 
 /**

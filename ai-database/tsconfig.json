@@ -2,13 +2,12 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDir": "./src",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
     "composite": true,
     "types": ["@cloudflare/workers-types", "node"]
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "tests"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist", "tests", "benchmarks"]
 }
