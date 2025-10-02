@@ -85,6 +85,8 @@ export interface ListOptions {
   offset?: number
   orderBy?: string
   direction?: 'asc' | 'desc'
+  sortBy?: string
+  sortOrder?: 'asc' | 'desc'
 }
 
 // ============================================================================
@@ -108,12 +110,13 @@ export interface Thing {
 
 export interface CreateThingInput {
   ns: string
-  id: string
+  id?: string
   type: string
   content?: string
   code?: string
   data?: Record<string, any>
   visibility?: Visibility
+  embedding?: number[]
 }
 
 export interface ThingFilter {
@@ -139,7 +142,7 @@ export interface Relationship {
 
 export interface CreateRelationshipInput {
   ns: string
-  id: string
+  id?: string
   type: string
   fromNs: string
   fromId: string

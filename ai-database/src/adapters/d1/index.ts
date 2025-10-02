@@ -5,6 +5,11 @@
  */
 
 import type { Database, D1Config } from '../../types/index.js'
+import { D1Database } from './database.js'
+
+export { D1Database } from './database.js'
+export { schema, things, relationships } from './schema.js'
+export type { ThingRow, ThingInsert, RelationshipRow, RelationshipInsert } from './schema.js'
 
 /**
  * Create D1 database instance
@@ -18,7 +23,6 @@ import type { Database, D1Config } from '../../types/index.js'
  * })
  * ```
  */
-export function createD1Database(_config: D1Config): Database {
-  // TODO: Implement in Phase 3
-  throw new Error('D1 adapter not yet implemented - Phase 3')
+export function createD1Database(config: D1Config): Database {
+  return new D1Database(config)
 }
