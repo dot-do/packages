@@ -81,6 +81,7 @@ export interface DbQuery {
 }
 
 export interface ListOptions {
+  ns?: string
   limit?: number
   offset?: number
   orderBy?: string
