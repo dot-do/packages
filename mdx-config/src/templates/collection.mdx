@@ -1,0 +1,115 @@
+---
+collection: ExampleCollection
+labels:
+  singular: Example
+  plural: Examples
+fields:
+  - name: title
+    type: text
+    required: true
+    label: Title
+    admin:
+      description: The title of the example
+  - name: slug
+    type: text
+    required: true
+    unique: true
+    label: URL Slug
+  - name: content
+    type: richText
+    label: Content
+  - name: status
+    type: select
+    required: true
+    defaultValue: draft
+    options:
+      - label: Draft
+        value: draft
+      - label: Published
+        value: published
+      - label: Archived
+        value: archived
+  - name: author
+    type: relationship
+    relationTo: users
+    required: true
+    label: Author
+  - name: publishedAt
+    type: date
+    label: Published Date
+timestamps: true
+admin:
+  useAsTitle: title
+  group: Content
+  defaultColumns:
+    - title
+    - status
+    - author
+    - updatedAt
+versions: true
+defaultSort: -createdAt
+---
+
+# Example Collection
+
+This is an example PayloadCMS collection definition in MDX format. The YAML frontmatter above defines all the collection's fields and configuration.
+
+## Overview
+
+This collection demonstrates common field types and patterns used in PayloadCMS.
+
+## Fields
+
+### title
+The main title field used for the collection's display name in the admin UI.
+
+### slug
+A unique identifier used for URLs and references. Should be URL-safe.
+
+### content
+Rich text content using PayloadCMS's rich text editor.
+
+### status
+Publication status with three states:
+- **Draft**: Work in progress
+- **Published**: Live and visible
+- **Archived**: Hidden but preserved
+
+### author
+Relationship to the Users collection, linking each document to its creator.
+
+### publishedAt
+Optional timestamp for when the document was published.
+
+## Usage
+
+```typescript
+import payload from 'payload'
+
+// Create a new document
+const example = await payload.create({
+  collection: 'examples',
+  data: {
+    title: 'My Example',
+    slug: 'my-example',
+    content: '<p>Content here</p>',
+    status: 'draft',
+    author: userId,
+  },
+})
+
+// Query documents
+const examples = await payload.find({
+  collection: 'examples',
+  where: {
+    status: { equals: 'published' },
+  },
+})
+```
+
+## Admin Configuration
+
+- **Use As Title**: `title` - This field appears in admin lists
+- **Group**: Content - Grouped with other content collections
+- **Default Columns**: Shows title, status, author, and update time
+- **Versions**: Enabled with draft support

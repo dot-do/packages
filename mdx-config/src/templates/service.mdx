@@ -1,0 +1,75 @@
+---
+service: Example Service
+category: Example Category
+description: Brief description of what this service does
+version: 1.0.0
+pricing:
+  - tier: Free
+    price: 0
+    included: 100 requests/month
+  - tier: Pro
+    price: 29/month
+    included: 10000 requests/month
+integrations:
+  - stripe
+  - sendgrid
+functions:
+  - name: exampleFunction
+    description: Example function that does something useful
+    input:
+      - name: inputParam
+        type: string
+        required: true
+        description: Input parameter description
+    output:
+      - name: result
+        type: string
+        description: Output result description
+tags:
+  - example
+  - template
+author: Your Name
+license: MIT
+---
+
+# Example Service
+
+This is an example service definition in MDX format. The YAML frontmatter above defines the service metadata, pricing, integrations, and functions.
+
+## Overview
+
+Add detailed documentation about your service here. This content serves as the service's README and API documentation.
+
+## Usage
+
+```typescript
+import { exampleFunction } from '@services/example-service'
+
+const result = await exampleFunction({
+  inputParam: 'value',
+})
+
+console.log(result)
+```
+
+## Functions
+
+### exampleFunction
+
+Description of what this function does.
+
+**Input:**
+- `inputParam` (string, required): Description
+
+**Output:**
+- `result` (string): Description
+
+**Example:**
+```typescript
+const result = await exampleFunction({ inputParam: 'test' })
+// { result: 'processed: test' }
+```
+
+## Implementation
+
+The actual implementation code can be added to the generated worker or specified inline in the frontmatter using the `implementation` field.

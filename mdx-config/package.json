@@ -1,0 +1,65 @@
+{
+  "name": "@dot-do/mdx-config",
+  "version": "0.1.0",
+  "description": "MDX-driven platform configuration for services, collections, workers, and API routes",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./parser": {
+      "types": "./dist/parser.d.ts",
+      "default": "./dist/parser.js"
+    },
+    "./generators": {
+      "types": "./dist/generators/index.d.ts",
+      "default": "./dist/generators/index.js"
+    },
+    "./validators": {
+      "types": "./dist/validators.d.ts",
+      "default": "./dist/validators.js"
+    },
+    "./schemas": {
+      "types": "./dist/schemas/index.d.ts",
+      "default": "./dist/schemas/index.js"
+    }
+  },
+  "bin": {
+    "mdx-config": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^3.0.0",
+    "gray-matter": "^4.0.3",
+    "zod": "^3.22.4",
+    "commander": "^11.1.0",
+    "chokidar": "^3.5.3",
+    "yaml": "^2.3.4",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "tsup": "^8.0.1",
+    "vitest": "^1.1.0",
+    "@vitest/coverage-v8": "^1.1.0"
+  },
+  "keywords": [
+    "mdx",
+    "configuration",
+    "payload",
+    "cloudflare",
+    "workers",
+    "codegen"
+  ],
+  "license": "MIT"
+}

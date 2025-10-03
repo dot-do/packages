@@ -1,0 +1,112 @@
+---
+worker: example-worker
+description: Example Cloudflare Worker with common patterns
+routes:
+  - pattern: /api/example
+    method: GET
+    handler: getExample
+  - pattern: /api/example
+    method: POST
+    handler: createExample
+bindings:
+  - type: kv
+    name: CACHE
+  - type: d1
+    name: DB
+    database_id: your-database-id
+  - type: service
+    name: AI_SERVICE
+    service: ai
+compatibility_date: 2025-01-01
+node_compat: true
+observability:
+  enabled: true
+  head_sampling_rate: 1
+---
+
+# Example Worker
+
+This is an example Cloudflare Worker definition in MDX format. The YAML frontmatter above defines routes, bindings, and configuration.
+
+## Overview
+
+This worker demonstrates:
+- HTTP API routes
+- Service bindings (KV, D1, other workers)
+- RPC interface
+- Queue handling
+
+## Routes
+
+### GET /api/example
+Retrieve example data from KV or D1.
+
+**Response:**
+```json
+{
+  "success": true,
+  "data": { ... }
+}
+```
+
+### POST /api/example
+Create new example data.
+
+**Request:**
+```json
+{
+  "name": "Example",
+  "value": "Data"
+}
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "id": "123"
+}
+```
+
+## Bindings
+
+### CACHE (KV)
+Key-value storage for caching responses.
+
+### DB (D1)
+SQLite database for persistent data.
+
+### AI_SERVICE (Service)
+RPC binding to AI service for AI operations.
+
+## Implementation
+
+The worker code can be auto-generated or provided inline:
+
+```typescript
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url)
+
+    if (url.pathname === '/api/example') {
+      // Handle request
+      return new Response('Example response')
+    }
+
+    return new Response('Not found', { status: 404 })
+  }
+}
+```
+
+## Local Development
+
+```bash
+cd workers/example-worker
+pnpm dev
+```
+
+## Deployment
+
+```bash
+pnpm deploy
+```
