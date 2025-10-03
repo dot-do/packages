@@ -1,0 +1,38 @@
+{
+  "name": "@dot-do/payload-multitenant",
+  "version": "0.1.0",
+  "description": "Multi-tenant marketplace platform with Workers for Platforms integration",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./collections": "./dist/collections/index.js",
+    "./middleware": "./dist/middleware/index.js",
+    "./lib": "./dist/lib/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "payload",
+    "multi-tenant",
+    "marketplace",
+    "cloudflare",
+    "workers-for-platforms"
+  ],
+  "author": ".do Platform",
+  "license": "MIT",
+  "dependencies": {
+    "payload": "^3.13.3",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.0"
+  },
+  "peerDependencies": {
+    "next": "^15.4.0"
+  }
+}
