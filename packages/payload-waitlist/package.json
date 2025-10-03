@@ -1,0 +1,65 @@
+{
+  "name": "@dot-do/payload-waitlist",
+  "version": "0.1.0",
+  "description": "Reusable waitlist system for PayloadCMS with referral tracking and email notifications",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./collection": {
+      "import": "./dist/collection/index.mjs",
+      "require": "./dist/collection/index.js",
+      "types": "./dist/collection/index.d.ts"
+    },
+    "./api": {
+      "import": "./dist/api/index.mjs",
+      "require": "./dist/api/index.js",
+      "types": "./dist/api/index.d.ts"
+    },
+    "./components": {
+      "import": "./dist/components/index.mjs",
+      "require": "./dist/components/index.js",
+      "types": "./dist/components/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts src/collection/index.ts src/api/index.ts src/components/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts src/collection/index.ts src/api/index.ts src/components/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["payload", "cms", "waitlist", "referral", "tracking", "typescript", "react"],
+  "author": "dot-do",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dot-do/packages.git",
+    "directory": "packages/payload-waitlist"
+  },
+  "files": ["dist"],
+  "peerDependencies": {
+    "payload": "^3.0.0",
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "eslint": "^8.56.0",
+    "payload": "^3.13.3",
+    "react": "^19.0.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

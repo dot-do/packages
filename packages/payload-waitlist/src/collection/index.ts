@@ -1,0 +1,1 @@
+export { createWaitlistCollection } from './Waitlist'
