@@ -1,0 +1,38 @@
+digraph dependencies {
+  label="ai-database (8 dependents)";
+  labelloc="t";
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=white];
+  edge [color="#666666"];
+  "ai-database" [label="ai-database", fillcolor="#ffeb3b"];
+  "@dotdo/do" [label="dotdo/\ndo", fillcolor="white"];
+  "@mdxdb/clickhouse" [label="mdxdb/\nclickhouse", fillcolor="white"];
+  "business-as-code" [label="business-as-code", fillcolor="white"];
+  "services-as-software" [label="services-as-software", fillcolor="white"];
+  "digital-tools" [label="digital-tools", fillcolor="white"];
+  "digital-products" [label="digital-products", fillcolor="white"];
+  "mdxe" [label="mdxe", fillcolor="white"];
+  "ai-primitives" [label="ai-primitives", fillcolor="white"];
+  "mdxld" [label="mdxld", fillcolor="white"];
+  "ai-functions" [label="ai-functions", fillcolor="white"];
+  "@dotdo/do" -> "ai-database";
+  "@dotdo/do" -> "ai-functions";
+  "@dotdo/do" -> "ai-primitives";
+  "@dotdo/do" -> "digital-tools";
+  "@mdxdb/clickhouse" -> "ai-database";
+  "business-as-code" -> "ai-database";
+  "business-as-code" -> "ai-functions";
+  "ai-database" -> "mdxld";
+  "ai-database" -> "ai-functions";
+  "services-as-software" -> "ai-database";
+  "services-as-software" -> "ai-functions";
+  "digital-tools" -> "ai-database";
+  "digital-tools" -> "ai-functions";
+  "digital-products" -> "ai-database";
+  "digital-products" -> "ai-functions";
+  "mdxe" -> "@mdxdb/clickhouse";
+  "mdxe" -> "ai-database";
+  "mdxe" -> "ai-functions";
+  "ai-primitives" -> "ai-functions";
+  "ai-primitives" -> "ai-database";
+}

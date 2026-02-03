@@ -1,0 +1,28 @@
+digraph dependencies {
+  label="@dotdo/postgres-shared (9 dependents)";
+  labelloc="t";
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=white];
+  edge [color="#666666"];
+  "@dotdo/postgres-shared" [label="dotdo/\npostgres-shared", fillcolor="#ffeb3b"];
+  "@dotdo/postgres" [label="dotdo/\npostgres", fillcolor="white"];
+  "@dotdo/documentdb" [label="dotdo/\ndocumentdb", fillcolor="white"];
+  "@dotdo/neon" [label="dotdo/\nneon", fillcolor="white"];
+  "@dotdo/postgrest" [label="dotdo/\npostgrest", fillcolor="white"];
+  "@dotdo/electric" [label="dotdo/\nelectric", fillcolor="white"];
+  "@dotdo/supabase" [label="dotdo/\nsupabase", fillcolor="white"];
+  "@dotdo/pg-lake" [label="dotdo/\npg-lake", fillcolor="white"];
+  "@dotdo/tanstack" [label="dotdo/\ntanstack", fillcolor="white"];
+  "postgres.do" [label="postgres.do", fillcolor="white"];
+  "@dotdo/postgres" -> "@dotdo/postgres-shared";
+  "@dotdo/postgres" -> "postgres.do";
+  "@dotdo/documentdb" -> "@dotdo/postgres";
+  "@dotdo/documentdb" -> "@dotdo/postgres-shared";
+  "@dotdo/neon" -> "@dotdo/postgres-shared";
+  "@dotdo/postgrest" -> "@dotdo/postgres-shared";
+  "@dotdo/electric" -> "@dotdo/postgres-shared";
+  "@dotdo/supabase" -> "@dotdo/postgres-shared";
+  "@dotdo/pg-lake" -> "@dotdo/postgres-shared";
+  "@dotdo/tanstack" -> "@dotdo/postgres-shared";
+  "postgres.do" -> "@dotdo/postgres-shared";
+}

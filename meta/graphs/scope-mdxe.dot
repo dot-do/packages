@@ -1,0 +1,19 @@
+digraph dependencies {
+  label="@mdxe internal dependencies";
+  labelloc="t";
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=white];
+  edge [color="#666666"];
+  "@mdxe/fumadocs" [label="mdxe/\nfumadocs", fillcolor="white"];
+  "@mdxe/do" [label="mdxe/\ndo", fillcolor="white"];
+  "@mdxe/github" [label="mdxe/\ngithub", fillcolor="white"];
+  "@mdxe/deploy" [label="mdxe/\ndeploy", fillcolor="white"];
+  "@mdxe/payload" [label="mdxe/\npayload", fillcolor="white"];
+  "@mdxe/vercel" [label="mdxe/\nvercel", fillcolor="white"];
+  "@mdxe/cloudflare" [label="mdxe/\ncloudflare", fillcolor="white"];
+  "@mdxe/hono" [label="mdxe/\nhono", fillcolor="white"];
+  "@mdxe/deploy" -> "@mdxe/do";
+  "@mdxe/deploy" -> "@mdxe/cloudflare";
+  "@mdxe/deploy" -> "@mdxe/github";
+  "@mdxe/deploy" -> "@mdxe/vercel";
+}

@@ -1,0 +1,392 @@
+[
+  {
+    "name": "@dotdo/db-rpc-server",
+    "version": "0.1.6",
+    "issues": [
+      "workspace dep: @dotdo/db-rpc@workspace:*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@dotdo/db-rpc": "workspace:*"
+    }
+  },
+  {
+    "name": "@dotdo/apis",
+    "version": "0.1.0",
+    "issues": [
+      "wildcard dep: oauth.do@*",
+      "wildcard dep: rpc.do@*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "oauth.do": "*",
+      "rpc.do": "*"
+    }
+  },
+  {
+    "name": "@dotdo/app-builder",
+    "version": "0.1.0",
+    "issues": [
+      "workspace dep: @dotdo/db-do-json@workspace:*",
+      "workspace dep: @dotdo/parse-worker@workspace:*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@dotdo/db-do-json": "workspace:*",
+      "@dotdo/parse-worker": "workspace:*"
+    }
+  },
+  {
+    "name": "@mdxui/fumadocs",
+    "version": "1.9.0",
+    "issues": [
+      "workspace dep: mdxld@workspace:*",
+      "workspace dep: @mdxdb/fumadocs@workspace:*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "mdxld": "workspace:*",
+      "@mdxdb/fumadocs": "workspace:*"
+    }
+  },
+  {
+    "name": "@mdxui/marketing",
+    "version": "1.0.2",
+    "issues": [
+      "wildcard dep: @mdxui/types@*",
+      "wildcard dep: @mdxui/shared@*",
+      "wildcard dep: @mdxui/widgets@*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@mdxui/types": "*",
+      "@mdxui/shared": "*",
+      "@mdxui/widgets": "*"
+    }
+  },
+  {
+    "name": "@mdxui/dashboard",
+    "version": "1.0.2",
+    "issues": [
+      "wildcard dep: @mdxui/shared@*",
+      "wildcard dep: @mdxui/widgets@*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@mdxui/shared": "*",
+      "@mdxui/widgets": "*"
+    }
+  },
+  {
+    "name": "@mdxui/blog",
+    "version": "1.0.2",
+    "issues": [
+      "wildcard dep: @mdxui/shared@*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@mdxui/shared": "*"
+    }
+  },
+  {
+    "name": "@mdxui/docs",
+    "version": "1.0.2",
+    "issues": [
+      "wildcard dep: @mdxui/types@*",
+      "wildcard dep: @mdxui/shared@*",
+      "wildcard dep: @mdxui/widgets@*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@mdxui/types": "*",
+      "@mdxui/shared": "*",
+      "@mdxui/widgets": "*"
+    }
+  },
+  {
+    "name": "@mdxe/deploy",
+    "version": "1.9.0",
+    "issues": [
+      "workspace dep: @mdxe/do@workspace:*",
+      "workspace dep: @mdxe/cloudflare@workspace:*",
+      "workspace dep: @mdxe/github@workspace:*",
+      "workspace dep: @mdxe/vercel@workspace:*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@mdxe/do": "workspace:*",
+      "@mdxe/cloudflare": "workspace:*",
+      "@mdxe/github": "workspace:*",
+      "@mdxe/vercel": "workspace:*"
+    }
+  },
+  {
+    "name": "@mdxe/payload",
+    "version": "1.9.0",
+    "issues": [
+      "workspace dep: @mdxdb/payload@workspace:^",
+      "workspace dep: @mdxdb/sqlite@workspace:^",
+      "workspace dep: mdxld@workspace:^"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@mdxdb/payload": "workspace:^",
+      "@mdxdb/sqlite": "workspace:^",
+      "mdxld": "workspace:^"
+    }
+  },
+  {
+    "name": "@mdxe/hono",
+    "version": "1.9.0",
+    "issues": [
+      "workspace dep: @mdxui/fumadocs@workspace:*",
+      "workspace dep: mdxld@workspace:*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@mdxui/fumadocs": "workspace:*",
+      "mdxld": "workspace:*"
+    }
+  },
+  {
+    "name": "@mdxdb/payload",
+    "version": "1.9.0",
+    "issues": [
+      "workspace dep: @mdxdb/sqlite@workspace:^",
+      "workspace dep: @mdxdb/clickhouse@workspace:^"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@mdxdb/sqlite": "workspace:^",
+      "@mdxdb/clickhouse": "workspace:^"
+    }
+  },
+  {
+    "name": "@mdxdb/fs",
+    "version": "1.9.0",
+    "issues": [
+      "workspace dep: @mdxld/extract@workspace:*",
+      "workspace dep: ai-database@workspace:*",
+      "workspace dep: mdxld@workspace:*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@mdxld/extract": "workspace:*",
+      "ai-database": "workspace:*",
+      "mdxld": "workspace:*"
+    }
+  },
+  {
+    "name": "@mdxdb/fumadocs",
+    "version": "1.9.0",
+    "issues": [
+      "workspace dep: @mdxdb/fs@workspace:*",
+      "workspace dep: mdxld@workspace:*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@mdxdb/fs": "workspace:*",
+      "mdxld": "workspace:*"
+    }
+  },
+  {
+    "name": "@mdxdb/clickhouse",
+    "version": "1.9.0",
+    "issues": [
+      "workspace dep: ai-database@workspace:^",
+      "workspace dep: @mdxld/extract@workspace:^",
+      "workspace dep: @mdxdb/fs@workspace:^"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "ai-database": "workspace:^",
+      "@mdxld/extract": "workspace:^",
+      "@mdxdb/fs": "workspace:^"
+    }
+  },
+  {
+    "name": "@mdxdb/fetch",
+    "version": "0.0.1",
+    "issues": [
+      "workspace dep: @mdxdb/types@workspace:*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "@mdxdb/types": "workspace:*"
+    }
+  },
+  {
+    "name": "bashx.do",
+    "version": "0.1.2",
+    "issues": [
+      "wildcard dep: mcp.do@*",
+      "wildcard dep: rpc.do@*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "mcp.do": "*",
+      "rpc.do": "*"
+    }
+  },
+  {
+    "name": "database.do",
+    "version": "0.0.1",
+    "issues": [
+      "wildcard dep: apis.do@*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "apis.do": "*"
+    }
+  },
+  {
+    "name": "tasks.do",
+    "version": "0.0.1",
+    "issues": [
+      "wildcard dep: apis.do@*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "apis.do": "*"
+    }
+  },
+  {
+    "name": "duck.do",
+    "version": "0.1.0-rc.1",
+    "issues": [
+      "wildcard dep: capnweb@*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "capnweb": "*"
+    }
+  },
+  {
+    "name": "sales-builder",
+    "version": "0.1.1",
+    "issues": [
+      "workspace dep: api.sb@workspace:*",
+      "workspace dep: db.sb@workspace:*",
+      "workspace dep: ideal-customer-profile@workspace:*",
+      "workspace dep: storybrand@workspace:*",
+      "workspace dep: jobs-to-be-done@workspace:*",
+      "workspace dep: landing-page@workspace:*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "api.sb": "workspace:*",
+      "db.sb": "workspace:*",
+      "ideal-customer-profile": "workspace:*",
+      "storybrand": "workspace:*",
+      "jobs-to-be-done": "workspace:*",
+      "landing-page": "workspace:*"
+    }
+  },
+  {
+    "name": "services-builder",
+    "version": "0.1.0",
+    "issues": [
+      "workspace dep: api.sb@workspace:*",
+      "workspace dep: db.sb@workspace:*",
+      "workspace dep: jobs-to-be-done@workspace:*",
+      "workspace dep: design-sprint@workspace:*",
+      "workspace dep: product-names@workspace:*",
+      "workspace dep: landing-page@workspace:*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "api.sb": "workspace:*",
+      "db.sb": "workspace:*",
+      "jobs-to-be-done": "workspace:*",
+      "design-sprint": "workspace:*",
+      "product-names": "workspace:*",
+      "landing-page": "workspace:*"
+    }
+  },
+  {
+    "name": "startup-builder",
+    "version": "0.1.0",
+    "issues": [
+      "workspace dep: api.sb@workspace:*",
+      "workspace dep: db.sb@workspace:*",
+      "workspace dep: foundation-sprint@workspace:*",
+      "workspace dep: lean-canvas@workspace:*",
+      "workspace dep: ideal-customer-profile@workspace:*",
+      "workspace dep: jobs-to-be-done@workspace:*",
+      "workspace dep: storybrand@workspace:*",
+      "workspace dep: startup-names@workspace:*",
+      "workspace dep: landing-page@workspace:*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "api.sb": "workspace:*",
+      "db.sb": "workspace:*",
+      "foundation-sprint": "workspace:*",
+      "lean-canvas": "workspace:*",
+      "ideal-customer-profile": "workspace:*",
+      "jobs-to-be-done": "workspace:*",
+      "storybrand": "workspace:*",
+      "startup-names": "workspace:*",
+      "landing-page": "workspace:*"
+    }
+  },
+  {
+    "name": "agents.do",
+    "version": "0.0.1",
+    "issues": [
+      "wildcard dep: apis.do@*"
+    ],
+    "issueType": "direct",
+    "deps": {
+      "apis.do": "*"
+    }
+  },
+  {
+    "name": "@dotdo/do",
+    "version": "0.1.4",
+    "issues": [
+      "depends on broken: @dotdo/apis"
+    ],
+    "issueType": "transitive",
+    "dependsOnBroken": [
+      "@dotdo/apis"
+    ]
+  },
+  {
+    "name": "mdxe",
+    "version": "1.9.1",
+    "issues": [
+      "depends on broken: @mdxdb/clickhouse, @mdxdb/fs, @mdxe/deploy, @mdxe/hono, @mdxe/payload"
+    ],
+    "issueType": "transitive",
+    "dependsOnBroken": [
+      "@mdxdb/clickhouse",
+      "@mdxdb/fs",
+      "@mdxe/deploy",
+      "@mdxe/hono",
+      "@mdxe/payload"
+    ]
+  },
+  {
+    "name": "@mdxui/do",
+    "version": "4.0.1",
+    "issues": [
+      "depends on broken: @dotdo/do"
+    ],
+    "issueType": "transitive",
+    "dependsOnBroken": [
+      "@dotdo/do"
+    ]
+  },
+  {
+    "name": "ai-waitlist",
+    "version": "0.1.0",
+    "issues": [
+      "depends on broken: mdxe"
+    ],
+    "issueType": "transitive",
+    "dependsOnBroken": [
+      "mdxe"
+    ]
+  }
+]

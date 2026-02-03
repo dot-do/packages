@@ -1,0 +1,36 @@
+digraph dependencies {
+  label="@mdxui/primitives (12 dependents)";
+  labelloc="t";
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=white];
+  edge [color="#666666"];
+  "@mdxui/primitives" [label="mdxui/\nprimitives", fillcolor="#ffeb3b"];
+  "@dotdo/landing" [label="dotdo/\nlanding", fillcolor="white"];
+  "@mdxui/do" [label="mdxui/\ndo", fillcolor="white"];
+  "@mdxui/admin" [label="mdxui/\nadmin", fillcolor="white"];
+  "@mdxui/widgets" [label="mdxui/\nwidgets", fillcolor="white"];
+  "@mdxui/app" [label="mdxui/\napp", fillcolor="white"];
+  "@mdxui/zero" [label="mdxui/\nzero", fillcolor="white"];
+  "@mdxui/auth" [label="mdxui/\nauth", fillcolor="white"];
+  "@mdxui/payload" [label="mdxui/\npayload", fillcolor="white"];
+  "@mdxui/soc2" [label="mdxui/\nsoc2", fillcolor="white"];
+  "@mdxui/issues" [label="mdxui/\nissues", fillcolor="white"];
+  "@mdxui/directory" [label="mdxui/\ndirectory", fillcolor="white"];
+  "dotdo" [label="dotdo", fillcolor="white"];
+  "@dotdo/landing" -> "@mdxui/primitives";
+  "@mdxui/do" -> "@mdxui/admin";
+  "@mdxui/do" -> "@mdxui/app";
+  "@mdxui/do" -> "@mdxui/primitives";
+  "@mdxui/do" -> "@mdxui/auth";
+  "@mdxui/admin" -> "@mdxui/primitives";
+  "@mdxui/widgets" -> "@mdxui/primitives";
+  "@mdxui/app" -> "@mdxui/primitives";
+  "@mdxui/zero" -> "@mdxui/primitives";
+  "@mdxui/auth" -> "@mdxui/primitives";
+  "@mdxui/payload" -> "@mdxui/auth";
+  "@mdxui/payload" -> "@mdxui/primitives";
+  "@mdxui/soc2" -> "@mdxui/primitives";
+  "@mdxui/issues" -> "@mdxui/primitives";
+  "@mdxui/directory" -> "@mdxui/primitives";
+  "dotdo" -> "@mdxui/primitives";
+}

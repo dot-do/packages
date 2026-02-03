@@ -1,0 +1,36 @@
+digraph dependencies {
+  label="mdxld (13 dependents)";
+  labelloc="t";
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=white];
+  edge [color="#666666"];
+  "mdxld" [label="mdxld", fillcolor="#ffeb3b"];
+  "@mdxui/fumadocs" [label="mdxui/\nfumadocs", fillcolor="white"];
+  "@mdxld/extract" [label="mdxld/\nextract", fillcolor="white"];
+  "@mdxld/markdown" [label="mdxld/\nmarkdown", fillcolor="white"];
+  "@mdxld/ast" [label="mdxld/\nast", fillcolor="white"];
+  "@mdxld/ai" [label="mdxld/\nai", fillcolor="white"];
+  "@mdxe/fumadocs" [label="mdxe/\nfumadocs", fillcolor="white"];
+  "@mdxe/payload" [label="mdxe/\npayload", fillcolor="white"];
+  "@mdxe/hono" [label="mdxe/\nhono", fillcolor="white"];
+  "@mdxdb/fumadocs" [label="mdxdb/\nfumadocs", fillcolor="white"];
+  "ai-database" [label="ai-database", fillcolor="white"];
+  "mdxai" [label="mdxai", fillcolor="white"];
+  "mdxld-workers" [label="mdxld-workers", fillcolor="white"];
+  "vscode-mdxld" [label="vscode-mdxld", fillcolor="white"];
+  "@mdxui/fumadocs" -> "mdxld";
+  "@mdxui/fumadocs" -> "@mdxdb/fumadocs";
+  "@mdxld/extract" -> "mdxld";
+  "@mdxld/markdown" -> "mdxld";
+  "@mdxld/ast" -> "mdxld";
+  "@mdxld/ai" -> "mdxld";
+  "@mdxe/fumadocs" -> "mdxld";
+  "@mdxe/payload" -> "mdxld";
+  "@mdxe/hono" -> "@mdxui/fumadocs";
+  "@mdxe/hono" -> "mdxld";
+  "@mdxdb/fumadocs" -> "mdxld";
+  "ai-database" -> "mdxld";
+  "mdxai" -> "mdxld";
+  "mdxld-workers" -> "mdxld";
+  "vscode-mdxld" -> "mdxld";
+}

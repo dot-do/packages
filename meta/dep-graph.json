@@ -1,0 +1,6551 @@
+{
+  "nodes": {
+    "@dotdo/client": {
+      "name": "@dotdo/client",
+      "version": "0.3.0",
+      "dependencies": [],
+      "dependents": [
+        "@mdxui/do"
+      ],
+      "downloads": 1472
+    },
+    "@dotdo/react": {
+      "name": "@dotdo/react",
+      "version": "1.0.0",
+      "dependencies": [],
+      "dependents": [
+        "@mdxui/cockpit",
+        "@mdxui/do"
+      ],
+      "downloads": 1226
+    },
+    "@dotdo/oauth": {
+      "name": "@dotdo/oauth",
+      "version": "0.1.5",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/do"
+      ],
+      "downloads": 527
+    },
+    "@dotdo/pglite": {
+      "name": "@dotdo/pglite",
+      "version": "0.1.3",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/postgres",
+        "@dotdo/pg-lake",
+        "@dotdo/pglite-tiny"
+      ],
+      "downloads": 457
+    },
+    "@dotdo/postgres-shared": {
+      "name": "@dotdo/postgres-shared",
+      "version": "0.1.2",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/postgres",
+        "@dotdo/documentdb",
+        "@dotdo/neon",
+        "@dotdo/postgrest",
+        "@dotdo/electric",
+        "@dotdo/supabase",
+        "@dotdo/pg-lake",
+        "@dotdo/tanstack",
+        "postgres.do"
+      ],
+      "downloads": 412
+    },
+    "@dotdo/do": {
+      "name": "@dotdo/do",
+      "version": "0.1.4",
+      "dependencies": [
+        "@dotdo/apis",
+        "@dotdo/oauth",
+        "ai-database",
+        "ai-evaluate",
+        "ai-functions",
+        "ai-primitives",
+        "ai-providers",
+        "ai-workflows",
+        "digital-tools",
+        "digital-workers",
+        "language-models",
+        "mdxui",
+        "rpc.do"
+      ],
+      "dependents": [
+        "@mdxui/do"
+      ],
+      "downloads": 407
+    },
+    "@dotdo/postgres": {
+      "name": "@dotdo/postgres",
+      "version": "0.1.2",
+      "dependencies": [
+        "@dotdo/pglite",
+        "@dotdo/postgres-shared",
+        "postgres.do"
+      ],
+      "dependents": [
+        "@dotdo/documentdb"
+      ],
+      "downloads": 309
+    },
+    "@dotdo/pg-geo": {
+      "name": "@dotdo/pg-geo",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/documentdb"
+      ],
+      "downloads": 186
+    },
+    "@dotdo/db-clickhouse": {
+      "name": "@dotdo/db-clickhouse",
+      "version": "0.1.10",
+      "dependencies": [],
+      "dependents": [
+        "db.sb"
+      ],
+      "downloads": 178
+    },
+    "@dotdo/mongodb": {
+      "name": "@dotdo/mongodb",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 165
+    },
+    "@dotdo/pg-search": {
+      "name": "@dotdo/pg-search",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 138
+    },
+    "@dotdo/cli": {
+      "name": "@dotdo/cli",
+      "version": "0.2.2",
+      "dependencies": [
+        "oauth.do",
+        "rpc.do"
+      ],
+      "dependents": [],
+      "downloads": 137
+    },
+    "@dotdo/pg-protocol": {
+      "name": "@dotdo/pg-protocol",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 134
+    },
+    "@dotdo/documentdb": {
+      "name": "@dotdo/documentdb",
+      "version": "0.1.1",
+      "dependencies": [
+        "@dotdo/pg-geo",
+        "@dotdo/postgres",
+        "@dotdo/postgres-shared",
+        "ai-evaluate"
+      ],
+      "dependents": [
+        "@dotdo/apis"
+      ],
+      "downloads": 133
+    },
+    "@dotdo/neon": {
+      "name": "@dotdo/neon",
+      "version": "0.1.1",
+      "dependencies": [
+        "@dotdo/postgres-shared"
+      ],
+      "dependents": [],
+      "downloads": 129
+    },
+    "@dotdo/pg-queue": {
+      "name": "@dotdo/pg-queue",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 129
+    },
+    "@dotdo/postgrest": {
+      "name": "@dotdo/postgrest",
+      "version": "0.1.1",
+      "dependencies": [
+        "@dotdo/postgres-shared"
+      ],
+      "dependents": [],
+      "downloads": 128
+    },
+    "@dotdo/iceberg": {
+      "name": "@dotdo/iceberg",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 128
+    },
+    "@dotdo/pg-query": {
+      "name": "@dotdo/pg-query",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 127
+    },
+    "@dotdo/electric": {
+      "name": "@dotdo/electric",
+      "version": "0.1.1",
+      "dependencies": [
+        "@dotdo/postgres-shared"
+      ],
+      "dependents": [],
+      "downloads": 127
+    },
+    "@dotdo/supabase": {
+      "name": "@dotdo/supabase",
+      "version": "0.1.1",
+      "dependencies": [
+        "@dotdo/postgres-shared"
+      ],
+      "dependents": [],
+      "downloads": 126
+    },
+    "@dotdo/pg-lake": {
+      "name": "@dotdo/pg-lake",
+      "version": "0.1.1",
+      "dependencies": [
+        "@dotdo/pglite",
+        "@dotdo/postgres-shared"
+      ],
+      "dependents": [],
+      "downloads": 125
+    },
+    "@dotdo/pglite-tiny": {
+      "name": "@dotdo/pglite-tiny",
+      "version": "0.1.1",
+      "dependencies": [
+        "@dotdo/pglite"
+      ],
+      "dependents": [],
+      "downloads": 120
+    },
+    "@dotdo/tanstack": {
+      "name": "@dotdo/tanstack",
+      "version": "0.1.1",
+      "dependencies": [
+        "@dotdo/postgres-shared"
+      ],
+      "dependents": [],
+      "downloads": 118
+    },
+    "@dotdo/mongo-payload": {
+      "name": "@dotdo/mongo-payload",
+      "version": "0.0.1",
+      "dependencies": [
+        "mongo.do"
+      ],
+      "dependents": [],
+      "downloads": 105
+    },
+    "@dotdo/payload": {
+      "name": "@dotdo/payload",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 99
+    },
+    "@dotdo/gitx": {
+      "name": "@dotdo/gitx",
+      "version": "0.1.2",
+      "dependencies": [],
+      "dependents": [
+        "gitx.do"
+      ],
+      "downloads": 88
+    },
+    "@dotdo/duckdb": {
+      "name": "@dotdo/duckdb",
+      "version": "0.1.0-rc.1",
+      "dependencies": [
+        "@dotdo/duckdb-types"
+      ],
+      "dependents": [],
+      "downloads": 68
+    },
+    "@dotdo/db-rpc-server": {
+      "name": "@dotdo/db-rpc-server",
+      "version": "0.1.6",
+      "dependencies": [
+        "@dotdo/db-rpc"
+      ],
+      "dependents": [],
+      "downloads": 53
+    },
+    "@dotdo/db-rpc": {
+      "name": "@dotdo/db-rpc",
+      "version": "0.1.6",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/db-rpc-server"
+      ],
+      "downloads": 49
+    },
+    "@dotdo/fsx": {
+      "name": "@dotdo/fsx",
+      "version": "0.1.2",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 38
+    },
+    "@dotdo/sqlite-core": {
+      "name": "@dotdo/sqlite-core",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/sqlite",
+        "sqlite.do"
+      ],
+      "downloads": 37
+    },
+    "@dotdo/apis": {
+      "name": "@dotdo/apis",
+      "version": "0.1.0",
+      "dependencies": [
+        "@dotdo/documentdb",
+        "postgres.do"
+      ],
+      "dependents": [
+        "@dotdo/do"
+      ],
+      "downloads": 37
+    },
+    "@dotdo/mcp": {
+      "name": "@dotdo/mcp",
+      "version": "0.1.1",
+      "dependencies": [
+        "ai-evaluate"
+      ],
+      "dependents": [
+        "@dotdo/sdb",
+        "esm.do"
+      ],
+      "downloads": 36
+    },
+    "@dotdo/pglite-react": {
+      "name": "@dotdo/pglite-react",
+      "version": "0.2.33",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/pglite-repl"
+      ],
+      "downloads": 36
+    },
+    "@dotdo/pglite-tools": {
+      "name": "@dotdo/pglite-tools",
+      "version": "0.2.20",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 36
+    },
+    "@dotdo/pglite-socket": {
+      "name": "@dotdo/pglite-socket",
+      "version": "0.0.20",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 35
+    },
+    "@dotdo/pglite-sync": {
+      "name": "@dotdo/pglite-sync",
+      "version": "0.4.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 35
+    },
+    "@dotdo/bashx": {
+      "name": "@dotdo/bashx",
+      "version": "0.1.2",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 34
+    },
+    "@dotdo/pglite-vue": {
+      "name": "@dotdo/pglite-vue",
+      "version": "0.2.33",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 34
+    },
+    "@dotdo/pglite-repl": {
+      "name": "@dotdo/pglite-repl",
+      "version": "0.2.33",
+      "dependencies": [
+        "@dotdo/pglite-react"
+      ],
+      "dependents": [],
+      "downloads": 33
+    },
+    "@dotdo/sqlite": {
+      "name": "@dotdo/sqlite",
+      "version": "0.0.1",
+      "dependencies": [
+        "@dotdo/sqlite-core"
+      ],
+      "dependents": [],
+      "downloads": 32
+    },
+    "@dotdo/tailwind": {
+      "name": "@dotdo/tailwind",
+      "version": "6.0.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 21
+    },
+    "@dotdo/magicui": {
+      "name": "@dotdo/magicui",
+      "version": "6.0.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 21
+    },
+    "@dotdo/landing": {
+      "name": "@dotdo/landing",
+      "version": "6.0.0",
+      "dependencies": [
+        "@mdxui/primitives"
+      ],
+      "dependents": [],
+      "downloads": 16
+    },
+    "@dotdo/app-builder": {
+      "name": "@dotdo/app-builder",
+      "version": "0.1.0",
+      "dependencies": [
+        "@dotdo/db-do-json",
+        "@dotdo/parse-worker"
+      ],
+      "dependents": [],
+      "downloads": 13
+    },
+    "@dotdo/db-do-json": {
+      "name": "@dotdo/db-do-json",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/app-builder"
+      ],
+      "downloads": 11
+    },
+    "@dotdo/parse-worker": {
+      "name": "@dotdo/parse-worker",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/app-builder"
+      ],
+      "downloads": 11
+    },
+    "@dotdo/db-composite": {
+      "name": "@dotdo/db-composite",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 9
+    },
+    "@dotdo/duckdb-types": {
+      "name": "@dotdo/duckdb-types",
+      "version": "0.1.0-rc.1",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/duckdb",
+        "duck.do"
+      ],
+      "downloads": 0
+    },
+    "@dotdo/vault": {
+      "name": "@dotdo/vault",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [
+        "vault.do"
+      ],
+      "downloads": 0
+    },
+    "@dotdo/esm": {
+      "name": "@dotdo/esm",
+      "version": "0.1.0",
+      "dependencies": [
+        "ai-evaluate"
+      ],
+      "dependents": [
+        "esm.do"
+      ],
+      "downloads": 0
+    },
+    "@dotdo/sdb": {
+      "name": "@dotdo/sdb",
+      "version": "0.1.0",
+      "dependencies": [
+        "@dotdo/mcp"
+      ],
+      "dependents": [],
+      "downloads": 0
+    },
+    "@saaskit/atatus": {
+      "name": "@saaskit/atatus",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 22
+    },
+    "@saaskit/azure": {
+      "name": "@saaskit/azure",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 9
+    },
+    "@saaskit/customerio": {
+      "name": "@saaskit/customerio",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 9
+    },
+    "@saaskit/github": {
+      "name": "@saaskit/github",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 7
+    },
+    "@saaskit/producthunt": {
+      "name": "@saaskit/producthunt",
+      "version": "0.2.13",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 6
+    },
+    "@saaskit/sales-deck": {
+      "name": "@saaskit/sales-deck",
+      "version": "0.2.13",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 6
+    },
+    "@saaskit/vercel": {
+      "name": "@saaskit/vercel",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 6
+    },
+    "@saaskit/sematext": {
+      "name": "@saaskit/sematext",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 6
+    },
+    "@saaskit/evergage": {
+      "name": "@saaskit/evergage",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 6
+    },
+    "@saaskit/saasquatch": {
+      "name": "@saaskit/saasquatch",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 6
+    },
+    "@saaskit/zapier-marketing": {
+      "name": "@saaskit/zapier-marketing",
+      "version": "0.2.13",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [
+        "@saaskit/marketing"
+      ],
+      "downloads": 5
+    },
+    "@saaskit/sanity": {
+      "name": "@saaskit/sanity",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 5
+    },
+    "@saaskit/hellobar": {
+      "name": "@saaskit/hellobar",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 5
+    },
+    "@saaskit/userlike": {
+      "name": "@saaskit/userlike",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 5
+    },
+    "@saaskit/kenshoo": {
+      "name": "@saaskit/kenshoo",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 5
+    },
+    "@saaskit/satismeter": {
+      "name": "@saaskit/satismeter",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 5
+    },
+    "@saaskit/keen-io": {
+      "name": "@saaskit/keen-io",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 5
+    },
+    "@saaskit/spinnakr": {
+      "name": "@saaskit/spinnakr",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 5
+    },
+    "@saaskit/twitter": {
+      "name": "@saaskit/twitter",
+      "version": "0.2.13",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 4
+    },
+    "@saaskit/rapidapi": {
+      "name": "@saaskit/rapidapi",
+      "version": "0.2.13",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 4
+    },
+    "@saaskit/pitch-deck": {
+      "name": "@saaskit/pitch-deck",
+      "version": "0.2.13",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 4
+    },
+    "@saaskit/kissmetrics": {
+      "name": "@saaskit/kissmetrics",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 4
+    },
+    "@saaskit/olark": {
+      "name": "@saaskit/olark",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 4
+    },
+    "@saaskit/blueshift": {
+      "name": "@saaskit/blueshift",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 4
+    },
+    "@saaskit/mousestats": {
+      "name": "@saaskit/mousestats",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/foxmetrics": {
+      "name": "@saaskit/foxmetrics",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/mouseflow": {
+      "name": "@saaskit/mouseflow",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/preact": {
+      "name": "@saaskit/preact",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/klaviyo": {
+      "name": "@saaskit/klaviyo",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/curebit": {
+      "name": "@saaskit/curebit",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/elevio": {
+      "name": "@saaskit/elevio",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/heap": {
+      "name": "@saaskit/heap",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/bitbucket": {
+      "name": "@saaskit/bitbucket",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/hittail": {
+      "name": "@saaskit/hittail",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/inspectlet": {
+      "name": "@saaskit/inspectlet",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/graphcms": {
+      "name": "@saaskit/graphcms",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/qualaroo": {
+      "name": "@saaskit/qualaroo",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/slack": {
+      "name": "@saaskit/slack",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/google-analytics": {
+      "name": "@saaskit/google-analytics",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/bing-ads": {
+      "name": "@saaskit/bing-ads",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/facebook-conversion-tracking": {
+      "name": "@saaskit/facebook-conversion-tracking",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/navilytics": {
+      "name": "@saaskit/navilytics",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/adroll": {
+      "name": "@saaskit/adroll",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/amplitude": {
+      "name": "@saaskit/amplitude",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/upstash": {
+      "name": "@saaskit/upstash",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/autosend": {
+      "name": "@saaskit/autosend",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/sdk": {
+      "name": "@saaskit/sdk",
+      "version": "0.2.13",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@saaskit/webengage": {
+      "name": "@saaskit/webengage",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/zapier": {
+      "name": "@saaskit/zapier",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/contentful": {
+      "name": "@saaskit/contentful",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/logtail": {
+      "name": "@saaskit/logtail",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/hubspot": {
+      "name": "@saaskit/hubspot",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/appcues": {
+      "name": "@saaskit/appcues",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/woopra": {
+      "name": "@saaskit/woopra",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/livechat": {
+      "name": "@saaskit/livechat",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/netlify": {
+      "name": "@saaskit/netlify",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/segmentio": {
+      "name": "@saaskit/segmentio",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/bugsnag": {
+      "name": "@saaskit/bugsnag",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/fullstory": {
+      "name": "@saaskit/fullstory",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/saas.dev": {
+      "name": "@saaskit/saas.dev",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/get-satisfaction": {
+      "name": "@saaskit/get-satisfaction",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/logalert": {
+      "name": "@saaskit/logalert",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/extole": {
+      "name": "@saaskit/extole",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/firebase": {
+      "name": "@saaskit/firebase",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/rollbar": {
+      "name": "@saaskit/rollbar",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/app": {
+      "name": "@saaskit/app",
+      "version": "0.2.13",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/ui": {
+      "name": "@saaskit/ui",
+      "version": "0.2.15",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@saaskit/tapstream": {
+      "name": "@saaskit/tapstream",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/airtable": {
+      "name": "@saaskit/airtable",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/twilio": {
+      "name": "@saaskit/twilio",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/alexa": {
+      "name": "@saaskit/alexa",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/clicky": {
+      "name": "@saaskit/clicky",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/gosquared": {
+      "name": "@saaskit/gosquared",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/fauna": {
+      "name": "@saaskit/fauna",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/mojn": {
+      "name": "@saaskit/mojn",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/snapengage": {
+      "name": "@saaskit/snapengage",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/outbound": {
+      "name": "@saaskit/outbound",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/buttercms": {
+      "name": "@saaskit/buttercms",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/mixpanel": {
+      "name": "@saaskit/mixpanel",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/nudgespot": {
+      "name": "@saaskit/nudgespot",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/intercom": {
+      "name": "@saaskit/intercom",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/sentry": {
+      "name": "@saaskit/sentry",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/editmode": {
+      "name": "@saaskit/editmode",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/piwik": {
+      "name": "@saaskit/piwik",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/debugbear": {
+      "name": "@saaskit/debugbear",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/lytics": {
+      "name": "@saaskit/lytics",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/formspree": {
+      "name": "@saaskit/formspree",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/trakio": {
+      "name": "@saaskit/trakio",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/logdna": {
+      "name": "@saaskit/logdna",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/vero": {
+      "name": "@saaskit/vero",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/route": {
+      "name": "@saaskit/route",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/uservoice": {
+      "name": "@saaskit/uservoice",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/frontleaf": {
+      "name": "@saaskit/frontleaf",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/supporthero": {
+      "name": "@saaskit/supporthero",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/chartbeat": {
+      "name": "@saaskit/chartbeat",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/drip": {
+      "name": "@saaskit/drip",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/checkly": {
+      "name": "@saaskit/checkly",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/bugherd": {
+      "name": "@saaskit/bugherd",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/chameleon": {
+      "name": "@saaskit/chameleon",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/taplytics": {
+      "name": "@saaskit/taplytics",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/cloudflare": {
+      "name": "@saaskit/cloudflare",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/datadog": {
+      "name": "@saaskit/datadog",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/pingdom": {
+      "name": "@saaskit/pingdom",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/planetscale": {
+      "name": "@saaskit/planetscale",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/supabase": {
+      "name": "@saaskit/supabase",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/aws": {
+      "name": "@saaskit/aws",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/headlessly": {
+      "name": "@saaskit/headlessly",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/clerk": {
+      "name": "@saaskit/clerk",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/insidevault": {
+      "name": "@saaskit/insidevault",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/quantcast": {
+      "name": "@saaskit/quantcast",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/improvely": {
+      "name": "@saaskit/improvely",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/clicktale": {
+      "name": "@saaskit/clicktale",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/logrocket": {
+      "name": "@saaskit/logrocket",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/wootric": {
+      "name": "@saaskit/wootric",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/gauges": {
+      "name": "@saaskit/gauges",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/gitlab": {
+      "name": "@saaskit/gitlab",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/auth0": {
+      "name": "@saaskit/auth0",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/optimizely": {
+      "name": "@saaskit/optimizely",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/sendgrid": {
+      "name": "@saaskit/sendgrid",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/logflare": {
+      "name": "@saaskit/logflare",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/datocms": {
+      "name": "@saaskit/datocms",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/comscore": {
+      "name": "@saaskit/comscore",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/awesm": {
+      "name": "@saaskit/awesm",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/errorception": {
+      "name": "@saaskit/errorception",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/bronto": {
+      "name": "@saaskit/bronto",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/adwords": {
+      "name": "@saaskit/adwords",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/logg.ng": {
+      "name": "@saaskit/logg.ng",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/crazy-egg": {
+      "name": "@saaskit/crazy-egg",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/twitter-ads": {
+      "name": "@saaskit/twitter-ads",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/yandex-metrica": {
+      "name": "@saaskit/yandex-metrica",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/next-auth": {
+      "name": "@saaskit/next-auth",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/visual-website-optimizer": {
+      "name": "@saaskit/visual-website-optimizer",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/perfect-audience": {
+      "name": "@saaskit/perfect-audience",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/lucky-orange": {
+      "name": "@saaskit/lucky-orange",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/facebook-custom-audiences": {
+      "name": "@saaskit/facebook-custom-audiences",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/google-tag-manager": {
+      "name": "@saaskit/google-tag-manager",
+      "version": "0.2.14",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/marketing": {
+      "name": "@saaskit/marketing",
+      "version": "0.2.6",
+      "dependencies": [
+        "@saaskit/zapier-marketing",
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/api": {
+      "name": "@saaskit/api",
+      "version": "0.2.13",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/integrations": {
+      "name": "@saaskit/integrations",
+      "version": "0.2.13",
+      "dependencies": [
+        "saaskit"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@saaskit/web": {
+      "name": "@saaskit/web",
+      "version": "0.2.13",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 1
+    },
+    "@mdxui/primitives": {
+      "name": "@mdxui/primitives",
+      "version": "6.0.0",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/landing",
+        "@mdxui/do",
+        "@mdxui/admin",
+        "@mdxui/widgets",
+        "@mdxui/app",
+        "@mdxui/zero",
+        "@mdxui/auth",
+        "@mdxui/payload",
+        "@mdxui/soc2",
+        "@mdxui/issues",
+        "@mdxui/directory",
+        "dotdo"
+      ],
+      "downloads": 1008
+    },
+    "@mdxui/beacon": {
+      "name": "@mdxui/beacon",
+      "version": "6.0.1",
+      "dependencies": [],
+      "dependents": [
+        "@mdxui/payload",
+        "fsx.do",
+        "dotdo"
+      ],
+      "downloads": 452
+    },
+    "@mdxui/themes": {
+      "name": "@mdxui/themes",
+      "version": "6.0.0",
+      "dependencies": [],
+      "dependents": [
+        "dotdo"
+      ],
+      "downloads": 448
+    },
+    "@mdxui/cockpit": {
+      "name": "@mdxui/cockpit",
+      "version": "6.0.1",
+      "dependencies": [
+        "@dotdo/react",
+        "platform.do",
+        "@mdxui/auth"
+      ],
+      "dependents": [
+        "@mdxui/payload",
+        "fsx.do",
+        "dotdo"
+      ],
+      "downloads": 439
+    },
+    "@mdxui/do": {
+      "name": "@mdxui/do",
+      "version": "4.0.1",
+      "dependencies": [
+        "@dotdo/client",
+        "@dotdo/do",
+        "@dotdo/react",
+        "@mdxui/admin",
+        "@mdxui/app",
+        "@mdxui/navigation",
+        "@mdxui/primitives",
+        "@mdxui/auth"
+      ],
+      "dependents": [],
+      "downloads": 294
+    },
+    "@mdxui/admin": {
+      "name": "@mdxui/admin",
+      "version": "6.0.0",
+      "dependencies": [
+        "@mdxui/primitives",
+        "mdxui"
+      ],
+      "dependents": [
+        "@mdxui/do"
+      ],
+      "downloads": 265
+    },
+    "@mdxui/widgets": {
+      "name": "@mdxui/widgets",
+      "version": "6.0.0",
+      "dependencies": [
+        "@mdxui/primitives"
+      ],
+      "dependents": [
+        "@mdxui/marketing",
+        "@mdxui/dashboard",
+        "@mdxui/docs"
+      ],
+      "downloads": 200
+    },
+    "@mdxui/app": {
+      "name": "@mdxui/app",
+      "version": "6.0.0",
+      "dependencies": [
+        "@mdxui/primitives"
+      ],
+      "dependents": [
+        "@mdxui/do"
+      ],
+      "downloads": 153
+    },
+    "@mdxui/terminal": {
+      "name": "@mdxui/terminal",
+      "version": "6.0.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 140
+    },
+    "@mdxui/zero": {
+      "name": "@mdxui/zero",
+      "version": "6.0.0",
+      "dependencies": [
+        "@mdxui/primitives",
+        "mdxui"
+      ],
+      "dependents": [],
+      "downloads": 27
+    },
+    "@mdxui/dochat": {
+      "name": "@mdxui/dochat",
+      "version": "3.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 26
+    },
+    "@mdxui/auth": {
+      "name": "@mdxui/auth",
+      "version": "1.1.1",
+      "dependencies": [
+        "mdxui",
+        "@mdxui/primitives"
+      ],
+      "dependents": [
+        "@mdxui/cockpit",
+        "@mdxui/do",
+        "@mdxui/payload"
+      ],
+      "downloads": 25
+    },
+    "@mdxui/payload": {
+      "name": "@mdxui/payload",
+      "version": "6.0.1",
+      "dependencies": [
+        "@mdxui/auth",
+        "@mdxui/beacon",
+        "@mdxui/cockpit",
+        "@mdxui/primitives",
+        "mdxui"
+      ],
+      "dependents": [],
+      "downloads": 25
+    },
+    "@mdxui/soc2": {
+      "name": "@mdxui/soc2",
+      "version": "6.0.0",
+      "dependencies": [
+        "@mdxui/primitives"
+      ],
+      "dependents": [],
+      "downloads": 23
+    },
+    "@mdxui/navigation": {
+      "name": "@mdxui/navigation",
+      "version": "6.0.0",
+      "dependencies": [],
+      "dependents": [
+        "@mdxui/do"
+      ],
+      "downloads": 22
+    },
+    "@mdxui/dashboard-panels": {
+      "name": "@mdxui/dashboard-panels",
+      "version": "6.0.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 22
+    },
+    "@mdxui/named": {
+      "name": "@mdxui/named",
+      "version": "6.0.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 21
+    },
+    "@mdxui/tremor": {
+      "name": "@mdxui/tremor",
+      "version": "6.0.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 21
+    },
+    "@mdxui/discovery": {
+      "name": "@mdxui/discovery",
+      "version": "6.0.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 21
+    },
+    "@mdxui/api": {
+      "name": "@mdxui/api",
+      "version": "6.0.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 21
+    },
+    "@mdxui/issues": {
+      "name": "@mdxui/issues",
+      "version": "6.0.0",
+      "dependencies": [
+        "mdxui",
+        "@mdxui/primitives"
+      ],
+      "dependents": [],
+      "downloads": 20
+    },
+    "@mdxui/directory": {
+      "name": "@mdxui/directory",
+      "version": "6.0.0",
+      "dependencies": [
+        "@mdxui/primitives"
+      ],
+      "dependents": [],
+      "downloads": 20
+    },
+    "@mdxui/fumadocs": {
+      "name": "@mdxui/fumadocs",
+      "version": "1.9.0",
+      "dependencies": [
+        "mdxld",
+        "@mdxdb/fumadocs"
+      ],
+      "dependents": [
+        "@mdxe/hono"
+      ],
+      "downloads": 13
+    },
+    "@mdxui/shared": {
+      "name": "@mdxui/shared",
+      "version": "1.0.2",
+      "dependencies": [],
+      "dependents": [
+        "@mdxui/marketing",
+        "@mdxui/dashboard",
+        "@mdxui/blog",
+        "@mdxui/docs"
+      ],
+      "downloads": 8
+    },
+    "@mdxui/types": {
+      "name": "@mdxui/types",
+      "version": "1.0.2",
+      "dependencies": [],
+      "dependents": [
+        "@mdxui/marketing",
+        "@mdxui/docs"
+      ],
+      "downloads": 5
+    },
+    "@mdxui/marketing": {
+      "name": "@mdxui/marketing",
+      "version": "1.0.2",
+      "dependencies": [
+        "@mdxui/types",
+        "@mdxui/shared",
+        "@mdxui/widgets"
+      ],
+      "dependents": [],
+      "downloads": 4
+    },
+    "@mdxui/dashboard": {
+      "name": "@mdxui/dashboard",
+      "version": "1.0.2",
+      "dependencies": [
+        "@mdxui/shared",
+        "@mdxui/widgets"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "@mdxui/blog": {
+      "name": "@mdxui/blog",
+      "version": "1.0.2",
+      "dependencies": [
+        "@mdxui/shared"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@mdxui/docs": {
+      "name": "@mdxui/docs",
+      "version": "1.0.2",
+      "dependencies": [
+        "@mdxui/types",
+        "@mdxui/shared",
+        "@mdxui/widgets"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@db4/core": {
+      "name": "@db4/core",
+      "version": "0.1.2",
+      "dependencies": [],
+      "dependents": [
+        "@db4/rpc",
+        "@db4/mongo",
+        "@db4/firebase",
+        "@db4/hyperdrive",
+        "@db4/postgres",
+        "@db4/cloudflare",
+        "@db4/planetscale",
+        "@db4/nats",
+        "@db4/pglite",
+        "@db4/client",
+        "@db4/turso",
+        "@db4/iceberg",
+        "@db4/supabase",
+        "@db4/convex",
+        "@db4/temporal",
+        "@db4/vortex",
+        "@db4/cache",
+        "@db4/auth",
+        "@db4/replication",
+        "@db4/do",
+        "@db4/schema",
+        "@db4/ai",
+        "@db4/query",
+        "@db4/mcp",
+        "@db4/rest",
+        "@db4/storage",
+        "@db4/store",
+        "@db4/drizzle",
+        "@db4/payload",
+        "@db4/worker",
+        "db4ai"
+      ],
+      "downloads": 418
+    },
+    "@db4/rpc": {
+      "name": "@db4/rpc",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [
+        "@db4/client",
+        "@db4/convex",
+        "db4ai"
+      ],
+      "downloads": 201
+    },
+    "@db4/mongo": {
+      "name": "@db4/mongo",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/client",
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 196
+    },
+    "@db4/firebase": {
+      "name": "@db4/firebase",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 190
+    },
+    "@db4/hyperdrive": {
+      "name": "@db4/hyperdrive",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 186
+    },
+    "@db4/postgres": {
+      "name": "@db4/postgres",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/client",
+        "@db4/core",
+        "@db4/query"
+      ],
+      "dependents": [],
+      "downloads": 183
+    },
+    "@db4/cloudflare": {
+      "name": "@db4/cloudflare",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 182
+    },
+    "@db4/planetscale": {
+      "name": "@db4/planetscale",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 181
+    },
+    "@db4/nats": {
+      "name": "@db4/nats",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 181
+    },
+    "@db4/pglite": {
+      "name": "@db4/pglite",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 181
+    },
+    "@db4/client": {
+      "name": "@db4/client",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core",
+        "@db4/rpc"
+      ],
+      "dependents": [
+        "@db4/mongo",
+        "@db4/postgres",
+        "@db4/mcp",
+        "@db4/rest",
+        "@db4/drizzle",
+        "@db4/payload",
+        "db4ai"
+      ],
+      "downloads": 177
+    },
+    "@db4/turso": {
+      "name": "@db4/turso",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 177
+    },
+    "@db4/iceberg": {
+      "name": "@db4/iceberg",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 176
+    },
+    "@db4/inngest": {
+      "name": "@db4/inngest",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 176
+    },
+    "@db4/supabase": {
+      "name": "@db4/supabase",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 175
+    },
+    "@db4/convex": {
+      "name": "@db4/convex",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/core",
+        "@db4/do",
+        "@db4/rpc"
+      ],
+      "dependents": [],
+      "downloads": 173
+    },
+    "@db4/temporal": {
+      "name": "@db4/temporal",
+      "version": "0.1.1",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 173
+    },
+    "@db4/vortex": {
+      "name": "@db4/vortex",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [
+        "@db4/do",
+        "@db4/query"
+      ],
+      "downloads": 170
+    },
+    "@db4/cache": {
+      "name": "@db4/cache",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 169
+    },
+    "@db4/cli": {
+      "name": "@db4/cli",
+      "version": "0.1.2",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 166
+    },
+    "@db4/auth": {
+      "name": "@db4/auth",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 166
+    },
+    "@db4/replication": {
+      "name": "@db4/replication",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 166
+    },
+    "@db4/do": {
+      "name": "@db4/do",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core",
+        "@db4/schema",
+        "@db4/vortex"
+      ],
+      "dependents": [
+        "@db4/convex",
+        "@db4/storage",
+        "@db4/worker"
+      ],
+      "downloads": 165
+    },
+    "@db4/schema": {
+      "name": "@db4/schema",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core",
+        "@icetype/core"
+      ],
+      "dependents": [
+        "@db4/do",
+        "@db4/worker"
+      ],
+      "downloads": 163
+    },
+    "@db4/ai": {
+      "name": "@db4/ai",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core",
+        "ai-functions"
+      ],
+      "dependents": [],
+      "downloads": 162
+    },
+    "@db4/query": {
+      "name": "@db4/query",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core",
+        "@db4/vortex"
+      ],
+      "dependents": [
+        "@db4/postgres"
+      ],
+      "downloads": 160
+    },
+    "@db4/mcp": {
+      "name": "@db4/mcp",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/client",
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 157
+    },
+    "@db4/rest": {
+      "name": "@db4/rest",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/client",
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 154
+    },
+    "@db4/storage": {
+      "name": "@db4/storage",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core",
+        "@db4/do"
+      ],
+      "dependents": [],
+      "downloads": 146
+    },
+    "@db4/store": {
+      "name": "@db4/store",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core",
+        "@icetype/core"
+      ],
+      "dependents": [
+        "db4ai"
+      ],
+      "downloads": 46
+    },
+    "@db4/drizzle": {
+      "name": "@db4/drizzle",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/client",
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 41
+    },
+    "@db4/payload": {
+      "name": "@db4/payload",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/client",
+        "@db4/core"
+      ],
+      "dependents": [],
+      "downloads": 39
+    },
+    "@db4/worker": {
+      "name": "@db4/worker",
+      "version": "0.1.2",
+      "dependencies": [
+        "@db4/core",
+        "@db4/do",
+        "@db4/schema"
+      ],
+      "dependents": [],
+      "downloads": 36
+    },
+    "@icetype/core": {
+      "name": "@icetype/core",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [
+        "@db4/schema",
+        "@db4/store",
+        "@icetype/migrations",
+        "@icetype/sqlite",
+        "@icetype/drizzle",
+        "@icetype/iceberg",
+        "@icetype/prisma",
+        "@icetype/postgres",
+        "@icetype/mysql",
+        "@icetype/clickhouse",
+        "@icetype/duckdb",
+        "@icetype/adapters",
+        "@icetype/cli",
+        "@icetype/playground-core",
+        "@icetype/test-utils",
+        "icetype",
+        "create-icetype"
+      ],
+      "downloads": 147
+    },
+    "@icetype/sql-common": {
+      "name": "@icetype/sql-common",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [
+        "@icetype/sqlite",
+        "@icetype/postgres",
+        "@icetype/mysql",
+        "@icetype/clickhouse",
+        "@icetype/duckdb"
+      ],
+      "downloads": 76
+    },
+    "@icetype/migrations": {
+      "name": "@icetype/migrations",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core"
+      ],
+      "dependents": [
+        "@icetype/postgres",
+        "@icetype/mysql"
+      ],
+      "downloads": 49
+    },
+    "@icetype/sqlite": {
+      "name": "@icetype/sqlite",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core",
+        "@icetype/sql-common"
+      ],
+      "dependents": [
+        "@icetype/cli",
+        "@icetype/playground-core",
+        "icetype"
+      ],
+      "downloads": 45
+    },
+    "@icetype/drizzle": {
+      "name": "@icetype/drizzle",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core"
+      ],
+      "dependents": [
+        "@icetype/cli",
+        "icetype"
+      ],
+      "downloads": 44
+    },
+    "@icetype/iceberg": {
+      "name": "@icetype/iceberg",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core"
+      ],
+      "dependents": [
+        "@icetype/cli",
+        "icetype"
+      ],
+      "downloads": 42
+    },
+    "@icetype/prisma": {
+      "name": "@icetype/prisma",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core"
+      ],
+      "dependents": [
+        "@icetype/cli",
+        "icetype"
+      ],
+      "downloads": 42
+    },
+    "@icetype/postgres": {
+      "name": "@icetype/postgres",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core",
+        "@icetype/migrations",
+        "@icetype/sql-common"
+      ],
+      "dependents": [
+        "@icetype/cli",
+        "@icetype/playground-core",
+        "icetype"
+      ],
+      "downloads": 39
+    },
+    "@icetype/mysql": {
+      "name": "@icetype/mysql",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core",
+        "@icetype/migrations",
+        "@icetype/sql-common"
+      ],
+      "dependents": [
+        "@icetype/cli",
+        "@icetype/playground-core",
+        "icetype"
+      ],
+      "downloads": 39
+    },
+    "@icetype/clickhouse": {
+      "name": "@icetype/clickhouse",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core",
+        "@icetype/sql-common"
+      ],
+      "dependents": [
+        "@icetype/cli",
+        "icetype"
+      ],
+      "downloads": 39
+    },
+    "@icetype/duckdb": {
+      "name": "@icetype/duckdb",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core",
+        "@icetype/sql-common"
+      ],
+      "dependents": [
+        "@icetype/cli",
+        "icetype"
+      ],
+      "downloads": 39
+    },
+    "@icetype/adapters": {
+      "name": "@icetype/adapters",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core"
+      ],
+      "dependents": [
+        "@icetype/cli",
+        "icetype"
+      ],
+      "downloads": 38
+    },
+    "@icetype/cli": {
+      "name": "@icetype/cli",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/adapters",
+        "@icetype/clickhouse",
+        "@icetype/core",
+        "@icetype/drizzle",
+        "@icetype/duckdb",
+        "@icetype/iceberg",
+        "@icetype/mysql",
+        "@icetype/postgres",
+        "@icetype/prisma",
+        "@icetype/sqlite"
+      ],
+      "dependents": [
+        "icetype"
+      ],
+      "downloads": 31
+    },
+    "@icetype/playground-core": {
+      "name": "@icetype/playground-core",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core",
+        "@icetype/postgres",
+        "@icetype/mysql",
+        "@icetype/sqlite"
+      ],
+      "dependents": [],
+      "downloads": 28
+    },
+    "@icetype/test-utils": {
+      "name": "@icetype/test-utils",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core"
+      ],
+      "dependents": [],
+      "downloads": 26
+    },
+    "@mdxld/extract": {
+      "name": "@mdxld/extract",
+      "version": "1.9.1",
+      "dependencies": [
+        "mdxld"
+      ],
+      "dependents": [
+        "@mdxdb/clickhouse"
+      ],
+      "downloads": 27
+    },
+    "@mdxld/types": {
+      "name": "@mdxld/types",
+      "version": "1.9.0",
+      "dependencies": [],
+      "dependents": [
+        "@mdxld/markdown"
+      ],
+      "downloads": 23
+    },
+    "@mdxld/compile": {
+      "name": "@mdxld/compile",
+      "version": "1.9.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 21
+    },
+    "@mdxld/markdown": {
+      "name": "@mdxld/markdown",
+      "version": "1.9.0",
+      "dependencies": [
+        "@mdxld/types",
+        "mdxld"
+      ],
+      "dependents": [],
+      "downloads": 21
+    },
+    "@mdxld/ast": {
+      "name": "@mdxld/ast",
+      "version": "1.9.0",
+      "dependencies": [
+        "mdxld"
+      ],
+      "dependents": [],
+      "downloads": 20
+    },
+    "@mdxld/schema": {
+      "name": "@mdxld/schema",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 17
+    },
+    "@mdxld/remark": {
+      "name": "@mdxld/remark",
+      "version": "1.9.0",
+      "dependencies": [],
+      "dependents": [
+        "@mdxld/jsx"
+      ],
+      "downloads": 15
+    },
+    "@mdxld/jsx": {
+      "name": "@mdxld/jsx",
+      "version": "1.9.0",
+      "dependencies": [
+        "@mdxld/remark"
+      ],
+      "dependents": [],
+      "downloads": 13
+    },
+    "@mdxld/ai": {
+      "name": "@mdxld/ai",
+      "version": "0.1.0",
+      "dependencies": [
+        "mdxld"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@mdxe/fumadocs": {
+      "name": "@mdxe/fumadocs",
+      "version": "0.1.0",
+      "dependencies": [
+        "mdxld"
+      ],
+      "dependents": [
+        "mdxe"
+      ],
+      "downloads": 34
+    },
+    "@mdxe/do": {
+      "name": "@mdxe/do",
+      "version": "1.9.0",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "@mdxe/deploy"
+      ],
+      "downloads": 16
+    },
+    "@mdxe/github": {
+      "name": "@mdxe/github",
+      "version": "1.9.0",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "@mdxe/deploy"
+      ],
+      "downloads": 13
+    },
+    "@mdxe/deploy": {
+      "name": "@mdxe/deploy",
+      "version": "1.9.0",
+      "dependencies": [
+        "@mdxe/do",
+        "@mdxe/cloudflare",
+        "@mdxe/github",
+        "@mdxe/vercel"
+      ],
+      "dependents": [
+        "mdxe"
+      ],
+      "downloads": 13
+    },
+    "@mdxe/payload": {
+      "name": "@mdxe/payload",
+      "version": "1.9.0",
+      "dependencies": [
+        "@mdxdb/payload",
+        "@mdxdb/sqlite",
+        "mdxld"
+      ],
+      "dependents": [
+        "mdxe"
+      ],
+      "downloads": 12
+    },
+    "@mdxe/vercel": {
+      "name": "@mdxe/vercel",
+      "version": "1.9.0",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "@mdxe/deploy"
+      ],
+      "downloads": 12
+    },
+    "@mdxe/cloudflare": {
+      "name": "@mdxe/cloudflare",
+      "version": "1.9.0",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "@mdxe/deploy"
+      ],
+      "downloads": 12
+    },
+    "@mdxe/hono": {
+      "name": "@mdxe/hono",
+      "version": "1.9.0",
+      "dependencies": [
+        "@mdxui/fumadocs",
+        "mdxld"
+      ],
+      "dependents": [
+        "mdxe"
+      ],
+      "downloads": 11
+    },
+    "@mdxdb/payload": {
+      "name": "@mdxdb/payload",
+      "version": "1.9.0",
+      "dependencies": [
+        "@mdxdb/sqlite",
+        "@mdxdb/clickhouse"
+      ],
+      "dependents": [
+        "@mdxe/payload"
+      ],
+      "downloads": 76
+    },
+    "@mdxdb/fs": {
+      "name": "@mdxdb/fs",
+      "version": "1.9.0",
+      "dependencies": [],
+      "dependents": [
+        "@mdxdb/fumadocs",
+        "mdxe"
+      ],
+      "downloads": 17
+    },
+    "@mdxdb/sqlite": {
+      "name": "@mdxdb/sqlite",
+      "version": "1.9.0",
+      "dependencies": [],
+      "dependents": [
+        "@mdxe/payload",
+        "@mdxdb/payload"
+      ],
+      "downloads": 13
+    },
+    "@mdxdb/fumadocs": {
+      "name": "@mdxdb/fumadocs",
+      "version": "1.9.0",
+      "dependencies": [
+        "@mdxdb/fs",
+        "mdxld"
+      ],
+      "dependents": [
+        "@mdxui/fumadocs"
+      ],
+      "downloads": 12
+    },
+    "@mdxdb/clickhouse": {
+      "name": "@mdxdb/clickhouse",
+      "version": "1.9.0",
+      "dependencies": [
+        "ai-database",
+        "@mdxld/extract"
+      ],
+      "dependents": [
+        "@mdxdb/payload",
+        "mdxe"
+      ],
+      "downloads": 10
+    },
+    "@mdxdb/fetch": {
+      "name": "@mdxdb/fetch",
+      "version": "0.0.1",
+      "dependencies": [
+        "@mdxdb/types"
+      ],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@mdxdb/types": {
+      "name": "@mdxdb/types",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [
+        "@mdxdb/fetch"
+      ],
+      "downloads": 2
+    },
+    "@org.ai/core": {
+      "name": "@org.ai/core",
+      "version": "2.1.3",
+      "dependencies": [
+        "ai-providers",
+        "language-models"
+      ],
+      "dependents": [
+        "ai-functions"
+      ],
+      "downloads": 344
+    },
+    "@org.ai/types": {
+      "name": "@org.ai/types",
+      "version": "2.1.3",
+      "dependencies": [],
+      "dependents": [
+        "digital-objects"
+      ],
+      "downloads": 193
+    },
+    "@org.ai/config": {
+      "name": "@org.ai/config",
+      "version": "0.0.2",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 36
+    },
+    "@org.ai/examples": {
+      "name": "@org.ai/examples",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 17
+    },
+    "@nathanclevenger/googlethis": {
+      "name": "@nathanclevenger/googlethis",
+      "version": "1.8.3",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 23
+    },
+    "@nathanclevenger/db-mongodb": {
+      "name": "@nathanclevenger/db-mongodb",
+      "version": "0.0.3",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 4
+    },
+    "@nathanclevenger/ui": {
+      "name": "@nathanclevenger/ui",
+      "version": "0.0.3",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 2
+    },
+    "@graphdl/core": {
+      "name": "@graphdl/core",
+      "version": "0.1.6",
+      "dependencies": [],
+      "dependents": [
+        "@graphdl/ui"
+      ],
+      "downloads": 146
+    },
+    "@graphdl/ui": {
+      "name": "@graphdl/ui",
+      "version": "0.0.14",
+      "dependencies": [
+        "@graphdl/core",
+        "ai-functions"
+      ],
+      "dependents": [],
+      "downloads": 19
+    },
+    "@mdx.do/mdx": {
+      "name": "@mdx.do/mdx",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 2
+    },
+    "saaskit": {
+      "name": "saaskit",
+      "version": "0.2.15",
+      "dependencies": [],
+      "dependents": [
+        "@saaskit/atatus",
+        "@saaskit/azure",
+        "@saaskit/customerio",
+        "@saaskit/github",
+        "@saaskit/producthunt",
+        "@saaskit/sales-deck",
+        "@saaskit/vercel",
+        "@saaskit/sematext",
+        "@saaskit/evergage",
+        "@saaskit/saasquatch",
+        "@saaskit/zapier-marketing",
+        "@saaskit/sanity",
+        "@saaskit/hellobar",
+        "@saaskit/userlike",
+        "@saaskit/kenshoo",
+        "@saaskit/satismeter",
+        "@saaskit/keen-io",
+        "@saaskit/spinnakr",
+        "@saaskit/twitter",
+        "@saaskit/rapidapi",
+        "@saaskit/pitch-deck",
+        "@saaskit/kissmetrics",
+        "@saaskit/olark",
+        "@saaskit/blueshift",
+        "@saaskit/mousestats",
+        "@saaskit/foxmetrics",
+        "@saaskit/mouseflow",
+        "@saaskit/preact",
+        "@saaskit/klaviyo",
+        "@saaskit/curebit",
+        "@saaskit/elevio",
+        "@saaskit/heap",
+        "@saaskit/bitbucket",
+        "@saaskit/hittail",
+        "@saaskit/inspectlet",
+        "@saaskit/graphcms",
+        "@saaskit/qualaroo",
+        "@saaskit/slack",
+        "@saaskit/google-analytics",
+        "@saaskit/bing-ads",
+        "@saaskit/facebook-conversion-tracking",
+        "@saaskit/navilytics",
+        "@saaskit/adroll",
+        "@saaskit/amplitude",
+        "@saaskit/upstash",
+        "@saaskit/autosend",
+        "@saaskit/webengage",
+        "@saaskit/zapier",
+        "@saaskit/contentful",
+        "@saaskit/logtail",
+        "@saaskit/hubspot",
+        "@saaskit/appcues",
+        "@saaskit/woopra",
+        "@saaskit/livechat",
+        "@saaskit/netlify",
+        "@saaskit/segmentio",
+        "@saaskit/bugsnag",
+        "@saaskit/fullstory",
+        "@saaskit/saas.dev",
+        "@saaskit/get-satisfaction",
+        "@saaskit/logalert",
+        "@saaskit/extole",
+        "@saaskit/firebase",
+        "@saaskit/rollbar",
+        "@saaskit/ui",
+        "@saaskit/tapstream",
+        "@saaskit/airtable",
+        "@saaskit/twilio",
+        "@saaskit/alexa",
+        "@saaskit/clicky",
+        "@saaskit/gosquared",
+        "@saaskit/fauna",
+        "@saaskit/mojn",
+        "@saaskit/snapengage",
+        "@saaskit/outbound",
+        "@saaskit/buttercms",
+        "@saaskit/mixpanel",
+        "@saaskit/nudgespot",
+        "@saaskit/intercom",
+        "@saaskit/sentry",
+        "@saaskit/editmode",
+        "@saaskit/piwik",
+        "@saaskit/debugbear",
+        "@saaskit/lytics",
+        "@saaskit/formspree",
+        "@saaskit/trakio",
+        "@saaskit/logdna",
+        "@saaskit/vero",
+        "@saaskit/route",
+        "@saaskit/uservoice",
+        "@saaskit/frontleaf",
+        "@saaskit/supporthero",
+        "@saaskit/chartbeat",
+        "@saaskit/drip",
+        "@saaskit/checkly",
+        "@saaskit/bugherd",
+        "@saaskit/chameleon",
+        "@saaskit/taplytics",
+        "@saaskit/cloudflare",
+        "@saaskit/datadog",
+        "@saaskit/pingdom",
+        "@saaskit/planetscale",
+        "@saaskit/supabase",
+        "@saaskit/aws",
+        "@saaskit/headlessly",
+        "@saaskit/clerk",
+        "@saaskit/insidevault",
+        "@saaskit/quantcast",
+        "@saaskit/improvely",
+        "@saaskit/clicktale",
+        "@saaskit/logrocket",
+        "@saaskit/wootric",
+        "@saaskit/gauges",
+        "@saaskit/gitlab",
+        "@saaskit/auth0",
+        "@saaskit/optimizely",
+        "@saaskit/sendgrid",
+        "@saaskit/logflare",
+        "@saaskit/datocms",
+        "@saaskit/comscore",
+        "@saaskit/awesm",
+        "@saaskit/errorception",
+        "@saaskit/bronto",
+        "@saaskit/adwords",
+        "@saaskit/logg.ng",
+        "@saaskit/crazy-egg",
+        "@saaskit/twitter-ads",
+        "@saaskit/yandex-metrica",
+        "@saaskit/next-auth",
+        "@saaskit/visual-website-optimizer",
+        "@saaskit/perfect-audience",
+        "@saaskit/lucky-orange",
+        "@saaskit/facebook-custom-audiences",
+        "@saaskit/google-tag-manager",
+        "@saaskit/marketing",
+        "@saaskit/integrations"
+      ],
+      "downloads": 10141
+    },
+    "oauth.do": {
+      "name": "oauth.do",
+      "version": "0.2.3",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/cli",
+        "@mdxe/do",
+        "@mdxe/github",
+        "@mdxe/vercel",
+        "@mdxe/cloudflare",
+        "mdxe",
+        "api.sb",
+        "ideal-customer-profile",
+        "jobs-to-be-done",
+        "design-sprint",
+        "foundation-sprint",
+        "lean-canvas",
+        "startup-names",
+        "product-names"
+      ],
+      "downloads": 2616
+    },
+    "rpc.do": {
+      "name": "rpc.do",
+      "version": "0.2.1",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/do",
+        "@dotdo/cli",
+        "platform.do"
+      ],
+      "downloads": 2308
+    },
+    "platform.do": {
+      "name": "platform.do",
+      "version": "0.1.11",
+      "dependencies": [
+        "rpc.do"
+      ],
+      "dependents": [
+        "@mdxui/cockpit"
+      ],
+      "downloads": 2091
+    },
+    "ai-functions": {
+      "name": "ai-functions",
+      "version": "2.1.3",
+      "dependencies": [
+        "@org.ai/core",
+        "language-models",
+        "ai-providers"
+      ],
+      "dependents": [
+        "@dotdo/do",
+        "@db4/ai",
+        "@graphdl/ui",
+        "ai-evaluate",
+        "business-as-code",
+        "ai-database",
+        "services-as-software",
+        "digital-workers",
+        "ai-props",
+        "ai-experiments",
+        "digital-tools",
+        "human-in-the-loop",
+        "digital-products",
+        "autonomous-agents",
+        "digital-tasks",
+        "mdxe",
+        "edge-api",
+        "ai-service",
+        "mdxai",
+        "ai-site",
+        "ai-screenshot",
+        "ai-primitives",
+        "ai-directory",
+        "payload-functions"
+      ],
+      "downloads": 1183
+    },
+    "ai-evaluate": {
+      "name": "ai-evaluate",
+      "version": "2.1.6",
+      "dependencies": [
+        "ai-functions",
+        "ai-tests"
+      ],
+      "dependents": [
+        "@dotdo/do",
+        "@dotdo/documentdb",
+        "@dotdo/mcp",
+        "@dotdo/esm",
+        "mdxe",
+        "esm.do"
+      ],
+      "downloads": 1053
+    },
+    "db4ai": {
+      "name": "db4ai",
+      "version": "0.3.6",
+      "dependencies": [
+        "@db4/client",
+        "@db4/core",
+        "@db4/store",
+        "@db4/rpc"
+      ],
+      "dependents": [],
+      "downloads": 883
+    },
+    "beads-workflows": {
+      "name": "beads-workflows",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 797
+    },
+    "ai-providers": {
+      "name": "ai-providers",
+      "version": "2.1.3",
+      "dependencies": [
+        "language-models"
+      ],
+      "dependents": [
+        "@dotdo/do",
+        "@org.ai/core",
+        "ai-functions",
+        "ai-brand",
+        "ai-business",
+        "ai-screenshot",
+        "ai-primitives"
+      ],
+      "downloads": 746
+    },
+    "language-models": {
+      "name": "language-models",
+      "version": "2.1.3",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/do",
+        "@org.ai/core",
+        "ai-functions",
+        "ai-providers"
+      ],
+      "downloads": 710
+    },
+    "gitx.do": {
+      "name": "gitx.do",
+      "version": "0.1.2",
+      "dependencies": [
+        "@dotdo/gitx"
+      ],
+      "dependents": [],
+      "downloads": 583
+    },
+    "ai-workflows": {
+      "name": "ai-workflows",
+      "version": "2.1.3",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/do",
+        "digital-workers",
+        "mdxe",
+        "ai-service",
+        "ai-primitives"
+      ],
+      "downloads": 557
+    },
+    "bashx.do": {
+      "name": "bashx.do",
+      "version": "0.1.2",
+      "dependencies": [
+        "dotdo",
+        "fsx.do"
+      ],
+      "dependents": [],
+      "downloads": 554
+    },
+    "shadmin": {
+      "name": "shadmin",
+      "version": "0.0.5",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 510
+    },
+    "docs.td": {
+      "name": "docs.td",
+      "version": "0.0.4",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 489
+    },
+    "mdxui": {
+      "name": "mdxui",
+      "version": "2.1.1",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/do",
+        "@mdxui/admin",
+        "@mdxui/zero",
+        "@mdxui/auth",
+        "@mdxui/payload",
+        "@mdxui/issues",
+        "dotdo"
+      ],
+      "downloads": 485
+    },
+    "ai-tests": {
+      "name": "ai-tests",
+      "version": "2.1.3",
+      "dependencies": [],
+      "dependents": [
+        "ai-evaluate"
+      ],
+      "downloads": 452
+    },
+    "fsx.do": {
+      "name": "fsx.do",
+      "version": "0.1.2",
+      "dependencies": [
+        "@mdxui/beacon",
+        "@mdxui/cockpit"
+      ],
+      "dependents": [
+        "bashx.do"
+      ],
+      "downloads": 452
+    },
+    "business-as-code": {
+      "name": "business-as-code",
+      "version": "2.1.3",
+      "dependencies": [
+        "ai-database",
+        "ai-functions"
+      ],
+      "dependents": [],
+      "downloads": 411
+    },
+    "mongo.do": {
+      "name": "mongo.do",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [
+        "@dotdo/mongo-payload",
+        "graph.do"
+      ],
+      "downloads": 411
+    },
+    "postgres.do": {
+      "name": "postgres.do",
+      "version": "0.1.2",
+      "dependencies": [
+        "@dotdo/postgres-shared"
+      ],
+      "dependents": [
+        "@dotdo/postgres",
+        "@dotdo/apis"
+      ],
+      "downloads": 356
+    },
+    "ai-database": {
+      "name": "ai-database",
+      "version": "2.1.3",
+      "dependencies": [
+        "mdxld",
+        "ai-functions"
+      ],
+      "dependents": [
+        "@dotdo/do",
+        "@mdxdb/clickhouse",
+        "business-as-code",
+        "services-as-software",
+        "digital-tools",
+        "digital-products",
+        "mdxe",
+        "ai-primitives"
+      ],
+      "downloads": 354
+    },
+    "services-as-software": {
+      "name": "services-as-software",
+      "version": "2.1.3",
+      "dependencies": [
+        "ai-database",
+        "ai-functions",
+        "digital-workers"
+      ],
+      "dependents": [],
+      "downloads": 354
+    },
+    "digital-workers": {
+      "name": "digital-workers",
+      "version": "2.1.3",
+      "dependencies": [
+        "ai-functions",
+        "ai-workflows"
+      ],
+      "dependents": [
+        "@dotdo/do",
+        "services-as-software",
+        "human-in-the-loop",
+        "autonomous-agents",
+        "digital-tasks"
+      ],
+      "downloads": 334
+    },
+    "org.ai": {
+      "name": "org.ai",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 330
+    },
+    "ai-props": {
+      "name": "ai-props",
+      "version": "2.1.3",
+      "dependencies": [
+        "ai-functions"
+      ],
+      "dependents": [
+        "ai-site",
+        "ai-primitives",
+        "ai-directory",
+        "ai-waitlist"
+      ],
+      "downloads": 318
+    },
+    "dotdo": {
+      "name": "dotdo",
+      "version": "0.1.0",
+      "dependencies": [
+        "@mdxui/beacon",
+        "@mdxui/cockpit",
+        "@mdxui/primitives",
+        "@mdxui/themes",
+        "mdxui"
+      ],
+      "dependents": [
+        "bashx.do"
+      ],
+      "downloads": 310
+    },
+    "ai-experiments": {
+      "name": "ai-experiments",
+      "version": "2.1.3",
+      "dependencies": [
+        "ai-functions"
+      ],
+      "dependents": [
+        "ai-primitives"
+      ],
+      "downloads": 295
+    },
+    "functions.do": {
+      "name": "functions.do",
+      "version": "0.0.5",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 287
+    },
+    "digital-tools": {
+      "name": "digital-tools",
+      "version": "2.1.3",
+      "dependencies": [
+        "ai-database",
+        "ai-functions"
+      ],
+      "dependents": [
+        "@dotdo/do",
+        "digital-tasks"
+      ],
+      "downloads": 278
+    },
+    "human-in-the-loop": {
+      "name": "human-in-the-loop",
+      "version": "2.1.3",
+      "dependencies": [
+        "ai-functions",
+        "digital-workers"
+      ],
+      "dependents": [],
+      "downloads": 272
+    },
+    "digital-products": {
+      "name": "digital-products",
+      "version": "2.1.3",
+      "dependencies": [
+        "ai-database",
+        "ai-functions"
+      ],
+      "dependents": [],
+      "downloads": 272
+    },
+    "mdxld": {
+      "name": "mdxld",
+      "version": "1.9.0",
+      "dependencies": [],
+      "dependents": [
+        "@mdxui/fumadocs",
+        "@mdxld/extract",
+        "@mdxld/markdown",
+        "@mdxld/ast",
+        "@mdxld/ai",
+        "@mdxe/fumadocs",
+        "@mdxe/payload",
+        "@mdxe/hono",
+        "@mdxdb/fumadocs",
+        "ai-database",
+        "mdxai",
+        "mdxld-workers",
+        "vscode-mdxld"
+      ],
+      "downloads": 269
+    },
+    "autonomous-agents": {
+      "name": "autonomous-agents",
+      "version": "2.1.3",
+      "dependencies": [
+        "ai-functions",
+        "digital-workers"
+      ],
+      "dependents": [],
+      "downloads": 263
+    },
+    "ducktail": {
+      "name": "ducktail",
+      "version": "0.3.0-rc.3",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 254
+    },
+    "digital-tasks": {
+      "name": "digital-tasks",
+      "version": "2.1.3",
+      "dependencies": [
+        "ai-functions",
+        "digital-workers",
+        "digital-tools"
+      ],
+      "dependents": [],
+      "downloads": 252
+    },
+    "icetype": {
+      "name": "icetype",
+      "version": "0.2.1",
+      "dependencies": [
+        "@icetype/core",
+        "@icetype/iceberg",
+        "@icetype/cli",
+        "@icetype/adapters",
+        "@icetype/clickhouse",
+        "@icetype/duckdb",
+        "@icetype/drizzle",
+        "@icetype/mysql",
+        "@icetype/postgres",
+        "@icetype/prisma",
+        "@icetype/sqlite"
+      ],
+      "dependents": [],
+      "downloads": 250
+    },
+    "remark-mdxld": {
+      "name": "remark-mdxld",
+      "version": "0.2.1",
+      "dependencies": [],
+      "dependents": [
+        "next-mdxld"
+      ],
+      "downloads": 191
+    },
+    "neo4j.do": {
+      "name": "neo4j.do",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 179
+    },
+    "mongoose.do": {
+      "name": "mongoose.do",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 167
+    },
+    "agentic.md": {
+      "name": "agentic.md",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 145
+    },
+    "apis.do": {
+      "name": "apis.do",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [
+        "llm.do",
+        "database.do",
+        "gpt.do",
+        "mcp.do",
+        "sdk.do",
+        "integrations.do",
+        "tasks.do",
+        "goals.do",
+        "plans.do",
+        "searches.do",
+        "evals.do",
+        "projects.do",
+        "analytics.do",
+        "experiments.do",
+        "models.do",
+        "triggers.do",
+        "actions.do",
+        "agents.do"
+      ],
+      "downloads": 145
+    },
+    "ducklytics": {
+      "name": "ducklytics",
+      "version": "0.1.2",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 144
+    },
+    "workflows.do": {
+      "name": "workflows.do",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 143
+    },
+    "graphdl.js": {
+      "name": "graphdl.js",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 140
+    },
+    "llm.do": {
+      "name": "llm.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do",
+        "models.do"
+      ],
+      "dependents": [],
+      "downloads": 129
+    },
+    "database.do": {
+      "name": "database.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 129
+    },
+    "gpt.do": {
+      "name": "gpt.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 124
+    },
+    "mcp.do": {
+      "name": "mcp.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 123
+    },
+    "create-do": {
+      "name": "create-do",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 122
+    },
+    "sdk.do": {
+      "name": "sdk.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 121
+    },
+    "integrations.do": {
+      "name": "integrations.do",
+      "version": "0.1.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 120
+    },
+    "tasks.do": {
+      "name": "tasks.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 120
+    },
+    "goals.do": {
+      "name": "goals.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 119
+    },
+    "plans.do": {
+      "name": "plans.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 118
+    },
+    "searches.do": {
+      "name": "searches.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 118
+    },
+    "evals.do": {
+      "name": "evals.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 118
+    },
+    "projects.do": {
+      "name": "projects.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 118
+    },
+    "analytics.do": {
+      "name": "analytics.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 117
+    },
+    "experiments.do": {
+      "name": "experiments.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 117
+    },
+    "models.do": {
+      "name": "models.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [
+        "llm.do"
+      ],
+      "downloads": 116
+    },
+    "triggers.do": {
+      "name": "triggers.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 116
+    },
+    "motion.md": {
+      "name": "motion.md",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 114
+    },
+    "nats.do": {
+      "name": "nats.do",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 114
+    },
+    "actions.do": {
+      "name": "actions.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 114
+    },
+    "durable-objects-nosql": {
+      "name": "durable-objects-nosql",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 111
+    },
+    "payload-utils": {
+      "name": "payload-utils",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 109
+    },
+    "dev.td": {
+      "name": "dev.td",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 109
+    },
+    "clickable-apis": {
+      "name": "clickable-apis",
+      "version": "0.0.1",
+      "dependencies": [
+        "simple-payload"
+      ],
+      "dependents": [],
+      "downloads": 108
+    },
+    "simple-payload": {
+      "name": "simple-payload",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [
+        "clickable-apis"
+      ],
+      "downloads": 108
+    },
+    "mondoo": {
+      "name": "mondoo",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 107
+    },
+    "payload-hooks-queue": {
+      "name": "payload-hooks-queue",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 104
+    },
+    "redis.do": {
+      "name": "redis.do",
+      "version": "0.2.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 100
+    },
+    "kafka.do": {
+      "name": "kafka.do",
+      "version": "0.0.4",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 97
+    },
+    "digital-objects": {
+      "name": "digital-objects",
+      "version": "1.0.0",
+      "dependencies": [
+        "@org.ai/types"
+      ],
+      "dependents": [],
+      "downloads": 90
+    },
+    "graph.do": {
+      "name": "graph.do",
+      "version": "0.1.0",
+      "dependencies": [
+        "mongo.do"
+      ],
+      "dependents": [],
+      "downloads": 89
+    },
+    "id.org.ai": {
+      "name": "id.org.ai",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 89
+    },
+    "sqlite.do": {
+      "name": "sqlite.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "@dotdo/sqlite-core"
+      ],
+      "dependents": [],
+      "downloads": 76
+    },
+    "duck.do": {
+      "name": "duck.do",
+      "version": "0.1.0-rc.1",
+      "dependencies": [
+        "@dotdo/duckdb-types"
+      ],
+      "dependents": [],
+      "downloads": 74
+    },
+    "turso.do": {
+      "name": "turso.do",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 70
+    },
+    "create-icetype": {
+      "name": "create-icetype",
+      "version": "0.1.0",
+      "dependencies": [
+        "@icetype/core"
+      ],
+      "dependents": [],
+      "downloads": 69
+    },
+    "db.sb": {
+      "name": "db.sb",
+      "version": "0.1.7",
+      "dependencies": [
+        "@dotdo/db-clickhouse"
+      ],
+      "dependents": [
+        "startups.studio",
+        "create-startups",
+        "sales-builder",
+        "services-builder",
+        "startup-builder"
+      ],
+      "downloads": 64
+    },
+    "startups.studio": {
+      "name": "startups.studio",
+      "version": "0.1.4",
+      "dependencies": [
+        "api.sb",
+        "db.sb"
+      ],
+      "dependents": [],
+      "downloads": 43
+    },
+    "mdxe": {
+      "name": "mdxe",
+      "version": "1.9.1",
+      "dependencies": [
+        "@mdxdb/clickhouse",
+        "@mdxdb/fs",
+        "@mdxe/deploy",
+        "@mdxe/fumadocs",
+        "@mdxe/hono",
+        "@mdxe/payload",
+        "ai-database",
+        "ai-functions",
+        "ai-evaluate",
+        "ai-workflows",
+        "oauth.do"
+      ],
+      "dependents": [
+        "ai-waitlist"
+      ],
+      "downloads": 39
+    },
+    "api.sb": {
+      "name": "api.sb",
+      "version": "0.1.2",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "startups.studio",
+        "create-startups",
+        "sales-builder",
+        "services-builder",
+        "startup-builder"
+      ],
+      "downloads": 35
+    },
+    "edge-api": {
+      "name": "edge-api",
+      "version": "0.1.70",
+      "dependencies": [
+        "ai-functions"
+      ],
+      "dependents": [],
+      "downloads": 27
+    },
+    "ideal-customer-profile": {
+      "name": "ideal-customer-profile",
+      "version": "0.1.6",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "sales-builder",
+        "startup-builder"
+      ],
+      "downloads": 23
+    },
+    "db.mdx": {
+      "name": "db.mdx",
+      "version": "0.0.18",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 22
+    },
+    "create-startups": {
+      "name": "create-startups",
+      "version": "0.1.1",
+      "dependencies": [
+        "api.sb",
+        "db.sb"
+      ],
+      "dependents": [],
+      "downloads": 21
+    },
+    "jobs-to-be-done": {
+      "name": "jobs-to-be-done",
+      "version": "0.1.6",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "sales-builder",
+        "services-builder",
+        "startup-builder"
+      ],
+      "downloads": 20
+    },
+    "design-sprint": {
+      "name": "design-sprint",
+      "version": "0.1.6",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "services-builder"
+      ],
+      "downloads": 20
+    },
+    "sales-builder": {
+      "name": "sales-builder",
+      "version": "0.1.1",
+      "dependencies": [
+        "api.sb",
+        "db.sb",
+        "ideal-customer-profile",
+        "jobs-to-be-done"
+      ],
+      "dependents": [],
+      "downloads": 19
+    },
+    "ai-service": {
+      "name": "ai-service",
+      "version": "0.1.0",
+      "dependencies": [
+        "ai-functions",
+        "ai-workflows"
+      ],
+      "dependents": [
+        "ai-primitives",
+        "ai-startups"
+      ],
+      "downloads": 19
+    },
+    "next-mdxld": {
+      "name": "next-mdxld",
+      "version": "1.3.0",
+      "dependencies": [
+        "remark-mdxld"
+      ],
+      "dependents": [],
+      "downloads": 18
+    },
+    "mdxai": {
+      "name": "mdxai",
+      "version": "1.2.0",
+      "dependencies": [
+        "ai-functions",
+        "mdxld"
+      ],
+      "dependents": [],
+      "downloads": 16
+    },
+    "mongo-fetch-api": {
+      "name": "mongo-fetch-api",
+      "version": "0.2.0",
+      "dependencies": [],
+      "dependents": [
+        "mongo-fetch"
+      ],
+      "downloads": 15
+    },
+    "ai-brand": {
+      "name": "ai-brand",
+      "version": "0.1.0",
+      "dependencies": [
+        "ai-business",
+        "ai-providers"
+      ],
+      "dependents": [
+        "ai-primitives"
+      ],
+      "downloads": 15
+    },
+    "ai-list": {
+      "name": "ai-list",
+      "version": "0.1.4",
+      "dependencies": [
+        "tagged-template-permutations"
+      ],
+      "dependents": [],
+      "downloads": 13
+    },
+    "ai-business": {
+      "name": "ai-business",
+      "version": "0.1.0",
+      "dependencies": [
+        "ai-providers"
+      ],
+      "dependents": [
+        "ai-brand",
+        "ai-primitives",
+        "ai-startups"
+      ],
+      "downloads": 13
+    },
+    "foundation-sprint": {
+      "name": "foundation-sprint",
+      "version": "0.1.6",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "startup-builder"
+      ],
+      "downloads": 12
+    },
+    "ai-server-components": {
+      "name": "ai-server-components",
+      "version": "0.0.2",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 12
+    },
+    "ai-plans": {
+      "name": "ai-plans",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [
+        "ai-primitives"
+      ],
+      "downloads": 12
+    },
+    "services-builder": {
+      "name": "services-builder",
+      "version": "0.1.0",
+      "dependencies": [
+        "api.sb",
+        "db.sb",
+        "jobs-to-be-done",
+        "design-sprint",
+        "product-names"
+      ],
+      "dependents": [],
+      "downloads": 11
+    },
+    "lean-canvas": {
+      "name": "lean-canvas",
+      "version": "0.1.6",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "startup-builder"
+      ],
+      "downloads": 11
+    },
+    "startup-names": {
+      "name": "startup-names",
+      "version": "0.1.6",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "startup-builder"
+      ],
+      "downloads": 10
+    },
+    "startup-builder": {
+      "name": "startup-builder",
+      "version": "0.1.0",
+      "dependencies": [
+        "api.sb",
+        "db.sb",
+        "foundation-sprint",
+        "lean-canvas",
+        "ideal-customer-profile",
+        "jobs-to-be-done",
+        "startup-names"
+      ],
+      "dependents": [],
+      "downloads": 10
+    },
+    "ai-site": {
+      "name": "ai-site",
+      "version": "0.1.0",
+      "dependencies": [
+        "ai-functions",
+        "ai-props"
+      ],
+      "dependents": [
+        "ai-primitives"
+      ],
+      "downloads": 10
+    },
+    "product-names": {
+      "name": "product-names",
+      "version": "0.1.6",
+      "dependencies": [
+        "oauth.do"
+      ],
+      "dependents": [
+        "services-builder"
+      ],
+      "downloads": 9
+    },
+    "ai-screenshot": {
+      "name": "ai-screenshot",
+      "version": "0.1.0",
+      "dependencies": [
+        "ai-providers",
+        "ai-functions"
+      ],
+      "dependents": [
+        "ai-primitives"
+      ],
+      "downloads": 9
+    },
+    "ai-primitives": {
+      "name": "ai-primitives",
+      "version": "0.1.0",
+      "dependencies": [
+        "ai-workflows",
+        "ai-functions",
+        "ai-props",
+        "ai-database",
+        "ai-providers",
+        "ai-brand",
+        "ai-business",
+        "ai-experiments",
+        "ai-directory",
+        "ai-service",
+        "ai-plans",
+        "ai-screenshot",
+        "ai-site",
+        "ai-startups"
+      ],
+      "dependents": [
+        "@dotdo/do"
+      ],
+      "downloads": 9
+    },
+    "ai-startups": {
+      "name": "ai-startups",
+      "version": "0.1.0",
+      "dependencies": [
+        "ai-business",
+        "ai-service"
+      ],
+      "dependents": [
+        "ai-primitives"
+      ],
+      "downloads": 9
+    },
+    "agents.do": {
+      "name": "agents.do",
+      "version": "0.0.1",
+      "dependencies": [
+        "apis.do"
+      ],
+      "dependents": [],
+      "downloads": 8
+    },
+    "ctx.do": {
+      "name": "ctx.do",
+      "version": "1.2.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 8
+    },
+    "gptmd": {
+      "name": "gptmd",
+      "version": "0.2.4",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 8
+    },
+    "ai-directory": {
+      "name": "ai-directory",
+      "version": "0.1.0",
+      "dependencies": [
+        "ai-functions",
+        "ai-props"
+      ],
+      "dependents": [
+        "ai-primitives"
+      ],
+      "downloads": 8
+    },
+    "esbuild-plugin-http": {
+      "name": "esbuild-plugin-http",
+      "version": "0.2.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 6
+    },
+    "services.studio": {
+      "name": "services.studio",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 5
+    },
+    "payload-workos": {
+      "name": "payload-workos",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 4
+    },
+    "db.mw": {
+      "name": "db.mw",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 4
+    },
+    "nextra-theme-api": {
+      "name": "nextra-theme-api",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 3
+    },
+    "hono-mdx": {
+      "name": "hono-mdx",
+      "version": "1.0.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 3
+    },
+    "apis-do-zapier": {
+      "name": "apis-do-zapier",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 3
+    },
+    "mdxld-workers": {
+      "name": "mdxld-workers",
+      "version": "1.1.0",
+      "dependencies": [
+        "mdxld"
+      ],
+      "dependents": [],
+      "downloads": 3
+    },
+    "ai-admin": {
+      "name": "ai-admin",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 3
+    },
+    "exec-symbols": {
+      "name": "exec-symbols",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 3
+    },
+    "gpt-code": {
+      "name": "gpt-code",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 3
+    },
+    "d1-json": {
+      "name": "d1-json",
+      "version": "0.0.5",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 2
+    },
+    "drivly": {
+      "name": "drivly",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 2
+    },
+    "mongo-rpc-server": {
+      "name": "mongo-rpc-server",
+      "version": "0.1.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 2
+    },
+    "durable-objects-cron": {
+      "name": "durable-objects-cron",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 2
+    },
+    "mongo-server-components": {
+      "name": "mongo-server-components",
+      "version": "0.0.3",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 2
+    },
+    "payload-vscode": {
+      "name": "payload-vscode",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 2
+    },
+    "mongo-fetch": {
+      "name": "mongo-fetch",
+      "version": "1.5.0",
+      "dependencies": [
+        "mongo-fetch-api"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "drively": {
+      "name": "drively",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 1
+    },
+    "vscode-mdxld": {
+      "name": "vscode-mdxld",
+      "version": "1.0.0",
+      "dependencies": [
+        "mdxld"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "mongo-rpc": {
+      "name": "mongo-rpc",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 1
+    },
+    "cloudformed": {
+      "name": "cloudformed",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 1
+    },
+    "payload-functions": {
+      "name": "payload-functions",
+      "version": "0.0.1-beta.5",
+      "dependencies": [
+        "ai-functions"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "f.to": {
+      "name": "f.to",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 1
+    },
+    "payload-zapier-apps": {
+      "name": "payload-zapier-apps",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 1
+    },
+    "ai-waitlist": {
+      "name": "ai-waitlist",
+      "version": "0.1.0",
+      "dependencies": [
+        "ai-props",
+        "mdxe"
+      ],
+      "dependents": [],
+      "downloads": 1
+    },
+    "tagged-template-permutations": {
+      "name": "tagged-template-permutations",
+      "version": "0.1.4",
+      "dependencies": [],
+      "dependents": [
+        "ai-list"
+      ],
+      "downloads": 1
+    },
+    "node-yaml-file": {
+      "name": "node-yaml-file",
+      "version": "0.1.0",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 1
+    },
+    "sources.do": {
+      "name": "sources.do",
+      "version": "0.0.1",
+      "dependencies": [],
+      "dependents": [],
+      "downloads": 0
+    },
+    "esm.do": {
+      "name": "esm.do",
+      "version": "0.0.2",
+      "dependencies": [
+        "@dotdo/esm",
+        "@dotdo/mcp",
+        "ai-evaluate"
+      ],
+      "dependents": [],
+      "downloads": 0
+    },
+    "vault.do": {
+      "name": "vault.do",
+      "version": "0.1.0",
+      "dependencies": [
+        "@dotdo/vault"
+      ],
+      "dependents": [],
+      "downloads": 0
+    }
+  },
+  "edges": [
+    {
+      "from": "@dotdo/do",
+      "to": "@dotdo/apis"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "@dotdo/oauth"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "ai-database"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "ai-evaluate"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "ai-functions"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "ai-primitives"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "ai-providers"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "ai-workflows"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "digital-tools"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "digital-workers"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "language-models"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "mdxui"
+    },
+    {
+      "from": "@dotdo/do",
+      "to": "rpc.do"
+    },
+    {
+      "from": "@dotdo/postgres",
+      "to": "@dotdo/pglite"
+    },
+    {
+      "from": "@dotdo/postgres",
+      "to": "@dotdo/postgres-shared"
+    },
+    {
+      "from": "@dotdo/postgres",
+      "to": "postgres.do"
+    },
+    {
+      "from": "@dotdo/cli",
+      "to": "oauth.do"
+    },
+    {
+      "from": "@dotdo/cli",
+      "to": "rpc.do"
+    },
+    {
+      "from": "@dotdo/documentdb",
+      "to": "@dotdo/pg-geo"
+    },
+    {
+      "from": "@dotdo/documentdb",
+      "to": "@dotdo/postgres"
+    },
+    {
+      "from": "@dotdo/documentdb",
+      "to": "@dotdo/postgres-shared"
+    },
+    {
+      "from": "@dotdo/documentdb",
+      "to": "ai-evaluate"
+    },
+    {
+      "from": "@dotdo/neon",
+      "to": "@dotdo/postgres-shared"
+    },
+    {
+      "from": "@dotdo/postgrest",
+      "to": "@dotdo/postgres-shared"
+    },
+    {
+      "from": "@dotdo/electric",
+      "to": "@dotdo/postgres-shared"
+    },
+    {
+      "from": "@dotdo/supabase",
+      "to": "@dotdo/postgres-shared"
+    },
+    {
+      "from": "@dotdo/pg-lake",
+      "to": "@dotdo/pglite"
+    },
+    {
+      "from": "@dotdo/pg-lake",
+      "to": "@dotdo/postgres-shared"
+    },
+    {
+      "from": "@dotdo/pglite-tiny",
+      "to": "@dotdo/pglite"
+    },
+    {
+      "from": "@dotdo/tanstack",
+      "to": "@dotdo/postgres-shared"
+    },
+    {
+      "from": "@dotdo/mongo-payload",
+      "to": "mongo.do"
+    },
+    {
+      "from": "@dotdo/duckdb",
+      "to": "@dotdo/duckdb-types"
+    },
+    {
+      "from": "@dotdo/db-rpc-server",
+      "to": "@dotdo/db-rpc"
+    },
+    {
+      "from": "@dotdo/apis",
+      "to": "@dotdo/documentdb"
+    },
+    {
+      "from": "@dotdo/apis",
+      "to": "postgres.do"
+    },
+    {
+      "from": "@dotdo/mcp",
+      "to": "ai-evaluate"
+    },
+    {
+      "from": "@dotdo/pglite-repl",
+      "to": "@dotdo/pglite-react"
+    },
+    {
+      "from": "@dotdo/sqlite",
+      "to": "@dotdo/sqlite-core"
+    },
+    {
+      "from": "@dotdo/landing",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "@dotdo/app-builder",
+      "to": "@dotdo/db-do-json"
+    },
+    {
+      "from": "@dotdo/app-builder",
+      "to": "@dotdo/parse-worker"
+    },
+    {
+      "from": "@dotdo/esm",
+      "to": "ai-evaluate"
+    },
+    {
+      "from": "@dotdo/sdb",
+      "to": "@dotdo/mcp"
+    },
+    {
+      "from": "@saaskit/atatus",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/azure",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/customerio",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/github",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/producthunt",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/sales-deck",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/vercel",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/sematext",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/evergage",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/saasquatch",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/zapier-marketing",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/sanity",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/hellobar",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/userlike",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/kenshoo",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/satismeter",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/keen-io",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/spinnakr",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/twitter",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/rapidapi",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/pitch-deck",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/kissmetrics",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/olark",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/blueshift",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/mousestats",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/foxmetrics",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/mouseflow",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/preact",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/klaviyo",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/curebit",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/elevio",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/heap",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/bitbucket",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/hittail",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/inspectlet",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/graphcms",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/qualaroo",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/slack",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/google-analytics",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/bing-ads",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/facebook-conversion-tracking",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/navilytics",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/adroll",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/amplitude",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/upstash",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/autosend",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/webengage",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/zapier",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/contentful",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/logtail",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/hubspot",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/appcues",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/woopra",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/livechat",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/netlify",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/segmentio",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/bugsnag",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/fullstory",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/saas.dev",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/get-satisfaction",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/logalert",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/extole",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/firebase",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/rollbar",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/ui",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/tapstream",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/airtable",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/twilio",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/alexa",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/clicky",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/gosquared",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/fauna",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/mojn",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/snapengage",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/outbound",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/buttercms",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/mixpanel",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/nudgespot",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/intercom",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/sentry",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/editmode",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/piwik",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/debugbear",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/lytics",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/formspree",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/trakio",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/logdna",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/vero",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/route",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/uservoice",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/frontleaf",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/supporthero",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/chartbeat",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/drip",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/checkly",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/bugherd",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/chameleon",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/taplytics",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/cloudflare",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/datadog",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/pingdom",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/planetscale",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/supabase",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/aws",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/headlessly",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/clerk",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/insidevault",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/quantcast",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/improvely",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/clicktale",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/logrocket",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/wootric",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/gauges",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/gitlab",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/auth0",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/optimizely",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/sendgrid",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/logflare",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/datocms",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/comscore",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/awesm",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/errorception",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/bronto",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/adwords",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/logg.ng",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/crazy-egg",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/twitter-ads",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/yandex-metrica",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/next-auth",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/visual-website-optimizer",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/perfect-audience",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/lucky-orange",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/facebook-custom-audiences",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/google-tag-manager",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/marketing",
+      "to": "@saaskit/zapier-marketing"
+    },
+    {
+      "from": "@saaskit/marketing",
+      "to": "saaskit"
+    },
+    {
+      "from": "@saaskit/integrations",
+      "to": "saaskit"
+    },
+    {
+      "from": "@mdxui/cockpit",
+      "to": "@dotdo/react"
+    },
+    {
+      "from": "@mdxui/cockpit",
+      "to": "platform.do"
+    },
+    {
+      "from": "@mdxui/cockpit",
+      "to": "@mdxui/auth"
+    },
+    {
+      "from": "@mdxui/do",
+      "to": "@dotdo/client"
+    },
+    {
+      "from": "@mdxui/do",
+      "to": "@dotdo/do"
+    },
+    {
+      "from": "@mdxui/do",
+      "to": "@dotdo/react"
+    },
+    {
+      "from": "@mdxui/do",
+      "to": "@mdxui/admin"
+    },
+    {
+      "from": "@mdxui/do",
+      "to": "@mdxui/app"
+    },
+    {
+      "from": "@mdxui/do",
+      "to": "@mdxui/navigation"
+    },
+    {
+      "from": "@mdxui/do",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "@mdxui/do",
+      "to": "@mdxui/auth"
+    },
+    {
+      "from": "@mdxui/admin",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "@mdxui/admin",
+      "to": "mdxui"
+    },
+    {
+      "from": "@mdxui/widgets",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "@mdxui/app",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "@mdxui/zero",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "@mdxui/zero",
+      "to": "mdxui"
+    },
+    {
+      "from": "@mdxui/auth",
+      "to": "mdxui"
+    },
+    {
+      "from": "@mdxui/auth",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "@mdxui/payload",
+      "to": "@mdxui/auth"
+    },
+    {
+      "from": "@mdxui/payload",
+      "to": "@mdxui/beacon"
+    },
+    {
+      "from": "@mdxui/payload",
+      "to": "@mdxui/cockpit"
+    },
+    {
+      "from": "@mdxui/payload",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "@mdxui/payload",
+      "to": "mdxui"
+    },
+    {
+      "from": "@mdxui/soc2",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "@mdxui/issues",
+      "to": "mdxui"
+    },
+    {
+      "from": "@mdxui/issues",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "@mdxui/directory",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "@mdxui/fumadocs",
+      "to": "mdxld"
+    },
+    {
+      "from": "@mdxui/fumadocs",
+      "to": "@mdxdb/fumadocs"
+    },
+    {
+      "from": "@mdxui/marketing",
+      "to": "@mdxui/types"
+    },
+    {
+      "from": "@mdxui/marketing",
+      "to": "@mdxui/shared"
+    },
+    {
+      "from": "@mdxui/marketing",
+      "to": "@mdxui/widgets"
+    },
+    {
+      "from": "@mdxui/dashboard",
+      "to": "@mdxui/shared"
+    },
+    {
+      "from": "@mdxui/dashboard",
+      "to": "@mdxui/widgets"
+    },
+    {
+      "from": "@mdxui/blog",
+      "to": "@mdxui/shared"
+    },
+    {
+      "from": "@mdxui/docs",
+      "to": "@mdxui/types"
+    },
+    {
+      "from": "@mdxui/docs",
+      "to": "@mdxui/shared"
+    },
+    {
+      "from": "@mdxui/docs",
+      "to": "@mdxui/widgets"
+    },
+    {
+      "from": "@db4/rpc",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/mongo",
+      "to": "@db4/client"
+    },
+    {
+      "from": "@db4/mongo",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/firebase",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/hyperdrive",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/postgres",
+      "to": "@db4/client"
+    },
+    {
+      "from": "@db4/postgres",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/postgres",
+      "to": "@db4/query"
+    },
+    {
+      "from": "@db4/cloudflare",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/planetscale",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/nats",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/pglite",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/client",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/client",
+      "to": "@db4/rpc"
+    },
+    {
+      "from": "@db4/turso",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/iceberg",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/supabase",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/convex",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/convex",
+      "to": "@db4/do"
+    },
+    {
+      "from": "@db4/convex",
+      "to": "@db4/rpc"
+    },
+    {
+      "from": "@db4/temporal",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/vortex",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/cache",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/auth",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/replication",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/do",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/do",
+      "to": "@db4/schema"
+    },
+    {
+      "from": "@db4/do",
+      "to": "@db4/vortex"
+    },
+    {
+      "from": "@db4/schema",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/schema",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@db4/ai",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/ai",
+      "to": "ai-functions"
+    },
+    {
+      "from": "@db4/query",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/query",
+      "to": "@db4/vortex"
+    },
+    {
+      "from": "@db4/mcp",
+      "to": "@db4/client"
+    },
+    {
+      "from": "@db4/mcp",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/rest",
+      "to": "@db4/client"
+    },
+    {
+      "from": "@db4/rest",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/storage",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/storage",
+      "to": "@db4/do"
+    },
+    {
+      "from": "@db4/store",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/store",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@db4/drizzle",
+      "to": "@db4/client"
+    },
+    {
+      "from": "@db4/drizzle",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/payload",
+      "to": "@db4/client"
+    },
+    {
+      "from": "@db4/payload",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/worker",
+      "to": "@db4/core"
+    },
+    {
+      "from": "@db4/worker",
+      "to": "@db4/do"
+    },
+    {
+      "from": "@db4/worker",
+      "to": "@db4/schema"
+    },
+    {
+      "from": "@icetype/migrations",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/sqlite",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/sqlite",
+      "to": "@icetype/sql-common"
+    },
+    {
+      "from": "@icetype/drizzle",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/iceberg",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/prisma",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/postgres",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/postgres",
+      "to": "@icetype/migrations"
+    },
+    {
+      "from": "@icetype/postgres",
+      "to": "@icetype/sql-common"
+    },
+    {
+      "from": "@icetype/mysql",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/mysql",
+      "to": "@icetype/migrations"
+    },
+    {
+      "from": "@icetype/mysql",
+      "to": "@icetype/sql-common"
+    },
+    {
+      "from": "@icetype/clickhouse",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/clickhouse",
+      "to": "@icetype/sql-common"
+    },
+    {
+      "from": "@icetype/duckdb",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/duckdb",
+      "to": "@icetype/sql-common"
+    },
+    {
+      "from": "@icetype/adapters",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/cli",
+      "to": "@icetype/adapters"
+    },
+    {
+      "from": "@icetype/cli",
+      "to": "@icetype/clickhouse"
+    },
+    {
+      "from": "@icetype/cli",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/cli",
+      "to": "@icetype/drizzle"
+    },
+    {
+      "from": "@icetype/cli",
+      "to": "@icetype/duckdb"
+    },
+    {
+      "from": "@icetype/cli",
+      "to": "@icetype/iceberg"
+    },
+    {
+      "from": "@icetype/cli",
+      "to": "@icetype/mysql"
+    },
+    {
+      "from": "@icetype/cli",
+      "to": "@icetype/postgres"
+    },
+    {
+      "from": "@icetype/cli",
+      "to": "@icetype/prisma"
+    },
+    {
+      "from": "@icetype/cli",
+      "to": "@icetype/sqlite"
+    },
+    {
+      "from": "@icetype/playground-core",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@icetype/playground-core",
+      "to": "@icetype/postgres"
+    },
+    {
+      "from": "@icetype/playground-core",
+      "to": "@icetype/mysql"
+    },
+    {
+      "from": "@icetype/playground-core",
+      "to": "@icetype/sqlite"
+    },
+    {
+      "from": "@icetype/test-utils",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "@mdxld/extract",
+      "to": "mdxld"
+    },
+    {
+      "from": "@mdxld/markdown",
+      "to": "@mdxld/types"
+    },
+    {
+      "from": "@mdxld/markdown",
+      "to": "mdxld"
+    },
+    {
+      "from": "@mdxld/ast",
+      "to": "mdxld"
+    },
+    {
+      "from": "@mdxld/jsx",
+      "to": "@mdxld/remark"
+    },
+    {
+      "from": "@mdxld/ai",
+      "to": "mdxld"
+    },
+    {
+      "from": "@mdxe/fumadocs",
+      "to": "mdxld"
+    },
+    {
+      "from": "@mdxe/do",
+      "to": "oauth.do"
+    },
+    {
+      "from": "@mdxe/github",
+      "to": "oauth.do"
+    },
+    {
+      "from": "@mdxe/deploy",
+      "to": "@mdxe/do"
+    },
+    {
+      "from": "@mdxe/deploy",
+      "to": "@mdxe/cloudflare"
+    },
+    {
+      "from": "@mdxe/deploy",
+      "to": "@mdxe/github"
+    },
+    {
+      "from": "@mdxe/deploy",
+      "to": "@mdxe/vercel"
+    },
+    {
+      "from": "@mdxe/payload",
+      "to": "@mdxdb/payload"
+    },
+    {
+      "from": "@mdxe/payload",
+      "to": "@mdxdb/sqlite"
+    },
+    {
+      "from": "@mdxe/payload",
+      "to": "mdxld"
+    },
+    {
+      "from": "@mdxe/vercel",
+      "to": "oauth.do"
+    },
+    {
+      "from": "@mdxe/cloudflare",
+      "to": "oauth.do"
+    },
+    {
+      "from": "@mdxe/hono",
+      "to": "@mdxui/fumadocs"
+    },
+    {
+      "from": "@mdxe/hono",
+      "to": "mdxld"
+    },
+    {
+      "from": "@mdxdb/payload",
+      "to": "@mdxdb/sqlite"
+    },
+    {
+      "from": "@mdxdb/payload",
+      "to": "@mdxdb/clickhouse"
+    },
+    {
+      "from": "@mdxdb/fumadocs",
+      "to": "@mdxdb/fs"
+    },
+    {
+      "from": "@mdxdb/fumadocs",
+      "to": "mdxld"
+    },
+    {
+      "from": "@mdxdb/clickhouse",
+      "to": "ai-database"
+    },
+    {
+      "from": "@mdxdb/clickhouse",
+      "to": "@mdxld/extract"
+    },
+    {
+      "from": "@mdxdb/fetch",
+      "to": "@mdxdb/types"
+    },
+    {
+      "from": "@org.ai/core",
+      "to": "ai-providers"
+    },
+    {
+      "from": "@org.ai/core",
+      "to": "language-models"
+    },
+    {
+      "from": "@graphdl/ui",
+      "to": "@graphdl/core"
+    },
+    {
+      "from": "@graphdl/ui",
+      "to": "ai-functions"
+    },
+    {
+      "from": "platform.do",
+      "to": "rpc.do"
+    },
+    {
+      "from": "ai-functions",
+      "to": "@org.ai/core"
+    },
+    {
+      "from": "ai-functions",
+      "to": "language-models"
+    },
+    {
+      "from": "ai-functions",
+      "to": "ai-providers"
+    },
+    {
+      "from": "ai-evaluate",
+      "to": "ai-functions"
+    },
+    {
+      "from": "ai-evaluate",
+      "to": "ai-tests"
+    },
+    {
+      "from": "db4ai",
+      "to": "@db4/client"
+    },
+    {
+      "from": "db4ai",
+      "to": "@db4/core"
+    },
+    {
+      "from": "db4ai",
+      "to": "@db4/store"
+    },
+    {
+      "from": "db4ai",
+      "to": "@db4/rpc"
+    },
+    {
+      "from": "ai-providers",
+      "to": "language-models"
+    },
+    {
+      "from": "gitx.do",
+      "to": "@dotdo/gitx"
+    },
+    {
+      "from": "bashx.do",
+      "to": "dotdo"
+    },
+    {
+      "from": "bashx.do",
+      "to": "fsx.do"
+    },
+    {
+      "from": "fsx.do",
+      "to": "@mdxui/beacon"
+    },
+    {
+      "from": "fsx.do",
+      "to": "@mdxui/cockpit"
+    },
+    {
+      "from": "business-as-code",
+      "to": "ai-database"
+    },
+    {
+      "from": "business-as-code",
+      "to": "ai-functions"
+    },
+    {
+      "from": "postgres.do",
+      "to": "@dotdo/postgres-shared"
+    },
+    {
+      "from": "ai-database",
+      "to": "mdxld"
+    },
+    {
+      "from": "ai-database",
+      "to": "ai-functions"
+    },
+    {
+      "from": "services-as-software",
+      "to": "ai-database"
+    },
+    {
+      "from": "services-as-software",
+      "to": "ai-functions"
+    },
+    {
+      "from": "services-as-software",
+      "to": "digital-workers"
+    },
+    {
+      "from": "digital-workers",
+      "to": "ai-functions"
+    },
+    {
+      "from": "digital-workers",
+      "to": "ai-workflows"
+    },
+    {
+      "from": "ai-props",
+      "to": "ai-functions"
+    },
+    {
+      "from": "dotdo",
+      "to": "@mdxui/beacon"
+    },
+    {
+      "from": "dotdo",
+      "to": "@mdxui/cockpit"
+    },
+    {
+      "from": "dotdo",
+      "to": "@mdxui/primitives"
+    },
+    {
+      "from": "dotdo",
+      "to": "@mdxui/themes"
+    },
+    {
+      "from": "dotdo",
+      "to": "mdxui"
+    },
+    {
+      "from": "ai-experiments",
+      "to": "ai-functions"
+    },
+    {
+      "from": "digital-tools",
+      "to": "ai-database"
+    },
+    {
+      "from": "digital-tools",
+      "to": "ai-functions"
+    },
+    {
+      "from": "human-in-the-loop",
+      "to": "ai-functions"
+    },
+    {
+      "from": "human-in-the-loop",
+      "to": "digital-workers"
+    },
+    {
+      "from": "digital-products",
+      "to": "ai-database"
+    },
+    {
+      "from": "digital-products",
+      "to": "ai-functions"
+    },
+    {
+      "from": "autonomous-agents",
+      "to": "ai-functions"
+    },
+    {
+      "from": "autonomous-agents",
+      "to": "digital-workers"
+    },
+    {
+      "from": "digital-tasks",
+      "to": "ai-functions"
+    },
+    {
+      "from": "digital-tasks",
+      "to": "digital-workers"
+    },
+    {
+      "from": "digital-tasks",
+      "to": "digital-tools"
+    },
+    {
+      "from": "icetype",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "icetype",
+      "to": "@icetype/iceberg"
+    },
+    {
+      "from": "icetype",
+      "to": "@icetype/cli"
+    },
+    {
+      "from": "icetype",
+      "to": "@icetype/adapters"
+    },
+    {
+      "from": "icetype",
+      "to": "@icetype/clickhouse"
+    },
+    {
+      "from": "icetype",
+      "to": "@icetype/duckdb"
+    },
+    {
+      "from": "icetype",
+      "to": "@icetype/drizzle"
+    },
+    {
+      "from": "icetype",
+      "to": "@icetype/mysql"
+    },
+    {
+      "from": "icetype",
+      "to": "@icetype/postgres"
+    },
+    {
+      "from": "icetype",
+      "to": "@icetype/prisma"
+    },
+    {
+      "from": "icetype",
+      "to": "@icetype/sqlite"
+    },
+    {
+      "from": "llm.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "llm.do",
+      "to": "models.do"
+    },
+    {
+      "from": "database.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "gpt.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "mcp.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "sdk.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "integrations.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "tasks.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "goals.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "plans.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "searches.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "evals.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "projects.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "analytics.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "experiments.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "models.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "triggers.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "actions.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "clickable-apis",
+      "to": "simple-payload"
+    },
+    {
+      "from": "digital-objects",
+      "to": "@org.ai/types"
+    },
+    {
+      "from": "graph.do",
+      "to": "mongo.do"
+    },
+    {
+      "from": "sqlite.do",
+      "to": "@dotdo/sqlite-core"
+    },
+    {
+      "from": "duck.do",
+      "to": "@dotdo/duckdb-types"
+    },
+    {
+      "from": "create-icetype",
+      "to": "@icetype/core"
+    },
+    {
+      "from": "db.sb",
+      "to": "@dotdo/db-clickhouse"
+    },
+    {
+      "from": "startups.studio",
+      "to": "api.sb"
+    },
+    {
+      "from": "startups.studio",
+      "to": "db.sb"
+    },
+    {
+      "from": "mdxe",
+      "to": "@mdxdb/clickhouse"
+    },
+    {
+      "from": "mdxe",
+      "to": "@mdxdb/fs"
+    },
+    {
+      "from": "mdxe",
+      "to": "@mdxe/deploy"
+    },
+    {
+      "from": "mdxe",
+      "to": "@mdxe/fumadocs"
+    },
+    {
+      "from": "mdxe",
+      "to": "@mdxe/hono"
+    },
+    {
+      "from": "mdxe",
+      "to": "@mdxe/payload"
+    },
+    {
+      "from": "mdxe",
+      "to": "ai-database"
+    },
+    {
+      "from": "mdxe",
+      "to": "ai-functions"
+    },
+    {
+      "from": "mdxe",
+      "to": "ai-evaluate"
+    },
+    {
+      "from": "mdxe",
+      "to": "ai-workflows"
+    },
+    {
+      "from": "mdxe",
+      "to": "oauth.do"
+    },
+    {
+      "from": "api.sb",
+      "to": "oauth.do"
+    },
+    {
+      "from": "edge-api",
+      "to": "ai-functions"
+    },
+    {
+      "from": "ideal-customer-profile",
+      "to": "oauth.do"
+    },
+    {
+      "from": "create-startups",
+      "to": "api.sb"
+    },
+    {
+      "from": "create-startups",
+      "to": "db.sb"
+    },
+    {
+      "from": "jobs-to-be-done",
+      "to": "oauth.do"
+    },
+    {
+      "from": "design-sprint",
+      "to": "oauth.do"
+    },
+    {
+      "from": "sales-builder",
+      "to": "api.sb"
+    },
+    {
+      "from": "sales-builder",
+      "to": "db.sb"
+    },
+    {
+      "from": "sales-builder",
+      "to": "ideal-customer-profile"
+    },
+    {
+      "from": "sales-builder",
+      "to": "jobs-to-be-done"
+    },
+    {
+      "from": "ai-service",
+      "to": "ai-functions"
+    },
+    {
+      "from": "ai-service",
+      "to": "ai-workflows"
+    },
+    {
+      "from": "next-mdxld",
+      "to": "remark-mdxld"
+    },
+    {
+      "from": "mdxai",
+      "to": "ai-functions"
+    },
+    {
+      "from": "mdxai",
+      "to": "mdxld"
+    },
+    {
+      "from": "ai-brand",
+      "to": "ai-business"
+    },
+    {
+      "from": "ai-brand",
+      "to": "ai-providers"
+    },
+    {
+      "from": "ai-list",
+      "to": "tagged-template-permutations"
+    },
+    {
+      "from": "ai-business",
+      "to": "ai-providers"
+    },
+    {
+      "from": "foundation-sprint",
+      "to": "oauth.do"
+    },
+    {
+      "from": "services-builder",
+      "to": "api.sb"
+    },
+    {
+      "from": "services-builder",
+      "to": "db.sb"
+    },
+    {
+      "from": "services-builder",
+      "to": "jobs-to-be-done"
+    },
+    {
+      "from": "services-builder",
+      "to": "design-sprint"
+    },
+    {
+      "from": "services-builder",
+      "to": "product-names"
+    },
+    {
+      "from": "lean-canvas",
+      "to": "oauth.do"
+    },
+    {
+      "from": "startup-names",
+      "to": "oauth.do"
+    },
+    {
+      "from": "startup-builder",
+      "to": "api.sb"
+    },
+    {
+      "from": "startup-builder",
+      "to": "db.sb"
+    },
+    {
+      "from": "startup-builder",
+      "to": "foundation-sprint"
+    },
+    {
+      "from": "startup-builder",
+      "to": "lean-canvas"
+    },
+    {
+      "from": "startup-builder",
+      "to": "ideal-customer-profile"
+    },
+    {
+      "from": "startup-builder",
+      "to": "jobs-to-be-done"
+    },
+    {
+      "from": "startup-builder",
+      "to": "startup-names"
+    },
+    {
+      "from": "ai-site",
+      "to": "ai-functions"
+    },
+    {
+      "from": "ai-site",
+      "to": "ai-props"
+    },
+    {
+      "from": "product-names",
+      "to": "oauth.do"
+    },
+    {
+      "from": "ai-screenshot",
+      "to": "ai-providers"
+    },
+    {
+      "from": "ai-screenshot",
+      "to": "ai-functions"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-workflows"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-functions"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-props"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-database"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-providers"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-brand"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-business"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-experiments"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-directory"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-service"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-plans"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-screenshot"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-site"
+    },
+    {
+      "from": "ai-primitives",
+      "to": "ai-startups"
+    },
+    {
+      "from": "ai-startups",
+      "to": "ai-business"
+    },
+    {
+      "from": "ai-startups",
+      "to": "ai-service"
+    },
+    {
+      "from": "agents.do",
+      "to": "apis.do"
+    },
+    {
+      "from": "ai-directory",
+      "to": "ai-functions"
+    },
+    {
+      "from": "ai-directory",
+      "to": "ai-props"
+    },
+    {
+      "from": "mdxld-workers",
+      "to": "mdxld"
+    },
+    {
+      "from": "mongo-fetch",
+      "to": "mongo-fetch-api"
+    },
+    {
+      "from": "vscode-mdxld",
+      "to": "mdxld"
+    },
+    {
+      "from": "payload-functions",
+      "to": "ai-functions"
+    },
+    {
+      "from": "ai-waitlist",
+      "to": "ai-props"
+    },
+    {
+      "from": "ai-waitlist",
+      "to": "mdxe"
+    },
+    {
+      "from": "esm.do",
+      "to": "@dotdo/esm"
+    },
+    {
+      "from": "esm.do",
+      "to": "@dotdo/mcp"
+    },
+    {
+      "from": "esm.do",
+      "to": "ai-evaluate"
+    },
+    {
+      "from": "vault.do",
+      "to": "@dotdo/vault"
+    }
+  ]
+}

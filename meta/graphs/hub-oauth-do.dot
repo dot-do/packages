@@ -1,0 +1,36 @@
+digraph dependencies {
+  label="oauth.do (14 dependents)";
+  labelloc="t";
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=white];
+  edge [color="#666666"];
+  "oauth.do" [label="oauth.do", fillcolor="#ffeb3b"];
+  "@dotdo/cli" [label="dotdo/\ncli", fillcolor="white"];
+  "@mdxe/do" [label="mdxe/\ndo", fillcolor="white"];
+  "@mdxe/github" [label="mdxe/\ngithub", fillcolor="white"];
+  "@mdxe/vercel" [label="mdxe/\nvercel", fillcolor="white"];
+  "@mdxe/cloudflare" [label="mdxe/\ncloudflare", fillcolor="white"];
+  "mdxe" [label="mdxe", fillcolor="white"];
+  "api.sb" [label="api.sb", fillcolor="white"];
+  "ideal-customer-profile" [label="ideal-customer-profile", fillcolor="white"];
+  "jobs-to-be-done" [label="jobs-to-be-done", fillcolor="white"];
+  "design-sprint" [label="design-sprint", fillcolor="white"];
+  "foundation-sprint" [label="foundation-sprint", fillcolor="white"];
+  "lean-canvas" [label="lean-canvas", fillcolor="white"];
+  "startup-names" [label="startup-names", fillcolor="white"];
+  "product-names" [label="product-names", fillcolor="white"];
+  "@dotdo/cli" -> "oauth.do";
+  "@mdxe/do" -> "oauth.do";
+  "@mdxe/github" -> "oauth.do";
+  "@mdxe/vercel" -> "oauth.do";
+  "@mdxe/cloudflare" -> "oauth.do";
+  "mdxe" -> "oauth.do";
+  "api.sb" -> "oauth.do";
+  "ideal-customer-profile" -> "oauth.do";
+  "jobs-to-be-done" -> "oauth.do";
+  "design-sprint" -> "oauth.do";
+  "foundation-sprint" -> "oauth.do";
+  "lean-canvas" -> "oauth.do";
+  "startup-names" -> "oauth.do";
+  "product-names" -> "oauth.do";
+}

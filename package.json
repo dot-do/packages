@@ -1,0 +1,19 @@
+{
+  "name": "npm-package-catalog",
+  "version": "1.0.0",
+  "description": "Catalogs published npm packages from specified scopes/users",
+  "type": "module",
+  "scripts": {
+    "catalog": "tsx src/index.ts",
+    "meta": "tsx src/meta-package.ts",
+    "graph": "tsx src/dep-graph.ts",
+    "validate": "tsx src/validate-packages.ts",
+    "validate:quick": "tsx src/validate-quick.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.7.0"
+  }
+}

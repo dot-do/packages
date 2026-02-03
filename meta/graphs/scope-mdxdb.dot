@@ -1,0 +1,18 @@
+digraph dependencies {
+  label="@mdxdb internal dependencies";
+  labelloc="t";
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=white];
+  edge [color="#666666"];
+  "@mdxdb/payload" [label="mdxdb/\npayload", fillcolor="white"];
+  "@mdxdb/fs" [label="mdxdb/\nfs", fillcolor="white"];
+  "@mdxdb/sqlite" [label="mdxdb/\nsqlite", fillcolor="white"];
+  "@mdxdb/fumadocs" [label="mdxdb/\nfumadocs", fillcolor="white"];
+  "@mdxdb/clickhouse" [label="mdxdb/\nclickhouse", fillcolor="white"];
+  "@mdxdb/fetch" [label="mdxdb/\nfetch", fillcolor="white"];
+  "@mdxdb/types" [label="mdxdb/\ntypes", fillcolor="white"];
+  "@mdxdb/payload" -> "@mdxdb/sqlite";
+  "@mdxdb/payload" -> "@mdxdb/clickhouse";
+  "@mdxdb/fumadocs" -> "@mdxdb/fs";
+  "@mdxdb/fetch" -> "@mdxdb/types";
+}

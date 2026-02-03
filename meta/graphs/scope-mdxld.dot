@@ -1,0 +1,18 @@
+digraph dependencies {
+  label="@mdxld internal dependencies";
+  labelloc="t";
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=white];
+  edge [color="#666666"];
+  "@mdxld/extract" [label="mdxld/\nextract", fillcolor="white"];
+  "@mdxld/types" [label="mdxld/\ntypes", fillcolor="white"];
+  "@mdxld/compile" [label="mdxld/\ncompile", fillcolor="white"];
+  "@mdxld/markdown" [label="mdxld/\nmarkdown", fillcolor="white"];
+  "@mdxld/ast" [label="mdxld/\nast", fillcolor="white"];
+  "@mdxld/schema" [label="mdxld/\nschema", fillcolor="white"];
+  "@mdxld/remark" [label="mdxld/\nremark", fillcolor="white"];
+  "@mdxld/jsx" [label="mdxld/\njsx", fillcolor="white"];
+  "@mdxld/ai" [label="mdxld/\nai", fillcolor="white"];
+  "@mdxld/markdown" -> "@mdxld/types";
+  "@mdxld/jsx" -> "@mdxld/remark";
+}

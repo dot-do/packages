@@ -1,0 +1,10 @@
+digraph dependencies {
+  label="@graphdl internal dependencies";
+  labelloc="t";
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=white];
+  edge [color="#666666"];
+  "@graphdl/core" [label="graphdl/\ncore", fillcolor="white"];
+  "@graphdl/ui" [label="graphdl/\nui", fillcolor="white"];
+  "@graphdl/ui" -> "@graphdl/core";
+}
