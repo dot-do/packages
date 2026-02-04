@@ -1,6 +1,6 @@
 ---
 name: "@icetype/drizzle"
-version: 0.1.0
+version: 0.3.0
 description: IceType adapter for Drizzle ORM - generates Drizzle schema files from IceType schemas
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -18,9 +18,9 @@ keywords:
   - mysql
   - sqlite
 downloads:
-  monthly: 44
+  monthly: 65
 published: "2026-01-22T14:38:55.562Z"
-updated: "2026-01-22T14:38:55.776Z"
+updated: "2026-02-03T11:24:57.101Z"
 ---
 
 # @icetype/drizzle

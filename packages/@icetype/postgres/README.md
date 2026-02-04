@@ -1,6 +1,6 @@
 ---
 name: "@icetype/postgres"
-version: 0.1.0
+version: 0.3.0
 description: IceType adapter for PostgreSQL - generates DDL from IceType schemas
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -16,9 +16,9 @@ keywords:
   - typescript
   - drizzle
 downloads:
-  monthly: 39
+  monthly: 58
 published: "2026-01-22T14:39:14.800Z"
-updated: "2026-01-22T14:39:15.053Z"
+updated: "2026-02-03T11:25:09.519Z"
 ---
 
 # @icetype/postgres

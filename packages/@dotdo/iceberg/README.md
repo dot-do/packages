@@ -1,325 +1,192 @@
 ---
 name: "@dotdo/iceberg"
-version: 0.1.1
-description: Apache Iceberg table format types and utilities for pg_lake
+version: 0.2.0
+description: Apache Iceberg table format for JavaScript/TypeScript
 license: MIT
-repository: "https://github.com/dot-do/postgres"
-homepage: "https://github.com/dot-do/postgres#readme"
+repository: "https://github.com/dot-do/iceberg"
+homepage: "https://iceberg.do"
 keywords:
   - iceberg
   - apache-iceberg
-  - parquet
+  - lakehouse
   - data-lake
-  - pg_lake
-  - postgresql
-  - time-travel
+  - parquet
+  - avro
+  - catalog
   - cloudflare
-  - workers
+  - r2
 downloads:
-  monthly: 128
+  monthly: 245
 published: "2026-01-22T15:58:38.749Z"
-updated: "2026-01-24T15:48:57.830Z"
+updated: "2026-02-03T14:39:48.211Z"
 ---
 
 # @dotdo/iceberg
 
-**Apache Iceberg table format for Cloudflare Workers.**
-
-TypeScript implementation of the Apache Iceberg specification for building data lakehouses on Cloudflare R2.
-
-```typescript
-import { MetadataBuilder, SchemaBuilder } from '@dotdo/iceberg'
-
-// Define schema
-const schema = new SchemaBuilder()
-  .addField({ name: 'id', type: 'long', required: true })
-  .addField({ name: 'name', type: 'string' })
-  .addField({ name: 'created_at', type: 'timestamptz' })
-  .build()
-
-// Create table metadata
-const metadata = new MetadataBuilder({ location: 's3://bucket/table' })
-  .setSchema(schema)
-  .setPartitionSpec([{ sourceId: 3, transform: 'day', fieldId: 1000 }])
-  .build()
-```
-
-## Why Iceberg?
-
-You have data that grows. Users need to query it efficiently. You want time-travel.
-
-Traditional approaches:
-- **Raw JSON files** - No schema evolution. No efficient queries. No time-travel.
-- **SQLite/PGLite** - Single-file limits. No column pruning. Backups are snapshots.
-- **External data warehouses** - Latency. Cost. Vendor lock-in.
-
-Iceberg gives you:
-- **Schema evolution** - Add columns, rename fields, widen types
-- **Time-travel queries** - Query any historical snapshot
-- **Partition pruning** - Skip irrelevant data files
-- **Column pruning** - Read only the columns you need
-- **ACID transactions** - Concurrent writes without corruption
-
-## What This Package Provides
-
-This is the **type system and builder layer** for Iceberg tables. It provides:
-
-| Module | Purpose |
-|--------|---------|
-| **Types** | Complete TypeScript types for Iceberg spec v2 |
-| **Schema** | Schema builder with evolution and validation |
-| **Metadata** | Table metadata builder with snapshot management |
-| **Manifest** | Manifest and manifest list builders |
-| **Catalog** | Catalog interface for table discovery |
-| **WAL** | WAL-to-Iceberg transformation utilities |
-
-This package does NOT include:
-- Parquet file reading/writing (use `@dotdo/parquet`)
-- Query execution (use `@dotdo/pg-lake`)
-- Storage backends (use R2 directly or via `@dotdo/pg-lake`)
+TypeScript implementation of the [Apache Iceberg](https://iceberg.apache.org/) table format.
 
 ## Installation
 
 ```bash
 npm install @dotdo/iceberg
+# or
+pnpm add @dotdo/iceberg
 ```
+
+## Features
+
+- **Metadata** - Read/write Iceberg metadata.json files
+- **Manifests** - Generate manifest files and manifest lists with Avro encoding
+- **Snapshots** - Create and manage table snapshots with time travel
+- **Schema Evolution** - Add, drop, rename columns with validation
+- **Variant Shredding** - Decompose semi-structured data for efficient queries
+- **Catalogs** - FileSystem, Memory, and R2 Data Catalog implementations
 
 ## Quick Start
 
-### Building a Schema
+```typescript
+import { MetadataWriter } from '@dotdo/iceberg';
+
+// Create a storage backend (implement the Storage interface)
+const storage = {
+  get: async (key: string) => /* ... */,
+  put: async (key: string, data: Uint8Array) => /* ... */,
+  delete: async (key: string) => /* ... */,
+  list: async (prefix: string) => /* ... */,
+  exists: async (key: string) => /* ... */,
+};
+
+// Create a new table
+const writer = new MetadataWriter(storage);
+const result = await writer.writeNewTable({
+  location: 's3://my-bucket/warehouse/db/my-table',
+});
+
+console.log('Table UUID:', result.metadata['table-uuid']);
+```
+
+## Common Operations
+
+### Creating a Table with Custom Schema
 
 ```typescript
-import { SchemaBuilder } from '@dotdo/iceberg'
+import { MetadataWriter, createTimePartitionSpec } from '@dotdo/iceberg';
 
-const schema = new SchemaBuilder()
-  .addField({ name: 'id', type: 'long', required: true })
-  .addField({ name: 'name', type: 'string' })
-  .addField({ name: 'email', type: 'string' })
-  .addField({ name: 'metadata', type: { type: 'map', keyType: 'string', valueType: 'string' } })
-  .addField({ name: 'tags', type: { type: 'list', elementType: 'string' } })
-  .addField({ name: 'created_at', type: 'timestamptz', required: true })
-  .build()
+const schema = {
+  'schema-id': 0,
+  type: 'struct' as const,
+  fields: [
+    { id: 1, name: 'user_id', required: true, type: 'long' },
+    { id: 2, name: 'created_at', required: true, type: 'timestamp' },
+    { id: 3, name: 'event_type', required: true, type: 'string' },
+  ],
+};
+
+const partitionSpec = createTimePartitionSpec(2, 'created_day', 'day');
+
+const result = await writer.writeNewTable({
+  location: 's3://bucket/warehouse/events',
+  schema,
+  partitionSpec,
+});
+```
+
+### Adding a Snapshot
+
+```typescript
+import { ManifestGenerator, SnapshotBuilder } from '@dotdo/iceberg';
+
+// Create a manifest with data files
+const manifest = new ManifestGenerator({
+  sequenceNumber: 1,
+  snapshotId: Date.now(),
+});
+
+manifest.addDataFile({
+  'file-path': 's3://bucket/data/part-00000.parquet',
+  'file-format': 'parquet',
+  'record-count': 10000,
+  'file-size-in-bytes': 102400,
+  partition: { created_day: 19890 },
+});
+
+// Build the snapshot
+const snapshot = new SnapshotBuilder({
+  sequenceNumber: 1,
+  manifestListPath: 's3://bucket/metadata/snap-001.avro',
+})
+  .setSummary(1, 0, 10000, 0, 102400, 0, 10000, 102400, 1)
+  .build();
 ```
 
 ### Schema Evolution
 
 ```typescript
-import { SchemaEvolution } from '@dotdo/iceberg'
+import { SchemaEvolutionBuilder } from '@dotdo/iceberg';
 
-const evolution = new SchemaEvolution(existingSchema)
-
-// Add new columns
-evolution.addColumn({ name: 'status', type: 'string' })
-
-// Rename columns (readers with old schema still work)
-evolution.renameColumn('email', 'email_address')
-
-// Widen types (int -> long, float -> double)
-evolution.updateColumnType('count', 'long')
-
-const newSchema = evolution.apply()
+const builder = new SchemaEvolutionBuilder(existingSchema);
+builder.addColumn('email', 'string', false, 'User email');
+builder.renameColumn('payload', 'data');
+const result = builder.build();
 ```
 
-### Creating Table Metadata
+### Time Travel
 
 ```typescript
-import { MetadataBuilder, createPartitionSpec, createSortOrder } from '@dotdo/iceberg'
+import { getSnapshotAtTimestamp, readTableMetadata } from '@dotdo/iceberg';
 
-const metadata = new MetadataBuilder({
-  location: 's3://my-bucket/warehouse/events',
-  tableUuid: crypto.randomUUID(),
-})
-  .setSchema(schema)
-  .setPartitionSpec([
-    { sourceId: 6, transform: 'day', fieldId: 1000, name: 'created_day' }
-  ])
-  .setSortOrder([
-    { sourceId: 1, direction: 'asc', nullOrder: 'nulls-last', transform: 'identity' }
-  ])
-  .setProperties({
-    'write.format.default': 'parquet',
-    'write.parquet.compression-codec': 'zstd',
-  })
-  .build()
+const metadata = await readTableMetadata(storage, 's3://bucket/warehouse/events');
+const snapshot = getSnapshotAtTimestamp(metadata, Date.now() - 24 * 60 * 60 * 1000);
 ```
 
-### Building Manifests
+## Variant Shredding
+
+Decompose semi-structured JSON data into typed columns for efficient querying:
 
 ```typescript
-import { ManifestBuilder, ManifestListBuilder } from '@dotdo/iceberg'
+import { setupVariantShredding, filterDataFilesWithStats } from '@dotdo/iceberg';
 
-// Build a manifest for data files
-const manifest = new ManifestBuilder({ schema, partitionSpec })
-  .addEntry({
-    status: 'added',
-    dataFile: {
-      content: 'data',
-      filePath: 'data/part-00000.parquet',
-      fileFormat: 'PARQUET',
-      recordCount: 10000,
-      fileSizeInBytes: 1024 * 1024,
-    }
-  })
-  .build()
+const { configs, fieldIdMap } = setupVariantShredding([
+  {
+    columnName: '$data',
+    fields: ['event_type', 'user_id', 'amount'],
+    fieldTypes: {
+      event_type: 'string',
+      user_id: 'long',
+      amount: 'double',
+    },
+  },
+]);
 
-// Build a manifest list for a snapshot
-const manifestList = new ManifestListBuilder({ snapshotId: 1n })
-  .addManifest({
-    manifestPath: 'metadata/manifest-1.avro',
-    manifestLength: 4096,
-    partitionSpecId: 0,
-    addedFilesCount: 1,
-    addedRowsCount: 10000,
-  })
-  .build()
+// Filter files using predicate pushdown
+const filter = { '$data.amount': { $gt: 100 } };
+const { files } = filterDataFilesWithStats(dataFiles, filter, configs, fieldIdMap);
 ```
 
-### WAL to Iceberg
-
-Transform PostgreSQL WAL records into Iceberg format for time-travel queries:
+## Catalog Implementations
 
 ```typescript
-import { walRecordToRow, WAL_TABLE_SCHEMA } from '@dotdo/iceberg/wal'
+import { FileSystemCatalog, MemoryCatalog } from '@dotdo/iceberg';
 
-const walRecord = {
-  lsn: 12345678n,
-  operation: 'INSERT',
-  schema: 'public',
-  table: 'users',
-  newRow: { id: 1, name: 'Alice' },
-  timestamp: Date.now(),
-  doId: 'do-abc123',
-}
+// In-memory catalog for testing
+const memoryCatalog = new MemoryCatalog();
 
-// Convert to Iceberg row format
-const row = walRecordToRow(walRecord)
-
-// WAL_TABLE_SCHEMA is the Iceberg schema for WAL tables
-// Use it to create a metadata builder for WAL storage
+// FileSystem catalog for production
+const fsCatalog = new FileSystemCatalog({
+  storage,
+  warehouseLocation: 's3://bucket/warehouse',
+});
 ```
 
-## API Reference
+## Documentation
 
-### Schema Module
+- [Full Documentation](https://github.com/dot-do/iceberg#readme)
+- [API Reference](https://github.com/dot-do/iceberg/blob/main/core/API.md)
+- [Apache Iceberg Specification](https://iceberg.apache.org/spec/)
 
-```typescript
-import {
-  SchemaBuilder,      // Build schemas incrementally
-  SchemaEvolution,    // Evolve existing schemas
-  validateSchema,     // Validate schema correctness
-  findFieldById,      // Find field by ID
-  findFieldByName,    // Find field by name
-} from '@dotdo/iceberg'
-```
+## Related
 
-### Types Module
-
-```typescript
-import type {
-  // Core types
-  IcebergSchema,
-  IcebergField,
-  IcebergType,
-  IcebergPrimitiveType,
-
-  // Partitioning
-  IcebergPartitionSpec,
-  IcebergPartitionField,
-  IcebergTransform,
-
-  // Sorting
-  IcebergSortOrder,
-  IcebergSortField,
-
-  // Snapshots
-  IcebergSnapshot,
-  IcebergSnapshotSummary,
-  IcebergTableMetadata,
-
-  // Manifests
-  IcebergManifestFile,
-  IcebergManifestEntry,
-  IcebergDataFile,
-} from '@dotdo/iceberg'
-```
-
-### Metadata Module
-
-```typescript
-import {
-  MetadataBuilder,           // Build table metadata
-  generateMetadataFileName,  // Generate v123.metadata.json names
-  generateManifestFileName,  // Generate manifest file names
-  generateDataFileName,      // Generate data file names
-} from '@dotdo/iceberg'
-```
-
-### Catalog Module
-
-```typescript
-import {
-  BaseCatalog,              // Abstract catalog base class
-  type ICatalog,            // Catalog interface
-  type TableIdentifier,     // { namespace: string[], name: string }
-  type NamespaceIdentifier, // string[]
-
-  // Commit operations
-  createAppendCommit,       // Create append commit request
-  assertRefSnapshotId,      // Requirement for optimistic locking
-} from '@dotdo/iceberg'
-```
-
-## Supported Types
-
-| Primitive | Description |
-|-----------|-------------|
-| `boolean` | True or false |
-| `int` | 32-bit signed integer |
-| `long` | 64-bit signed integer |
-| `float` | 32-bit IEEE 754 floating point |
-| `double` | 64-bit IEEE 754 floating point |
-| `decimal(P,S)` | Arbitrary-precision decimal |
-| `date` | Calendar date |
-| `time` | Time of day (microsecond precision) |
-| `timestamp` | Timestamp without timezone |
-| `timestamptz` | Timestamp with timezone |
-| `string` | UTF-8 string |
-| `uuid` | UUID |
-| `fixed(L)` | Fixed-length byte array |
-| `binary` | Variable-length byte array |
-
-| Nested | Description |
-|--------|-------------|
-| `struct` | Tuple of typed fields |
-| `list` | Collection of elements |
-| `map` | Key-value pairs |
-
-## Supported Transforms
-
-| Transform | Description | Example |
-|-----------|-------------|---------|
-| `identity` | Value unchanged | `identity` |
-| `bucket[N]` | Hash mod N | `bucket[16]` |
-| `truncate[W]` | Truncate to width | `truncate[10]` |
-| `year` | Extract year | `year` |
-| `month` | Extract year-month | `month` |
-| `day` | Extract year-month-day | `day` |
-| `hour` | Extract year-month-day-hour | `hour` |
-| `void` | Always null | `void` |
-
-## Part of the postgres.do Ecosystem
-
-| Package | Description |
-|---------|-------------|
-| [`@dotdo/pg-lake`](../pglake) | Data lakehouse on R2 |
-| [`@dotdo/parquet`](../parquet) | Parquet file support |
-| [`@dotdo/postgres`](../postgres) | PostgreSQL server |
-
-## Links
-
-- [Apache Iceberg Spec](https://iceberg.apache.org/spec/)
-- [Documentation](https://postgres.do/docs/iceberg)
-- [GitHub](https://github.com/dot-do/postgres)
+- [iceberg.do](https://iceberg.do) - Managed Iceberg REST Catalog service
 
 ## License
 

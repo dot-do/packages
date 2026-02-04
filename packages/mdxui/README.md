@@ -1,6 +1,6 @@
 ---
 name: mdxui
-version: 2.1.1
+version: 6.1.0
 description: Higher-order abstractions for Business-as-Code. Type-safe components that abstract entire business domains.
 license: MIT
 repository: "https://github.com/dot-do/ui"
@@ -19,9 +19,9 @@ keywords:
   - saas
   - dashboard
 downloads:
-  monthly: 485
+  monthly: 1122
 published: "2025-05-20T20:13:24.684Z"
-updated: "2026-01-12T15:39:30.243Z"
+updated: "2026-01-29T20:32:26.721Z"
 ---
 
 # mdxui

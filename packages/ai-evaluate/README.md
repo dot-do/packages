@@ -1,6 +1,6 @@
 ---
 name: ai-evaluate
-version: 2.1.6
+version: 2.2.0
 description: Secure code execution in sandboxed environments
 license: MIT
 keywords:
@@ -12,9 +12,9 @@ keywords:
   - miniflare
   - primitives
 downloads:
-  monthly: 1053
+  monthly: 2313
 published: "2025-12-20T12:15:21.736Z"
-updated: "2026-01-25T12:05:14.689Z"
+updated: "2026-01-26T01:55:29.728Z"
 ---
 
 # ai-evaluate
@@ -42,7 +42,43 @@ const result = await evaluate({ script: userCode }, env)
 
 ## Quick Start
 
-### Ready-to-Deploy Example
+### REST API (eval.workers.do)
+
+Try it now with curl:
+
+```bash
+# Simple script execution
+curl -X POST https://eval.workers.do \
+  -H "Content-Type: application/json" \
+  -d '{"script": "return 1 + 1"}'
+# {"success":true,"value":2,"logs":[],"duration":2}
+
+# With module exports
+curl -X POST https://eval.workers.do \
+  -H "Content-Type: application/json" \
+  -d '{"module": "export const add = (a, b) => a + b", "script": "return add(2, 3)"}'
+# {"success":true,"value":5,"logs":[],"duration":2}
+
+# With console output
+curl -X POST https://eval.workers.do \
+  -H "Content-Type: application/json" \
+  -d '{"script": "console.log(42); return 42"}'
+# {"success":true,"value":42,"logs":[{"level":"log","message":"42",...}],"duration":2}
+
+# With external imports (npm packages)
+curl -X POST https://eval.workers.do \
+  -H "Content-Type: application/json" \
+  -d '{"script": "return _.chunk([1, 2, 3, 4, 5, 6], 2)", "imports": ["lodash"]}'
+# {"success":true,"value":[[1,2],[3,4],[5,6]],"logs":[],"duration":42}
+
+# With versioned imports
+curl -X POST https://eval.workers.do \
+  -H "Content-Type: application/json" \
+  -d '{"script": "return dayjs().format(\"YYYY-MM-DD\")", "imports": ["dayjs@1.11.10"]}'
+# {"success":true,"value":"2026-01-25","logs":[],"duration":35}
+```
+
+### Deploy Your Own
 
 ```bash
 cd example
@@ -117,10 +153,45 @@ interface EvaluateOptions {
   module?: string              // Module code with exports
   tests?: string               // Vitest-style test code
   script?: string              // Script to execute
-  timeout?: number             // Default: 5000ms
+  timeout?: number             // Default: 5000ms, max: 60000ms
   env?: Record<string, string> // Environment variables
   sdk?: SDKConfig | boolean    // Enable $, db, ai globals
+  imports?: string[]           // External npm packages (see below)
 }
+```
+
+### External Imports
+
+The `imports` option lets you use npm packages in your sandboxed code. Supports:
+
+```typescript
+// Bare package names (auto-resolved via esm.sh)
+imports: ['lodash', 'dayjs', 'uuid']
+
+// Versioned packages
+imports: ['lodash@4.17.21', 'dayjs@1.11.10']
+
+// Scoped packages
+imports: ['@faker-js/faker']
+
+// Full URLs (for custom CDNs)
+imports: ['https://esm.sh/lodash@4.17.21']
+```
+
+Imported packages are available as globals matching their package name:
+- `lodash` → `_` (special case) and `lodash`
+- `dayjs` → `dayjs`
+- `uuid` → `uuid`
+
+```typescript
+const result = await evaluate({
+  imports: ['lodash', 'dayjs'],
+  script: `
+    const chunks = _.chunk([1,2,3,4,5,6], 2)
+    const today = dayjs().format('YYYY-MM-DD')
+    return { chunks, today }
+  `
+}, env)
 
 interface EvaluateResult {
   success: boolean             // Execution succeeded
@@ -357,10 +428,26 @@ console.log(result.value) // 7
 | Protection | Description |
 |------------|-------------|
 | V8 Isolate | Code runs in isolated V8 context |
-| No Network | External access blocked by default |
+| Network Control | Configurable: allow, block, or allowlist |
 | No File System | Zero filesystem access |
 | Memory Limits | Standard Worker limits apply |
 | CPU Limits | Execution time bounded |
+
+### Network Access Control
+
+```typescript
+// Allow all network (default)
+await evaluate({ script: '...', fetch: true })
+
+// Block all network
+await evaluate({ script: '...', fetch: false })
+
+// Allowlist specific domains (wildcards supported)
+await evaluate({
+  script: '...',
+  fetch: ['api.example.com', '*.trusted.com']
+})
+```
 
 ## Troubleshooting
 

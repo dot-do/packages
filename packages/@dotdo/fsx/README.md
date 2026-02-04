@@ -1,6 +1,6 @@
 ---
 name: "@dotdo/fsx"
-version: 0.1.2
+version: 0.1.4
 description: Pure POSIX filesystem implementation in TypeScript. Zero dependencies. Self-hostable. FsBackend interface for pluggable storage.
 license: MIT
 repository: "https://github.com/dot-do/fsx"
@@ -22,9 +22,9 @@ keywords:
   - workers
   - ai-agents
 downloads:
-  monthly: 38
+  monthly: 217
 published: "2026-01-23T18:21:36.167Z"
-updated: "2026-01-23T18:21:36.535Z"
+updated: "2026-01-26T16:00:50.488Z"
 ---
 
 # @dotdo/fsx

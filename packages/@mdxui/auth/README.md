@@ -1,6 +1,6 @@
 ---
 name: "@mdxui/auth"
-version: 1.1.1
+version: 1.5.2
 description: Authentication components and WorkOS AuthKit wrappers for mdxui
 license: MIT
 repository: "https://github.com/dot-do/ui"
@@ -14,9 +14,9 @@ keywords:
   - authkit
   - identity
 downloads:
-  monthly: 25
+  monthly: 745
 published: "2026-01-24T14:38:23.898Z"
-updated: "2026-01-25T12:00:58.888Z"
+updated: "2026-01-29T23:12:12.478Z"
 ---
 
 # @mdxui/auth
@@ -30,6 +30,214 @@ pnpm add @mdxui/auth
 ```
 
 ## Quick Start
+
+### Zero-Config AuthApp (Recommended)
+
+The easiest way to get started - just set environment variables:
+
+```bash
+# .env
+VITE_WORKOS_CLIENT_ID=client_xxx
+VITE_APP_NAME=My App
+```
+
+```tsx
+import { AuthApp } from '@mdxui/auth/shell'
+
+function App() {
+  return <AuthApp />
+}
+```
+
+That's it! You get a complete authenticated app with:
+- Sidebar navigation with org switcher
+- Profile, Security, Sessions, API Keys, Team, and Integrations pages
+- Error boundaries with friendly messages
+- Theme support
+
+### With Explicit Config
+
+```tsx
+import { AuthApp } from '@mdxui/auth/shell'
+
+function App() {
+  return (
+    <AuthApp
+      config={{
+        branding: { name: 'My App' },
+        identity: {
+          clientId: 'client_xxx',
+          redirectUri: 'https://myapp.com/callback',
+        },
+      }}
+    />
+  )
+}
+```
+
+### Custom Routes
+
+```tsx
+import { AuthApp, accountRoutes, developerRoutes } from '@mdxui/auth/shell'
+import { FileText } from 'lucide-react'
+import { DocsPage } from './pages/DocsPage'
+
+function App() {
+  return (
+    <AuthApp
+      config={{
+        branding: { name: 'My App' },
+        identity: { clientId: 'client_xxx' },
+        routes: [
+          ...accountRoutes,      // Profile, Security, Sessions
+          ...developerRoutes,    // API Keys
+          {
+            key: 'docs',
+            path: '/docs',
+            label: 'Documentation',
+            icon: FileText,
+            component: DocsPage,
+            group: 'developer',
+          },
+        ],
+      }}
+    />
+  )
+}
+```
+
+### Prebuilt Static App (Cloudflare Workers / Static Hosting)
+
+For deployments where you don't want a build step, use the prebuilt app. The package includes a complete SPA in the `app/` directory with all CSS (Tailwind), React, and routing bundled.
+
+#### Option A: Serve with Hono (Recommended)
+
+Use Hono to serve the prebuilt app with config injection from environment variables:
+
+**wrangler.toml:**
+```toml
+name = "my-auth-app"
+main = "src/index.ts"
+
+[assets]
+directory = "node_modules/@mdxui/auth/app"
+
+[vars]
+WORKOS_CLIENT_ID = "client_01EXAMPLE"
+APP_NAME = "My App"
+```
+
+**src/index.ts:**
+```ts
+import { Hono } from 'hono'
+
+type Bindings = {
+  ASSETS: Fetcher
+  WORKOS_CLIENT_ID: string
+  APP_NAME?: string
+  APP_TAGLINE?: string
+  LOGO_URL?: string
+}
+
+const app = new Hono<{ Bindings: Bindings }>()
+
+// Serve config from environment variables
+app.get('/auth-config.json', (c) => {
+  return c.json({
+    clientId: c.env.WORKOS_CLIENT_ID,
+    appName: c.env.APP_NAME ?? 'App',
+    tagline: c.env.APP_TAGLINE,
+    logoUrl: c.env.LOGO_URL,
+  })
+})
+
+// Serve static assets (SPA fallback handled by assets)
+app.all('*', async (c) => {
+  return c.env.ASSETS.fetch(c.req.raw)
+})
+
+export default app
+```
+
+#### Option B: Vanilla Worker
+
+If you're not using Hono, use the standard Worker API:
+
+**src/index.ts:**
+```ts
+export interface Env {
+  ASSETS: Fetcher
+  WORKOS_CLIENT_ID: string
+  APP_NAME?: string
+}
+
+export default {
+  async fetch(request: Request, env: Env): Promise<Response> {
+    const url = new URL(request.url)
+
+    // Serve config from environment variables
+    if (url.pathname === '/auth-config.json') {
+      return Response.json({
+        clientId: env.WORKOS_CLIENT_ID,
+        appName: env.APP_NAME ?? 'App',
+      })
+    }
+
+    // Serve static assets
+    return env.ASSETS.fetch(request)
+  }
+}
+```
+
+Both approaches:
+- No copying files needed
+- Config comes from secure environment variables
+- Easy to update by bumping the package version
+
+#### Option C: Copy to Static Directory
+
+Copy the prebuilt app and add your config file:
+
+**1. Install and copy:**
+```bash
+pnpm add @mdxui/auth
+cp -r node_modules/@mdxui/auth/app/* public/
+```
+
+**2. Create `public/auth-config.json`:**
+```json
+{
+  "clientId": "client_01EXAMPLE",
+  "appName": "My App"
+}
+```
+
+**3. Configure wrangler.toml:**
+```toml
+name = "my-auth-app"
+
+[assets]
+directory = "public"
+```
+
+This approach:
+- Works with any static hosting (Netlify, Vercel, S3, etc.)
+- Config is a static file in your repo
+- Requires re-copying after package updates
+
+#### Config Options
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `clientId` | Yes | WorkOS client ID |
+| `appName` | No | App name (default: "App") |
+| `tagline` | No | Subtitle shown in sidebar |
+| `redirectUri` | No | OAuth redirect URI |
+| `apiHostname` | No | WorkOS API hostname |
+| `devMode` | No | Enable dev mode (default: false) |
+| `logoUrl` | No | URL to logo image |
+
+### Traditional Setup (Without Shell)
 
 ```tsx
 import {
@@ -63,6 +271,11 @@ function Dashboard() {
 
 ## Features
 
+- **Zero-Config AuthApp** - Complete authenticated app shell with environment variable support
+- **Pre-built Pages** - Profile, Security, Sessions, API Keys, Team, and Integrations pages
+- **Route Presets** - Composable route groups (`accountRoutes`, `developerRoutes`, `adminRoutes`)
+- **SidebarOrgSwitcher** - Auto-wired org switcher with branding fallback
+- **WidgetErrorBoundary** - Friendly, contextual error messages for widget failures
 - **Authentication Providers** - `IdentityProvider` and `AuthGate` for managing auth state
 - **WorkOS Widgets** - Pre-built components for user management (profile, security, API keys)
 - **Vault Components** - UI for managing encrypted secrets with `VaultProvider`
@@ -130,6 +343,56 @@ import type {
   VaultItem,
   VaultField,
 } from '@mdxui/auth'
+```
+
+### Shell Exports (`@mdxui/auth/shell`)
+
+Complete authenticated app shell with routing:
+
+```tsx
+import {
+  // App Components
+  AuthApp,              // Zero-config app with built-in routing
+  AuthAppWithChildren,  // App shell without routing (bring your own)
+  AuthAppProvider,      // Providers only (for custom layouts)
+  AuthShell,            // Shell layout component
+  AuthShellNav,         // Navigation component
+
+  // Shell Components
+  SidebarOrgSwitcher,   // Org switcher with branding fallback
+  WidgetErrorBoundary,  // Error boundary with friendly messages
+  Breadcrumbs,          // Breadcrumb navigation
+
+  // Pre-built Pages
+  ProfilePage,          // User profile management
+  SecurityPage,         // Password and MFA settings
+  SessionsPage,         // Active sessions management
+  ApiKeysPage,          // API key management
+  TeamPage,             // Team member management (requires org)
+  IntegrationsPage,     // Third-party integrations
+
+  // Route Presets
+  defaultRoutes,        // All default routes
+  defaultGroups,        // Default route groups
+  accountRoutes,        // Profile, Security, Sessions
+  developerRoutes,      // API Keys
+  adminRoutes,          // Team management
+  integrationRoutes,    // Integrations
+
+  // Config Hooks
+  useAuthShellConfig,
+  useAuthShellRoutes,
+  useAuthShellBranding,
+} from '@mdxui/auth/shell'
+
+// Types
+import type {
+  AuthAppConfig,
+  AuthAppProps,
+  AuthAppRoute,
+  AuthShellBranding,
+  AuthShellIdentity,
+} from '@mdxui/auth/shell'
 ```
 
 ### Subpath Exports
@@ -213,6 +476,97 @@ const sessionResult = AuthSessionSchema.safeParse({
     reason: 'Customer support',
   },
 })
+```
+
+## AuthApp (Shell)
+
+### Zero-Config with Environment Variables
+
+AuthApp can read configuration from environment variables, perfect for Cloudflare Workers Static Assets:
+
+```bash
+# .env
+VITE_WORKOS_CLIENT_ID=client_xxx        # Required
+VITE_WORKOS_REDIRECT_URI=https://...    # Optional
+VITE_WORKOS_API_HOSTNAME=auth.apis.do   # Optional
+VITE_WORKOS_DEV_MODE=true               # Optional
+VITE_APP_NAME=My App                    # Optional (defaults to "App")
+VITE_APP_TAGLINE=Best app ever          # Optional
+```
+
+```tsx
+import { AuthApp } from '@mdxui/auth/shell'
+
+// That's it - reads config from env vars
+function App() {
+  return <AuthApp />
+}
+```
+
+### Route Presets
+
+Compose routes from presets:
+
+```tsx
+import {
+  AuthApp,
+  accountRoutes,      // Profile, Security, Sessions
+  developerRoutes,    // API Keys
+  adminRoutes,        // Team
+  integrationRoutes,  // Integrations
+  defaultGroups,
+} from '@mdxui/auth/shell'
+
+function App() {
+  return (
+    <AuthApp
+      config={{
+        branding: { name: 'My App' },
+        identity: { clientId: 'client_xxx' },
+        groups: defaultGroups,
+        routes: [
+          ...accountRoutes,
+          ...developerRoutes,
+          // Exclude adminRoutes if you don't need team management
+        ],
+      }}
+    />
+  )
+}
+```
+
+### WidgetErrorBoundary
+
+Wraps WorkOS widgets with friendly error handling:
+
+```tsx
+import { WidgetErrorBoundary } from '@mdxui/auth/shell'
+import { UserProfile } from '@mdxui/auth/widgets'
+
+function ProfilePage() {
+  return (
+    <WidgetErrorBoundary widgetName="profile">
+      <UserProfile authToken={getAccessToken} />
+    </WidgetErrorBoundary>
+  )
+}
+// On error: "Your profile is camera shy right now..."
+// Unknown widgets: "Something went wrong loading your API Keys..."
+```
+
+### Custom Sidebar Header
+
+```tsx
+import { AuthApp, SidebarOrgSwitcher } from '@mdxui/auth/shell'
+
+// Default: SidebarOrgSwitcher is included automatically
+<AuthApp config={config} />
+
+// Custom header content
+<AuthApp
+  config={config}
+  sidebarHeaderContent={<MyCustomHeader />}
+/>
 ```
 
 ## Components

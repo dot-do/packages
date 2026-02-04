@@ -1,6 +1,6 @@
 ---
 name: esm.do
-version: 0.0.2
+version: 0.0.7
 description: Living ESM module system for AI agents - types, modules, tests, and scripts in one place
 license: MIT
 repository: "https://github.com/dot-do/esm"
@@ -15,9 +15,9 @@ keywords:
   - cloudflare
   - workers
 downloads:
-  monthly: 0
+  monthly: 439
 published: "2026-01-25T11:57:38.763Z"
-updated: "2026-01-25T12:00:26.820Z"
+updated: "2026-01-26T20:34:31.520Z"
 ---
 
 # esm.do

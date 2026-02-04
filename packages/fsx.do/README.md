@@ -1,6 +1,6 @@
 ---
 name: fsx.do
-version: 0.1.2
+version: 0.1.3
 description: Filesystem on Cloudflare Durable Objects - A virtual filesystem for the edge
 license: MIT
 repository: "https://github.com/dot-do/fsx"
@@ -17,9 +17,9 @@ keywords:
   - storage
   - posix
 downloads:
-  monthly: 452
+  monthly: 566
 published: "2026-01-09T17:00:27.502Z"
-updated: "2026-01-23T18:17:32.271Z"
+updated: "2026-01-26T17:09:49.710Z"
 ---
 
 # fsx.do

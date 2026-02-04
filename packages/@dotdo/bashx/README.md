@@ -1,7 +1,7 @@
 ---
 name: "@dotdo/bashx"
-version: 0.1.2
-description: Pure library for bash command parsing, classification, escaping, and safety analysis - zero Cloudflare dependencies
+version: 0.1.5
+description: AI-enhanced bash execution with AsyncFn pattern - parsing, classification, escaping, and safety analysis
 license: MIT
 repository: "https://github.com/dot-do/bashx"
 homepage: "https://github.com/dot-do/bashx#readme"
@@ -21,10 +21,11 @@ keywords:
   - analysis
   - sanitize
   - posix
+  - asyncfn
 downloads:
-  monthly: 34
+  monthly: 163
 published: "2026-01-23T18:21:49.114Z"
-updated: "2026-01-23T18:21:49.438Z"
+updated: "2026-01-26T16:01:17.728Z"
 ---
 
 # @dotdo/bashx

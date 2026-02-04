@@ -1,6 +1,6 @@
 ---
 name: "@dotdo/oauth"
-version: 0.1.5
+version: 0.1.7
 description: "OAuth 2.1 server implementation for MCP - the leaf package with zero dependencies on @dotdo/do or oauth.do"
 license: MIT
 repository: "https://github.com/drivly/oauth.do"
@@ -16,9 +16,9 @@ keywords:
   - cloudflare-workers
   - hono
 downloads:
-  monthly: 527
+  monthly: 1351
 published: "2026-01-24T14:54:10.527Z"
-updated: "2026-01-24T18:40:56.905Z"
+updated: "2026-01-27T15:30:04.648Z"
 ---
 
 # @dotdo/oauth

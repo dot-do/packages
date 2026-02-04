@@ -1,6 +1,6 @@
 ---
 name: oauth.do
-version: 0.2.3
+version: 0.2.6
 description: OAuth authentication SDK, React components, and Hono middleware for org.ai identity
 license: MIT
 repository: "https://github.com/dot-do/oauth.do"
@@ -19,9 +19,9 @@ keywords:
   - react
   - hono
 downloads:
-  monthly: 2616
+  monthly: 4561
 published: "2025-12-04T21:02:30.392Z"
-updated: "2026-01-24T23:46:08.560Z"
+updated: "2026-02-02T12:50:32.366Z"
 ---
 
 # oauth.do
@@ -42,7 +42,7 @@ OAuth authentication SDK and CLI for the .do Platform, wrapping [WorkOS AuthKit]
 import { auth } from 'oauth.do'
 
 const { user, token } = await auth()
-console.log(`Hello, ${user.firstName}!`)
+console.log(`Hello, ${user.name || user.email}!`)
 ```
 
 ## Entry Points
@@ -234,6 +234,12 @@ If you're not logged in, it will automatically start the login flow before launc
 
 Pre-configured React components for authentication, wrapping WorkOS AuthKit widgets.
 
+**Additional dependencies for React:** When using `oauth.do/react`, you need to install React and the auth provider:
+
+```bash
+pnpm add react react-dom @mdxui/auth @radix-ui/themes
+```
+
 ```tsx
 import { OAuthDoProvider, useAuth, SignInButton, SignOutButton } from 'oauth.do/react'
 
@@ -297,7 +303,7 @@ import { auth, requireAuth, apiKey } from 'oauth.do/hono'
 const app = new Hono()
 
 // Add auth to all routes (populates c.var.user if authenticated)
-app.use('*', auth())
+app.use('*', auth({ jwksUri: 'https://api.workos.com/sso/jwks/client_xxx' }))
 
 // Public route - auth is optional
 app.get('/api/public', (c) => {
@@ -306,17 +312,17 @@ app.get('/api/public', (c) => {
 })
 
 // Protected route - requires authentication
-app.use('/api/protected/*', requireAuth())
+app.use('/api/protected/*', requireAuth({ jwksUri: 'https://api.workos.com/sso/jwks/client_xxx' }))
 
 app.get('/api/protected/data', (c) => {
   return c.json({ secret: 'data', user: c.var.user })
 })
 
 // Role-based access
-app.use('/api/admin/*', requireAuth({ roles: ['admin'] }))
+app.use('/api/admin/*', requireAuth({ jwksUri: 'https://api.workos.com/sso/jwks/client_xxx', roles: ['admin'] }))
 
 // Permission-based access
-app.use('/api/billing/*', requireAuth({ permissions: ['billing:read', 'billing:write'] }))
+app.use('/api/billing/*', requireAuth({ jwksUri: 'https://api.workos.com/sso/jwks/client_xxx', permissions: ['billing:read', 'billing:write'] }))
 ```
 
 ### API Key Authentication
@@ -334,7 +340,7 @@ app.use('/api/v1/*', apiKey({
 
 // Combined: JWT or API key
 app.use('/api/*', combined({
-  auth: { cookieName: 'session' },
+  auth: { jwksUri: 'https://api.workos.com/sso/jwks/client_xxx', cookieName: 'session' },
   apiKey: {
     verify: async (key) => verifyApiKey(key)
   }
@@ -344,7 +350,7 @@ app.use('/api/*', combined({
 ## Token Storage
 
 ```typescript
-import { createSecureStorage, KeychainTokenStorage } from 'oauth.do'
+import { createSecureStorage, KeychainTokenStorage } from 'oauth.do/node'
 
 // Auto-select best storage (keychain -> secure file)
 const storage = createSecureStorage()

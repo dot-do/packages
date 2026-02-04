@@ -1,6 +1,6 @@
 ---
 name: "@dotdo/pglite"
-version: 0.1.3
+version: 0.1.4
 description: PGlite fork with Cloudflare Workers compatibility. Original PGlite is a WASM Postgres build packaged into a TypeScript client library.
 license: Apache-2.0
 repository: "https://github.com/dot-do/pglite"
@@ -15,9 +15,9 @@ keywords:
   - cloudflare
   - workers
 downloads:
-  monthly: 457
+  monthly: 1390
 published: "2026-01-22T15:59:47.342Z"
-updated: "2026-01-24T23:28:03.027Z"
+updated: "2026-01-25T13:47:45.985Z"
 ---
 
 # @dotdo/pglite

@@ -1,6 +1,6 @@
 ---
 name: mdxld
-version: 1.9.0
+version: 1.9.1
 description: Lightweight MDX + Linked Data parser and stringifier
 license: MIT
 repository: "https://github.com/ai-primitives/mdx.org.ai"
@@ -13,9 +13,9 @@ keywords:
   - parse
   - stringify
 downloads:
-  monthly: 269
+  monthly: 1116
 published: "2024-12-16T18:45:01.206Z"
-updated: "2025-12-20T12:30:02.134Z"
+updated: "2026-01-26T11:40:58.674Z"
 ---
 
 # mdxld

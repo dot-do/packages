@@ -1,6 +1,6 @@
 ---
 name: "@icetype/mysql"
-version: 0.1.0
+version: 0.3.0
 description: IceType adapter for MySQL - generates DDL from IceType schemas
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -14,9 +14,9 @@ keywords:
   - sql
   - typescript
 downloads:
-  monthly: 39
+  monthly: 61
 published: "2026-01-22T14:39:09.267Z"
-updated: "2026-01-22T14:39:09.546Z"
+updated: "2026-02-03T11:25:07.307Z"
 ---
 
 # @icetype/mysql

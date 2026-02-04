@@ -1,6 +1,6 @@
 ---
 name: "@icetype/prisma"
-version: 0.1.0
+version: 0.3.0
 description: IceType adapter for Prisma - import and export Prisma schema files
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -16,9 +16,9 @@ keywords:
   - orm
   - typescript
 downloads:
-  monthly: 42
+  monthly: 63
 published: "2026-01-22T14:39:17.542Z"
-updated: "2026-01-22T14:39:17.770Z"
+updated: "2026-02-03T11:25:11.542Z"
 ---
 
 # @icetype/prisma

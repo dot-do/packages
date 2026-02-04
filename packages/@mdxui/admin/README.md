@@ -1,14 +1,14 @@
 ---
 name: "@mdxui/admin"
-version: 6.0.0
+version: 6.0.1
 description: Pure UI components for admin dashboards - bring your own data layer
 license: MIT
 repository: "https://github.com/dot-do/ui"
 homepage: "https://github.com/dot-do/ui#readme"
 downloads:
-  monthly: 265
+  monthly: 414
 published: "2026-01-11T12:25:44.416Z"
-updated: "2026-01-24T14:37:53.790Z"
+updated: "2026-01-29T23:14:06.097Z"
 ---
 
 # @mdxui/admin

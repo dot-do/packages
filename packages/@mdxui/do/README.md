@@ -1,12 +1,12 @@
 ---
 name: "@mdxui/do"
-version: 4.0.1
+version: 4.0.8
 description: Admin interface for .do platform - manage Durable Objects via RPC
 license: MIT
 downloads:
-  monthly: 294
+  monthly: 436
 published: "2026-01-12T15:43:25.583Z"
-updated: "2026-01-24T14:37:52.119Z"
+updated: "2026-01-29T23:15:07.936Z"
 ---
 
 # @mdxui/do

@@ -16,7 +16,7 @@ keywords:
   - hono
   - cloudflare-workers
 downloads:
-  monthly: 53
+  monthly: 42
 published: "2025-12-17T11:49:40.446Z"
 updated: "2025-12-17T19:02:00.705Z"
 ---

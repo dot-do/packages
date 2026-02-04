@@ -1,6 +1,6 @@
 ---
 name: "@icetype/clickhouse"
-version: 0.1.0
+version: 0.3.0
 description: IceType adapter for ClickHouse DDL generation
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -13,9 +13,9 @@ keywords:
   - ddl
   - typescript
 downloads:
-  monthly: 39
+  monthly: 60
 published: "2026-01-22T14:38:46.800Z"
-updated: "2026-01-22T14:38:47.090Z"
+updated: "2026-02-03T11:24:51.556Z"
 ---
 
 # @icetype/clickhouse

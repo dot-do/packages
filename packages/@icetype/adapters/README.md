@@ -1,6 +1,6 @@
 ---
 name: "@icetype/adapters"
-version: 0.1.0
+version: 0.3.0
 description: IceType adapter abstraction layer for schema transformations
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -13,9 +13,9 @@ keywords:
   - parquet
   - typescript
 downloads:
-  monthly: 38
+  monthly: 57
 published: "2026-01-22T14:38:40.887Z"
-updated: "2026-01-22T14:38:41.161Z"
+updated: "2026-02-03T11:24:47.182Z"
 ---
 
 # @icetype/adapters

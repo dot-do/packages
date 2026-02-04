@@ -1,6 +1,6 @@
 ---
 name: bashx.do
-version: 0.1.2
+version: 0.1.3
 description: AI-enhanced bash execution with safety, intent understanding, and intelligent recovery
 license: MIT
 repository: "https://github.com/dot-do/bashx"
@@ -14,9 +14,9 @@ keywords:
   - mcp
   - safety
 downloads:
-  monthly: 554
+  monthly: 697
 published: "2026-01-09T18:19:35.160Z"
-updated: "2026-01-23T18:17:52.028Z"
+updated: "2026-01-26T17:09:21.466Z"
 ---
 
 # bashx.do

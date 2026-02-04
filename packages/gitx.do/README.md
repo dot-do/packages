@@ -1,6 +1,6 @@
 ---
 name: gitx.do
-version: 0.1.2
+version: 0.1.3
 description: Git on Cloudflare Durable Objects - A complete git reimplementation for the edge
 license: MIT
 repository: "https://github.com/dot-do/gitx"
@@ -13,9 +13,9 @@ keywords:
   - mcp
   - ai
 downloads:
-  monthly: 583
+  monthly: 710
 published: "2026-01-05T11:20:17.112Z"
-updated: "2026-01-23T18:17:46.325Z"
+updated: "2026-01-26T17:09:11.199Z"
 ---
 
 # gitx.do

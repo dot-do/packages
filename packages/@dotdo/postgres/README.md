@@ -1,6 +1,6 @@
 ---
 name: "@dotdo/postgres"
-version: 0.1.2
+version: 0.1.3
 description: PostgreSQL server for Cloudflare Workers/DOs with PGLite WASM and tiered storage
 license: MIT
 repository: "https://github.com/dot-do/postgres"
@@ -18,9 +18,9 @@ keywords:
   - parquet
   - time-travel
 downloads:
-  monthly: 309
+  monthly: 1352
 published: "2026-01-22T15:59:28.627Z"
-updated: "2026-01-24T17:13:35.439Z"
+updated: "2026-01-25T13:47:33.285Z"
 ---
 
 # @dotdo/postgres
@@ -124,9 +124,21 @@ Done. PostgreSQL at the edge.
 | **Latency** | <10ms (edge) | 50-200ms (regional) |
 | **Idle cost** | $0 (hibernation) | $$$ (always running) |
 | **Cache reads** | FREE | Per-query cost |
-| **Cold starts** | <10ms | 50-200ms |
+| **Warm starts** | **16ms** (WASM hoisting) | 50-200ms |
+| **Cold starts** | ~1200ms (full WASM) | 50-200ms |
 | **Per-user DBs** | Built-in | Complex infra |
 | **WebSocket** | 95% cheaper | Full connection cost |
+
+### Performance
+
+| Scenario | Latency | Notes |
+|----------|---------|-------|
+| **Warm query** | 13-16ms | WASM hoisted, consistent |
+| **Warm start** (DO reinstantiated) | **16ms** | 75x faster with WASM hoisting |
+| **Cold start** | ~1200ms | Full WASM initialization |
+| **Non-query endpoints** | **Instant** | Respond while WASM loads |
+
+The key insight: **Isolates stay warm much longer than DO class instances**. WASM hoisting at the module level means most requests hit a warm isolate where WASM is already loaded, reducing latency from ~1200ms to ~16ms.
 
 ## API Reference
 
@@ -155,6 +167,19 @@ export const AuthenticatedPostgresDO = createAuthenticatedPostgresDO({
   oauthDoBinding: 'OAUTH_DO',
   requiredScopes: ['read', 'write'],
 })
+
+// WASM hoisting utilities for diagnostics
+import {
+  hasBgHoistedPglite,      // Check if WASM is loaded
+  isBgWasmLoading,          // Check if WASM is loading
+  getBgHoistedPgliteDiagnostics,  // Get detailed diagnostics
+} from '@dotdo/postgres/worker'
+
+// Check WASM state
+console.log('WASM loaded:', hasBgHoistedPglite())
+console.log('WASM loading:', isBgWasmLoading())
+console.log('Diagnostics:', getBgHoistedPgliteDiagnostics())
+// { hasInstance: true, isLoading: false, loadDurationMs: 1156, ... }
 ```
 
 #### createRoutes
@@ -179,6 +204,53 @@ app.route('/api/sql', createRoutes(postgresDO))
 // GET  /config        - Get database configuration
 // GET  /schema        - Get schema version info
 ```
+
+#### BackgroundPGLiteManager
+
+Eager-but-non-blocking WASM loading for optimal performance.
+
+```typescript
+import { BackgroundPGLiteManager, createBackgroundPGLiteManager } from '@dotdo/postgres/worker'
+
+// In your Durable Object
+export class PostgresDO extends DurableObject {
+  private manager: BackgroundPGLiteManager
+
+  constructor(ctx: DurableObjectState, env: Env) {
+    super(ctx, env)
+    this.manager = createBackgroundPGLiteManager({
+      database: 'mydb',
+      waitUntil: (p) => ctx.waitUntil(p), // Keep DO alive during WASM load
+    })
+  }
+
+  async init() {
+    // Starts WASM loading in background, returns IMMEDIATELY
+    await this.manager.initialize()
+  }
+
+  // Health check - responds INSTANTLY (doesn't wait for WASM)
+  ping() {
+    return {
+      ok: true,
+      wasmLoaded: this.manager.isWASMLoaded(),
+      wasmLoading: this.manager.isLoading(),
+    }
+  }
+
+  // Query - waits for WASM if not ready (loading already started)
+  async query(sql: string) {
+    return this.manager.query(sql)
+  }
+}
+```
+
+**Why eager-but-non-blocking?**
+- Pure lazy loading "kicks the can down the road" - first query still pays full ~1200ms
+- Background loading gives the best of both worlds:
+  - Non-query endpoints respond instantly
+  - WASM starts loading immediately
+  - First query only waits for remaining load time (often near-zero)
 
 #### WebSocket Handler
 

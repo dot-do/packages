@@ -1,6 +1,6 @@
 ---
 name: "@icetype/sqlite"
-version: 0.1.0
+version: 0.3.0
 description: IceType adapter for SQLite - generates DDL from IceType schemas
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -14,9 +14,9 @@ keywords:
   - sql
   - typescript
 downloads:
-  monthly: 45
+  monthly: 64
 published: "2026-01-22T14:55:48.379Z"
-updated: "2026-01-22T14:55:48.672Z"
+updated: "2026-02-03T11:30:56.985Z"
 ---
 
 # @icetype/sqlite

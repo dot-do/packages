@@ -1,6 +1,6 @@
 ---
 name: "@icetype/migrations"
-version: 0.1.0
+version: 0.3.0
 description: IceType migration generation and management infrastructure
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -12,9 +12,9 @@ keywords:
   - database
   - typescript
 downloads:
-  monthly: 49
+  monthly: 69
 published: "2026-01-22T14:39:06.151Z"
-updated: "2026-01-22T14:39:06.375Z"
+updated: "2026-02-03T11:25:04.902Z"
 ---
 
 # @icetype/migrations

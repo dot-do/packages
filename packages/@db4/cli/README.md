@@ -12,7 +12,7 @@ keywords:
   - workers
   - durable-objects
 downloads:
-  monthly: 166
+  monthly: 207
 published: "2026-01-20T11:28:43.483Z"
 updated: "2026-01-23T17:20:06.492Z"
 ---

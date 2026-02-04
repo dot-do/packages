@@ -12,7 +12,7 @@ keywords:
   - graphcms
   - cms
 downloads:
-  monthly: 3
+  monthly: 7
 published: "2021-11-07T08:56:29.118Z"
 updated: "2021-11-07T09:05:25.715Z"
 ---

@@ -16,7 +16,7 @@ keywords:
   - pub-sub
   - queue
 downloads:
-  monthly: 97
+  monthly: 101
 published: "2026-01-05T11:43:57.053Z"
 updated: "2026-01-05T11:43:57.189Z"
 ---

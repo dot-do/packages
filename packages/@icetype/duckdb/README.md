@@ -1,6 +1,6 @@
 ---
 name: "@icetype/duckdb"
-version: 0.1.0
+version: 0.3.0
 description: IceType adapter for DuckDB - generates DDL from IceType schemas
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -14,9 +14,9 @@ keywords:
   - sql
   - typescript
 downloads:
-  monthly: 39
+  monthly: 60
 published: "2026-01-22T14:38:58.290Z"
-updated: "2026-01-22T14:38:58.573Z"
+updated: "2026-02-03T11:24:58.979Z"
 ---
 
 # @icetype/duckdb

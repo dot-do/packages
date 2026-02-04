@@ -1,6 +1,6 @@
 ---
 name: rpc.do
-version: 0.2.1
+version: 0.2.4
 description: Lightweight transport-agnostic RPC client proxy
 license: MIT
 repository: "https://github.com/dot-do/rpc.do"
@@ -15,9 +15,9 @@ keywords:
   - cloudflare
   - workers
 downloads:
-  monthly: 2308
+  monthly: 3827
 published: "2025-12-04T21:17:05.283Z"
-updated: "2026-01-24T23:44:31.653Z"
+updated: "2026-01-31T16:38:23.166Z"
 ---
 
 # rpc.do
@@ -25,6 +25,8 @@ updated: "2026-01-24T23:44:31.653Z"
 ![CI](https://github.com/dot-do/rpc.do/actions/workflows/ci.yml/badge.svg)
 
 Lightweight transport-agnostic RPC proxy.
+
+**New to rpc.do?** Check out the [Getting Started Guide](docs/GETTING_STARTED.md) for a beginner-friendly introduction.
 
 ## Why rpc.do?
 

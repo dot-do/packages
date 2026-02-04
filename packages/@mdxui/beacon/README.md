@@ -1,6 +1,6 @@
 ---
 name: "@mdxui/beacon"
-version: 6.0.1
+version: 7.0.0
 description: Site template components for mdxui - landing pages, hero sections, and marketing components
 license: MIT
 repository: "https://github.com/dot-do/ui"
@@ -14,9 +14,9 @@ keywords:
   - components
   - templates
 downloads:
-  monthly: 452
+  monthly: 564
 published: "2025-12-23T12:36:45.467Z"
-updated: "2026-01-24T14:38:29.318Z"
+updated: "2026-01-29T23:13:11.164Z"
 ---
 
 # @mdxui/beacon

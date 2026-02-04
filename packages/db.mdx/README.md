@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/ai-primitives/core"
 homepage: "https://github.com/ai-primitives/core/tree/main/packages/db.mdx"
 downloads:
-  monthly: 22
+  monthly: 42
 published: "2024-12-06T20:08:00.982Z"
 updated: "2024-12-06T21:43:47.301Z"
 ---

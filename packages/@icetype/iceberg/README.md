@@ -1,6 +1,6 @@
 ---
 name: "@icetype/iceberg"
-version: 0.1.0
+version: 0.3.0
 description: IceType to Apache Iceberg metadata and Parquet schema generation
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -12,9 +12,9 @@ keywords:
   - schema
   - data-lake
 downloads:
-  monthly: 42
+  monthly: 185
 published: "2026-01-22T14:39:00.692Z"
-updated: "2026-01-22T14:39:00.963Z"
+updated: "2026-02-03T11:25:00.979Z"
 ---
 
 # @icetype/iceberg

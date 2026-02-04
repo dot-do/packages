@@ -1,6 +1,6 @@
 ---
 name: "@dotdo/do"
-version: 0.1.4
+version: 0.1.6
 description: Digital Object - Every business entity IS a Durable Object. Unified edge-native platform with CRUD APIs, SDK, AI, payments, and more.
 license: MIT
 repository: "https://github.com/dot-do/do"
@@ -20,9 +20,9 @@ keywords:
   - mcp
   - digital-object
 downloads:
-  monthly: 407
+  monthly: 912
 published: "2026-01-23T19:56:19.572Z"
-updated: "2026-01-24T15:28:14.457Z"
+updated: "2026-01-26T16:01:33.487Z"
 ---
 
 # [DO](https://objects.do)

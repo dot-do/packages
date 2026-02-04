@@ -1,6 +1,6 @@
 ---
 name: "@dotdo/cli"
-version: 0.2.2
+version: 0.2.5
 description: Unified CLI module with syntax highlighting, output formatting, auth, and RPC
 license: MIT
 repository: "https://github.com/dot-do/cli.do"
@@ -15,9 +15,9 @@ keywords:
   - spinner
   - progress
 downloads:
-  monthly: 137
+  monthly: 507
 published: "2026-01-23T18:26:43.483Z"
-updated: "2026-01-25T11:56:13.499Z"
+updated: "2026-01-26T16:01:44.659Z"
 ---
 
 # @dotdo/cli

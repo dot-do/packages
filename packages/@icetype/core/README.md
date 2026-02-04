@@ -1,6 +1,6 @@
 ---
 name: "@icetype/core"
-version: 0.1.0
+version: 0.3.0
 description: IceType schema language - parser, types, and validation
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -12,9 +12,9 @@ keywords:
   - typescript
   - type-safe
 downloads:
-  monthly: 147
+  monthly: 291
 published: "2026-01-22T14:38:50.306Z"
-updated: "2026-01-22T14:38:50.562Z"
+updated: "2026-02-03T11:24:53.708Z"
 ---
 
 # @icetype/core
@@ -177,10 +177,30 @@ await manager.loadPlugins();
 
 ### Relation Operators
 
-- `->` - Forward relation (has many)
-- `<-` - Backward relation (belongs to)
-- `~>` - Fuzzy forward (AI-powered matching)
-- `<~` - Fuzzy backward
+| Operator | Name | Description |
+|----------|------|-------------|
+| `->` | Forward | Direct foreign key reference (has one/many) |
+| `<-` | Backward | Reverse reference (belongs to) |
+| `~>` | Fuzzy Forward | AI-powered semantic matching (similarity search) |
+| `<~` | Fuzzy Backward | AI-powered reverse semantic lookup (grounding)
+
+#### Standard Relations
+
+```typescript
+author: '-> User!'           // Forward: Post belongs to User
+posts: '<- Post.author[]'    // Backward: User has many Posts
+```
+
+#### Fuzzy Relations
+
+Fuzzy relations use semantic similarity instead of explicit foreign keys:
+
+```typescript
+similar: '~> Product[]'      // Find semantically similar products
+taggedItems: '<~ Product[]'  // Products that semantically match this tag
+```
+
+> **Note:** Fuzzy operators are fully parsed but runtime execution is planned for future releases.
 
 ### Directives
 

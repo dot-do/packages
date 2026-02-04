@@ -1,6 +1,6 @@
 ---
 name: "@dotdo/sdb"
-version: 0.1.0
+version: 0.1.3
 description: Simple Document/Graph Database for Cloudflare Durable Objects
 license: MIT
 repository: "https://github.com/dot-do/sdb"
@@ -21,9 +21,9 @@ keywords:
   - mcp
   - model-context-protocol
 downloads:
-  monthly: 0
+  monthly: 368
 published: "2026-01-25T00:36:13.194Z"
-updated: "2026-01-25T00:36:13.510Z"
+updated: "2026-01-26T01:56:27.772Z"
 ---
 
 # SDB
@@ -64,6 +64,19 @@ yarn add @dotdo/sdb
 pnpm add @dotdo/sdb
 ```
 
+### Worker Setup
+
+The `DB` export works as both a Durable Object class and a client factory:
+
+```typescript
+// wrangler entry point (e.g., src/index.ts)
+import app, { $Context } from '@dotdo/sdb/worker'
+import { DB } from '@dotdo/sdb'
+
+export { DB, $Context }
+export default app
+```
+
 ### Define Schema & Connect
 
 ```typescript
@@ -80,6 +93,21 @@ const db = DB({
     author: '-> User',
   }
 }, { url: 'https://your-worker.your-domain.workers.dev' })
+```
+
+### Quick Untyped Usage
+
+For prototyping or dynamic schemas, use the pre-configured singleton:
+
+```typescript
+import { db, configureDB } from '@dotdo/sdb'
+
+// Configure once at app startup
+configureDB({ url: 'https://your-worker.your-domain.workers.dev' })
+
+// Use anywhere - collections are accessed dynamically
+const users = await db.users.list()
+const post = await db.posts.create({ title: 'Hello World' })
 ```
 
 ### CRUD Operations

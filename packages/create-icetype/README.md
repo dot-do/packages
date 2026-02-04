@@ -1,6 +1,6 @@
 ---
 name: create-icetype
-version: 0.1.0
+version: 0.2.0
 description: Create IceType projects - scaffolds new schema-driven TypeScript projects
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -14,9 +14,9 @@ keywords:
   - schema
   - typescript
 downloads:
-  monthly: 69
+  monthly: 84
 published: "2026-01-22T14:38:53.120Z"
-updated: "2026-01-22T14:38:53.358Z"
+updated: "2026-02-03T11:24:55.350Z"
 ---
 
 # create-icetype

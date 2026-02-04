@@ -1,6 +1,6 @@
 ---
 name: icetype
-version: 0.2.1
+version: 0.3.0
 description: IceType - Type-safe schema language for data lakes and databases
 license: MIT
 repository: "https://github.com/dot-do/icetype"
@@ -14,9 +14,9 @@ keywords:
   - data-lake
   - type-safe
 downloads:
-  monthly: 250
+  monthly: 274
 published: "2026-01-16T15:02:10.979Z"
-updated: "2026-01-22T14:39:03.860Z"
+updated: "2026-02-03T11:25:02.960Z"
 ---
 
 # icetype
