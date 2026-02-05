@@ -13,7 +13,7 @@ keywords:
   - cdc
   - cloudflare-workers
 downloads:
-  monthly: 85
+  monthly: 96
 published: "2026-02-02T19:33:17.056Z"
 updated: "2026-02-02T19:33:17.465Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - fauna
   - data
 downloads:
-  monthly: 6
+  monthly: 9
 published: "2021-11-07T08:56:27.579Z"
 updated: "2021-11-07T09:05:24.511Z"
 ---

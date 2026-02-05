@@ -10,7 +10,7 @@ keywords:
   - primitives
   - openai
 downloads:
-  monthly: 358
+  monthly: 364
 published: "2025-05-06T16:41:11.441Z"
 updated: "2025-05-06T16:41:11.796Z"
 ---

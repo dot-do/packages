@@ -17,7 +17,7 @@ keywords:
   - capnweb
   - rpc
 downloads:
-  monthly: 161
+  monthly: 165
 published: "2026-01-22T15:59:04.482Z"
 updated: "2026-01-24T15:49:26.168Z"
 ---
