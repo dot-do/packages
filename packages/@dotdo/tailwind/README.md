@@ -14,7 +14,7 @@ keywords:
   - ui
   - design-system
 downloads:
-  monthly: 44
+  monthly: 45
 published: "2026-01-24T14:38:26.372Z"
 updated: "2026-01-24T14:38:26.648Z"
 ---
