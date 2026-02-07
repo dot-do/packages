@@ -12,7 +12,7 @@ keywords:
   - logg.ng
   - logging
 downloads:
-  monthly: 5
+  monthly: 6
 published: "2021-11-07T08:56:31.028Z"
 updated: "2021-11-07T09:05:27.477Z"
 ---

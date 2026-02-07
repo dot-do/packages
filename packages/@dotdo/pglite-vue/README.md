@@ -14,7 +14,7 @@ keywords:
   - pglite
   - vue
 downloads:
-  monthly: 54
+  monthly: 55
 published: "2026-01-24T15:50:45.206Z"
 updated: "2026-01-24T15:50:45.517Z"
 ---

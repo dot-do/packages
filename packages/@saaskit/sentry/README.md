@@ -12,7 +12,7 @@ keywords:
   - sentry
   - monitoring
 downloads:
-  monthly: 8
+  monthly: 11
 published: "2021-11-05T07:08:02.079Z"
 updated: "2021-11-07T09:05:31.975Z"
 ---

@@ -14,7 +14,7 @@ keywords:
   - data-lake
   - type-safe
 downloads:
-  monthly: 358
+  monthly: 363
 published: "2026-01-16T15:02:10.979Z"
 updated: "2026-02-03T11:25:02.960Z"
 ---

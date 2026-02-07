@@ -10,7 +10,7 @@ keywords:
   - lean-canvas
   - mvp
 downloads:
-  monthly: 12
+  monthly: 11
 published: "2025-12-17T19:56:37.744Z"
 updated: "2025-12-17T19:56:37.896Z"
 ---
