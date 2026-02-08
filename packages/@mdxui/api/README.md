@@ -11,7 +11,7 @@ keywords:
   - openapi
   - hypermedia
 downloads:
-  monthly: 46
+  monthly: 47
 published: "2026-01-24T14:37:51.504Z"
 updated: "2026-01-24T14:37:51.771Z"
 ---

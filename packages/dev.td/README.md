@@ -12,7 +12,7 @@ keywords:
   - sdk
   - cli
 downloads:
-  monthly: 26
+  monthly: 24
 published: "2026-01-05T16:56:10.823Z"
 updated: "2026-01-05T16:56:10.995Z"
 ---

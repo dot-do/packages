@@ -12,7 +12,7 @@ keywords:
   - react
   - zero-config
 downloads:
-  monthly: 121
+  monthly: 120
 published: "2025-12-20T12:30:40.757Z"
 updated: "2025-12-20T13:13:14.503Z"
 ---
