@@ -16,7 +16,7 @@ keywords:
   - icetype
   - cdc
 downloads:
-  monthly: 76
+  monthly: 77
 published: "2026-01-23T17:20:52.120Z"
 updated: "2026-01-23T17:20:52.466Z"
 ---

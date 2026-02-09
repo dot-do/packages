@@ -12,7 +12,7 @@ keywords:
   - twitter-ads
   - analytics
 downloads:
-  monthly: 6
+  monthly: 8
 published: "2021-11-05T07:08:03.095Z"
 updated: "2021-11-07T09:05:32.759Z"
 ---

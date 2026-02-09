@@ -17,7 +17,7 @@ keywords:
   - durable-objects
   - serverless
 downloads:
-  monthly: 618
+  monthly: 665
 published: "2026-01-22T15:58:31.445Z"
 updated: "2026-01-24T15:48:50.396Z"
 ---

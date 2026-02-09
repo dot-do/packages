@@ -12,7 +12,7 @@ keywords:
   - headlessly
   - cms
 downloads:
-  monthly: 8
+  monthly: 10
 published: "2021-11-07T08:56:29.047Z"
 updated: "2021-11-07T09:05:25.809Z"
 ---
