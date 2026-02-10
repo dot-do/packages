@@ -12,7 +12,7 @@ keywords:
   - evergage
   - analytics
 downloads:
-  monthly: 8
+  monthly: 9
 published: "2021-11-05T07:07:55.613Z"
 updated: "2021-11-07T09:05:24.042Z"
 ---

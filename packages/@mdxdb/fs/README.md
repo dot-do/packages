@@ -13,7 +13,7 @@ keywords:
   - mdx
   - database
 downloads:
-  monthly: 114
+  monthly: 118
 published: "2024-12-17T11:48:16.717Z"
 updated: "2025-12-20T12:30:53.349Z"
 ---
