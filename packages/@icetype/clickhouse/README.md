@@ -13,7 +13,7 @@ keywords:
   - ddl
   - typescript
 downloads:
-  monthly: 164
+  monthly: 165
 published: "2026-01-22T14:38:46.800Z"
 updated: "2026-02-03T11:24:51.556Z"
 ---

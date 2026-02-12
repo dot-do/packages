@@ -18,7 +18,7 @@ keywords:
   - mysql
   - sqlite
 downloads:
-  monthly: 169
+  monthly: 170
 published: "2026-01-22T14:38:55.562Z"
 updated: "2026-02-03T11:24:57.101Z"
 ---
