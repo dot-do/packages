@@ -12,7 +12,7 @@ keywords:
   - multi-tenant
   - cloudflare-workers
 downloads:
-  monthly: 73
+  monthly: 47
 published: "2026-01-05T11:52:47.275Z"
 updated: "2026-01-05T17:10:47.125Z"
 ---

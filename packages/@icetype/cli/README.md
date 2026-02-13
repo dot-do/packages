@@ -11,7 +11,7 @@ keywords:
   - schema
   - codegen
 downloads:
-  monthly: 162
+  monthly: 164
 published: "2026-01-22T14:38:43.509Z"
 updated: "2026-02-03T11:24:49.582Z"
 ---

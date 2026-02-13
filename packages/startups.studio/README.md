@@ -12,7 +12,7 @@ keywords:
   - payload
   - cli
 downloads:
-  monthly: 27
+  monthly: 26
 published: "2025-12-17T19:48:13.912Z"
 updated: "2025-12-17T21:20:40.681Z"
 ---

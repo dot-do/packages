@@ -1,6 +1,6 @@
 ---
 name: "@mdxui/tremor"
-version: 6.0.0
+version: 7.0.0
 description: Tremor template wrappers implementing the mdxui interface - analytics dashboards, landing pages, and marketing sites
 license: MIT
 repository: "https://github.com/dot-do/ui"
@@ -14,9 +14,9 @@ keywords:
   - charts
   - components
 downloads:
-  monthly: 44
+  monthly: 46
 published: "2026-01-24T14:38:33.282Z"
-updated: "2026-01-24T14:38:33.583Z"
+updated: "2026-02-12T20:57:30.280Z"
 ---
 
 # @mdxui/tremor

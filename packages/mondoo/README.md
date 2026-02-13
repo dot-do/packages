@@ -17,7 +17,7 @@ keywords:
   - schema
   - validation
 downloads:
-  monthly: 13
+  monthly: 14
 published: "2026-01-05T01:10:16.963Z"
 updated: "2026-01-05T01:10:17.170Z"
 ---
