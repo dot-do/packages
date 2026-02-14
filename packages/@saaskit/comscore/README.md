@@ -12,7 +12,7 @@ keywords:
   - comscore
   - analytics
 downloads:
-  monthly: 25
+  monthly: 26
 published: "2021-11-05T07:07:53.675Z"
 updated: "2021-11-07T09:05:21.959Z"
 ---

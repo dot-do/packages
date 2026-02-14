@@ -12,7 +12,7 @@ keywords:
   - sql
   - client
 downloads:
-  monthly: 92
+  monthly: 93
 published: "2026-01-23T18:27:22.287Z"
 updated: "2026-01-23T18:27:22.503Z"
 ---
