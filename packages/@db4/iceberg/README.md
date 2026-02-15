@@ -16,7 +16,7 @@ keywords:
   - workers
   - r2
 downloads:
-  monthly: 213
+  monthly: 215
 published: "2026-01-20T11:29:15.327Z"
 updated: "2026-01-23T17:20:24.666Z"
 ---
