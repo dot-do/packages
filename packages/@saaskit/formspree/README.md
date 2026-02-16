@@ -12,7 +12,7 @@ keywords:
   - formspree
   - cms
 downloads:
-  monthly: 6
+  monthly: 8
 published: "2021-11-07T08:56:27.679Z"
 updated: "2021-11-07T09:05:24.521Z"
 ---

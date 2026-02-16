@@ -12,7 +12,7 @@ keywords:
   - bing-ads
   - analytics
 downloads:
-  monthly: 22
+  monthly: 26
 published: "2021-11-05T07:07:52.698Z"
 updated: "2021-11-07T09:05:20.410Z"
 ---

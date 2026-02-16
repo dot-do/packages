@@ -9,7 +9,7 @@ keywords:
   - ai
   - primitives
 downloads:
-  monthly: 242
+  monthly: 235
 published: "2025-05-01T09:39:46.081Z"
 updated: "2026-01-12T18:26:12.728Z"
 ---

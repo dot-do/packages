@@ -12,7 +12,7 @@ keywords:
   - lytics
   - analytics
 downloads:
-  monthly: 12
+  monthly: 16
 published: "2021-11-05T07:07:58.805Z"
 updated: "2021-11-07T09:05:27.904Z"
 ---

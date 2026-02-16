@@ -13,7 +13,7 @@ keywords:
   - site-generator
   - database
 downloads:
-  monthly: 608
+  monthly: 607
 published: "2025-05-06T11:49:52.557Z"
 updated: "2025-05-06T11:49:52.820Z"
 ---
