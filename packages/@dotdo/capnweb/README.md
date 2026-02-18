@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/dot-do/capnweb"
 homepage: "https://github.com/dot-do/capnweb#readme"
 downloads:
-  monthly: 333
+  monthly: 365
 published: "2026-01-26T14:43:02.873Z"
 updated: "2026-01-26T14:43:03.202Z"
 ---

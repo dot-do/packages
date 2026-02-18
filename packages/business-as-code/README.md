@@ -9,7 +9,7 @@ keywords:
   - code
   - primitives
 downloads:
-  monthly: 560
+  monthly: 550
 published: "2025-04-12T15:45:33.502Z"
 updated: "2026-01-12T18:26:04.126Z"
 ---

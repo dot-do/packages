@@ -15,7 +15,7 @@ keywords:
   - nosql
   - document-database
 downloads:
-  monthly: 241
+  monthly: 246
 published: "2026-01-20T11:32:48.836Z"
 updated: "2026-01-23T17:21:14.981Z"
 ---
