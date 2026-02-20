@@ -1,6 +1,6 @@
 ---
 name: oauth.do
-version: 0.2.6
+version: 0.2.7
 description: OAuth authentication SDK, React components, and Hono middleware for org.ai identity
 license: MIT
 repository: "https://github.com/dot-do/oauth.do"
@@ -21,7 +21,7 @@ keywords:
 downloads:
   monthly: 3605
 published: "2025-12-04T21:02:30.392Z"
-updated: "2026-02-02T12:50:32.366Z"
+updated: "2026-02-19T16:36:57.799Z"
 ---
 
 # oauth.do
