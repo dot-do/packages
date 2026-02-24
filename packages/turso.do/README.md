@@ -11,7 +11,7 @@ keywords:
   - durable-objects
   - managed-service
 downloads:
-  monthly: 83
+  monthly: 15
 published: "2026-01-22T11:02:55.611Z"
 updated: "2026-01-22T11:02:55.820Z"
 ---

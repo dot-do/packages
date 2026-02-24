@@ -12,7 +12,7 @@ keywords:
   - planetscale
   - data
 downloads:
-  monthly: 9
+  monthly: 12
 published: "2021-11-07T08:56:33.197Z"
 updated: "2021-11-07T09:05:30.522Z"
 ---

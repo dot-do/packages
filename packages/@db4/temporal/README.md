@@ -17,7 +17,7 @@ keywords:
   - workers
   - orchestration
 downloads:
-  monthly: 232
+  monthly: 65
 published: "2026-01-20T11:29:08.324Z"
 updated: "2026-01-23T17:21:29.240Z"
 ---
