@@ -13,7 +13,7 @@ keywords:
   - pglite
   - socket
 downloads:
-  monthly: 62
+  monthly: 27
 published: "2026-01-24T15:50:21.884Z"
 updated: "2026-01-24T15:50:22.165Z"
 ---

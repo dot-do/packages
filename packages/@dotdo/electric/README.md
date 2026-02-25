@@ -19,7 +19,7 @@ keywords:
   - durable-streams
   - durable-sessions
 downloads:
-  monthly: 139
+  monthly: 41
 published: "2026-01-22T15:58:35.255Z"
 updated: "2026-01-24T15:48:54.599Z"
 ---

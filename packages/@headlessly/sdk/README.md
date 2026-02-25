@@ -12,7 +12,7 @@ keywords:
   - agents
   - rpc
 downloads:
-  monthly: 97
+  monthly: 98
 published: "2026-02-07T15:33:25.369Z"
 updated: "2026-02-07T15:33:25.626Z"
 ---
