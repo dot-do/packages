@@ -15,7 +15,7 @@ keywords:
   - read-replicas
   - high-availability
 downloads:
-  monthly: 57
+  monthly: 53
 published: "2026-01-20T11:29:25.629Z"
 updated: "2026-01-23T17:20:35.792Z"
 ---
