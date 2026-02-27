@@ -13,7 +13,7 @@ keywords:
   - sqlite
   - edge-database
 downloads:
-  monthly: 88
+  monthly: 73
 published: "2026-01-20T11:31:45.957Z"
 updated: "2026-01-23T17:20:17.886Z"
 ---

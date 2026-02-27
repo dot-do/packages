@@ -12,7 +12,7 @@ keywords:
   - supporthero
   - analytics
 downloads:
-  monthly: 15
+  monthly: 14
 published: "2021-11-05T07:08:02.559Z"
 updated: "2021-11-07T09:05:32.223Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - components
   - layouts
 downloads:
-  monthly: 11
+  monthly: 10
 published: "2024-12-23T16:18:49.789Z"
 updated: "2024-12-27T17:38:13.345Z"
 ---

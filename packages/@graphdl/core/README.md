@@ -19,7 +19,7 @@ keywords:
   - mdxld
   - json-ld
 downloads:
-  monthly: 815
+  monthly: 825
 published: "2023-11-05T22:36:26.832Z"
 updated: "2026-01-30T19:56:37.638Z"
 ---

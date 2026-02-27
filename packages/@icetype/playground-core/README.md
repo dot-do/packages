@@ -12,7 +12,7 @@ keywords:
   - editor
   - typescript
 downloads:
-  monthly: 25
+  monthly: 19
 published: "2026-01-22T14:39:11.854Z"
 updated: "2026-01-22T14:39:12.077Z"
 ---
