@@ -10,7 +10,7 @@ keywords:
   - json-ld
   - ai
 downloads:
-  monthly: 13
+  monthly: 11
 published: "2026-01-16T09:56:52.663Z"
 updated: "2026-01-16T09:56:52.956Z"
 ---

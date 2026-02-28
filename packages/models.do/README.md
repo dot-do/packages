@@ -13,7 +13,7 @@ keywords:
   - capabilities
   - comparison
 downloads:
-  monthly: 960
+  monthly: 956
 published: "2025-04-14T08:20:56.463Z"
 updated: "2025-04-14T08:20:56.818Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - bugsnag
   - analytics
 downloads:
-  monthly: 25
+  monthly: 24
 published: "2021-11-05T07:07:53.663Z"
 updated: "2021-11-07T09:05:20.200Z"
 ---

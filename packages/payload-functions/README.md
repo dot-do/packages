@@ -4,7 +4,7 @@ version: 0.0.1-beta.5
 description: Convenience Functions for Rapid Development of Payload CMS Apps
 license: MIT
 downloads:
-  monthly: 12
+  monthly: 11
 published: "2023-11-02T09:37:29.270Z"
 updated: "2023-11-02T11:29:21.068Z"
 ---

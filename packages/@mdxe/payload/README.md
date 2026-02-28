@@ -15,7 +15,7 @@ keywords:
   - mdx
   - content-management
 downloads:
-  monthly: 111
+  monthly: 112
 published: "2025-12-20T12:31:45.839Z"
 updated: "2025-12-20T12:31:46.077Z"
 ---
