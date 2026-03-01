@@ -19,7 +19,7 @@ keywords:
   - validation
   - utilities
 downloads:
-  monthly: 1071
+  monthly: 1202
 published: "2026-01-22T15:59:10.696Z"
 updated: "2026-01-24T17:13:18.158Z"
 ---
