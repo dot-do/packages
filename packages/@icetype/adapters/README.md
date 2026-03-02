@@ -13,7 +13,7 @@ keywords:
   - parquet
   - typescript
 downloads:
-  monthly: 123
+  monthly: 122
 published: "2026-01-22T14:38:40.887Z"
 updated: "2026-02-03T11:24:47.182Z"
 ---
