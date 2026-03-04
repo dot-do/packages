@@ -12,7 +12,7 @@ keywords:
   - postgresql
   - database
 downloads:
-  monthly: 22
+  monthly: 20
 published: "2026-01-22T16:00:39.172Z"
 updated: "2026-01-24T15:49:22.575Z"
 ---
