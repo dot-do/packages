@@ -13,7 +13,7 @@ keywords:
   - feature-flag
   - agent-first
 downloads:
-  monthly: 32
+  monthly: 37
 published: "2026-03-03T18:40:56.121Z"
 updated: "2026-03-03T18:40:56.440Z"
 ---

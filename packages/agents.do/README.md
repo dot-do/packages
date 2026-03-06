@@ -14,7 +14,7 @@ keywords:
   - intelligence
   - automation
 downloads:
-  monthly: 8
+  monthly: 5
 published: "2025-03-27T15:16:35.642Z"
 updated: "2025-03-27T15:16:35.810Z"
 ---
