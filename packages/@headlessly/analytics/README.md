@@ -14,7 +14,7 @@ keywords:
   - funnel
   - agent-first
 downloads:
-  monthly: 95
+  monthly: 98
 published: "2026-03-03T18:39:13.757Z"
 updated: "2026-03-03T18:39:14.064Z"
 ---

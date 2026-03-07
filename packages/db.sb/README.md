@@ -14,7 +14,7 @@ keywords:
   - startups
   - sdk
 downloads:
-  monthly: 24
+  monthly: 22
 published: "2025-12-17T19:50:33.333Z"
 updated: "2025-12-18T16:31:39.766Z"
 ---

@@ -15,7 +15,7 @@ keywords:
   - postgresql
   - sqlite
 downloads:
-  monthly: 1022
+  monthly: 1023
 published: "2025-03-27T15:18:01.074Z"
 updated: "2025-03-27T15:18:01.301Z"
 ---
