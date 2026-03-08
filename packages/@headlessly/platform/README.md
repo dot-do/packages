@@ -14,7 +14,7 @@ keywords:
   - agent
   - agent-first
 downloads:
-  monthly: 92
+  monthly: 97
 published: "2026-03-03T18:42:23.301Z"
 updated: "2026-03-03T18:42:23.578Z"
 ---

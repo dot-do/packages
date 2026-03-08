@@ -10,7 +10,7 @@ keywords:
   - branding
   - startup
 downloads:
-  monthly: 2
+  monthly: 3
 published: "2025-12-17T20:54:08.832Z"
 updated: "2025-12-17T20:54:09.089Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - logalert
   - logging
 downloads:
-  monthly: 12
+  monthly: 11
 published: "2021-11-07T08:56:30.529Z"
 updated: "2021-11-07T09:05:27.254Z"
 ---

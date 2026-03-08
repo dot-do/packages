@@ -13,7 +13,7 @@ keywords:
   - cdc
   - agent-first
 downloads:
-  monthly: 91
+  monthly: 95
 published: "2026-03-03T18:40:41.467Z"
 updated: "2026-03-03T18:40:41.703Z"
 ---
