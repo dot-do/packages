@@ -13,7 +13,7 @@ keywords:
   - functions
   - workflows
 downloads:
-  monthly: 25
+  monthly: 23
 published: "2025-05-08T13:40:57.372Z"
 updated: "2025-05-08T13:40:57.636Z"
 ---

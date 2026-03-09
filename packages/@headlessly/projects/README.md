@@ -13,7 +13,7 @@ keywords:
   - project-management
   - agent-first
 downloads:
-  monthly: 96
+  monthly: 97
 published: "2026-03-03T18:42:37.972Z"
 updated: "2026-03-03T18:42:38.253Z"
 ---

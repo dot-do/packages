@@ -12,7 +12,7 @@ keywords:
   - digital-objects
   - agent-first
 downloads:
-  monthly: 48
+  monthly: 50
 published: "2026-03-03T18:41:39.949Z"
 updated: "2026-03-03T18:41:40.259Z"
 ---

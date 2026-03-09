@@ -12,7 +12,7 @@ keywords:
   - aws
   - hosting
 downloads:
-  monthly: 13
+  monthly: 9
 published: "2021-11-07T08:56:23.687Z"
 updated: "2021-11-07T09:05:10.048Z"
 ---
