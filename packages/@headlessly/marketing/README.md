@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/marketing"
-version: 0.1.0
+version: 0.1.2
 description: headless.ly Marketing entities — Campaign, Segment, Form
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -16,7 +16,7 @@ keywords:
 downloads:
   monthly: 91
 published: "2026-03-03T18:41:24.817Z"
-updated: "2026-03-03T18:41:25.121Z"
+updated: "2026-03-09T23:19:15.638Z"
 ---
 
 # @headlessly/marketing

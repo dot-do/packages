@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/experiments"
-version: 0.1.0
+version: 0.1.2
 description: headless.ly Experimentation entities — Experiment, FeatureFlag
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -15,7 +15,7 @@ keywords:
 downloads:
   monthly: 47
 published: "2026-03-03T18:40:56.121Z"
-updated: "2026-03-03T18:40:56.440Z"
+updated: "2026-03-09T23:19:01.907Z"
 ---
 
 # @headlessly/experiments

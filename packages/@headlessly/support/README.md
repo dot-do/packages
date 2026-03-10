@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/support"
-version: 0.1.0
+version: 0.1.2
 description: headless.ly Support entities — Ticket
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -15,7 +15,7 @@ keywords:
 downloads:
   monthly: 100
 published: "2026-03-03T18:43:38.397Z"
-updated: "2026-03-03T18:43:38.648Z"
+updated: "2026-03-09T23:21:01.493Z"
 ---
 
 # @headlessly/support

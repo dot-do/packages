@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/events"
-version: 0.1.0
+version: 0.1.1
 description: Event system with time travel for headless.ly Digital Objects
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -15,7 +15,7 @@ keywords:
 downloads:
   monthly: 96
 published: "2026-03-03T18:40:41.467Z"
-updated: "2026-03-03T18:40:41.703Z"
+updated: "2026-03-09T21:51:45.397Z"
 ---
 
 # @headlessly/events

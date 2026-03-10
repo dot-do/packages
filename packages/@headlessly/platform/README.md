@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/platform"
-version: 0.1.0
+version: 0.1.2
 description: headless.ly Platform entities — Workflow, Integration, Agent
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -16,7 +16,7 @@ keywords:
 downloads:
   monthly: 98
 published: "2026-03-03T18:42:23.301Z"
-updated: "2026-03-03T18:42:23.578Z"
+updated: "2026-03-09T23:20:02.002Z"
 ---
 
 # @headlessly/platform

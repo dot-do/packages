@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/content"
-version: 0.1.0
+version: 0.1.2
 description: headless.ly Content entities — Content, Asset, Site
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -15,7 +15,7 @@ keywords:
 downloads:
   monthly: 97
 published: "2026-03-03T18:40:12.378Z"
-updated: "2026-03-03T18:40:12.619Z"
+updated: "2026-03-09T23:18:34.362Z"
 ---
 
 # @headlessly/content

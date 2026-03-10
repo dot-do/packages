@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/rpc"
-version: 0.1.0
+version: 0.1.2
 description: Preconfigured rpc.do client for headless.ly — capnweb promise pipelining, magic .map(), automatic batching
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -14,7 +14,7 @@ keywords:
 downloads:
   monthly: 87
 published: "2026-03-03T18:43:08.513Z"
-updated: "2026-03-03T18:43:08.714Z"
+updated: "2026-03-09T23:20:31.256Z"
 ---
 
 # @headlessly/rpc

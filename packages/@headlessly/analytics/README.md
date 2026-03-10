@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/analytics"
-version: 0.1.0
+version: 0.1.1
 description: headless.ly Analytics entities — Event, Metric, Funnel, Goal
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -16,7 +16,7 @@ keywords:
 downloads:
   monthly: 102
 published: "2026-03-03T18:39:13.757Z"
-updated: "2026-03-03T18:39:14.064Z"
+updated: "2026-03-09T21:50:32.910Z"
 ---
 
 # @headlessly/analytics

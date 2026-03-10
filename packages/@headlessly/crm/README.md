@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/crm"
-version: 0.1.0
+version: 0.1.2
 description: headless.ly CRM entities — Contact, Company, Deal
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -16,7 +16,7 @@ keywords:
 downloads:
   monthly: 98
 published: "2026-03-03T18:40:26.141Z"
-updated: "2026-03-03T18:40:26.409Z"
+updated: "2026-03-09T23:18:48.100Z"
 ---
 
 # @headlessly/crm
@@ -107,7 +107,7 @@ Contact.qualified((contact, $) => {
 })
 ```
 
-**Verbs**: `qualify()` · `qualifying()` · `qualified()` · `qualifiedBy`
+**Verbs**: `qualify()` · `capture()` · `assign()` · `merge()` · `enrich()` — each with full lifecycle conjugation
 
 **Key fields**: name, email, phone, title, role (`DecisionMaker | Influencer | Champion | Blocker | User`), status (`Active | Inactive | Bounced | Unsubscribed`), leadScore, source
 
@@ -132,9 +132,9 @@ await Deal.close(deal.$id)
 await Deal.win(deal.$id)
 ```
 
-**Verbs**: `close()` · `win()` · `lose()` — each with full lifecycle conjugation
+**Verbs**: `close()` · `win()` · `lose()` · `advance()` · `reopen()` — each with full lifecycle conjugation
 
-**Key fields**: name, value, currency, stage (`Prospecting | Qualification | Proposal | Negotiation | ClosedWon | ClosedLost`), probability, expectedCloseDate, source
+**Key fields**: name, value, currency, stage (`Prospecting | Qualification | Proposal | Negotiation | Closed | Won | Lost`), probability, expectedCloseDate, source
 
 **Relationships**: → Organization, → Contact, → Owner, → Campaign, ← Leads[], ← Activities[]
 
@@ -187,7 +187,7 @@ await Activity.create({
 await Activity.complete('activity_mN8pZwKj')
 ```
 
-**Verbs**: `complete()` · `cancel()` — each with full lifecycle conjugation
+**Verbs**: `complete()` · `cancel()` · `log()` — each with full lifecycle conjugation
 
 ### Pipeline
 
@@ -235,7 +235,7 @@ Query results are standard arrays — chain operations with familiar JavaScript:
 const active = await Contact.find({ status: 'Active' })
 for (const contact of active) {
   const deals = await Deal.find({ contact: contact.$id })
-  const open = deals.filter((d) => d.stage !== 'ClosedWon' && d.stage !== 'ClosedLost')
+  const open = deals.filter((d) => d.stage !== 'Won' && d.stage !== 'Lost')
   for (const deal of open) {
     await Deal.update(deal.$id, { lastContactedAt: new Date().toISOString() })
   }

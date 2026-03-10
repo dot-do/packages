@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/billing"
-version: 0.1.0
+version: 0.1.1
 description: headless.ly Billing entities — Customer, Product, Price, Subscription, Invoice, Payment
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -17,7 +17,7 @@ keywords:
 downloads:
   monthly: 99
 published: "2026-03-03T18:39:28.862Z"
-updated: "2026-03-03T18:39:29.130Z"
+updated: "2026-03-09T21:50:47.559Z"
 ---
 
 # @headlessly/billing

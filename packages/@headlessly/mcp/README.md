@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/mcp"
-version: 0.1.0
+version: 0.1.2
 description: MCP protocol client for headless.ly — search, fetch, do
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -14,7 +14,7 @@ keywords:
 downloads:
   monthly: 50
 published: "2026-03-03T18:41:39.949Z"
-updated: "2026-03-03T18:41:40.259Z"
+updated: "2026-03-09T23:19:30.638Z"
 ---
 
 # @headlessly/mcp

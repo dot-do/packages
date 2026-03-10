@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/projects"
-version: 0.1.0
+version: 0.1.2
 description: headless.ly Projects entities — Project, Issue, Comment
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -15,7 +15,7 @@ keywords:
 downloads:
   monthly: 97
 published: "2026-03-03T18:42:37.972Z"
-updated: "2026-03-03T18:42:38.253Z"
+updated: "2026-03-09T23:20:16.624Z"
 ---
 
 # @headlessly/projects

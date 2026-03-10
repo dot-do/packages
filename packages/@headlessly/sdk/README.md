@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/sdk"
-version: 0.1.0
+version: 0.1.2
 description: The unified headless.ly SDK — all 35 entities + $ context
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -16,7 +16,7 @@ keywords:
 downloads:
   monthly: 190
 published: "2026-02-07T15:33:25.369Z"
-updated: "2026-03-03T18:43:24.032Z"
+updated: "2026-03-09T23:20:46.766Z"
 ---
 
 # @headlessly/sdk

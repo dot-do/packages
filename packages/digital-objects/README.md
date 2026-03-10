@@ -1,7 +1,10 @@
 ---
 name: digital-objects
-version: 1.0.0
+version: 1.1.0
 description: Unified storage primitive for AI primitives - nouns, verbs, things, actions
+license: MIT
+repository: "https://github.com/org-ai/primitives"
+homepage: "https://primitives.org.ai/digital-objects"
 keywords:
   - digital-objects
   - durable-objects
@@ -14,13 +17,16 @@ keywords:
   - things
   - actions
   - linguistics
+  - ai-primitives
 downloads:
   monthly: 81
 published: "2026-01-16T09:56:50.118Z"
-updated: "2026-01-16T09:56:50.399Z"
+updated: "2026-03-09T21:50:18.113Z"
 ---
 
 # digital-objects
+
+![Stability: Experimental](https://img.shields.io/badge/stability-experimental-red)
 
 Unified storage primitive for AI primitives - a linguistically-aware entity and graph system.
 

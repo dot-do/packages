@@ -1,6 +1,6 @@
 ---
 name: "@headlessly/objects"
-version: 0.1.0
+version: 0.1.2
 description: DO-backed NounProvider for digital-objects — bridges Noun() to Durable Object storage
 license: MIT
 repository: "https://github.com/headlessly/headless.ly"
@@ -14,7 +14,7 @@ keywords:
 downloads:
   monthly: 58
 published: "2026-03-03T18:42:08.510Z"
-updated: "2026-03-03T18:42:08.770Z"
+updated: "2026-03-09T23:19:45.290Z"
 ---
 
 # @headlessly/objects
