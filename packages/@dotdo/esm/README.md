@@ -3,7 +3,7 @@ name: "@dotdo/esm"
 version: 0.1.1
 description: Platform-agnostic core library for esm.do module management.
 downloads:
-  monthly: 32
+  monthly: 44
 published: "2026-01-25T11:57:24.311Z"
 updated: "2026-01-26T18:23:16.173Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - presentation
   - slidev
 downloads:
-  monthly: 83
+  monthly: 84
 published: "2025-04-14T08:25:49.615Z"
 updated: "2025-04-14T08:25:49.850Z"
 ---

@@ -13,7 +13,7 @@ keywords:
   - parse
   - stringify
 downloads:
-  monthly: 1415
+  monthly: 1379
 published: "2024-12-16T18:45:01.206Z"
 updated: "2026-01-26T11:40:58.674Z"
 ---
