@@ -12,7 +12,7 @@ keywords:
   - hellobar
   - analytics
 downloads:
-  monthly: 21
+  monthly: 17
 published: "2021-11-05T07:07:57.214Z"
 updated: "2021-11-07T09:05:26.095Z"
 ---

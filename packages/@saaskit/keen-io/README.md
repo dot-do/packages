@@ -12,7 +12,7 @@ keywords:
   - keen-io
   - analytics
 downloads:
-  monthly: 10
+  monthly: 9
 published: "2021-11-05T07:07:58.017Z"
 updated: "2021-11-07T09:05:26.627Z"
 ---

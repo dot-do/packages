@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/nathanclevenger/gpt-markdown-cli"
 homepage: "https://github.com/nathanclevenger/gpt-markdown-cli#readme"
 downloads:
-  monthly: 28
+  monthly: 26
 published: "2023-03-26T10:38:54.241Z"
 updated: "2023-03-28T11:53:01.955Z"
 ---

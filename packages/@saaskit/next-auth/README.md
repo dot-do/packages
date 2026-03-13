@@ -12,7 +12,7 @@ keywords:
   - next-auth
   - auth
 downloads:
-  monthly: 5
+  monthly: 4
 published: "2021-11-07T08:56:32.242Z"
 updated: "2021-11-07T09:05:29.425Z"
 ---
