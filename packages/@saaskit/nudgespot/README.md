@@ -12,7 +12,7 @@ keywords:
   - nudgespot
   - analytics
 downloads:
-  monthly: 11
+  monthly: 9
 published: "2021-11-05T07:07:59.677Z"
 updated: "2021-11-07T09:05:29.635Z"
 ---
