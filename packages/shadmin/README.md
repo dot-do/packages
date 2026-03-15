@@ -14,7 +14,7 @@ keywords:
   - cli
   - vite
 downloads:
-  monthly: 14
+  monthly: 11
 published: "2026-01-06T12:48:33.208Z"
 updated: "2026-01-06T21:12:37.820Z"
 ---

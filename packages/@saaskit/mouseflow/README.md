@@ -12,7 +12,7 @@ keywords:
   - mouseflow
   - analytics
 downloads:
-  monthly: 16
+  monthly: 14
 published: "2021-11-05T07:07:59.180Z"
 updated: "2021-11-07T09:05:29.334Z"
 ---

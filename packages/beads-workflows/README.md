@@ -13,7 +13,7 @@ keywords:
   - claude
   - agent
 downloads:
-  monthly: 693
+  monthly: 644
 published: "2025-12-20T11:20:53.035Z"
 updated: "2025-12-20T16:49:35.591Z"
 ---

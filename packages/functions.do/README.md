@@ -15,7 +15,7 @@ keywords:
   - functions
   - object generation
 downloads:
-  monthly: 1088
+  monthly: 1029
 published: "2025-03-09T11:08:39.127Z"
 updated: "2025-03-11T08:56:21.110Z"
 ---
