@@ -12,7 +12,7 @@ keywords:
   - miniflare
   - primitives
 downloads:
-  monthly: 1000
+  monthly: 980
 published: "2025-12-20T12:15:21.736Z"
 updated: "2026-01-26T01:55:29.728Z"
 ---
