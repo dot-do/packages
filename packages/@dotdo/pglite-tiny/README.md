@@ -17,7 +17,7 @@ keywords:
   - tiny
   - minimal
 downloads:
-  monthly: 9
+  monthly: 11
 published: "2026-01-22T15:59:42.540Z"
 updated: "2026-01-24T15:50:32.335Z"
 ---

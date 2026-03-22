@@ -12,7 +12,7 @@ keywords:
   - extole
   - analytics
 downloads:
-  monthly: 10
+  monthly: 7
 published: "2021-11-05T07:07:55.420Z"
 updated: "2021-11-07T09:05:24.067Z"
 ---

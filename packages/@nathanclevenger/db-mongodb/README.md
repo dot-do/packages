@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/payloadcms/payload"
 homepage: "https://payloadcms.com"
 downloads:
-  monthly: 6
+  monthly: 3
 published: "2023-10-12T08:02:58.488Z"
 updated: "2023-10-12T08:02:58.665Z"
 ---

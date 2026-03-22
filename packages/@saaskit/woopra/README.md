@@ -12,7 +12,7 @@ keywords:
   - woopra
   - analytics
 downloads:
-  monthly: 12
+  monthly: 7
 published: "2021-11-05T07:08:04.074Z"
 updated: "2021-11-07T09:05:33.748Z"
 ---

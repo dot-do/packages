@@ -12,7 +12,7 @@ keywords:
   - vercel
   - hosting
 downloads:
-  monthly: 9
+  monthly: 5
 published: "2021-11-07T08:56:36.038Z"
 updated: "2021-11-07T09:05:33.331Z"
 ---

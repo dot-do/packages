@@ -13,7 +13,7 @@ keywords:
   - messaging
   - pubsub
 downloads:
-  monthly: 2
+  monthly: 1
 published: "2026-01-05T10:02:58.970Z"
 updated: "2026-01-05T10:02:59.102Z"
 ---
