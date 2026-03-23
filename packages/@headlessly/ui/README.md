@@ -16,7 +16,7 @@ keywords:
   - admin
   - database-editor
 downloads:
-  monthly: 95
+  monthly: 96
 published: "2026-03-03T18:43:54.144Z"
 updated: "2026-03-03T18:43:54.371Z"
 ---
