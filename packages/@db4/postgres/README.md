@@ -14,7 +14,7 @@ keywords:
   - cloudflare
   - workers
 downloads:
-  monthly: 9
+  monthly: 11
 published: "2026-01-20T11:32:53.127Z"
 updated: "2026-01-23T17:21:24.588Z"
 ---

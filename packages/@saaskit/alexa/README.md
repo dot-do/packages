@@ -12,7 +12,7 @@ keywords:
   - alexa
   - analytics
 downloads:
-  monthly: 6
+  monthly: 11
 published: "2021-11-05T07:07:51.826Z"
 updated: "2021-11-07T09:05:00.564Z"
 ---
