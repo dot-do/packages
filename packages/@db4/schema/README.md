@@ -14,7 +14,7 @@ keywords:
   - workers
   - typescript
 downloads:
-  monthly: 11
+  monthly: 12
 published: "2026-01-20T11:32:18.098Z"
 updated: "2026-01-23T17:20:44.089Z"
 ---

@@ -14,7 +14,7 @@ keywords:
   - components
   - image
 downloads:
-  monthly: 672
+  monthly: 630
 published: "2025-05-06T13:54:12.805Z"
 updated: "2025-05-06T13:54:13.153Z"
 ---

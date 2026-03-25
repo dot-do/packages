@@ -13,7 +13,7 @@ keywords:
   - durable-objects
   - containers
 downloads:
-  monthly: 8
+  monthly: 11
 published: "2026-01-23T19:16:44.009Z"
 updated: "2026-01-23T19:16:45.719Z"
 ---
