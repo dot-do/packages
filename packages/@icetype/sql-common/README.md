@@ -13,7 +13,7 @@ keywords:
   - utilities
   - typescript
 downloads:
-  monthly: 10
+  monthly: 9
 published: "2026-01-22T14:55:45.255Z"
 updated: "2026-02-03T11:30:55.067Z"
 ---

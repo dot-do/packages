@@ -12,7 +12,7 @@ keywords:
   - okr
   - key-results
 downloads:
-  monthly: 632
+  monthly: 553
 published: "2025-05-06T11:37:01.366Z"
 updated: "2025-05-06T11:37:01.618Z"
 ---
