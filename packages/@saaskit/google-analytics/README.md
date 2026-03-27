@@ -12,7 +12,7 @@ keywords:
   - google-analytics
   - analytics
 downloads:
-  monthly: 2
+  monthly: 3
 published: "2021-11-05T07:07:56.393Z"
 updated: "2021-11-07T09:05:25.439Z"
 ---

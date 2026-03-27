@@ -12,7 +12,7 @@ keywords:
   - logdna
   - logging
 downloads:
-  monthly: 3
+  monthly: 4
 published: "2021-11-07T08:56:30.517Z"
 updated: "2021-11-07T09:05:27.264Z"
 ---
