@@ -1,6 +1,6 @@
 ---
 name: oauth.do
-version: 0.2.7
+version: 0.3.3
 description: OAuth authentication SDK, React components, and Hono middleware for org.ai identity
 license: MIT
 repository: "https://github.com/dot-do/oauth.do"
@@ -19,9 +19,9 @@ keywords:
   - react
   - hono
 downloads:
-  monthly: 1382
+  monthly: 1323
 published: "2025-12-04T21:02:30.392Z"
-updated: "2026-02-19T16:36:57.799Z"
+updated: "2026-03-27T20:54:07.550Z"
 ---
 
 # oauth.do
@@ -30,7 +30,7 @@ updated: "2026-02-19T16:36:57.799Z"
 [![license](https://img.shields.io/npm/l/oauth.do.svg)](https://github.com/dot-do/oauth.do/blob/main/LICENSE)
 [![tests](https://img.shields.io/github/actions/workflow/status/dot-do/oauth.do/test.yml?label=tests)](https://github.com/dot-do/oauth.do/actions)
 
-OAuth authentication SDK and CLI for the .do Platform, wrapping [WorkOS AuthKit](https://workos.com/authkit) with pre-configured defaults and multiple entry points for different environments.
+OAuth authentication SDK and CLI for the .do Platform, wrapping [id.org.ai](https://id.org.ai) identity with pre-configured defaults and multiple entry points for different environments.
 
 **Why oauth.do?**
 - Pre-configured AuthKit settings for .do Platform - works out of the box
@@ -64,7 +64,7 @@ oauth.do provides multiple entry points for different environments:
 ### Prerequisites
 
 - Node.js 18.0.0 or higher
-- WorkOS account (optional - for custom AuthKit configuration)
+- id.org.ai provides identity — no separate auth provider setup needed
 
 ### Installation
 
@@ -232,7 +232,7 @@ If you're not logged in, it will automatically start the login flow before launc
 
 ## React Components
 
-Pre-configured React components for authentication, wrapping WorkOS AuthKit widgets.
+Pre-configured React components for authentication, wrapping id.org.ai identity widgets.
 
 **Additional dependencies for React:** When using `oauth.do/react`, you need to install React and the auth provider:
 
@@ -303,7 +303,7 @@ import { auth, requireAuth, apiKey } from 'oauth.do/hono'
 const app = new Hono()
 
 // Add auth to all routes (populates c.var.user if authenticated)
-app.use('*', auth({ jwksUri: 'https://api.workos.com/sso/jwks/client_xxx' }))
+app.use('*', auth({ jwksUri: 'https://id.org.ai/.well-known/jwks.json' }))
 
 // Public route - auth is optional
 app.get('/api/public', (c) => {
@@ -312,17 +312,17 @@ app.get('/api/public', (c) => {
 })
 
 // Protected route - requires authentication
-app.use('/api/protected/*', requireAuth({ jwksUri: 'https://api.workos.com/sso/jwks/client_xxx' }))
+app.use('/api/protected/*', requireAuth({ jwksUri: 'https://id.org.ai/.well-known/jwks.json' }))
 
 app.get('/api/protected/data', (c) => {
   return c.json({ secret: 'data', user: c.var.user })
 })
 
 // Role-based access
-app.use('/api/admin/*', requireAuth({ jwksUri: 'https://api.workos.com/sso/jwks/client_xxx', roles: ['admin'] }))
+app.use('/api/admin/*', requireAuth({ jwksUri: 'https://id.org.ai/.well-known/jwks.json', roles: ['admin'] }))
 
 // Permission-based access
-app.use('/api/billing/*', requireAuth({ jwksUri: 'https://api.workos.com/sso/jwks/client_xxx', permissions: ['billing:read', 'billing:write'] }))
+app.use('/api/billing/*', requireAuth({ jwksUri: 'https://id.org.ai/.well-known/jwks.json', permissions: ['billing:read', 'billing:write'] }))
 ```
 
 ### API Key Authentication
@@ -340,7 +340,7 @@ app.use('/api/v1/*', apiKey({
 
 // Combined: JWT or API key
 app.use('/api/*', combined({
-  auth: { jwksUri: 'https://api.workos.com/sso/jwks/client_xxx', cookieName: 'session' },
+  auth: { jwksUri: 'https://id.org.ai/.well-known/jwks.json', cookieName: 'session' },
   apiKey: {
     verify: async (key) => verifyApiKey(key)
   }
