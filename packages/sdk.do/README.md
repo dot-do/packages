@@ -15,7 +15,7 @@ keywords:
   - typescript
   - cli
 downloads:
-  monthly: 504
+  monthly: 415
 published: "2025-04-14T08:21:41.740Z"
 updated: "2025-04-14T08:21:41.963Z"
 ---

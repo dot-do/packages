@@ -12,7 +12,7 @@ keywords:
   - visual-website-optimizer
   - analytics
 downloads:
-  monthly: 6
+  monthly: 2
 published: "2021-11-05T07:08:03.959Z"
 updated: "2021-11-07T09:05:33.375Z"
 ---

@@ -13,7 +13,7 @@ keywords:
   - mongo.do
   - cloudflare
 downloads:
-  monthly: 1
+  monthly: 2
 published: "2026-01-05T13:00:09.342Z"
 updated: "2026-01-05T13:00:09.485Z"
 ---
