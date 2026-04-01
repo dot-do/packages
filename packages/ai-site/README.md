@@ -12,7 +12,7 @@ keywords:
   - ai-functions
   - ai-props
 downloads:
-  monthly: 311
+  monthly: 256
 published: "2025-05-05T18:47:24.566Z"
 updated: "2025-05-05T18:47:24.878Z"
 ---

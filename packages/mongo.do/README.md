@@ -12,7 +12,7 @@ keywords:
   - sqlite
   - database
 downloads:
-  monthly: 5
+  monthly: 3
 published: "2026-01-05T03:03:10.900Z"
 updated: "2026-01-05T09:57:27.767Z"
 ---
