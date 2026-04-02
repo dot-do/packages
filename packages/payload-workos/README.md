@@ -11,7 +11,7 @@ keywords:
   - authentication
   - sso
 downloads:
-  monthly: 4
+  monthly: 2
 published: "2025-04-14T13:23:36.975Z"
 updated: "2025-04-14T13:23:37.360Z"
 ---

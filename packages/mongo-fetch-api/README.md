@@ -12,7 +12,7 @@ keywords:
   - rest
   - drivly
 downloads:
-  monthly: 2
+  monthly: 1
 published: "2023-04-07T14:17:44.796Z"
 updated: "2023-04-07T14:17:44.994Z"
 ---
