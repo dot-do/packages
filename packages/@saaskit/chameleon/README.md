@@ -12,7 +12,7 @@ keywords:
   - chameleon
   - analytics
 downloads:
-  monthly: 4
+  monthly: 6
 published: "2021-11-05T07:07:53.574Z"
 updated: "2021-11-07T09:05:20.747Z"
 ---

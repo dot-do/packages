@@ -1,6 +1,6 @@
 ---
 name: id.org.ai
-version: 0.2.1
+version: 0.2.2
 description: Agent-first identity — Humans. Agents. Identity.
 license: MIT
 repository: "https://github.com/dot-org-ai/id.org.ai"
@@ -15,9 +15,9 @@ keywords:
   - cloudflare
   - durable-objects
 downloads:
-  monthly: 292
+  monthly: 293
 published: "2026-01-16T09:56:52.663Z"
-updated: "2026-03-27T17:32:25.060Z"
+updated: "2026-04-02T14:24:27.257Z"
 ---
 
 # id.org.ai — Agent-First Identity

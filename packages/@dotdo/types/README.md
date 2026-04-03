@@ -18,7 +18,7 @@ keywords:
   - ai
   - business-as-code
 downloads:
-  monthly: 1069
+  monthly: 1016
 published: "2026-01-26T14:39:58.679Z"
 updated: "2026-01-26T18:51:59.703Z"
 ---

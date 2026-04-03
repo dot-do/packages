@@ -17,7 +17,7 @@ keywords:
   - snappy
   - thrift
 downloads:
-  monthly: 18
+  monthly: 15
 published: "2026-02-02T12:42:33.172Z"
 updated: "2026-02-02T18:19:09.765Z"
 ---
