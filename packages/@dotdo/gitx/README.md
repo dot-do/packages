@@ -21,7 +21,7 @@ keywords:
   - pure
   - portable
 downloads:
-  monthly: 14
+  monthly: 12
 published: "2026-01-23T18:17:43.008Z"
 updated: "2026-01-26T16:01:03.353Z"
 ---

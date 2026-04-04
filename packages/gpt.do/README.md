@@ -14,7 +14,7 @@ keywords:
   - completion
   - generation
 downloads:
-  monthly: 345
+  monthly: 305
 published: "2025-04-14T08:19:55.421Z"
 updated: "2025-04-14T08:19:55.651Z"
 ---
