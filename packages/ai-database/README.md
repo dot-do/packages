@@ -12,7 +12,7 @@ keywords:
   - mdxld
   - primitives
 downloads:
-  monthly: 754
+  monthly: 698
 published: "2024-12-17T13:57:36.599Z"
 updated: "2026-01-12T18:25:52.051Z"
 ---

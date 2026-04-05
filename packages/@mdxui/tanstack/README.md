@@ -4,7 +4,7 @@ version: 0.2.0
 description: A highly opinionated, MDX-first framework for static pre-rendering, SPA, and SSR — powered by TanStack Start, deployed anywhere or on Cloudflare Workers.
 license: MIT
 downloads:
-  monthly: 18
+  monthly: 32
 published: "2026-02-12T20:57:13.913Z"
 updated: "2026-02-12T22:40:31.430Z"
 ---

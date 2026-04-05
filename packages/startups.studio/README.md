@@ -1,6 +1,6 @@
 ---
 name: startups.studio
-version: 0.5.0
+version: 0.6.0
 description: Define your entire business as code - CLI for syncing MDX business definitions
 license: MIT
 keywords:
@@ -9,9 +9,9 @@ keywords:
   - business-as-code
   - cli
 downloads:
-  monthly: 370
+  monthly: 488
 published: "2025-12-17T19:48:13.912Z"
-updated: "2026-03-26T17:25:16.469Z"
+updated: "2026-04-04T20:57:33.057Z"
 ---
 
 # startups.studio
