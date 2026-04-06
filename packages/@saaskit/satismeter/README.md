@@ -12,7 +12,7 @@ keywords:
   - satismeter
   - analytics
 downloads:
-  monthly: 22
+  monthly: 20
 published: "2021-11-05T07:08:01.537Z"
 updated: "2021-11-07T09:05:31.500Z"
 ---

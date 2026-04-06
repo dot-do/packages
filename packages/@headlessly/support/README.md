@@ -13,7 +13,7 @@ keywords:
   - helpdesk
   - agent-first
 downloads:
-  monthly: 247
+  monthly: 244
 published: "2026-03-03T18:43:38.397Z"
 updated: "2026-03-09T23:21:01.493Z"
 ---

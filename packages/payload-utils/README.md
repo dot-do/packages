@@ -10,7 +10,7 @@ keywords:
   - workers
   - nextjs
 downloads:
-  monthly: 97
+  monthly: 99
 published: "2025-04-14T13:23:02.455Z"
 updated: "2025-04-14T13:23:02.704Z"
 ---

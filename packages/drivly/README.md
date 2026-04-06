@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/drivly/drivly"
 homepage: "https://driv.ly"
 downloads:
-  monthly: 7
+  monthly: 8
 published: "2022-10-01T21:14:19.830Z"
 updated: "2022-10-01T21:17:36.893Z"
 ---

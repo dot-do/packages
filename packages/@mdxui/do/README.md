@@ -4,7 +4,7 @@ version: 4.0.8
 description: Admin interface for .do platform - manage Durable Objects via RPC
 license: MIT
 downloads:
-  monthly: 32
+  monthly: 34
 published: "2026-01-12T15:43:25.583Z"
 updated: "2026-01-29T23:15:07.936Z"
 ---
