@@ -3,7 +3,7 @@ name: "@org.ai/config"
 version: 0.0.2
 description: Shared TypeScript and ESLint configurations for the primitives.org.ai monorepo.
 downloads:
-  monthly: 46
+  monthly: 44
 published: "2025-12-23T02:31:47.094Z"
 updated: "2025-12-23T02:36:47.268Z"
 ---

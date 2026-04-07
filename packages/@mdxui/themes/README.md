@@ -17,7 +17,7 @@ keywords:
   - tailwind
   - mdxui
 downloads:
-  monthly: 42
+  monthly: 35
 published: "2025-12-23T12:36:30.274Z"
 updated: "2026-01-24T14:38:21.263Z"
 ---

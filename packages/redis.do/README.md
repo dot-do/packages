@@ -16,7 +16,7 @@ keywords:
   - mcp
   - ioredis
 downloads:
-  monthly: 2
+  monthly: 1
 published: "2026-01-05T12:15:13.653Z"
 updated: "2026-01-05T12:15:13.832Z"
 ---
