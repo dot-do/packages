@@ -12,7 +12,7 @@ keywords:
   - curebit
   - analytics
 downloads:
-  monthly: 10
+  monthly: 11
 published: "2021-11-05T07:07:54.378Z"
 updated: "2021-11-07T09:05:23.283Z"
 ---

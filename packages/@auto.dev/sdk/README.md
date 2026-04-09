@@ -1,6 +1,6 @@
 ---
 name: "@auto.dev/sdk"
-version: 0.1.13
+version: 0.1.16
 description: SDK, MCP, and CLI for the auto.dev APIs
 license: MIT
 repository: "https://github.com/auto-dot-dev/sdk"
@@ -13,9 +13,9 @@ keywords:
   - mcp
   - cli
 downloads:
-  monthly: 1494
+  monthly: 1706
 published: "2026-03-31T14:29:41.522Z"
-updated: "2026-04-07T19:58:37.119Z"
+updated: "2026-04-08T23:44:04.091Z"
 ---
 
 # @auto.dev/sdk

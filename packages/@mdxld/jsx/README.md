@@ -15,7 +15,7 @@ keywords:
   - plugin
   - compile
 downloads:
-  monthly: 5
+  monthly: 6
 published: "2025-12-20T13:49:23.743Z"
 updated: "2025-12-20T13:49:24.027Z"
 ---
