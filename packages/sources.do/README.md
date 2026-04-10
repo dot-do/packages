@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/drivly/sources.do"
 homepage: "https://sources.do"
 downloads:
-  monthly: 0
+  monthly: 1
 published: "2022-10-12T10:33:50.744Z"
 updated: "2022-10-12T10:33:50.902Z"
 ---
