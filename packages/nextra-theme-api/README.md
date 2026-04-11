@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/drivly/nextra-theme-blog"
 homepage: "https://github.com/drivly/nextra-theme-blog#readme"
 downloads:
-  monthly: 2
+  monthly: 3
 published: "2021-11-08T15:45:52.490Z"
 updated: "2021-11-08T15:45:52.720Z"
 ---

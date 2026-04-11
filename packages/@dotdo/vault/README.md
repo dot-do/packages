@@ -13,7 +13,7 @@ keywords:
   - key-management
   - ekm
 downloads:
-  monthly: 23
+  monthly: 21
 published: "2026-01-25T11:31:06.301Z"
 updated: "2026-01-25T11:31:06.724Z"
 ---
