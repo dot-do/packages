@@ -12,7 +12,7 @@ keywords:
   - errors
   - server
 downloads:
-  monthly: 14
+  monthly: 10
 published: "2026-03-03T18:41:53.528Z"
 updated: "2026-03-03T18:41:53.834Z"
 ---
