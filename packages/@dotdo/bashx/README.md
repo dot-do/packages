@@ -23,7 +23,7 @@ keywords:
   - posix
   - asyncfn
 downloads:
-  monthly: 11
+  monthly: 10
 published: "2026-01-23T18:21:49.114Z"
 updated: "2026-01-26T16:01:17.728Z"
 ---
