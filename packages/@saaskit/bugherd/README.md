@@ -12,7 +12,7 @@ keywords:
   - bugherd
   - analytics
 downloads:
-  monthly: 14
+  monthly: 15
 published: "2021-11-05T07:07:52.784Z"
 updated: "2021-11-07T09:05:20.198Z"
 ---
