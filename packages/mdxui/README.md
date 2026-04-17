@@ -19,7 +19,7 @@ keywords:
   - saas
   - dashboard
 downloads:
-  monthly: 192
+  monthly: 195
 published: "2025-05-20T20:13:24.684Z"
 updated: "2026-01-29T20:32:26.721Z"
 ---

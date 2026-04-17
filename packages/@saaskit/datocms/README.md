@@ -12,7 +12,7 @@ keywords:
   - datocms
   - cms
 downloads:
-  monthly: 8
+  monthly: 10
 published: "2021-11-07T08:56:26.568Z"
 updated: "2021-11-07T09:05:23.278Z"
 ---

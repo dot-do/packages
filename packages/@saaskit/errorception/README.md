@@ -12,7 +12,7 @@ keywords:
   - errorception
   - analytics
 downloads:
-  monthly: 11
+  monthly: 14
 published: "2021-11-05T07:07:54.680Z"
 updated: "2021-11-07T09:05:23.865Z"
 ---

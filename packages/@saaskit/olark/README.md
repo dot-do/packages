@@ -12,7 +12,7 @@ keywords:
   - olark
   - analytics
 downloads:
-  monthly: 11
+  monthly: 15
 published: "2021-11-05T07:07:59.945Z"
 updated: "2021-11-07T09:05:29.945Z"
 ---

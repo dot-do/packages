@@ -12,7 +12,7 @@ keywords:
   - jsx
   - transform
 downloads:
-  monthly: 5
+  monthly: 6
 published: "2025-12-20T13:49:30.742Z"
 updated: "2025-12-20T13:49:31.005Z"
 ---
