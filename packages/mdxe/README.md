@@ -16,7 +16,7 @@ keywords:
   - fumadocs
   - opennext
 downloads:
-  monthly: 49
+  monthly: 47
 published: "2024-12-12T14:37:21.102Z"
 updated: "2025-12-20T12:39:29.388Z"
 ---

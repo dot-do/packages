@@ -17,7 +17,7 @@ keywords:
   - ai-sdk-provider
   - embeddings
 downloads:
-  monthly: 322
+  monthly: 321
 published: "2025-04-14T08:20:25.988Z"
 updated: "2025-04-14T08:20:26.219Z"
 ---
