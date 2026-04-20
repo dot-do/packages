@@ -14,7 +14,7 @@ keywords:
   - app-builder
   - dynamic
 downloads:
-  monthly: 24
+  monthly: 23
 published: "2025-12-18T20:56:23.585Z"
 updated: "2025-12-18T20:56:23.865Z"
 ---

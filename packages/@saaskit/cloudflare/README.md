@@ -12,7 +12,7 @@ keywords:
   - cloudflare
   - hosting
 downloads:
-  monthly: 13
+  monthly: 12
 published: "2021-11-07T08:56:25.584Z"
 updated: "2021-11-07T09:05:21.830Z"
 ---
