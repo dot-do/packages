@@ -1,6 +1,6 @@
 ---
 name: id.org.ai
-version: 0.2.5
+version: 0.2.7
 description: Agent-first identity — Humans. Agents. Identity.
 license: MIT
 repository: "https://github.com/dot-org-ai/id.org.ai"
@@ -17,7 +17,7 @@ keywords:
 downloads:
   monthly: 1141
 published: "2026-01-16T09:56:52.663Z"
-updated: "2026-04-17T23:24:43.972Z"
+updated: "2026-04-20T19:22:21.324Z"
 ---
 
 # id.org.ai — Agent-First Identity
