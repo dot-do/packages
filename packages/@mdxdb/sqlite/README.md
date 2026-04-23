@@ -18,7 +18,7 @@ keywords:
   - embeddings
   - rpc
 downloads:
-  monthly: 27
+  monthly: 26
 published: "2025-05-20T20:23:23.538Z"
 updated: "2025-12-20T12:30:32.110Z"
 ---

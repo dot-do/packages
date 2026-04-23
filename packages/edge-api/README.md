@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/nathanclevenger/edge-api"
 homepage: "https://github.com/nathanclevenger/edge-api#readme"
 downloads:
-  monthly: 228
+  monthly: 227
 published: "2023-06-08T09:29:19.116Z"
 updated: "2024-05-14T15:14:26.583Z"
 ---

@@ -15,7 +15,7 @@ keywords:
   - stripe
   - agent-first
 downloads:
-  monthly: 20
+  monthly: 18
 published: "2026-03-03T18:39:28.862Z"
 updated: "2026-03-09T21:50:47.559Z"
 ---
