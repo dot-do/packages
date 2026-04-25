@@ -15,7 +15,7 @@ keywords:
   - sqlite
   - nosql
 downloads:
-  monthly: 257
+  monthly: 252
 published: "2026-01-26T14:46:54.145Z"
 updated: "2026-01-27T15:28:13.960Z"
 ---
