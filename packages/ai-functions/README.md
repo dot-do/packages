@@ -11,7 +11,7 @@ keywords:
   - oauth
   - primitives
 downloads:
-  monthly: 1491
+  monthly: 1485
 published: "2023-07-11T20:24:24.176Z"
 updated: "2026-01-12T18:25:49.824Z"
 ---

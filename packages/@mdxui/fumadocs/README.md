@@ -14,7 +14,7 @@ keywords:
   - react
   - ui
 downloads:
-  monthly: 15
+  monthly: 16
 published: "2025-12-20T12:31:22.576Z"
 updated: "2025-12-20T12:31:22.852Z"
 ---

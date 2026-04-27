@@ -12,7 +12,7 @@ keywords:
   - mixpanel
   - analytics
 downloads:
-  monthly: 14
+  monthly: 13
 published: "2021-11-05T07:07:59.176Z"
 updated: "2021-11-07T09:05:27.894Z"
 ---
