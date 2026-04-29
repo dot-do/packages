@@ -12,7 +12,7 @@ keywords:
   - azure
   - hosting
 downloads:
-  monthly: 9
+  monthly: 11
 published: "2021-11-07T08:56:24.210Z"
 updated: "2021-11-07T09:05:10.066Z"
 ---
