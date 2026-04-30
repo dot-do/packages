@@ -9,7 +9,7 @@ keywords:
   - business-as-code
   - cli
 downloads:
-  monthly: 3008
+  monthly: 3005
 published: "2025-12-17T19:48:13.912Z"
 updated: "2026-04-07T19:27:21.430Z"
 ---

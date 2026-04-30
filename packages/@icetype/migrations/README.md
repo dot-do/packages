@@ -12,7 +12,7 @@ keywords:
   - database
   - typescript
 downloads:
-  monthly: 23
+  monthly: 25
 published: "2026-01-22T14:39:06.151Z"
 updated: "2026-02-03T11:25:04.902Z"
 ---
