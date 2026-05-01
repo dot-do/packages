@@ -4,7 +4,7 @@ version: 6.0.1
 description: Zero Email components for mdxui - AI-powered email client UI
 license: MIT
 downloads:
-  monthly: 45
+  monthly: 44
 published: "2026-01-24T14:38:23.846Z"
 updated: "2026-02-12T20:57:14.387Z"
 ---

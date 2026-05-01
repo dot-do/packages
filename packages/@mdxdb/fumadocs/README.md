@@ -12,7 +12,7 @@ keywords:
   - mdx
   - documentation
 downloads:
-  monthly: 28
+  monthly: 30
 published: "2025-12-20T12:31:06.981Z"
 updated: "2025-12-20T12:31:07.287Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - atatus
   - analytics
 downloads:
-  monthly: 23
+  monthly: 27
 published: "2021-11-05T07:07:51.963Z"
 updated: "2021-11-07T09:05:10.058Z"
 ---
