@@ -12,7 +12,7 @@ keywords:
   - facebook-conversion-tracking
   - analytics
 downloads:
-  monthly: 17
+  monthly: 23
 published: "2021-11-05T07:07:55.614Z"
 updated: "2021-11-07T09:05:23.978Z"
 ---

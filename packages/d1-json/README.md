@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/nathanclevenger/d1-json"
 homepage: "https://github.com/nathanclevenger/d1-json#readme"
 downloads:
-  monthly: 10
+  monthly: 9
 published: "2023-10-04T10:07:02.986Z"
 updated: "2023-10-08T12:00:35.549Z"
 ---
