@@ -12,7 +12,7 @@ keywords:
   - foxmetrics
   - analytics
 downloads:
-  monthly: 26
+  monthly: 23
 published: "2021-11-05T07:07:55.636Z"
 updated: "2021-11-07T09:05:24.739Z"
 ---

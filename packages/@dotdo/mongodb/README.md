@@ -13,7 +13,7 @@ keywords:
   - compatibility
   - client
 downloads:
-  monthly: 19
+  monthly: 16
 published: "2026-01-22T15:58:42.382Z"
 updated: "2026-01-24T15:49:02.625Z"
 ---

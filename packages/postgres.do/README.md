@@ -18,7 +18,7 @@ keywords:
   - pglite
   - wasm
 downloads:
-  monthly: 163
+  monthly: 146
 published: "2026-01-22T15:59:15.325Z"
 updated: "2026-01-24T17:13:22.421Z"
 ---

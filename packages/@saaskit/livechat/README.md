@@ -12,7 +12,7 @@ keywords:
   - livechat
   - analytics
 downloads:
-  monthly: 26
+  monthly: 23
 published: "2021-11-05T07:07:58.838Z"
 updated: "2021-11-07T09:05:27.022Z"
 ---

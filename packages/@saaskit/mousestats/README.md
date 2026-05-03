@@ -12,7 +12,7 @@ keywords:
   - mousestats
   - analytics
 downloads:
-  monthly: 25
+  monthly: 23
 published: "2021-11-05T07:07:59.596Z"
 updated: "2021-11-07T09:05:29.335Z"
 ---
