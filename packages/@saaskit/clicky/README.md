@@ -12,7 +12,7 @@ keywords:
   - clicky
   - analytics
 downloads:
-  monthly: 20
+  monthly: 17
 published: "2021-11-05T07:07:53.664Z"
 updated: "2021-11-07T09:05:21.808Z"
 ---
