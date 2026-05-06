@@ -19,7 +19,7 @@ keywords:
   - tailwind
   - iconify
 downloads:
-  monthly: 117
+  monthly: 198
 published: "2025-05-06T11:38:24.633Z"
 updated: "2025-05-06T11:38:24.893Z"
 ---

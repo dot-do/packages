@@ -16,7 +16,7 @@ keywords:
   - cloudflare
   - r2
 downloads:
-  monthly: 178
+  monthly: 167
 published: "2026-01-22T15:58:38.749Z"
 updated: "2026-02-03T14:39:48.211Z"
 ---

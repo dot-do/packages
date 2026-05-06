@@ -12,7 +12,7 @@ keywords:
   - airtable
   - data
 downloads:
-  monthly: 16
+  monthly: 15
 published: "2021-11-07T08:56:22.723Z"
 updated: "2021-11-07T09:05:00.566Z"
 ---
