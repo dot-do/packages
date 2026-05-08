@@ -10,7 +10,7 @@ keywords:
   - ai
   - business
 downloads:
-  monthly: 39
+  monthly: 36
 published: "2025-12-17T19:44:45.086Z"
 updated: "2026-04-04T20:57:22.053Z"
 ---
