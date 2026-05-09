@@ -12,7 +12,7 @@ keywords:
   - awesm
   - analytics
 downloads:
-  monthly: 22
+  monthly: 21
 published: "2021-11-05T07:07:52.693Z"
 updated: "2021-11-07T09:05:10.043Z"
 ---

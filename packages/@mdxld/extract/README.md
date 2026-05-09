@@ -17,7 +17,7 @@ keywords:
   - headless
   - ai
 downloads:
-  monthly: 11
+  monthly: 12
 published: "2025-12-20T12:30:46.998Z"
 updated: "2025-12-20T13:26:40.842Z"
 ---
