@@ -20,7 +20,7 @@ keywords:
   - mcp
   - digital-object
 downloads:
-  monthly: 235
+  monthly: 240
 published: "2026-01-23T19:56:19.572Z"
 updated: "2026-01-26T16:01:33.487Z"
 ---

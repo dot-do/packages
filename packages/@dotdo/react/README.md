@@ -19,7 +19,7 @@ keywords:
   - edge
   - tanstack-query
 downloads:
-  monthly: 135
+  monthly: 140
 published: "2026-01-10T22:35:34.071Z"
 updated: "2026-01-12T11:58:48.823Z"
 ---
