@@ -14,7 +14,7 @@ keywords:
   - sql
   - typescript
 downloads:
-  monthly: 16
+  monthly: 23
 published: "2026-01-22T14:55:48.379Z"
 updated: "2026-02-03T11:30:56.985Z"
 ---

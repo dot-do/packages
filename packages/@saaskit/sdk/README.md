@@ -4,7 +4,7 @@ version: 0.2.13
 description: "Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it."
 license: MIT
 downloads:
-  monthly: 28
+  monthly: 34
 published: "2021-11-01T10:41:39.258Z"
 updated: "2021-11-07T08:56:38.496Z"
 ---

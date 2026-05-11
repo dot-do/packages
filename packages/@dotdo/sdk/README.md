@@ -13,7 +13,7 @@ keywords:
   - typescript
   - api
 downloads:
-  monthly: 6
+  monthly: 11
 published: "2026-01-26T16:01:54.397Z"
 updated: "2026-01-26T16:01:54.743Z"
 ---

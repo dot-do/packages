@@ -12,7 +12,7 @@ keywords:
   - chartbeat
   - analytics
 downloads:
-  monthly: 32
+  monthly: 44
 published: "2021-11-05T07:07:53.581Z"
 updated: "2021-11-07T09:05:20.820Z"
 ---
