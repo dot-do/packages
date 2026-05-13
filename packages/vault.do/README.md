@@ -13,7 +13,7 @@ keywords:
   - dotdo
   - key-management
 downloads:
-  monthly: 19
+  monthly: 21
 published: "2026-01-25T11:31:14.561Z"
 updated: "2026-01-25T11:31:14.825Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - webengage
   - analytics
 downloads:
-  monthly: 30
+  monthly: 31
 published: "2021-11-05T07:08:03.934Z"
 updated: "2021-11-07T09:05:33.536Z"
 ---

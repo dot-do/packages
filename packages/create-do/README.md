@@ -12,7 +12,7 @@ keywords:
   - scaffold
   - create
 downloads:
-  monthly: 9
+  monthly: 10
 published: "2026-01-08T23:28:00.761Z"
 updated: "2026-01-08T23:28:00.899Z"
 ---
