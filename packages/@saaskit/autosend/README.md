@@ -12,7 +12,7 @@ keywords:
   - autosend
   - analytics
 downloads:
-  monthly: 31
+  monthly: 30
 published: "2021-11-05T07:07:52.702Z"
 updated: "2021-11-07T09:05:10.029Z"
 ---

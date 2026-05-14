@@ -12,7 +12,7 @@ keywords:
   - elevio
   - analytics
 downloads:
-  monthly: 33
+  monthly: 32
 published: "2021-11-05T07:07:54.501Z"
 updated: "2021-11-07T09:05:23.860Z"
 ---

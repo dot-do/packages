@@ -13,7 +13,7 @@ keywords:
   - linked-data
   - typescript
 downloads:
-  monthly: 51
+  monthly: 57
 published: "2024-12-14T16:26:08.986Z"
 updated: "2024-12-27T21:43:01.170Z"
 ---
