@@ -12,7 +12,7 @@ keywords:
   - permutations
   - array
 downloads:
-  monthly: 17
+  monthly: 26
 published: "2023-11-03T19:30:21.864Z"
 updated: "2023-11-03T22:15:30.207Z"
 ---
