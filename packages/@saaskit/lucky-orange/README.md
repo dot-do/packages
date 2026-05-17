@@ -12,7 +12,7 @@ keywords:
   - lucky-orange
   - analytics
 downloads:
-  monthly: 33
+  monthly: 28
 published: "2021-11-05T07:07:58.807Z"
 updated: "2021-11-07T09:05:27.745Z"
 ---

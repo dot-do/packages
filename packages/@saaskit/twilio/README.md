@@ -12,7 +12,7 @@ keywords:
   - twilio
   - api
 downloads:
-  monthly: 12
+  monthly: 10
 published: "2021-11-07T08:56:35.518Z"
 updated: "2021-11-07T09:05:32.989Z"
 ---

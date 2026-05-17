@@ -12,7 +12,7 @@ keywords:
   - tapstream
   - analytics
 downloads:
-  monthly: 35
+  monthly: 32
 published: "2021-11-05T07:08:02.985Z"
 updated: "2021-11-07T09:05:32.682Z"
 ---

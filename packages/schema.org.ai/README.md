@@ -13,7 +13,7 @@ keywords:
   - business-as-code
   - mdxld
 downloads:
-  monthly: 194
+  monthly: 196
 published: "2026-05-05T20:25:59.226Z"
 updated: "2026-05-05T20:25:59.407Z"
 ---

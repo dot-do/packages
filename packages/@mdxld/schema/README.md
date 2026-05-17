@@ -19,7 +19,7 @@ keywords:
   - structured data
   - structured-data
 downloads:
-  monthly: 48
+  monthly: 51
 published: "2025-05-21T09:31:28.711Z"
 updated: "2025-05-21T09:31:29.079Z"
 ---
