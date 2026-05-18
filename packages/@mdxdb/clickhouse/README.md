@@ -16,7 +16,7 @@ keywords:
   - git-sync
   - bi-directional-sync
 downloads:
-  monthly: 29
+  monthly: 27
 published: "2024-12-17T11:48:43.201Z"
 updated: "2025-12-20T12:31:14.451Z"
 ---

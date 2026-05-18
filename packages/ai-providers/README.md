@@ -14,7 +14,7 @@ keywords:
   - gateway
   - primitives
 downloads:
-  monthly: 703
+  monthly: 747
 published: "2025-04-14T08:23:46.746Z"
 updated: "2026-01-12T18:06:18.680Z"
 ---
