@@ -10,7 +10,7 @@ keywords:
   - state-machine
   - primitives
 downloads:
-  monthly: 859
+  monthly: 862
 published: "2024-10-22T10:48:30.486Z"
 updated: "2026-01-12T18:06:12.563Z"
 ---
