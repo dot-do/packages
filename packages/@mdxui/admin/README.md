@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/dot-do/ui"
 homepage: "https://github.com/dot-do/ui#readme"
 downloads:
-  monthly: 55
+  monthly: 59
 published: "2026-01-11T12:25:44.416Z"
 updated: "2026-01-29T23:14:06.097Z"
 ---

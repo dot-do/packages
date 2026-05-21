@@ -14,7 +14,7 @@ keywords:
   - client
   - sdk
 downloads:
-  monthly: 32
+  monthly: 34
 published: "2026-01-20T11:31:35.245Z"
 updated: "2026-01-23T17:20:09.212Z"
 ---

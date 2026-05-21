@@ -11,7 +11,7 @@ keywords:
   - terminal
   - cli
 downloads:
-  monthly: 17
+  monthly: 18
 published: "2026-01-24T14:37:58.999Z"
 updated: "2026-01-24T14:37:59.252Z"
 ---
