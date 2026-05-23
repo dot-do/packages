@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/drivly/mongo-fetch"
 homepage: "https://github.com/drivly/mongo-fetch#readme"
 downloads:
-  monthly: 7
+  monthly: 10
 published: "2023-04-07T16:57:31.198Z"
 updated: "2023-04-07T16:57:31.415Z"
 ---
