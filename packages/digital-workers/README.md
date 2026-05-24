@@ -10,7 +10,7 @@ keywords:
   - workers
   - primitives
 downloads:
-  monthly: 48
+  monthly: 45
 published: "2025-05-06T12:47:12.658Z"
 updated: "2026-01-12T18:25:59.769Z"
 ---

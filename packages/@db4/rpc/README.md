@@ -14,7 +14,7 @@ keywords:
   - durable-objects
   - magic-map
 downloads:
-  monthly: 48
+  monthly: 45
 published: "2026-01-20T11:32:10.860Z"
 updated: "2026-01-23T17:20:40.713Z"
 ---

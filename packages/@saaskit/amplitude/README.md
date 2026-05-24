@@ -12,7 +12,7 @@ keywords:
   - amplitude
   - analytics
 downloads:
-  monthly: 881
+  monthly: 1015
 published: "2021-11-05T07:07:51.960Z"
 updated: "2021-11-07T09:05:00.541Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - datadog
   - monitoring
 downloads:
-  monthly: 15
+  monthly: 17
 published: "2021-11-07T08:56:26.122Z"
 updated: "2021-11-07T09:05:23.323Z"
 ---
