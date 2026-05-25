@@ -22,7 +22,7 @@ keywords:
   - cdc
   - time-travel
 downloads:
-  monthly: 29
+  monthly: 31
 published: "2026-01-22T15:58:53.930Z"
 updated: "2026-01-24T15:49:14.403Z"
 ---

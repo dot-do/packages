@@ -15,7 +15,7 @@ keywords:
   - spinner
   - progress
 downloads:
-  monthly: 59
+  monthly: 65
 published: "2026-01-23T18:26:43.483Z"
 updated: "2026-01-26T16:01:44.659Z"
 ---

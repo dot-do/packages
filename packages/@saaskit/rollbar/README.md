@@ -12,7 +12,7 @@ keywords:
   - rollbar
   - monitoring
 downloads:
-  monthly: 30
+  monthly: 29
 published: "2021-11-05T07:08:01.262Z"
 updated: "2021-11-07T09:05:30.863Z"
 ---
