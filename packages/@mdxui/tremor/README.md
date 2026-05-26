@@ -14,7 +14,7 @@ keywords:
   - charts
   - components
 downloads:
-  monthly: 36
+  monthly: 37
 published: "2026-01-24T14:38:33.282Z"
 updated: "2026-02-12T20:57:30.280Z"
 ---

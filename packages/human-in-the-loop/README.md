@@ -1,6 +1,6 @@
 ---
 name: human-in-the-loop
-version: 2.1.3
+version: 2.2.2
 description: Primitives for integrating human oversight and intervention in AI workflows
 license: MIT
 keywords:
@@ -9,12 +9,14 @@ keywords:
   - hitl
   - primitives
 downloads:
-  monthly: 53
+  monthly: 54
 published: "2025-05-06T11:39:18.502Z"
-updated: "2026-01-12T18:26:11.008Z"
+updated: "2026-05-26T03:19:53.574Z"
 ---
 
 # human-in-the-loop
+
+![Stability: Alpha](https://img.shields.io/badge/stability-alpha-orange)
 
 Primitives for integrating human oversight and intervention in AI workflows. Implements the digital-workers interface for humans operating within a company boundary.
 

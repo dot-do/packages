@@ -4,7 +4,7 @@ version: 3.0.1
 description: AI chat components for MDXUI - build conversational AI experiences
 license: MIT
 downloads:
-  monthly: 12
+  monthly: 27
 published: "2026-01-24T14:38:33.124Z"
 updated: "2026-01-24T14:38:33.403Z"
 ---

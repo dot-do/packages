@@ -13,7 +13,7 @@ keywords:
   - mongodb
   - sqlite
 downloads:
-  monthly: 817
+  monthly: 808
 published: "2025-04-14T08:25:34.659Z"
 updated: "2025-04-14T08:25:34.989Z"
 ---

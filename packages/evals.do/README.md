@@ -14,7 +14,7 @@ keywords:
   - quality
   - performance
 downloads:
-  monthly: 873
+  monthly: 865
 published: "2025-04-14T08:18:58.113Z"
 updated: "2025-04-14T08:18:58.399Z"
 ---
