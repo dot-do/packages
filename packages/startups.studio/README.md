@@ -1,6 +1,6 @@
 ---
 name: startups.studio
-version: 0.10.0
+version: 0.11.0
 description: Define your entire business as code - CLI for syncing MDX business definitions
 license: MIT
 keywords:
@@ -11,7 +11,7 @@ keywords:
 downloads:
   monthly: 378
 published: "2025-12-17T19:48:13.912Z"
-updated: "2026-05-25T20:43:45.483Z"
+updated: "2026-05-26T11:08:47.635Z"
 ---
 
 # startups.studio
@@ -59,9 +59,10 @@ const validatedIdeas = await ideas.find({ status: 'validated', limit: 10 })
 
 Environment overrides:
 
-- `STARTUPS_STUDIO_API_KEY`
-- `STARTUPS_STUDIO_API_URL`
-- `STARTUPS_STUDIO_ORG`
+- `STARTUPS_STUDIO_API_KEY` — admin / cascade API key (single shared secret today)
+- `STARTUPS_STUDIO_API_URL` — admin API base URL (Payload control plane)
+- `STARTUPS_STUDIO_ORG` — active studio slug
+- `STARTUPS_EXPLORE_BASE_URL` — cascade-as-a-service base URL (defaults to `https://explore.startups.studio`); used by `runFoundationSprint`
 
 ## Scripts
 

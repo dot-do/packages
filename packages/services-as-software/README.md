@@ -1,6 +1,6 @@
 ---
 name: services-as-software
-version: 2.1.3
+version: 2.4.0
 description: Primitives for building AI-powered services that operate as software
 license: MIT
 keywords:
@@ -11,10 +11,12 @@ keywords:
 downloads:
   monthly: 66
 published: "2025-05-01T09:39:46.081Z"
-updated: "2026-01-12T18:26:12.728Z"
+updated: "2026-05-26T14:47:18.033Z"
 ---
 
 # services-as-software
+
+![Stability: Experimental](https://img.shields.io/badge/stability-experimental-red)
 
 Primitives for building AI-powered services that operate as software. Services are a superset of digital-workers with a payment/business overlay, capable of crossing company/business boundaries.
 

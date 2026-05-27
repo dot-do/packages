@@ -1,6 +1,6 @@
 ---
 name: ai-props
-version: 2.1.3
+version: 2.4.0
 description: AI-powered props primitives for intelligent component properties
 license: MIT
 keywords:
@@ -11,10 +11,12 @@ keywords:
 downloads:
   monthly: 93
 published: "2024-12-14T23:14:35.362Z"
-updated: "2026-01-12T18:25:57.755Z"
+updated: "2026-05-26T14:46:41.833Z"
 ---
 
 # ai-props
+
+![Stability: Experimental](https://img.shields.io/badge/stability-experimental-red)
 
 **Stop manually writing placeholder props. Let AI fill in the blanks.**
 

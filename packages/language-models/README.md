@@ -1,6 +1,6 @@
 ---
 name: language-models
-version: 2.1.3
+version: 2.4.0
 description: Model listing and resolution for LLM providers
 license: MIT
 keywords:
@@ -12,10 +12,12 @@ keywords:
 downloads:
   monthly: 222
 published: "2025-05-01T09:39:20.437Z"
-updated: "2026-01-12T18:06:14.528Z"
+updated: "2026-05-26T14:47:14.528Z"
 ---
 
 # language-models
+
+![Stability: Experimental](https://img.shields.io/badge/stability-experimental-red)
 
 **Stop memorizing model IDs. Start shipping.**
 

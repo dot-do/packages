@@ -1,6 +1,6 @@
 ---
 name: digital-products
-version: 2.1.3
+version: 2.4.0
 description: Primitives for defining and building digital products
 license: MIT
 keywords:
@@ -12,10 +12,12 @@ keywords:
 downloads:
   monthly: 43
 published: "2025-12-23T02:31:50.630Z"
-updated: "2026-01-12T18:26:06.459Z"
+updated: "2026-05-26T14:46:59.740Z"
 ---
 
 # digital-products
+
+![Stability: Experimental](https://img.shields.io/badge/stability-experimental-red)
 
 Primitives for defining and building digital products.
 

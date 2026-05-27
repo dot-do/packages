@@ -1,6 +1,6 @@
 ---
 name: autonomous-agents
-version: 2.1.3
+version: 2.4.0
 description: Primitives for building and orchestrating autonomous AI agents
 license: MIT
 keywords:
@@ -11,10 +11,12 @@ keywords:
 downloads:
   monthly: 30
 published: "2025-05-06T09:55:12.312Z"
-updated: "2026-01-12T18:26:01.746Z"
+updated: "2026-05-26T14:46:53.487Z"
 ---
 
 # autonomous-agents
+
+![Stability: Beta](https://img.shields.io/badge/stability-beta-yellow)
 
 Primitives for building and orchestrating autonomous AI agents. Implements the `digital-workers` interface for AI agents operating within a company boundary.
 

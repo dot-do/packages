@@ -1,6 +1,6 @@
 ---
 name: ai-providers
-version: 2.1.3
+version: 2.4.0
 description: Unified AI provider registry with Cloudflare AI Gateway support
 license: MIT
 keywords:
@@ -16,10 +16,12 @@ keywords:
 downloads:
   monthly: 943
 published: "2025-04-14T08:23:46.746Z"
-updated: "2026-01-12T18:06:18.680Z"
+updated: "2026-05-26T14:46:44.390Z"
 ---
 
 # ai-providers
+
+![Stability: Stable](https://img.shields.io/badge/stability-stable-green)
 
 **Stop juggling API keys. Start building.**
 

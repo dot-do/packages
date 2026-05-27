@@ -1,6 +1,6 @@
 ---
 name: ai-functions
-version: 2.1.3
+version: 2.4.0
 description: Core AI primitives for building intelligent applications
 license: MIT
 keywords:
@@ -13,10 +13,12 @@ keywords:
 downloads:
   monthly: 2256
 published: "2023-07-11T20:24:24.176Z"
-updated: "2026-01-12T18:25:49.824Z"
+updated: "2026-05-26T14:46:35.913Z"
 ---
 
 # ai-functions
+
+![Stability: Stable](https://img.shields.io/badge/stability-stable-green)
 
 **Calling AI models shouldn't require 50 lines of boilerplate.**
 
@@ -403,6 +405,42 @@ const summarize = defineFunction({
 const trip = await planTrip.call({ destination: 'Paris', travelers: 4 })
 const summary = await summarize.call({ text: longArticle, maxLength: 100 })
 ```
+
+### The four Function kinds
+
+`defineFunction` accepts a discriminated union (`FunctionDefinition`). Each `type` has a distinct execution contract:
+
+| `type` | Meaning | At call time |
+|--------|---------|--------------|
+| `code` | **Deterministic handler** — a fetch/transform/rule | Runs your `handler` (or inline `code` body). **No model.** |
+| `generative` | One-shot generation | `generateObject` / `generateText` |
+| `agentic` | Plan-execute-observe tool loop | Iterative model + tool calls |
+| `human` | Human/approval step | Generates channel UI, returns a pending result |
+
+```typescript
+// Code = deterministic. Supply a handler (or an inline `code` string).
+const calculateTax = defineFunction({
+  type: 'code',
+  name: 'calculateTax',
+  args: { amount: 'Amount (number)', rate: 'Rate (number)' },
+  handler: ({ amount, rate }) => amount * rate, // runs every call, no LLM
+})
+await calculateTax.call({ amount: 100, rate: 0.2 }) // => 20
+```
+
+> **Migration (breaking, as of this release):** previously `type: 'code'` LLM-**generated** code at call time. `Code` is now **deterministic** — it requires a `handler` or inline `code` body and never calls a model. A `code` function with neither now throws.
+>
+> If you relied on the old behavior (have a model *author* code), use the new explicit `generateCode()` export, or a `generative` function whose output is source text:
+>
+> ```typescript
+> import { generateCode } from 'ai-functions'
+> const src = await generateCode(
+>   { name: 'fib', args: { n: '(number)' }, language: 'typescript' },
+>   { n: 10 }
+> ) // => string of generated source
+> ```
+>
+> The `generate('code', prompt)` primitive is unchanged — it is a string-prompt code-authoring helper, distinct from the `FunctionDefinition` union.
 
 ## API Reference
 

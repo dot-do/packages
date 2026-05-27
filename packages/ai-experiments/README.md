@@ -1,7 +1,7 @@
 ---
 name: ai-experiments
-version: 2.1.3
-description: AI-powered experimentation primitives for testing and evaluating models
+version: 2.4.0
+description: Runtime A/B testing for AI variants in production - traffic splitting, decision strategies, and ClickHouse-backed outcome tracking
 license: MIT
 keywords:
   - ai
@@ -12,12 +12,24 @@ keywords:
 downloads:
   monthly: 176
 published: "2025-05-06T08:53:58.851Z"
-updated: "2026-01-12T18:25:55.969Z"
+updated: "2026-05-26T14:46:32.437Z"
 ---
 
 # ai-experiments
 
-AI-powered experimentation primitives for testing and evaluating models.
+![Stability: Experimental](https://img.shields.io/badge/stability-experimental-red)
+
+Runtime A/B testing for AI variants in production. Traffic splitting, multi-armed bandits, parameter sweeps, and ClickHouse-backed outcome tracking via the canonical `ai-database` adapter.
+
+## Lifecycle
+
+**Runtime (production).** `ai-experiments` is for splitting live traffic across model/prompt/parameter variants and measuring outcomes against real users. Reach for it when you need to learn which variant wins under production conditions — not in a test suite.
+
+## Not for
+
+- **Unit testing.** If you want to assert that a specific input produces a specific output during development or CI, use [`ai-tests`](../ai-tests) plus `vitest`. `ai-experiments` exists to *measure* outcomes across users, not to *assert* them against fixtures.
+- **Sandboxing untrusted code.** That's [`ai-evaluate`](../ai-evaluate)'s job.
+- **Offline-only experiments.** While `Experiment()` works offline for parameter sweeps, the package's value comes from production tracking — if you're never deploying the variants, a plain `for` loop is simpler.
 
 ## Overview
 

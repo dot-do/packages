@@ -1,6 +1,6 @@
 ---
 name: ai-workflows
-version: 2.1.3
+version: 2.4.0
 description: Event-driven workflows with state machine support
 license: MIT
 keywords:
@@ -12,10 +12,12 @@ keywords:
 downloads:
   monthly: 998
 published: "2024-10-22T10:48:30.486Z"
-updated: "2026-01-12T18:06:12.563Z"
+updated: "2026-05-26T14:46:50.578Z"
 ---
 
 # ai-workflows
+
+![Stability: Beta](https://img.shields.io/badge/stability-beta-yellow)
 
 **Event-driven AI workflows shouldn't require a PhD in distributed systems.**
 

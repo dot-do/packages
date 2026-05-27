@@ -1,7 +1,7 @@
 ---
 name: ai-evaluate
-version: 2.2.0
-description: Secure code execution in sandboxed environments
+version: 2.4.0
+description: Runtime sandboxed execution of AI-generated code in V8 isolates
 license: MIT
 keywords:
   - ai
@@ -14,10 +14,26 @@ keywords:
 downloads:
   monthly: 167
 published: "2025-12-20T12:15:21.736Z"
-updated: "2026-01-26T01:55:29.728Z"
+updated: "2026-05-26T14:46:29.272Z"
 ---
 
 # ai-evaluate
+
+![Stability: Experimental](https://img.shields.io/badge/stability-experimental-red)
+
+Runtime sandboxed execution of AI-generated (or otherwise untrusted) code in V8 isolates, backed by Cloudflare Workers `worker_loaders` in production and Miniflare locally.
+
+## Lifecycle
+
+**Runtime (production).** `ai-evaluate` is for executing untrusted code while your application is serving real requests — agent-generated scripts, user-supplied snippets, dynamic tool implementations. Reach for it when you need to run code you didn't write at request time without exposing your host environment.
+
+## Not for
+
+- **Replacing your test runner.** Unit and integration tests should use [`ai-tests`](../ai-tests) plus `vitest`. `ai-evaluate` runs *inside* production; it isn't a vitest substitute.
+- **A/B testing variants under traffic.** Use [`ai-experiments`](../ai-experiments) for production traffic splitting and outcome measurement.
+- **Trusted, statically-known code.** If you wrote and shipped the code yourself, just call it directly — sandboxing has overhead.
+
+---
 
 **You need to run user code. But untrusted code is terrifying.**
 

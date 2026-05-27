@@ -1,6 +1,6 @@
 ---
 name: digital-tools
-version: 2.1.3
+version: 2.4.0
 description: Tools that can be used by both humans and AI agents
 license: MIT
 keywords:
@@ -13,10 +13,12 @@ keywords:
 downloads:
   monthly: 47
 published: "2025-12-23T02:31:58.139Z"
-updated: "2026-01-12T18:26:09.157Z"
+updated: "2026-05-26T14:47:06.058Z"
 ---
 
 # Digital Tools
+
+![Stability: Experimental](https://img.shields.io/badge/stability-experimental-red)
 
 Entity types (Nouns) and providers for digital tools usable by both humans and AI agents.
 
@@ -1093,5 +1095,4 @@ AI and machine learning entities.
 |--------|----------------|
 | **Model** | `name`, `provider`, `modelId`, `type`, `contextWindow`, `maxOutputTokens`, `supportsTools`, `status` |
 | **Prompt** | `name`, `template`, `systemPrompt`, `variables`, `defaultModel`, `temperature`, `version` |
-| **Completion** | `input`, `output`, `modelId`, `inputTokens`, `outputTokens`, `cost`, `latency`, `status` |
-| **AIConversation** | `title`, `systemPr
+| **Completion** | `input`, `output`, `modelId`, `inputTokens`, `o

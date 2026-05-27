@@ -1,6 +1,6 @@
 ---
 name: "@graphdl/core"
-version: 0.3.0
+version: 0.4.0
 description: Pure TypeScript DSL for defining entity graphs with noun/verb semantics and relationship operators
 license: MIT
 repository: "https://github.com/ai-primitives/primitives.org.ai"
@@ -21,10 +21,12 @@ keywords:
 downloads:
   monthly: 1750
 published: "2023-11-05T22:36:26.832Z"
-updated: "2026-01-30T19:56:37.638Z"
+updated: "2026-05-26T12:00:50.645Z"
 ---
 
 # @graphdl/core
+
+![Stability: Experimental](https://img.shields.io/badge/stability-experimental-red)
 
 **Define entity graphs with the expressiveness of natural language**
 

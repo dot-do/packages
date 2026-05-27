@@ -1,6 +1,6 @@
 ---
 name: human-in-the-loop
-version: 2.2.2
+version: 2.4.0
 description: Primitives for integrating human oversight and intervention in AI workflows
 license: MIT
 keywords:
@@ -11,7 +11,7 @@ keywords:
 downloads:
   monthly: 54
 published: "2025-05-06T11:39:18.502Z"
-updated: "2026-05-26T03:19:53.574Z"
+updated: "2026-05-26T14:47:12.314Z"
 ---
 
 # human-in-the-loop

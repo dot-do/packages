@@ -1,6 +1,6 @@
 ---
 name: digital-workers
-version: 2.1.3
+version: 2.4.0
 description: Common abstract interface over AI Agents and Humans
 license: MIT
 keywords:
@@ -12,10 +12,12 @@ keywords:
 downloads:
   monthly: 56
 published: "2025-05-06T12:47:12.658Z"
-updated: "2026-01-12T18:25:59.769Z"
+updated: "2026-05-26T14:47:09.332Z"
 ---
 
 # digital-workers
+
+![Stability: Beta](https://img.shields.io/badge/stability-beta-yellow)
 
 **You're building AI-powered workflows. But who should actually do the work?**
 

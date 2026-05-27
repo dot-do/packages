@@ -1,6 +1,6 @@
 ---
 name: business-as-code
-version: 2.1.3
+version: 2.4.0
 description: Primitives for expressing business logic and processes as code
 license: MIT
 keywords:
@@ -11,10 +11,12 @@ keywords:
 downloads:
   monthly: 1000
 published: "2025-04-12T15:45:33.502Z"
-updated: "2026-01-12T18:26:04.126Z"
+updated: "2026-05-26T14:46:56.875Z"
 ---
 
 # business-as-code
+
+![Stability: Experimental](https://img.shields.io/badge/stability-experimental-red)
 
 Primitives for expressing business logic, strategy, and operations as code. Define your entire business model—from vision and goals to products, services, processes, KPIs, OKRs, and financials—in a declarative, type-safe way.
 
