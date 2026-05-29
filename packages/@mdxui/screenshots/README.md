@@ -16,7 +16,7 @@ keywords:
   - kpi
   - charts
 downloads:
-  monthly: 195
+  monthly: 250
 published: "2026-05-26T22:13:59.512Z"
 updated: "2026-05-26T22:26:42.595Z"
 ---
