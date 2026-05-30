@@ -1,7 +1,7 @@
 ---
 name: "@mdxui/screenshots"
-version: 0.1.1
-description: Browser-frame + dashboard chrome + KPI/chart/table panels for landing-page product mockups. Renders believable product UI for screenshots, marketing, and waitlist funnels.
+version: 0.2.0
+description: Dashboard + browser-frame screenshot mocks for landing-page hero media (BrowserFrame, DashboardShell, panels, cells, grids)
 license: MIT
 repository: "https://github.com/dot-do/ui"
 homepage: "https://mdxui.dev"
@@ -9,23 +9,33 @@ keywords:
   - mdxui
   - react
   - screenshots
-  - browser-frame
   - dashboard
+  - browser-frame
+  - hero
   - landing-page
-  - marketing
-  - kpi
-  - charts
+  - components
 downloads:
-  monthly: 250
+  monthly: 263
 published: "2026-05-26T22:13:59.512Z"
-updated: "2026-05-26T22:26:42.595Z"
+updated: "2026-05-29T12:18:47.652Z"
 ---
 
 # @mdxui/screenshots
 
-Dashboard component library for screenshot generation and marketing visuals.
+Dashboard + browser-frame screenshot mocks for **landing-page hero media** and marketing visuals.
 
-> **Note**: This package is in active development. Core components (grids, KPIs, charts, tables) are currently being migrated from `apps/screenshots`. See [Component Status](#component-status) below.
+> **Identity (reconciled — wave PRD W-A2 / ADR 0003 open thread):**
+> This package's canonical name is **`@mdxui/screenshots`** (what the renderer
+> imports). It was previously in a three-way-broken state — `package.json`
+> declared `@mdxui/dashboard-panels@6.0.0`, the published artifact was
+> `@mdxui/screenshots@0.1.1`, and the source barrel said `0.0.1`. All three are
+> now reconciled to **`@mdxui/screenshots`** at **`0.2.0`** (next above the
+> published `0.1.1`). The one in-repo consumer (`@mdxui/tremor`) was updated to
+> the canonical name.
+
+> **General-SaaS hero media:** the new `HeroScreenshot` component
+> (`@mdxui/screenshots/hero`) is the clean hero-media prop surface for the
+> `headless = false` Software dialect — see [Hero Media](#hero-media) below.
 
 ## Features
 
@@ -78,6 +88,41 @@ export function DashboardDemo() {
   )
 }
 ```
+
+## Hero Media
+
+`HeroScreenshot` is a **drop-in dashboard mock for landing-page hero surfaces**
+— the General-SaaS (`headless = false`) Software dialect (ADR 0003). It renders
+a browser-framed app shell (sidebar nav + header + KPI tiles + content rows)
+**entirely from text props**, so a landing page can use a realistic product
+mock as hero media without a real screenshot asset.
+
+```tsx
+import { HeroScreenshot } from '@mdxui/screenshots/hero'
+
+<HeroScreenshot
+  url="app.acme.com/home"
+  appName="Acme"
+  nav={['Dashboard', 'Projects', 'Reports', 'Settings']}
+  kpis={[
+    { label: 'MRR', value: '$48.2k', delta: '+12.4%' },
+    { label: 'Active', value: '1,204' },
+    { label: 'Churn', value: '1.8%' },
+    { label: 'NPS', value: '62' },
+  ]}
+  rows={[
+    { title: 'Q3 launch plan', detail: 'Updated 2h ago · 8 tasks' },
+    { title: 'Onboarding flow', detail: 'In review · 3 comments' },
+  ]}
+/>
+```
+
+The prop surface (`HeroScreenshotProps`) is **byte-aligned with the renderer's
+`SoftwareContent.hero.screenshot` wire shape** (`{ url, appName, nav, kpis,
+rows }`), so the renderer maps the wire object straight onto these props instead
+of hand-composing `BrowserFrame` + `DashboardShell`. Unlike `DashboardShell`
+(which wires the interactive `SidebarProvider` for real dashboards), this is a
+static, self-contained mock optimized for rendering as image-like hero media.
 
 ## Component Catalog
 

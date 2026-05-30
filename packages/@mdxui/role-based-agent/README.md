@@ -1,6 +1,6 @@
 ---
 name: "@mdxui/role-based-agent"
-version: 0.1.0-alpha.1
+version: 0.1.4
 description: "Role-Based Agent site template — landing components for AI hires that own a role (e.g., AI CFO, AI VP of Sales). Composes @mdxui/neo blocks with role-badge + capabilities pattern."
 license: MIT
 repository: "https://github.com/dot-do/ui"
@@ -15,9 +15,9 @@ keywords:
   - components
   - templates
 downloads:
-  monthly: 0
+  monthly: 55
 published: "2026-05-28T14:36:00.398Z"
-updated: "2026-05-28T14:36:00.657Z"
+updated: "2026-05-29T20:26:46.322Z"
 ---
 
 ERROR: No README data found!
