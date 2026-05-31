@@ -9,7 +9,7 @@ keywords:
   - primitives
   - typescript
 downloads:
-  monthly: 708
+  monthly: 829
 published: "2026-01-09T13:30:23.411Z"
 updated: "2026-05-26T14:47:20.417Z"
 ---

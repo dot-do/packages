@@ -18,7 +18,7 @@ keywords:
   - indexeddb
   - opfs
 downloads:
-  monthly: 24
+  monthly: 26
 published: "2026-01-20T11:29:02.104Z"
 updated: "2026-01-23T17:21:19.765Z"
 ---
