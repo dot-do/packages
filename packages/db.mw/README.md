@@ -12,7 +12,7 @@ keywords:
   - json-ld
   - typescript
 downloads:
-  monthly: 11
+  monthly: 13
 published: "2024-12-15T15:23:25.446Z"
 updated: "2024-12-15T15:23:25.776Z"
 ---

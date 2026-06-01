@@ -6,7 +6,7 @@ license: Apache-2.0
 repository: "https://github.com/electric-sql/pglite"
 homepage: "https://pglite.dev"
 downloads:
-  monthly: 16
+  monthly: 18
 published: "2026-01-24T15:50:15.372Z"
 updated: "2026-01-24T15:50:15.718Z"
 ---
