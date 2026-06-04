@@ -15,7 +15,7 @@ keywords:
   - analytics
   - streaming
 downloads:
-  monthly: 34
+  monthly: 37
 published: "2026-01-26T14:43:14.146Z"
 updated: "2026-01-26T14:43:14.400Z"
 ---

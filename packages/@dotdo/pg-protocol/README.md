@@ -12,7 +12,7 @@ keywords:
   - wasm
   - pg-protocol
 downloads:
-  monthly: 17
+  monthly: 21
 published: "2026-01-22T15:58:58.577Z"
 updated: "2026-01-24T15:49:19.517Z"
 ---

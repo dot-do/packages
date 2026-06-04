@@ -12,7 +12,7 @@ keywords:
   - sendgrid
   - api
 downloads:
-  monthly: 25
+  monthly: 27
 published: "2021-11-07T08:56:34.530Z"
 updated: "2021-11-07T09:05:31.608Z"
 ---

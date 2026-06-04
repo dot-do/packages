@@ -11,7 +11,7 @@ keywords:
   - libsql
   - turso
 downloads:
-  monthly: 14
+  monthly: 16
 published: "2026-01-22T11:02:51.851Z"
 updated: "2026-01-22T11:02:52.097Z"
 ---
