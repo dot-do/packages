@@ -1,12 +1,12 @@
 ---
 name: "@mdxui/primitives"
-version: 6.0.0
+version: 6.1.0
 description: "> Low-level UI components for the mdxui ecosystem."
 license: MIT
 downloads:
   monthly: 1237
 published: "2025-12-23T12:36:34.211Z"
-updated: "2026-01-24T14:38:00.359Z"
+updated: "2026-06-10T16:36:11.009Z"
 ---
 
 # @mdxui/primitives
@@ -97,8 +97,6 @@ pnpm add @mdxui/primitives
 | `Orbital` | Orbiting elements in a circle |
 | `ShineBorder` | Animated shimmering border |
 | `BorderBeam` | Moving beam border effect |
-| `Spotlight` | Cursor-following spotlight |
-| `Particles` | Floating particle background |
 | `TextReveal` | Scroll-triggered text reveal |
 | `AnimatedCard` | Interactive tilt card |
 
@@ -194,7 +192,7 @@ Override individual components via `className`:
 | `@mdxui/cockpit` | Dashboard widgets, form inputs, navigation |
 | `@mdxui/admin` | Data tables, form fields, action buttons |
 | `@mdxui/app` | App shell, sidebar, navigation |
-| `@mdxui/blocks` | Marketing section components |
+| `@mdxui/neo` | Marketing section components |
 
 ### Key Principle
 

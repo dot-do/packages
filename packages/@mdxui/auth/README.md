@@ -1,6 +1,6 @@
 ---
 name: "@mdxui/auth"
-version: 1.5.2
+version: 1.5.3
 description: Authentication components and WorkOS AuthKit wrappers for mdxui
 license: MIT
 repository: "https://github.com/dot-do/ui"
@@ -16,7 +16,7 @@ keywords:
 downloads:
   monthly: 165
 published: "2026-01-24T14:38:23.898Z"
-updated: "2026-01-29T23:12:12.478Z"
+updated: "2026-06-10T17:00:47.201Z"
 ---
 
 # @mdxui/auth

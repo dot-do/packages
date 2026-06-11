@@ -1,6 +1,6 @@
 ---
 name: "@mdxui/cockpit"
-version: 7.0.5
+version: 7.0.6
 description: App template components for mdxui - developer dashboards, auth flows, and SaaS patterns
 license: MIT
 repository: "https://github.com/dot-do/ui"
@@ -16,7 +16,7 @@ keywords:
 downloads:
   monthly: 101
 published: "2025-12-23T12:36:54.044Z"
-updated: "2026-01-29T23:13:36.160Z"
+updated: "2026-06-10T17:01:21.671Z"
 ---
 
 # @mdxui/cockpit

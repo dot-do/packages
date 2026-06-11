@@ -1,12 +1,12 @@
 ---
 name: "@mdxui/widgets"
-version: 6.1.0
+version: 6.1.1
 description: Complex, interactive UI widgets for building applications.
 license: MIT
 downloads:
   monthly: 250
 published: "2024-12-24T13:34:16.765Z"
-updated: "2026-01-29T23:13:46.268Z"
+updated: "2026-06-10T17:01:37.912Z"
 ---
 
 # @mdxui/widgets
