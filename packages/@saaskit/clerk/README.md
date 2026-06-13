@@ -12,7 +12,7 @@ keywords:
   - clerk
   - auth
 downloads:
-  monthly: 10
+  monthly: 16
 published: "2021-11-07T08:56:25.349Z"
 updated: "2021-11-07T09:05:21.160Z"
 ---

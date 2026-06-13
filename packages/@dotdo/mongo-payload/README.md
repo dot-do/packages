@@ -23,7 +23,7 @@ keywords:
   - edge-computing
   - serverless
 downloads:
-  monthly: 17
+  monthly: 20
 published: "2026-01-05T11:35:55.244Z"
 updated: "2026-01-05T11:35:55.558Z"
 ---
