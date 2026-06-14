@@ -1,6 +1,6 @@
 ---
 name: "@mdxui/themes"
-version: 6.1.0
+version: 6.2.0
 description: Design tokens, CSS variables, and theme management for mdxui
 license: MIT
 repository: "https://github.com/dot-do/ui"
@@ -17,9 +17,9 @@ keywords:
   - tailwind
   - mdxui
 downloads:
-  monthly: 1374
+  monthly: 1520
 published: "2025-12-23T12:36:30.274Z"
-updated: "2026-06-05T13:40:07.442Z"
+updated: "2026-06-13T18:06:52.916Z"
 ---
 
 # @mdxui/themes

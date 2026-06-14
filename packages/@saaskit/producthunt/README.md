@@ -6,7 +6,7 @@ license: MIT
 repository: saas-studio/saaskit/integrations/twitter
 homepage: "https://saaskit.js.org/"
 downloads:
-  monthly: 29
+  monthly: 24
 published: "2021-11-01T13:00:46.467Z"
 updated: "2021-11-07T08:56:36.990Z"
 ---

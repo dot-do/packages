@@ -12,7 +12,7 @@ keywords:
   - gauges
   - analytics
 downloads:
-  monthly: 28
+  monthly: 27
 published: "2021-11-05T07:07:56.332Z"
 updated: "2021-11-07T09:05:25.337Z"
 ---

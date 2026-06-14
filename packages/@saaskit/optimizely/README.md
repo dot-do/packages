@@ -12,7 +12,7 @@ keywords:
   - optimizely
   - analytics
 downloads:
-  monthly: 27
+  monthly: 31
 published: "2021-11-05T07:08:00.198Z"
 updated: "2021-11-07T09:05:29.951Z"
 ---
