@@ -12,7 +12,7 @@ keywords:
   - buttercms
   - cms
 downloads:
-  monthly: 30
+  monthly: 31
 published: "2021-11-07T08:56:24.705Z"
 updated: "2021-11-07T09:05:20.733Z"
 ---
