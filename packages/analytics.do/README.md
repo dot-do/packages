@@ -13,7 +13,7 @@ keywords:
   - ai
   - evaluation
 downloads:
-  monthly: 1186
+  monthly: 1041
 published: "2025-04-14T08:18:15.890Z"
 updated: "2025-04-14T08:18:16.170Z"
 ---

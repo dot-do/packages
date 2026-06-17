@@ -11,7 +11,7 @@ keywords:
   - opentui
   - dashboard
 downloads:
-  monthly: 239
+  monthly: 241
 published: "2026-01-11T12:19:34.974Z"
 updated: "2026-01-24T14:38:13.585Z"
 ---
