@@ -13,7 +13,7 @@ keywords:
   - headless-cms
   - agent-first
 downloads:
-  monthly: 57
+  monthly: 61
 published: "2026-03-03T18:40:12.378Z"
 updated: "2026-03-09T23:18:34.362Z"
 ---

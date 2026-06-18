@@ -15,7 +15,7 @@ keywords:
   - durable-objects
   - realtime
 downloads:
-  monthly: 32
+  monthly: 34
 published: "2026-01-20T11:29:06.185Z"
 updated: "2026-01-23T17:21:26.952Z"
 ---

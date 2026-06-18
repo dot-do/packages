@@ -21,7 +21,7 @@ keywords:
   - mcp
   - model-context-protocol
 downloads:
-  monthly: 55
+  monthly: 58
 published: "2026-01-25T00:36:13.194Z"
 updated: "2026-01-26T01:56:27.772Z"
 ---

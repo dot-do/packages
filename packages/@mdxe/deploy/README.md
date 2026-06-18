@@ -15,7 +15,7 @@ keywords:
   - github-pages
   - mdx
 downloads:
-  monthly: 30
+  monthly: 36
 published: "2025-12-20T12:30:59.226Z"
 updated: "2025-12-20T12:30:59.469Z"
 ---
