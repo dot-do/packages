@@ -13,7 +13,7 @@ keywords:
   - payload
   - cms
 downloads:
-  monthly: 21
+  monthly: 20
 published: "2025-12-18T20:55:57.651Z"
 updated: "2025-12-18T20:55:57.895Z"
 ---

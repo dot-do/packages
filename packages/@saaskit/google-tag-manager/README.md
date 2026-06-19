@@ -12,7 +12,7 @@ keywords:
   - google-tag-manager
   - analytics
 downloads:
-  monthly: 25
+  monthly: 23
 published: "2021-11-05T07:07:56.427Z"
 updated: "2021-11-07T09:05:25.675Z"
 ---
