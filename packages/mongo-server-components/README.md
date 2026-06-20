@@ -11,7 +11,7 @@ keywords:
   - react
   - rsc
 downloads:
-  monthly: 25
+  monthly: 24
 published: "2024-01-31T08:23:21.184Z"
 updated: "2024-01-31T08:52:31.144Z"
 ---

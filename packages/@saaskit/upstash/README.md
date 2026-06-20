@@ -12,7 +12,7 @@ keywords:
   - upstash
   - data
 downloads:
-  monthly: 15
+  monthly: 16
 published: "2021-11-07T08:56:35.685Z"
 updated: "2021-11-07T09:05:32.823Z"
 ---

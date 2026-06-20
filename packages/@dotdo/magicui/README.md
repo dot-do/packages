@@ -3,7 +3,7 @@ name: "@dotdo/magicui"
 version: 6.0.0
 license: MIT
 downloads:
-  monthly: 17
+  monthly: 14
 published: "2026-01-24T14:37:55.561Z"
 updated: "2026-01-24T14:37:55.858Z"
 ---

@@ -25,7 +25,7 @@ keywords:
   - business
   - business-as-code
 downloads:
-  monthly: 354
+  monthly: 353
 published: "2025-11-26T12:33:11.824Z"
 updated: "2025-12-11T19:16:52.584Z"
 ---
