@@ -14,7 +14,7 @@ keywords:
   - auth
   - components
 downloads:
-  monthly: 375
+  monthly: 374
 published: "2025-12-23T12:36:54.044Z"
 updated: "2026-06-10T17:01:21.671Z"
 ---

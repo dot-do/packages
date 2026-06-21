@@ -4,7 +4,7 @@ version: 6.0.1
 description: "Abstract application framework layer for building admin interfaces and SaaS applications with React. Provides a \"Bring Your Own Backend\" architecture where you implement the data and auth providers while the framework handles UI composition, navigation, t"
 license: MIT
 downloads:
-  monthly: 313
+  monthly: 315
 published: "2026-01-12T15:42:46.260Z"
 updated: "2026-06-10T17:01:50.945Z"
 ---
