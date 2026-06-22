@@ -16,7 +16,7 @@ keywords:
   - features
   - pricing
 downloads:
-  monthly: 786
+  monthly: 795
 published: "2026-05-26T14:43:02.757Z"
 updated: "2026-06-10T16:36:42.434Z"
 ---
