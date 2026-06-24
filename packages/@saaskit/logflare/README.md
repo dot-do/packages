@@ -12,7 +12,7 @@ keywords:
   - logflare
   - logging
 downloads:
-  monthly: 21
+  monthly: 26
 published: "2021-11-07T08:56:30.611Z"
 updated: "2021-11-07T09:05:27.303Z"
 ---

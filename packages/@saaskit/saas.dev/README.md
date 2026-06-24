@@ -12,7 +12,7 @@ keywords:
   - saas.dev
   - monitoring
 downloads:
-  monthly: 21
+  monthly: 25
 published: "2021-11-07T08:56:33.696Z"
 updated: "2021-11-07T09:05:31.048Z"
 ---

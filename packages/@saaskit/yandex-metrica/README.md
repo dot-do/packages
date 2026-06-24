@@ -12,7 +12,7 @@ keywords:
   - yandex-metrica
   - analytics
 downloads:
-  monthly: 31
+  monthly: 39
 published: "2021-11-05T07:08:04.138Z"
 updated: "2021-11-07T09:05:33.865Z"
 ---

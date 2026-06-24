@@ -12,7 +12,7 @@ keywords:
   - saasquatch
   - analytics
 downloads:
-  monthly: 34
+  monthly: 42
 published: "2021-11-05T07:08:01.557Z"
 updated: "2021-11-07T09:05:31.024Z"
 ---
