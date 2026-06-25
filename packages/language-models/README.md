@@ -10,7 +10,7 @@ keywords:
   - openrouter
   - primitives
 downloads:
-  monthly: 1641
+  monthly: 1632
 published: "2025-05-01T09:39:20.437Z"
 updated: "2026-05-26T14:47:14.528Z"
 ---
