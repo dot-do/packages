@@ -16,7 +16,7 @@ keywords:
   - websocket
   - hibernation
 downloads:
-  monthly: 19
+  monthly: 26
 published: "2026-01-23T19:18:00.317Z"
 updated: "2026-01-23T20:31:38.284Z"
 ---
