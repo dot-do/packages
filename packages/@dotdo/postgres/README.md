@@ -18,7 +18,7 @@ keywords:
   - parquet
   - time-travel
 downloads:
-  monthly: 276
+  monthly: 261
 published: "2026-01-22T15:59:28.627Z"
 updated: "2026-01-25T13:47:33.285Z"
 ---

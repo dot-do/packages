@@ -10,7 +10,7 @@ keywords:
   - validation
   - mvp
 downloads:
-  monthly: 20
+  monthly: 19
 published: "2025-12-17T20:54:16.922Z"
 updated: "2025-12-17T20:54:17.157Z"
 ---
