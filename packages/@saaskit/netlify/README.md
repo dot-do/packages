@@ -12,7 +12,7 @@ keywords:
   - netlify
   - hosting
 downloads:
-  monthly: 24
+  monthly: 26
 published: "2021-11-07T08:56:31.873Z"
 updated: "2021-11-07T09:05:29.346Z"
 ---

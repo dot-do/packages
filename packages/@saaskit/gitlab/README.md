@@ -12,7 +12,7 @@ keywords:
   - gitlab
   - repoProviders
 downloads:
-  monthly: 20
+  monthly: 22
 published: "2021-11-07T08:56:28.535Z"
 updated: "2021-11-07T09:05:25.120Z"
 ---

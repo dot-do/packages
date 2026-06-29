@@ -12,7 +12,7 @@ keywords:
   - bronto
   - analytics
 downloads:
-  monthly: 34
+  monthly: 32
 published: "2021-11-05T07:07:52.714Z"
 updated: "2021-11-07T09:05:20.224Z"
 ---
