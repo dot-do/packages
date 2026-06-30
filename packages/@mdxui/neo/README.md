@@ -1,6 +1,6 @@
 ---
 name: "@mdxui/neo"
-version: 0.3.1
+version: 0.4.0
 description: Marketing and landing page components with mdxui-compliant interfaces
 license: MIT
 repository: "https://github.com/dot-do/ui"
@@ -18,7 +18,7 @@ keywords:
 downloads:
   monthly: 854
 published: "2026-05-26T14:43:02.757Z"
-updated: "2026-06-24T15:48:24.966Z"
+updated: "2026-06-29T22:16:19.060Z"
 ---
 
 ERROR: No README data found!
