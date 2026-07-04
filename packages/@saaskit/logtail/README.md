@@ -12,7 +12,7 @@ keywords:
   - logtail
   - logging
 downloads:
-  monthly: 21
+  monthly: 19
 published: "2021-11-07T08:56:31.162Z"
 updated: "2021-11-07T09:05:27.733Z"
 ---

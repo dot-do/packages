@@ -12,7 +12,7 @@ keywords:
   - frontleaf
   - analytics
 downloads:
-  monthly: 44
+  monthly: 47
 published: "2021-11-05T07:07:55.613Z"
 updated: "2021-11-07T09:05:24.557Z"
 ---

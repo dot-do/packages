@@ -15,7 +15,7 @@ keywords:
   - landing-page
   - components
 downloads:
-  monthly: 204
+  monthly: 192
 published: "2026-05-26T22:13:59.512Z"
 updated: "2026-05-29T12:18:47.652Z"
 ---

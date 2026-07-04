@@ -14,7 +14,7 @@ keywords:
   - billing
   - projects
 downloads:
-  monthly: 45
+  monthly: 39
 published: "2026-02-07T15:33:25.369Z"
 updated: "2026-03-09T23:20:46.766Z"
 ---

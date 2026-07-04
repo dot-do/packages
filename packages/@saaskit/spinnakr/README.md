@@ -12,7 +12,7 @@ keywords:
   - spinnakr
   - analytics
 downloads:
-  monthly: 29
+  monthly: 41
 published: "2021-11-05T07:08:02.273Z"
 updated: "2021-11-07T09:05:32.238Z"
 ---

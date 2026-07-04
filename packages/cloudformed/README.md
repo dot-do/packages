@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/cloudformed/pkg"
 homepage: "https://github.com/monatheoctocat/my_package"
 downloads:
-  monthly: 14
+  monthly: 13
 published: "2022-07-25T15:29:40.627Z"
 updated: "2022-07-25T15:29:40.802Z"
 ---
