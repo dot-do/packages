@@ -12,7 +12,7 @@ keywords:
   - feature-flags
   - browser
 downloads:
-  monthly: 32
+  monthly: 34
 published: "2026-03-03T18:41:10.566Z"
 updated: "2026-03-03T18:41:10.895Z"
 ---

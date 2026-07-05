@@ -12,7 +12,7 @@ keywords:
   - yaml-ld
   - types
 downloads:
-  monthly: 238
+  monthly: 244
 published: "2024-12-15T18:58:23.362Z"
 updated: "2024-12-27T17:39:06.883Z"
 ---

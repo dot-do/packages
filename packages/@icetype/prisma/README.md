@@ -16,7 +16,7 @@ keywords:
   - orm
   - typescript
 downloads:
-  monthly: 26
+  monthly: 31
 published: "2026-01-22T14:39:17.542Z"
 updated: "2026-02-03T11:25:11.542Z"
 ---

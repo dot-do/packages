@@ -14,7 +14,7 @@ keywords:
   - mcp
   - safety
 downloads:
-  monthly: 62
+  monthly: 58
 published: "2026-01-09T18:19:35.160Z"
 updated: "2026-01-26T17:09:21.466Z"
 ---

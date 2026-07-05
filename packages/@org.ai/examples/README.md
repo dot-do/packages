@@ -12,7 +12,7 @@ keywords:
   - startup
   - vc
 downloads:
-  monthly: 21
+  monthly: 24
 published: "2025-12-23T02:24:58.438Z"
 updated: "2025-12-23T02:24:58.763Z"
 ---

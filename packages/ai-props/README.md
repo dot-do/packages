@@ -9,7 +9,7 @@ keywords:
   - react
   - primitives
 downloads:
-  monthly: 488
+  monthly: 455
 published: "2024-12-14T23:14:35.362Z"
 updated: "2026-05-26T14:46:41.833Z"
 ---
