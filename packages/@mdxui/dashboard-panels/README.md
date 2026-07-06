@@ -3,7 +3,7 @@ name: "@mdxui/dashboard-panels"
 version: 6.0.0
 description: Dashboard component library for screenshot generation and marketing visuals.
 downloads:
-  monthly: 135
+  monthly: 134
 published: "2026-01-24T14:38:06.289Z"
 updated: "2026-01-24T14:38:06.569Z"
 ---

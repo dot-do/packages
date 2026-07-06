@@ -4,7 +4,7 @@ version: 6.0.0
 description: A flexible directory/catalog component package for displaying collections of items with search, filtering, and navigation capabilities.
 license: MIT
 downloads:
-  monthly: 136
+  monthly: 133
 published: "2026-01-24T14:37:50.991Z"
 updated: "2026-01-24T14:37:51.237Z"
 ---
