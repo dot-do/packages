@@ -1,6 +1,6 @@
 ---
 name: "@mdxui/named"
-version: 8.2.4
+version: 8.4.0
 description: Named Agents site template - landing page components for AI product sites
 license: MIT
 repository: "https://github.com/dot-do/ui"
@@ -17,7 +17,7 @@ keywords:
 downloads:
   monthly: 1482
 published: "2026-01-24T14:38:26.049Z"
-updated: "2026-06-29T22:17:04.779Z"
+updated: "2026-07-07T02:12:02.732Z"
 ---
 
 ERROR: No README data found!
