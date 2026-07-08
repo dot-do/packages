@@ -1,6 +1,6 @@
 ---
 name: "@mdxui/services"
-version: 0.7.2
+version: 0.7.3
 description: "Services site template — the Services dialect of the @mdxui template family. Higher-order, outcome-led landing components (ServiceHero, Problem, WhatYouGet, HowItWorks, Defensibility, ReportPricing, Faq, FinalCta) that expose Services-semantic props and c"
 license: MIT
 repository: "https://github.com/dot-do/ui"
@@ -17,7 +17,7 @@ keywords:
 downloads:
   monthly: 781
 published: "2026-05-29T12:50:14.249Z"
-updated: "2026-07-07T00:38:38.692Z"
+updated: "2026-07-07T13:10:32.852Z"
 ---
 
 # @mdxui/services
