@@ -13,7 +13,7 @@ keywords:
   - capnweb
   - hibernation
 downloads:
-  monthly: 33
+  monthly: 25
 published: "2026-01-26T16:00:04.306Z"
 updated: "2026-01-31T16:36:26.897Z"
 ---

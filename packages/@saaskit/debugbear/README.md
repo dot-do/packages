@@ -12,7 +12,7 @@ keywords:
   - debugbear
   - monitoring
 downloads:
-  monthly: 15
+  monthly: 12
 published: "2021-11-07T08:56:26.496Z"
 updated: "2021-11-07T09:05:23.320Z"
 ---

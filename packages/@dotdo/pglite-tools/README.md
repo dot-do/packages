@@ -14,7 +14,7 @@ keywords:
   - pg_dump
   - pg_restore
 downloads:
-  monthly: 29
+  monthly: 26
 published: "2026-01-24T15:50:38.521Z"
 updated: "2026-01-24T15:50:38.911Z"
 ---

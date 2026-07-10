@@ -14,7 +14,7 @@ keywords:
   - adapter
   - json
 downloads:
-  monthly: 23
+  monthly: 17
 published: "2025-12-18T20:56:03.731Z"
 updated: "2025-12-18T20:56:04.035Z"
 ---

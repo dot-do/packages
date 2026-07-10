@@ -17,7 +17,7 @@ keywords:
   - experiments
   - sdk
 downloads:
-  monthly: 27
+  monthly: 22
 published: "2026-03-03T18:42:53.332Z"
 updated: "2026-03-03T18:42:53.598Z"
 ---

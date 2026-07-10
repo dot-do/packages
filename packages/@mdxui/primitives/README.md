@@ -4,7 +4,7 @@ version: 6.1.0
 description: "> Low-level UI components for the mdxui ecosystem."
 license: MIT
 downloads:
-  monthly: 811
+  monthly: 760
 published: "2025-12-23T12:36:34.211Z"
 updated: "2026-06-10T16:36:11.009Z"
 ---

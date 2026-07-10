@@ -12,7 +12,7 @@ keywords:
   - typescript
   - type-safe
 downloads:
-  monthly: 114
+  monthly: 103
 published: "2026-01-22T14:38:50.306Z"
 updated: "2026-02-03T11:24:53.708Z"
 ---
