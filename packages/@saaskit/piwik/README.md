@@ -12,7 +12,7 @@ keywords:
   - piwik
   - analytics
 downloads:
-  monthly: 40
+  monthly: 38
 published: "2021-11-05T07:08:00.660Z"
 updated: "2021-11-07T09:05:30.288Z"
 ---

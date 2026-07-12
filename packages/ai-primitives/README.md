@@ -3,7 +3,7 @@ name: ai-primitives
 version: 2.0.1
 description: All AI primitives for building intelligent applications
 downloads:
-  monthly: 152
+  monthly: 51
 published: "2025-05-06T16:41:11.441Z"
 updated: "2026-05-26T14:46:39.021Z"
 ---

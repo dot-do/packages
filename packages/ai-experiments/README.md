@@ -10,7 +10,7 @@ keywords:
   - analytics
   - primitives
 downloads:
-  monthly: 244
+  monthly: 137
 published: "2025-05-06T08:53:58.851Z"
 updated: "2026-05-26T14:46:32.437Z"
 ---
