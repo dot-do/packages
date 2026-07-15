@@ -1,6 +1,6 @@
 ---
 name: kestrel.markets
-version: 0.1.0
+version: 0.4.1
 description: A typed, token-efficient language + runtime for agentic trading — see everything, then strike at speed.
 license: MIT
 repository: "https://github.com/nathanclevenger/kestrel"
@@ -12,16 +12,20 @@ keywords:
   - trading-runtime
   - mcp
 downloads:
-  monthly: 0
+  monthly: 40
 published: "2026-07-12T19:03:24.914Z"
-updated: "2026-07-12T19:03:25.279Z"
+updated: "2026-07-15T00:08:24.138Z"
 ---
 
 # 🦅 Kestrel
 
 **A typed, token-efficient language + runtime for agentic trading.**
 
-Domain: [kestrel.markets](https://kestrel.markets) · Packages: `@kestrel-markets/*`
+[![status: pre-release](https://img.shields.io/badge/status-pre--release-orange.svg)](docs/public/status.md)
+[![npm](https://img.shields.io/npm/v/kestrel.markets.svg)](https://www.npmjs.com/package/kestrel.markets)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+`npm i kestrel.markets` · [kestrel.markets](https://kestrel.markets) · [capability status](docs/public/status.md)
 
 ---
 
@@ -55,8 +59,9 @@ Here is all four in one motion, on a real day.
 April 9, 2025, 13:24 ET. Five sessions into the tariff crash, a headline hits: 90-day
 pause. The runtime's velocity detector fires a Wake, and the agent's next context
 window contains a **Frame** — the same picture you'd see on your terminal, rendered
-for a token budget (numbers approximate; format illustrative — the renderer is in
-build):
+for a token budget (numbers approximate and the layout below is illustrative; the
+Frame renderer ships today — run `kestrel frame` on any fixture, e.g.
+[`examples/briefing.json`](examples/briefing.json)):
 
 ```text
 KESTREL FRAME  shock · 2025-04-09 13:24 ET · mode sim
@@ -245,7 +250,11 @@ LLM authors are graded only on **post-training-cutoff, date-blinded** days — t
 model may have memorized the tariff crash, so no grade earned on it counts. Weights
 leak what code fences can't stop.
 
-## Guarantees
+## Design guarantees
+
+These are guarantees about how the **software** behaves — determinism, fail-closed
+parsing, honest grading, bounded risk as a type. They are properties of the runtime, not
+claims about trading results or returns (see the [Disclaimer](#disclaimer) below).
 
 - An agent is never in the hot path. *(Plans fire; agents author.)*
 - A screen never invents a value. *(Renderers are pure functions of the Frame.)*
@@ -256,6 +265,96 @@ leak what code fences can't stop.
 - A backtest is never flattering. *(One fill model for every strategy and its null;
   contamination-fenced grading.)*
 - One pod never runs live twice. *(The live singleton is platform-enforced.)*
+
+## Install & quickstart
+
+Kestrel ships as a single MIT package on npm — the `kestrel` CLI and a typed library.
+
+**Runtime matrix.** The verbs are not all the same weight, but `npx` works for every one
+of them. The language and rendering verbs — `parse`, `print`, `validate`, `frame`/`percept`
+— run on plain **Node ≥ 18**. The simulation, grading, and registry verbs — `run`, `day`,
+`runs`, `lineage`, `leaderboard`, and local `agent` mode — execute on **Bun ≥ 1.1** (they
+load `bun:sqlite` and Bun's crypto hasher), and the package **bundles the Bun runtime** so
+you do not have to install it: the `kestrel` bin runs light verbs under your Node and
+re-execs heavy verbs onto a Bun binary — `$KESTREL_BUN` if set, else a `bun` on your `PATH`,
+else the bundled one. Grading therefore always runs on Bun by construction; only a host with
+no Bun anywhere fails closed with `RUNTIME_UNAVAILABLE` (exit 4), never a silent degrade.
+
+```bash
+# A graded session with no Bun install — `--fill` and `--r-usd` are required.
+npx kestrel.markets run --bus tape.jsonl --plans plans.kestrel \
+  --fill strict-cross-v1 --r-usd 10000
+
+npm i kestrel.markets      # or: bun add kestrel.markets
+```
+
+The bundled runtime is the optional dependency `bun`. It is not small, and the cost depends on
+your platform, because npm keeps every platform variant it downloaded (measured, `bun` +
+`@oven` on disk): **≈ 61 MB** on macOS arm64, **≈ 172 MB** on Linux arm64 (glibc) and
+**≈ 259 MB** on Alpine, **≈ 347 MB** on Linux x64 — where npm retains all four x64 variants.
+(The published tarball itself stays ~2 MB — this is install weight, not download weight.)
+
+If you already run Bun, or you want a lean install, `npm i kestrel.markets --omit=optional`
+skips the runtime in a **project** install: light verbs work unchanged, and heavy verbs then
+need a `bun` on `PATH` (or `KESTREL_BUN=/path/to/bun`), refusing with exit 4 if neither exists.
+Note that npm ignores `--omit=optional` for **global** (`-g`) installs and fetches the runtime
+anyway; there, `KESTREL_NO_BUNDLED_BUN=1` makes the CLI ignore the bundled copy at run time.
+
+An explicit `KESTREL_BUN` is a **pin**: if it does not resolve to a working Bun, the CLI
+refuses (exit 4) rather than quietly running on a different runtime than you named.
+
+**As a library** — the text DSL and the typed object model are the same language:
+`parse` text into objects, `print` objects back into byte-identical text (ADR-0004).
+
+```ts
+import { parse, print } from "kestrel.markets/lang";
+
+const doc = parse(`PLAN fade-flush budget 0.4R ttl 15:30 regime {intraday: range}
+  USING signal SPX exec SPY 0dte
+  WHEN spot crosses below 5150
+  DO buy 1 -1 P @ lean(bid, fair, 0.5)
+  TP 2x frac 0.5 @ fair`);
+
+print(parse(print(doc))) === print(doc);   // true — the round-trip is byte-stable
+```
+
+**As a client** — `kestrel.markets/client` is the SDK face of the managed API (one of
+the four equal faces — http / sdk / cli / mcp, ADR-0004). It walks the day-one flow —
+mint an anonymous trial capability, run a sim, stream the operation, read the certified
+Blotter and grade — over the exact same contract the CLI's `--api` path speaks. A
+structured 402/Offer is surfaced as **data** (never a browser redirect), carrying the
+free proof already earned under the trial.
+
+```ts
+import { KestrelClient } from "kestrel.markets/client";
+
+const client = new KestrelClient();                 // → api.kestrel.markets (BYO trial)
+await client.mint();                                // anonymous trial capability
+const sim = await client.sim({ source, dataset });  // Operation → certified Blotter
+if (!sim.gated) {
+  const grade = await client.grade({ blotters: [sim.value.blotter!.sessionId] });
+}
+```
+
+The full flow — including the in-process contract server the client ships for offline
+runs — is a runnable, self-verifying script:
+[`examples/client-mint-sim-proof.mjs`](examples/client-mint-sim-proof.mjs).
+
+**From a clone** — three CLI runs in a minute, all on generic tickers:
+
+```bash
+git clone https://github.com/nathanclevenger/kestrel && cd kestrel
+bun install && bun run build
+
+node dist/cli.js print examples/momentum-breakout.kestrel    # parse → canonical re-print
+node dist/cli.js parse examples/reject-exit-on-mark.kestrel   # fail-closed: EXIT on a mark is refused (exit 2)
+node dist/cli.js frame examples/briefing.json                # render the market as text (a Frame)
+```
+
+Runnable scripts with expected output live in [`examples/`](examples/). What actually
+ships today — graded feature-by-feature across **syntax · runtime · evidence ·
+access**, with source and test receipts — is tracked honestly in
+[`docs/public/status.md`](docs/public/status.md).
 
 ## Start here
 
@@ -303,7 +402,29 @@ language features. Correctness is proven against a privately-maintained golden c
 (grammar parses + recorded session replays) and property tests (round-trip,
 replay-byte-stability, fail-closed).
 
+## Disclaimer
+
+Kestrel is software for expressing and evaluating trading logic. It is **not investment
+advice** and **not a recommendation** to buy or sell any security. The examples,
+fixtures, and figures in this repository are **illustrative and educational** — chosen to
+teach language features, not to describe a profitable strategy — and use generic tickers.
+
+Nothing here is a promise of results. Trading options and other instruments carries a
+substantial risk of loss. Past or simulated performance does not predict future results,
+and a simulation or backtest is not a live trading outcome. Kestrel is **not a
+broker-dealer, exchange, or investment adviser** and executes nothing on its own; any
+brokerage connection is one you bring and operate yourself.
+
+The software is provided **"as is", without warranty of any kind**, express or implied,
+under the terms of the MIT [`LICENSE`](LICENSE). You are solely responsible for any use,
+including any orders placed through a broker you connect. The design guarantees above are
+properties of the software, not assurances of financial outcome.
+
 ---
 
-_Status: founding. The language spec, typed core, and runtime are being built to the
-ADRs above._
+_Status: **v0.4.0, published to npm as `kestrel.markets` (MIT).** The grammar (parse ·
+print · byte-stable round-trip), the plan engine (arm · fire · manage · TTL), and the
+Frame renderer ship today; grading runs mechanically at practice tier, while View/Wake
+scheduling and the full stratified replay grader are partial. No result is
+certified-tier yet. Every capability is graded honestly — feature-by-feature, with
+source and test receipts — in [`docs/public/status.md`](docs/public/status.md)._

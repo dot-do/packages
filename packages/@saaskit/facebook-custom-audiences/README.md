@@ -12,7 +12,7 @@ keywords:
   - facebook-custom-audiences
   - analytics
 downloads:
-  monthly: 34
+  monthly: 30
 published: "2021-11-05T07:07:55.438Z"
 updated: "2021-11-07T09:05:24.595Z"
 ---

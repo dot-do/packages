@@ -3,7 +3,7 @@ name: next-mdxld
 version: 1.3.0
 description: MDX loader for Next.js with dynamic layouts and components
 downloads:
-  monthly: 44
+  monthly: 47
 published: "2024-12-22T14:44:43.456Z"
 updated: "2025-01-14T18:43:04.766Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - quantcast
   - analytics
 downloads:
-  monthly: 31
+  monthly: 27
 published: "2021-11-05T07:08:01.183Z"
 updated: "2021-11-07T09:05:30.853Z"
 ---

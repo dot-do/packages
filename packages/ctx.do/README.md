@@ -6,7 +6,7 @@ license: MIT
 repository: "ssh://git@github.com/drivly/ctx.do"
 homepage: "https://ctx.do"
 downloads:
-  monthly: 62
+  monthly: 42
 published: "2022-09-27T16:51:14.218Z"
 updated: "2023-01-07T11:35:25.489Z"
 ---

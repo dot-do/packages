@@ -4,7 +4,7 @@ version: 6.1.1
 description: Complex, interactive UI widgets for building applications.
 license: MIT
 downloads:
-  monthly: 178
+  monthly: 173
 published: "2024-12-24T13:34:16.765Z"
 updated: "2026-06-10T17:01:37.912Z"
 ---

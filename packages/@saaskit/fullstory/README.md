@@ -12,7 +12,7 @@ keywords:
   - fullstory
   - analytics
 downloads:
-  monthly: 26
+  monthly: 24
 published: "2021-11-05T07:07:56.291Z"
 updated: "2021-11-07T09:05:25.177Z"
 ---
