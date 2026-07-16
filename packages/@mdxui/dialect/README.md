@@ -14,7 +14,7 @@ keywords:
   - chrome
   - templates
 downloads:
-  monthly: 60
+  monthly: 59
 published: "2026-05-29T13:51:34.467Z"
 updated: "2026-06-10T16:37:04.155Z"
 ---

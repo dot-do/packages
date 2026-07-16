@@ -1,6 +1,6 @@
 ---
 name: kestrel.markets
-version: 0.4.1
+version: 0.4.9
 description: A typed, token-efficient language + runtime for agentic trading — see everything, then strike at speed.
 license: MIT
 repository: "https://github.com/nathanclevenger/kestrel"
@@ -12,9 +12,9 @@ keywords:
   - trading-runtime
   - mcp
 downloads:
-  monthly: 40
+  monthly: 442
 published: "2026-07-12T19:03:24.914Z"
-updated: "2026-07-15T00:08:24.138Z"
+updated: "2026-07-16T04:19:36.014Z"
 ---
 
 # 🦅 Kestrel
@@ -87,9 +87,9 @@ reader is a context window.**
 style choice; the streaming contract: **the next bar is one appended line**, so an
 agent that watches all day keeps its entire prior tape KV-cached and pays only for
 what's new — perception cost is O(new bars), not O(screen). (2D charts redraw their
-whole grid per update, busting the cache each time; they're reserved for one-shot
-keyframes and for *your* HTML rendering of the same Frame.) It is also the oldest
-idea in the room: the original ticker tape was an append-only stream.
+whole grid per update, busting the cache each time, which is why the agent's channel is
+this tape and not a grid.) It is also the oldest idea in the room: the original ticker
+tape was an append-only stream.
 
 **Candles are relative, anchored by keyframes** — direction, body in basis points vs
 prior close, wick extents; the open is implied (a gap prints only when nonzero).
@@ -101,8 +101,11 @@ levels registry. Exact glyphs are measured per model tokenizer, never assumed.
 
 Every number is typed, attributed (observed / calculated / detector / model), and
 watermarked with its source — a renderer lays values out but can never invent one.
-One Frame, many renderings: this text for the agent, a chart for you. **Same numbers,
-same moment. No more narrating candlesticks.**
+That typed Frame is what makes one Frame renderable many ways; today the package ships
+exactly one rendering of it — this text screen, for the agent (`ascii`/`unicode`/`md`).
+A visual rendering for a human is the plan, not a claim: it isn't built yet, and asking
+the renderer for `json`/`html` is refused rather than quietly answered with the text
+screen. **Same numbers, same moment. No more narrating candlesticks.**
 
 ## The agent responds with a plan, not an order
 
@@ -116,11 +119,11 @@ line) carry the thinking, so the *why* travels with the strategy:
 # liquidity vacuum. Chase with bounded convexity; quit on giveback.
 PLAN headline-chase budget 0.25R ttl 15:55 regime {intraday: trend}
   USING signal SPX exec SPY 0dte
-  WHEN spot > HOD AND velocity(5m) >= p95                          # still accelerating
+  WHEN spot > hod AND velocity(5m) >= p95                          # still accelerating
   DO buy 2 +1 C @ min(fair, mid) peg cap fair                     # never pay past fair
-  RELOAD WHEN spot > HOD buy 1 +1 C @ min(fair, mid) peg cap fair # add INTO strength
+  RELOAD WHEN spot > hod buy 1 +1 C @ min(fair, mid) peg cap fair # add INTO strength
   TP 2.5x frac 0.5 @ fair                                         # bank half on the rip
-  EXIT spot < VWAP held 120s @ fair                               # giveback = thesis dead, get out
+  EXIT spot < vwap held 120s @ fair                               # giveback = thesis dead, get out
 ```
 
 From the moment this plan is armed, the agent's judgment acts at machine speed. When
@@ -155,12 +158,12 @@ grammar in a few hundred tokens — no API docs, no SDK spelunking:
 IMPORT fade-ladder FROM ./armory/reversion.kestrel
 USING signal SPX exec SPY 0dte           # scoped defaults; any leg may override
 
-PLAN <name> budget <n>R ttl <HH:MM|+45m> [regime {tag}] [priority n]
+PLAN <name> budget <n>R ttl <HH:MM|+45m> [regime {scope: value}] [priority n]
   WHEN <trigger>                          # series × predicates × AND/OR/NOT
   DO buy <qty> <strike|ATM|+1> <C|P> @ <price>
   ALSO <ticket>                           # secondary action (covered sell, hedge)
   RELOAD +1 rung every $<step>, up to <n> # fade: worse price = better entry
-  TP <frac> @ <mult>x rest <price>        # take-profit tiers on the position
+  TP <+N%|Nx|price> [frac <f>] [@ <price>] # bank a fraction at the target; @ = exec anchor
   EXIT <underlying trigger> @ <price>     # active out — never on option marks
   INVALIDATE <trigger> -> halt, ride      # thesis dead: stop adding, ride the tail
   CANCEL-IF <trigger>                     # pull unfilled orders only
@@ -188,7 +191,7 @@ unfilled), tracking (`peg`/`fix`), bounds (`cap fair` on buys, `floor` ≥ intri
 sells), and line-level `cancel-if`.
 
 Triggers read the same everywhere — Wake, Plan, and Grade share one algebra: market
-series (`spot`, `HOD`, `VWAP`, `velocity(1m)`), your own facts (`pnl`,
+series (`spot`, `hod`, `vwap`, `velocity(1m)`), your own facts (`pnl`,
 `fills.avg_px`, `plan(x).fired`), predicates (`crosses above`, `held 120s`,
 `within 5m`, `T-10`, `phase close`), composed with `AND / OR / NOT`.
 
@@ -218,7 +221,7 @@ thousands, **live is a singleton**, enforced:
 
 ```mermaid
 flowchart LR
-    H["Human<br/>CLI · HTML views"] --> S
+    H["Human<br/>CLI"] --> S
     P["Programs<br/>TS SDK (typed objects)"] --> S
     G["Agents<br/>MCP · Kestrel text"] --> S
     S["Session<br/>pod × mode"] --> RT["Runtime<br/>views · wakes · plans · grade"]
@@ -250,6 +253,21 @@ LLM authors are graded only on **post-training-cutoff, date-blinded** days — t
 model may have memorized the tariff crash, so no grade earned on it counts. Weights
 leak what code fences can't stop.
 
+## KestrelBench
+
+The same grading machinery runs **KestrelBench** (the Kestrel Markets Trading
+Benchmark): governed seasons on [kestrel.markets](https://kestrel.markets)
+measuring whether an *organization of seats* — deliberate PM + Strategist
+judgment over a low-latency Watcher reflex — captures real alpha with real
+restraint. Two properties come from this repo and nowhere else:
+
+- **Recomputable, not asserted.** Every published season result can be re-run
+  byte-identically from this engine by anyone. Trust the recomputation, not us.
+- **Latency is physics.** Deliberation consumes tape time (ADR-0040): while a
+  seat thinks, the market keeps moving, and alpha internalizes the delay. No
+  governed season runs latency-blind — which is why no single model, however
+  smart, is expected to win a season directly.
+
 ## Design guarantees
 
 These are guarantees about how the **software** behaves — determinism, fail-closed
@@ -260,8 +278,10 @@ claims about trading results or returns (see the [Disclaimer](#disclaimer) below
 - A screen never invents a value. *(Renderers are pure functions of the Frame.)*
 - An agent never trades blind to its own inventory. *(The acting kernel is
   non-configurable.)*
-- A position is never naked or unbounded. *(Bounded risk is a type; parsing fails
-  closed to STAND_DOWN.)*
+- Risk is **bounded by default, fail-closed**. *(`size × max_loss ≤ budget` is a
+  type; an action whose max_loss is unknown or unbounded is refused. Unbounded risk is
+  never a silent default — reachable, if at all, only by an explicit willing-human act,
+  never by inference.)*
 - A backtest is never flattering. *(One fill model for every strategy and its null;
   contamination-fenced grading.)*
 - One pod never runs live twice. *(The live singleton is platform-enforced.)*
@@ -281,12 +301,33 @@ else the bundled one. Grading therefore always runs on Bun by construction; only
 no Bun anywhere fails closed with `RUNTIME_UNAVAILABLE` (exit 4), never a silent degrade.
 
 ```bash
-# A graded session with no Bun install — `--fill` and `--r-usd` are required.
-npx kestrel.markets run --bus tape.jsonl --plans plans.kestrel \
-  --fill strict-cross-v1 --r-usd 10000
+# The one-command funnel — a curated hosted scenario, free, zero setup, plain Node.
+# Prints the graded story + a shareable proof URL; `kestrel sim` alone lists the menu.
+npx kestrel.markets sim wsb-gme-meme-short-squeeze
 
 npm i kestrel.markets      # or: bun add kestrel.markets
+
+# A graded session on your own machine, no Bun install — `--fill` and `--r-usd` are required.
+# The bus + plans below ship inside the package (a seeded 30-minute SPY tape and three generic
+# plans), so this runs against the install above with nothing else to fetch or author.
+npx kestrel.markets run \
+  --bus node_modules/kestrel.markets/examples/tape.jsonl \
+  --plans node_modules/kestrel.markets/examples/plans.kestrel \
+  --fill strict-cross-v1 --r-usd 10000
 ```
+
+In a terminal that `run` pretty-prints the graded **Session report** — a `session` block (with the
+`determinism_hash`), one entry per plan with its lifecycle, the orders, and `totals` carrying the
+settle mark and the headline Grade — and records the run to a local ledger at `data/kestrel.db`
+(`kestrel runs list`; `--no-record` skips it). Piped, it collapses to a terse
+`settle=<ts> pnl=<usd> events=<n>` line, so add `--json` for the canonical report (the only
+jq-stable mode) or `--out report.json` to write it to a file.
+
+The two commands differ in kind, not just in weight. `sim` runs a curated scenario on the **managed
+API** and hands back a shareable proof URL. `run` grades **locally and deterministically** — no
+network, no account: the same bus + the same plans yield a byte-identical report, which is why the
+`determinism_hash` above reproduces on your machine. Point `--bus`/`--plans` at your own files to
+grade your own tape.
 
 The bundled runtime is the optional dependency `bun`. It is not small, and the cost depends on
 your platform, because npm keeps every platform variant it downloaded (measured, `bun` +
@@ -325,10 +366,13 @@ Blotter and grade — over the exact same contract the CLI's `--api` path speaks
 structured 402/Offer is surfaced as **data** (never a browser redirect), carrying the
 free proof already earned under the trial.
 
+This snippet is the **live** mode: a bare `new KestrelClient()` talks to `api.kestrel.markets`
+over the network and mints a real trial capability.
+
 ```ts
 import { KestrelClient } from "kestrel.markets/client";
 
-const client = new KestrelClient();                 // → api.kestrel.markets (BYO trial)
+const client = new KestrelClient();                 // LIVE → api.kestrel.markets (BYO trial)
 await client.mint();                                // anonymous trial capability
 const sim = await client.sim({ source, dataset });  // Operation → certified Blotter
 if (!sim.gated) {
@@ -336,9 +380,12 @@ if (!sim.gated) {
 }
 ```
 
-The full flow — including the in-process contract server the client ships for offline
-runs — is a runnable, self-verifying script:
-[`examples/client-mint-sim-proof.mjs`](examples/client-mint-sim-proof.mjs).
+The full flow is a runnable, self-verifying script:
+[`examples/client-mint-sim-proof.mjs`](examples/client-mint-sim-proof.mjs). Read its mode label
+before you run it: **it defaults to MOCK** — the in-process contract server the client ships, no
+network and no account, which is how it self-verifies in CI. Set `KESTREL_API=<base-url>` to run
+the same flow **live** against a real API; the script prints which of the two it is using
+(`in-process contract mock` or `live @ <base-url>`) on its first line.
 
 **From a clone** — three CLI runs in a minute, all on generic tickers:
 
@@ -382,9 +429,14 @@ itself). Ground rules:
 4. **Fail closed.** Anything that doesn't parse to a legal bounded action is
    STAND_DOWN. Unknown series read UNKNOWN and de-arm their statement with a logged
    reason — never crash, never silently false.
-5. **Bounded risk is the hard rule.** Every position defined-risk; budgets nest up the
-   org tree; authority only narrows downward; Risk (L0) outranks everyone, including
-   you.
+5. **Bounded risk is the hard rule — bounded by default, fail-closed.** Every action
+   must carry a *computable* `max_loss` and satisfy `size × max_loss ≤ budget`; an
+   unknown or unbounded max_loss is refused at the output boundary. That alone forbids
+   the always-wrong cases (a naked call, short equity — both unbounded), so
+   `no-uncovered-short` is an author-overridable *default* in the Risk envelope, not a
+   language guarantee; unbounded risk is enabled only by an explicit willing-human act,
+   never silently (ADR-0005). Budgets nest up the org tree; authority only narrows
+   downward; Risk (L0) outranks everyone, including you.
 6. **Names are data** (ADR-0006). Name your plans and clauses meaningfully —
    `fade-ladder`, not `plan1`. Your names are lineage keys on the leaderboard and the
    substrate for emergent strategy discovery.
@@ -422,7 +474,7 @@ properties of the software, not assurances of financial outcome.
 
 ---
 
-_Status: **v0.4.0, published to npm as `kestrel.markets` (MIT).** The grammar (parse ·
+_Status: **v0.4.9, published to npm as `kestrel.markets` (MIT).** The grammar (parse ·
 print · byte-stable round-trip), the plan engine (arm · fire · manage · TTL), and the
 Frame renderer ship today; grading runs mechanically at practice tier, while View/Wake
 scheduling and the full stratified replay grader are partial. No result is

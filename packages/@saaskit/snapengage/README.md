@@ -12,7 +12,7 @@ keywords:
   - snapengage
   - analytics
 downloads:
-  monthly: 34
+  monthly: 31
 published: "2021-11-05T07:08:02.223Z"
 updated: "2021-11-07T09:05:32.163Z"
 ---
