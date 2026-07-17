@@ -13,7 +13,7 @@ keywords:
   - workers
   - sdk
 downloads:
-  monthly: 18
+  monthly: 19
 published: "2026-01-23T20:17:20.075Z"
 updated: "2026-01-23T20:30:59.136Z"
 ---

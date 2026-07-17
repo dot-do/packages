@@ -14,7 +14,7 @@ keywords:
   - xstate
   - typescript
 downloads:
-  monthly: 121
+  monthly: 125
 published: "2025-04-01T16:01:57.395Z"
 updated: "2025-04-02T12:47:47.731Z"
 ---

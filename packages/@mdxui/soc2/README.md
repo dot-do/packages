@@ -4,7 +4,7 @@ version: 6.0.0
 description: SOC2 compliance components for trust centers and compliance portals
 license: MIT
 downloads:
-  monthly: 20
+  monthly: 18
 published: "2026-01-24T14:38:06.139Z"
 updated: "2026-01-24T14:38:06.429Z"
 ---

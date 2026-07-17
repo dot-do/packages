@@ -11,7 +11,7 @@ keywords:
   - format
   - typescript
 downloads:
-  monthly: 16
+  monthly: 17
 published: "2025-12-20T13:12:58.819Z"
 updated: "2025-12-20T13:12:59.062Z"
 ---

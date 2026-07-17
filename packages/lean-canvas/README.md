@@ -10,7 +10,7 @@ keywords:
   - planning
   - ai
 downloads:
-  monthly: 15
+  monthly: 14
 published: "2025-12-17T20:54:14.120Z"
 updated: "2025-12-17T20:54:14.388Z"
 ---
