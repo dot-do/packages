@@ -12,7 +12,7 @@ keywords:
   - route
   - analytics
 downloads:
-  monthly: 44
+  monthly: 45
 published: "2021-11-05T07:08:01.531Z"
 updated: "2021-11-07T09:05:31.122Z"
 ---

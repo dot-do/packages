@@ -15,7 +15,7 @@ keywords:
   - baas
   - backend-as-a-service
 downloads:
-  monthly: 24
+  monthly: 23
 published: "2026-01-20T11:32:32.860Z"
 updated: "2026-01-23T17:21:04.665Z"
 ---

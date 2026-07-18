@@ -1,9 +1,8 @@
 ---
 name: kestrel.markets
-version: 0.4.11
+version: 0.4.13
 description: "A typed, token-efficient language + runtime for agentic trading: agents author bounded plans, the runtime fires them at the tick. CLI + typed library + MCP server."
 license: MIT
-repository: "https://github.com/nathanclevenger/kestrel"
 homepage: "https://kestrel.markets"
 keywords:
   - agentic-trading
@@ -18,9 +17,9 @@ keywords:
   - backtesting
   - deterministic-replay
 downloads:
-  monthly: 1571
+  monthly: 3509
 published: "2026-07-12T19:03:24.914Z"
-updated: "2026-07-16T18:24:47.799Z"
+updated: "2026-07-17T13:49:28.704Z"
 ---
 
 # kestrel.markets
@@ -34,20 +33,22 @@ bounded plans; the runtime fires them at the tick. `npx`-able, MIT, no account.
 
 ## Try it in one command
 
-Free, anonymous, zero setup. This is the site's hero command: it grabs a bundled starter
-strategy, runs a curated scenario on the managed API, and streams the full day loop as pure
-text — the OPEN briefing, your Plan, wake frames, the fills, the graded line, and a shareable
-proof URL. Plain Node — no Bun install, no key, no signup:
+Free, anonymous, zero setup. One word — no slug, no file, no `curl`, no key, no signup.
+Bare `prove` picks a pinned default free scenario, runs it on the managed API, and streams
+the full day loop as pure text — the OPEN briefing, a bundled starter Plan, wake frames, the
+fills, the graded line, and a shareable proof URL. Plain Node, no Bun install:
 
 ```bash
-curl -sO https://kestrel.markets/examples/sampler-starter.plan.kestrel && npx -y kestrel.markets sim mean-reversion-range-fade --plans sampler-starter.plan.kestrel
+npx -y kestrel.markets prove
 ```
 
-The `--plans` file is a deliberately minimal starter (enter one share at the open, hold to the
-risk-envelope ttl) — yours to edit or replace. It is why the run shows a real, filled trade,
-graded honestly with small losses included. Drop `--plans` and the same command still runs — it
-just grades an honest do-nothing baseline. `npx kestrel.markets sim` with no slug prints the
-scenario menu.
+`prove` runs a bundled starter strategy (enter one share at the open, hold to the risk-envelope
+ttl), which is why the run shows a real, filled trade graded honestly with small losses included
+— never dressed up as alpha. Author your own with `npx kestrel.markets prove --plans <file>`.
+
+Want a specific scenario instead of the default? `npx kestrel.markets sim <slug>` runs any
+scenario from the curated menu (bare `npx kestrel.markets sim` prints the menu); add
+`--plans <file>` to grade your own strategy against it.
 
 ## Why this exists
 
@@ -80,7 +81,7 @@ ever arms. Comments carry the thinking, so the *why* travels with the strategy:
 # Thesis: range day — a flush below support is a gift, not a warning.
 # Worse price = better entry, so RELOAD into it; if the level truly
 # breaks and holds, stop adding and let the bounded remainder ride.
-PLAN fade-flush budget 0.4R ttl 15:30 regime {intraday: range}
+PLAN fade-flush budget 0.4R ttl 15:30
   WHEN spot crosses below 5150
   DO buy 1 -1 P @ lean(bid, fair, 0.5)                                  # rest between bid and worth
   RELOAD WHEN spot crosses below 5146 buy 1 -2 P @ lean(bid, fair, 0.5) # the ladder IS the thesis
