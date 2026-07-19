@@ -1,6 +1,6 @@
 ---
 name: kestrel.markets
-version: 0.4.13
+version: 0.4.18
 description: "A typed, token-efficient language + runtime for agentic trading: agents author bounded plans, the runtime fires them at the tick. CLI + typed library + MCP server."
 license: MIT
 homepage: "https://kestrel.markets"
@@ -17,9 +17,9 @@ keywords:
   - backtesting
   - deterministic-replay
 downloads:
-  monthly: 3509
+  monthly: 6468
 published: "2026-07-12T19:03:24.914Z"
-updated: "2026-07-17T13:49:28.704Z"
+updated: "2026-07-19T03:29:07.651Z"
 ---
 
 # kestrel.markets
