@@ -17,7 +17,7 @@ keywords:
   - backtesting
   - deterministic-replay
 downloads:
-  monthly: 6468
+  monthly: 7130
 published: "2026-07-12T19:03:24.914Z"
 updated: "2026-07-19T03:29:07.651Z"
 ---
