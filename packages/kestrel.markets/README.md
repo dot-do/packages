@@ -1,6 +1,6 @@
 ---
 name: kestrel.markets
-version: 0.4.18
+version: 0.4.19
 description: "A typed, token-efficient language + runtime for agentic trading: agents author bounded plans, the runtime fires them at the tick. CLI + typed library + MCP server."
 license: MIT
 homepage: "https://kestrel.markets"
@@ -19,7 +19,7 @@ keywords:
 downloads:
   monthly: 7130
 published: "2026-07-12T19:03:24.914Z"
-updated: "2026-07-19T03:29:07.651Z"
+updated: "2026-07-20T15:18:15.881Z"
 ---
 
 # kestrel.markets
@@ -183,6 +183,23 @@ You are exactly who this language is for. Three things worth knowing:
 3. **`kestrel agent` is a JSONL request/response protocol** over stdin/stdout —
    `npx kestrel.markets agent --help` documents the ops.
 
+4. **BYOK once, resident thereafter.** Store your model key in the owner-only
+   `~/.kestrel/.env` and every future session — across context windows and across every
+   worktree — reads it back with no re-export:
+
+   ```bash
+   # Prompted, echo suppressed — the value never touches argv, shell history, or `ps`:
+   npx kestrel.markets secrets set FIREWORKS_API_KEY
+   # …or pipe it non-interactively (one trailing newline is stripped):
+   printf %s "$FIREWORKS_API_KEY" | npx kestrel.markets secrets set FIREWORKS_API_KEY --stdin
+   ```
+
+   Resolution is `process.env` FIRST, the file as fallback — so CI/containers inject the
+   same key with zero disk writes. `secrets list` prints **names only** (never a value); the
+   same store is on the local MCP face (`kestrel.secrets.set/unset/list`) so an agent
+   self-installs its key once. The dir is `0700`, the file `0600`; a `*LIVE*` broker key name
+   is refused (the store is paper-only).
+
 ### Persist this
 
 Append to your `AGENTS.md` / `CLAUDE.md` so the next session starts informed:
@@ -197,6 +214,7 @@ Append to your `AGENTS.md` / `CLAUDE.md` so the next session starts informed:
 - Fail closed: a parse escape stands down; an unknown series de-arms with a logged reason. Never a silent default.
 - Marks lie: `mid` is never a price anchor; a SELL is floored at intrinsic; no EXIT conditions on a mark.
 - Grade locally: `kestrel run --bus <tape> --plans <doc> --fill strict-cross-v1 --r-usd <n>` is deterministic.
+- BYOK residency: `kestrel secrets set FIREWORKS_API_KEY` once → resident across sessions/worktrees (process.env still wins). Names-only listing; values never printed; a `*LIVE*` key is refused (paper-only store).
 ```
 
 ## What actually works today
