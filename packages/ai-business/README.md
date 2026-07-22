@@ -14,7 +14,7 @@ keywords:
   - storybrand
   - lean-canvas
 downloads:
-  monthly: 17
+  monthly: 25
 published: "2025-04-14T08:22:55.652Z"
 updated: "2025-05-06T09:57:00.848Z"
 ---
