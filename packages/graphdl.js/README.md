@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/graphdl/graphdl"
 homepage: "https://graphdl.org"
 downloads:
-  monthly: 130
+  monthly: 128
 published: "2022-07-25T15:45:54.745Z"
 updated: "2022-07-25T15:45:54.865Z"
 ---

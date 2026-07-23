@@ -19,7 +19,7 @@ keywords:
   - react
   - hono
 downloads:
-  monthly: 355
+  monthly: 341
 published: "2025-12-04T21:02:30.392Z"
 updated: "2026-03-27T20:54:07.550Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - supabase
   - auth
 downloads:
-  monthly: 19
+  monthly: 20
 published: "2021-11-07T08:56:34.775Z"
 updated: "2021-11-07T09:05:32.234Z"
 ---
