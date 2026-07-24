@@ -12,7 +12,7 @@ keywords:
   - preact
   - analytics
 downloads:
-  monthly: 58
+  monthly: 50
 published: "2021-11-05T07:08:00.721Z"
 updated: "2021-11-07T09:05:30.495Z"
 ---

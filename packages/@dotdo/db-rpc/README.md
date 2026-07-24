@@ -15,7 +15,7 @@ keywords:
   - remote
   - client
 downloads:
-  monthly: 39
+  monthly: 38
 published: "2025-12-17T11:50:45.444Z"
 updated: "2025-12-17T19:01:54.871Z"
 ---

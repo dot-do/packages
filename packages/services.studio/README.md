@@ -19,7 +19,7 @@ keywords:
   - typescript
   - sdk
 downloads:
-  monthly: 103
+  monthly: 101
 published: "2025-10-01T17:59:55.378Z"
 updated: "2025-10-01T17:59:55.584Z"
 ---
