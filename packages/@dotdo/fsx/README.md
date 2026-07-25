@@ -22,7 +22,7 @@ keywords:
   - workers
   - ai-agents
 downloads:
-  monthly: 133
+  monthly: 129
 published: "2026-01-23T18:21:36.167Z"
 updated: "2026-01-26T16:00:50.488Z"
 ---
