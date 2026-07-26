@@ -13,7 +13,7 @@ keywords:
   - d1
   - sqlite
 downloads:
-  monthly: 20
+  monthly: 23
 published: "2026-01-05T15:29:26.074Z"
 updated: "2026-01-05T16:46:28.432Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - durable-objects
   - agent-first
 downloads:
-  monthly: 32
+  monthly: 29
 published: "2026-03-03T18:42:08.510Z"
 updated: "2026-03-09T23:19:45.290Z"
 ---

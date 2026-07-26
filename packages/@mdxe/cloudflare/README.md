@@ -13,7 +13,7 @@ keywords:
   - deploy
   - mdx
 downloads:
-  monthly: 24
+  monthly: 25
 published: "2025-12-20T12:30:08.336Z"
 updated: "2025-12-20T12:30:08.644Z"
 ---
