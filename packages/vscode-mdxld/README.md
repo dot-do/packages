@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/ai-primitives/vscode-mdxld"
 homepage: "https://mdx.org.ai"
 downloads:
-  monthly: 11
+  monthly: 9
 published: "2024-12-21T09:57:02.147Z"
 updated: "2024-12-21T09:57:02.336Z"
 ---

@@ -13,7 +13,7 @@ keywords:
   - server
   - edge
 downloads:
-  monthly: 25
+  monthly: 32
 published: "2025-12-20T12:31:38.711Z"
 updated: "2025-12-20T12:31:38.995Z"
 ---

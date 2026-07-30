@@ -12,7 +12,7 @@ keywords:
   - bitbucket
   - repoProviders
 downloads:
-  monthly: 16
+  monthly: 19
 published: "2021-11-07T08:56:24.038Z"
 updated: "2021-11-07T09:05:20.374Z"
 ---

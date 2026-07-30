@@ -12,7 +12,7 @@ keywords:
   - get-satisfaction
   - analytics
 downloads:
-  monthly: 15
+  monthly: 19
 published: "2021-11-05T07:07:56.372Z"
 updated: "2021-11-07T09:05:25.209Z"
 ---

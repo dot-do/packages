@@ -12,7 +12,7 @@ keywords:
   - hubspot
   - analytics
 downloads:
-  monthly: 31
+  monthly: 32
 published: "2021-11-05T07:07:57.429Z"
 updated: "2021-11-07T09:05:26.324Z"
 ---

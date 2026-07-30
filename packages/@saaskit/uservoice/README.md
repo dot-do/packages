@@ -12,7 +12,7 @@ keywords:
   - uservoice
   - analytics
 downloads:
-  monthly: 21
+  monthly: 27
 published: "2021-11-05T07:08:03.484Z"
 updated: "2021-11-07T09:05:33.333Z"
 ---
