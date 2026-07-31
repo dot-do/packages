@@ -13,7 +13,7 @@ keywords:
   - mcp
   - middleware
 downloads:
-  monthly: 36
+  monthly: 34
 published: "2026-01-24T14:58:43.611Z"
 updated: "2026-01-24T14:58:43.817Z"
 ---

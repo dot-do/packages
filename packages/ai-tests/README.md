@@ -13,7 +13,7 @@ keywords:
   - rpc
   - primitives
 downloads:
-  monthly: 115
+  monthly: 103
 published: "2025-12-23T02:31:34.923Z"
 updated: "2026-05-26T14:46:47.544Z"
 ---
