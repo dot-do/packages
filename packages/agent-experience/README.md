@@ -19,7 +19,7 @@ keywords:
   - openapi
   - mcp
 downloads:
-  monthly: 127
+  monthly: 129
 published: "2026-07-21T16:04:52.499Z"
 updated: "2026-07-21T16:04:52.809Z"
 ---

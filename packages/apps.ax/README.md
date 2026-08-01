@@ -12,7 +12,7 @@ keywords:
   - directory
   - store
 downloads:
-  monthly: 145
+  monthly: 146
 published: "2026-07-19T11:04:51.992Z"
 updated: "2026-07-19T11:04:52.319Z"
 ---
