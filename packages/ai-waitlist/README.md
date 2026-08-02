@@ -12,7 +12,7 @@ keywords:
   - authentication
   - onboarding
 downloads:
-  monthly: 16
+  monthly: 8
 published: "2025-05-08T01:21:20.969Z"
 updated: "2025-05-08T01:21:21.220Z"
 ---

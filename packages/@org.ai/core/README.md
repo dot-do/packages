@@ -11,7 +11,7 @@ keywords:
   - template
   - context
 downloads:
-  monthly: 34
+  monthly: 32
 published: "2026-01-12T18:25:46.831Z"
 updated: "2026-01-12T18:25:47.149Z"
 ---

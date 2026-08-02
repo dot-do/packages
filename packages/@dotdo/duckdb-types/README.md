@@ -13,7 +13,7 @@ keywords:
   - schema
   - rpc
 downloads:
-  monthly: 26
+  monthly: 24
 published: "2026-01-23T18:27:05.360Z"
 updated: "2026-01-23T18:27:05.626Z"
 ---

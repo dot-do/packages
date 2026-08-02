@@ -22,7 +22,7 @@ keywords:
   - mcp
   - agents
 downloads:
-  monthly: 0
+  monthly: 112
 published: "2026-07-31T13:28:31.276Z"
 updated: "2026-07-31T13:28:31.644Z"
 ---

@@ -13,7 +13,7 @@ keywords:
   - mcp
   - ai
 downloads:
-  monthly: 36
+  monthly: 32
 published: "2026-01-05T11:20:17.112Z"
 updated: "2026-01-26T17:09:11.199Z"
 ---

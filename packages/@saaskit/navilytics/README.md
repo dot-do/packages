@@ -12,7 +12,7 @@ keywords:
   - navilytics
   - analytics
 downloads:
-  monthly: 48
+  monthly: 20
 published: "2021-11-05T07:07:59.599Z"
 updated: "2021-11-07T09:05:29.473Z"
 ---
