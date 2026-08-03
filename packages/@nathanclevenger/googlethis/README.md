@@ -21,7 +21,7 @@ keywords:
   - serp
   - gis
 downloads:
-  monthly: 52
+  monthly: 50
 published: "2024-08-28T08:09:30.377Z"
 updated: "2024-08-28T08:13:29.660Z"
 ---

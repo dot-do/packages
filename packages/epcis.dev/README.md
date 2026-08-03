@@ -17,7 +17,7 @@ keywords:
   - mcp
   - agents
 downloads:
-  monthly: 127
+  monthly: 129
 published: "2026-07-31T13:28:07.125Z"
 updated: "2026-07-31T13:28:07.457Z"
 ---
