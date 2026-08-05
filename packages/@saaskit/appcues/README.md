@@ -12,7 +12,7 @@ keywords:
   - appcues
   - analytics
 downloads:
-  monthly: 24
+  monthly: 21
 published: "2021-11-05T07:07:51.921Z"
 updated: "2021-11-07T09:05:00.543Z"
 ---
