@@ -12,7 +12,7 @@ keywords:
   - userlike
   - analytics
 downloads:
-  monthly: 25
+  monthly: 21
 published: "2021-11-05T07:08:03.219Z"
 updated: "2021-11-07T09:05:33.157Z"
 ---

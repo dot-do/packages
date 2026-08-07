@@ -1,6 +1,6 @@
 ---
 name: epcis.dev
-version: 0.1.0
+version: 0.2.0
 description: "EPCIS 2.0 toolkit for engineers and agents: translate EPCIS 1.1/1.2 XML to 2.0 JSON-LD with per-job fidelity reports, validate against the pinned official GS1 EPCIS 2.0.1 schemas (sha256 pins), compute CBV 2.0 §8.9 event hashes, run a local capture gatewa"
 license: MIT
 keywords:
@@ -19,7 +19,7 @@ keywords:
 downloads:
   monthly: 144
 published: "2026-07-31T13:28:07.125Z"
-updated: "2026-07-31T13:28:07.457Z"
+updated: "2026-08-06T08:04:37.650Z"
 ---
 
 # epcis.dev
@@ -45,11 +45,14 @@ npx epcis.dev validate <file.json> [--project]     # pinned GS1 EPCIS 2.0.1 sche
 npx epcis.dev hash <file.json>                     # CBV 2.0 §8.9 event hash (ni:///sha-256;…)
 npx epcis.dev translate <file.xml> [--out f.json]  # EPCIS 1.1/1.2/2.0 XML → 2.0 JSON-LD
 npx epcis.dev capture <file.json|file.xml>         # the capture pipeline, in-process
-npx epcis.dev mcp                                  # MCP server on stdio (5 tools)
+npx epcis.dev seed scenario <pack>                 # one seeded fictional world, with an answer key
+npx epcis.dev mcp                                  # MCP server on stdio
 npx epcis.dev conformance run --self               # advisory 18-check suite, self-test
 npx epcis.dev conformance run --target d.json      # advisory run vs any EPCIS 2.0 endpoint
-npx epcis.dev conformance rejudge <run.json>       # offline verify + replay of a run
+npx epcis.dev conformance run --self --out r.json  # …and write the evidence bundle to r.json
+npx epcis.dev conformance rejudge r.json           # offline verify + replay of that bundle
 npx epcis.dev pins                                 # sha256 pins of the vendored GS1 artefacts
+npx epcis.dev version                              # the package's own name and version
 ```
 
 Every verb takes `--json` (deterministic machine JSON — same data, same exit code as the
@@ -77,7 +80,7 @@ npx epcis.dev validate  $CORPUS/invalid/object-event-missing-action.json       #
 npx epcis.dev hash      $CORPUS/valid-standard/object-event-shipping.json      # ni:///sha-256;…?ver=CBV2.0
 npx epcis.dev translate $CORPUS/xml-translation/object-event-1.2.xml           # delivered + fidelity report
 npx epcis.dev capture   $CORPUS/valid-standard/object-event-shipping.json      # 202-shaped job + eventIDs
-npx epcis.dev conformance run --self                                           # 18/18 pass, advisory
+npx epcis.dev conformance run --self                                           # advisory; exit 0 is the verdict
 ```
 
 ## What each verb is
@@ -92,8 +95,9 @@ eval-free). `--project` first applies `project()` — the conformant projection 
 spine extension envelope — for documents that carry it.
 
 **hash** — the standardized EPCIS event hash (CBV 2.0 §8.9), byte-compatible with the
-OpenEPCIS reference vectors this repo's tests are gated on. By construction the algorithm
-excludes `eventID`, `recordTime`, and `errorDeclaration`.
+published CBV 2.0 §8.9 reference vectors (`RalphTro/epcis-event-hash-generator`, sha256-pinned
+with their source URLs — the hash gate is graded against those, not against itself). By
+construction the algorithm excludes `eventID`, `recordTime`, and `errorDeclaration`.
 
 **capture** — the real gateway pipeline, in-process: trust-boundary fields are stripped,
 every event must validate (as its conformant projection) against the pinned schema, the whole
@@ -109,7 +113,10 @@ requirements (TCR-43.x, TCR-53.x, TCR-54, M121, M122). Every run is **advisory**
 unsigned, it carries no attestation weight, and this tool has no code path that signs.
 Every run records full HTTP transcripts into a content-addressed evidence bundle, and
 `rejudge` replays the verdict logic offline — same transcripts, same verdicts, no network.
-A verdict flip under replay is a suite defect, never the target's.
+A verdict flip under replay is a suite defect, never the target's. **The bundle rides in
+`--out`, not in `--json`** (it is large, and `--json` is the verdict): `conformance run
+--self --out r.json` then `conformance rejudge r.json`. Edit one transcript byte in `r.json`
+and rejudge exits 1 with the address that no longer hashes to its recorded digest.
 
 **mcp** — the agent door. See below.
 
@@ -119,7 +126,7 @@ A verdict flip under replay is a suite defect, never the target's.
 { "mcpServers": { "epcis": { "command": "npx", "args": ["-y", "epcis.dev", "mcp"] } } }
 ```
 
-Five tools: `capture`, `query`, `get_event`, `trace_epc`, `translate`. The MCP face is a
+Six tools: `capture`, `query`, `get_event`, `trace`, `translate`, `seed`. The MCP face is a
 door, not a second path — every tool re-dispatches through the same gateway the REST-shaped
 pipeline uses, so validation, stamping, and append-only law are identical. The store is
 session-lived and local: capture events, then query them back (`EQ_bizStep`, `GE_eventTime`,
@@ -140,9 +147,29 @@ implementation. The bundle is self-contained (zero runtime dependencies).
 `npx epcis.dev pins` prints the sha256 pins of the vendored official GS1 EPCIS 2.0.1
 artefacts (JSON schema, OpenAPI, JSON-LD context, query schema, SHACL) — the same pins
 `vendor/gs1/PINS.json` in this package records. Validation runs against these pinned bytes,
-never against whatever a URL serves today. Event hashing is gated on the OpenEPCIS reference
-vectors. The suite this package publishes under — **698 tests across 42 files**, including
-the pin gates and the golden corpus — re-runs on every publish (`prepublishOnly`). The capture gateway accepts standard EPCIS 2.0 documents and documents carrying the
+never against whatever a URL serves today. Event hashing is gated on the CBV 2.0 §8.9
+reference vectors from `RalphTro/epcis-event-hash-generator` — someone else's answer key,
+pinned by sha256 with its source URLs recorded the same way.
+
+The suite this package publishes under — the pin gates, the golden corpus, the Atlas gate
+battery — re-runs on every publish (`prepublishOnly`). **Its size is deliberately not written
+here:** it was, as a hand-typed number, and the number was wrong by the time it published. A
+README is permanent and a test count moves every commit.
+
+The suite is not in the tarball either — a package ships the tool, not its test runner — so
+this file names no command that would need it. What it names instead runs against the bytes
+you just installed:
+
+```bash
+npx epcis.dev conformance run --self   # the advisory suite, driving the shipped binary
+npx epcis.dev pins                     # every pinned digest, re-hashable against ref.gs1.org
+```
+
+And the gate itself ships, in a file you can open: `prepublishOnly` in
+`node_modules/epcis.dev/package.json` is the full workspace suite followed by the publish
+guard.
+
+The capture gateway accepts standard EPCIS 2.0 documents and documents carrying the
 spine's **conformant superset** envelope — extension fields ride under a declared JSON-LD
 context, and `project(event)` always validates against the pinned official schema.
 
@@ -158,10 +185,10 @@ context, and `project(event)` always validates against the pinned official schem
 
 ```md
 ## epcis.dev (npm)
-- `npx epcis.dev <verb> --json`; verbs: validate, hash, translate, capture, mcp,
-  conformance run/rejudge, pins. Exit: 0 ok / 1 fail / 2 usage / 3 not-found / 4 internal.
+- `npx epcis.dev <verb> --json`; verbs: validate, hash, translate, capture, mcp, seed,
+  conformance run/rejudge, pins, version. Exit: 0 ok / 1 fail / 2 usage / 3 not-found / 4 internal.
 - All local; only `conformance run --target` touches the network (the endpoint you name).
-- MCP: `npx -y epcis.dev mcp` (stdio; tools: capture, query, get_event, trace_epc, translate).
+- MCP: `npx -y epcis.dev mcp` (stdio; tools: capture, query, get_event, trace, translate, seed).
 - Conformance runs are ADVISORY — unsigned, never an attestation.
 - Fixtures: node_modules/epcis.dev/golden-corpus/; docs: node_modules/epcis.dev/AGENTS.md.
 ```
