@@ -12,7 +12,7 @@ keywords:
   - hittail
   - analytics
 downloads:
-  monthly: 20
+  monthly: 28
 published: "2021-11-05T07:07:57.429Z"
 updated: "2021-11-07T09:05:26.152Z"
 ---

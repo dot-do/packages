@@ -12,7 +12,7 @@ keywords:
   - editmode
   - cms
 downloads:
-  monthly: 12
+  monthly: 16
 published: "2021-11-07T08:56:26.736Z"
 updated: "2021-11-07T09:05:23.861Z"
 ---
