@@ -14,7 +14,7 @@ keywords:
   - render
   - structured-data
 downloads:
-  monthly: 9
+  monthly: 10
 published: "2025-12-20T13:13:05.378Z"
 updated: "2025-12-20T13:13:05.638Z"
 ---

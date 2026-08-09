@@ -14,7 +14,7 @@ keywords:
   - durable-objects
   - encoding
 downloads:
-  monthly: 11
+  monthly: 16
 published: "2026-01-20T11:31:56.607Z"
 updated: "2026-01-23T17:20:56.166Z"
 ---
