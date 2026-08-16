@@ -15,7 +15,7 @@ keywords:
   - workers
   - compatibility
 downloads:
-  monthly: 29
+  monthly: 26
 published: "2026-01-22T15:58:45.898Z"
 updated: "2026-01-24T15:49:06.245Z"
 ---

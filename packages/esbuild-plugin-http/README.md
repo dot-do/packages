@@ -6,7 +6,7 @@ license: MIT
 repository: "https://github.com/nathanclevenger/esbuild-plugin-http"
 homepage: "https://github.com/nathanclevenger/esbuild-plugin-http#readme"
 downloads:
-  monthly: 13
+  monthly: 15
 published: "2022-09-29T12:56:37.179Z"
 updated: "2022-09-29T19:04:27.834Z"
 ---

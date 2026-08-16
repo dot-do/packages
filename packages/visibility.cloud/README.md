@@ -18,7 +18,7 @@ keywords:
   - cli
   - agent
 downloads:
-  monthly: 157
+  monthly: 167
 published: "2026-07-31T13:28:17.690Z"
 updated: "2026-07-31T13:28:17.965Z"
 ---

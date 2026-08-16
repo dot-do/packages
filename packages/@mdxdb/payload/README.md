@@ -16,7 +16,7 @@ keywords:
   - clickhouse
   - durable-objects
 downloads:
-  monthly: 86
+  monthly: 80
 published: "2025-12-18T09:16:57.936Z"
 updated: "2025-12-20T12:31:30.659Z"
 ---
