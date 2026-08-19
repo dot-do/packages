@@ -1,6 +1,6 @@
 ---
 name: "@auto.dev/sdk"
-version: 0.1.23
+version: 0.1.24
 description: SDK, MCP, and CLI for the auto.dev APIs
 license: MIT
 repository: "https://github.com/auto-dot-dev/sdk"
@@ -15,7 +15,7 @@ keywords:
 downloads:
   monthly: 393
 published: "2026-03-31T14:29:41.522Z"
-updated: "2026-05-12T20:13:42.779Z"
+updated: "2026-08-18T16:35:01.206Z"
 ---
 
 # @auto.dev/sdk
@@ -283,7 +283,7 @@ import { AutoDevClient } from '@auto.dev/sdk/core'    // low-level client
 | **Growth** | $299/mo + data fees | + Specs, Build, Recalls, Payments, APR, TCO |
 | **Scale** | $599/mo + data fees | + Open Recalls, Plate-to-VIN, Taxes & Fees |
 
-All plans include 1,000 free calls/month. See [auto.dev/pricing](https://auto.dev/pricing) for per-call data costs.
+The Starter plan includes 1,000 free API calls/month; Growth and Scale bill all API calls. See [auto.dev/pricing](https://auto.dev/pricing) for per-call data costs.
 
 ## Documentation
 
