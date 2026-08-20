@@ -12,7 +12,7 @@ keywords:
   - kenshoo
   - analytics
 downloads:
-  monthly: 27
+  monthly: 18
 published: "2021-11-05T07:07:58.421Z"
 updated: "2021-11-07T09:05:26.837Z"
 ---

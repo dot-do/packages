@@ -12,7 +12,7 @@ keywords:
   - edge
   - rpc
 downloads:
-  monthly: 14
+  monthly: 15
 published: "2026-01-26T15:59:36.991Z"
 updated: "2026-01-26T18:07:40.831Z"
 ---

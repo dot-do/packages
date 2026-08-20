@@ -12,7 +12,7 @@ keywords:
   - qualaroo
   - analytics
 downloads:
-  monthly: 28
+  monthly: 27
 published: "2021-11-05T07:08:01.238Z"
 updated: "2021-11-07T09:05:30.813Z"
 ---

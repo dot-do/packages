@@ -13,7 +13,7 @@ keywords:
   - edge-database
   - serverless
 downloads:
-  monthly: 12
+  monthly: 13
 published: "2026-01-23T17:20:58.418Z"
 updated: "2026-01-23T17:20:58.726Z"
 ---
