@@ -4,7 +4,7 @@ version: 0.1.0
 description: "[![Tests](https://github.com/graphdl/exec-symbols/actions/workflows/tests.yml/badge.svg)](https://github.com/graphdl/exec-symbols/actions/workflows/tests.yml)"
 license: ISC
 downloads:
-  monthly: 11
+  monthly: 12
 published: "2025-05-01T09:39:11.237Z"
 updated: "2025-05-01T09:39:11.545Z"
 ---
