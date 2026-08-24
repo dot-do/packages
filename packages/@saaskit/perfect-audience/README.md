@@ -12,7 +12,7 @@ keywords:
   - perfect-audience
   - analytics
 downloads:
-  monthly: 18
+  monthly: 17
 published: "2021-11-05T07:08:00.309Z"
 updated: "2021-11-07T09:05:30.404Z"
 ---

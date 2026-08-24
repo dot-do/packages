@@ -12,7 +12,7 @@ keywords:
   - mcp
   - x402
 downloads:
-  monthly: 23
+  monthly: 21
 published: "2026-07-19T11:04:48.520Z"
 updated: "2026-07-19T11:04:48.816Z"
 ---
