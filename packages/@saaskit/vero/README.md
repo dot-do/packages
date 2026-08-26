@@ -12,7 +12,7 @@ keywords:
   - vero
   - analytics
 downloads:
-  monthly: 19
+  monthly: 15
 published: "2021-11-05T07:08:03.417Z"
 updated: "2021-11-07T09:05:33.377Z"
 ---

@@ -12,7 +12,7 @@ keywords:
   - schema
   - data-lake
 downloads:
-  monthly: 13
+  monthly: 17
 published: "2026-01-22T14:39:00.692Z"
 updated: "2026-02-03T11:25:00.979Z"
 ---

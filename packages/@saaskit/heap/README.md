@@ -12,7 +12,7 @@ keywords:
   - heap
   - analytics
 downloads:
-  monthly: 23
+  monthly: 19
 published: "2021-11-05T07:07:56.985Z"
 updated: "2021-11-07T09:05:25.879Z"
 ---
