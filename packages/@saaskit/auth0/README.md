@@ -12,7 +12,7 @@ keywords:
   - auth0
   - auth
 downloads:
-  monthly: 8
+  monthly: 7
 published: "2021-11-07T08:56:23.337Z"
 updated: "2021-11-07T09:05:10.091Z"
 ---

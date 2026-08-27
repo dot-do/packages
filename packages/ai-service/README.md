@@ -12,7 +12,7 @@ keywords:
   - billing
   - stripe
 downloads:
-  monthly: 42
+  monthly: 43
 published: "2025-05-06T09:55:12.353Z"
 updated: "2025-05-06T09:55:12.651Z"
 ---

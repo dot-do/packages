@@ -12,7 +12,7 @@ keywords:
   - klaviyo
   - analytics
 downloads:
-  monthly: 18
+  monthly: 17
 published: "2021-11-05T07:07:58.400Z"
 updated: "2021-11-07T09:05:27.080Z"
 ---
