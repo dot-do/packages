@@ -16,7 +16,7 @@ keywords:
   - thrift
   - variant
 downloads:
-  monthly: 15
+  monthly: 18
 published: "2026-02-02T12:55:17.592Z"
 updated: "2026-02-02T18:19:00.118Z"
 ---

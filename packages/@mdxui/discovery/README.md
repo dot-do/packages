@@ -14,7 +14,7 @@ keywords:
   - discovery
   - components
 downloads:
-  monthly: 23
+  monthly: 26
 published: "2026-01-24T14:38:22.498Z"
 updated: "2026-01-24T14:38:22.773Z"
 ---

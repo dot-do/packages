@@ -15,7 +15,7 @@ keywords:
   - r2
   - cache
 downloads:
-  monthly: 14
+  monthly: 17
 published: "2026-01-20T11:31:52.804Z"
 updated: "2026-01-23T17:20:47.016Z"
 ---

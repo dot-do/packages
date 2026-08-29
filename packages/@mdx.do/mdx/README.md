@@ -15,7 +15,7 @@ keywords:
   - processor
   - jsx
 downloads:
-  monthly: 4
+  monthly: 7
 published: "2024-12-11T21:34:28.335Z"
 updated: "2024-12-11T21:34:28.612Z"
 ---

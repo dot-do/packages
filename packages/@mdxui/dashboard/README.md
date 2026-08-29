@@ -12,7 +12,7 @@ keywords:
   - react
   - components
 downloads:
-  monthly: 12
+  monthly: 15
 published: "2024-12-24T13:33:30.946Z"
 updated: "2024-12-27T17:38:24.271Z"
 ---
