@@ -12,7 +12,7 @@ keywords:
   - sanity
   - cms
 downloads:
-  monthly: 5
+  monthly: 17
 published: "2021-11-07T08:56:33.866Z"
 updated: "2021-11-07T09:05:31.623Z"
 ---

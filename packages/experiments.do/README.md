@@ -13,7 +13,7 @@ keywords:
   - ai
   - optimization
 downloads:
-  monthly: 120
+  monthly: 119
 published: "2025-04-14T08:19:12.551Z"
 updated: "2025-04-14T08:19:12.786Z"
 ---

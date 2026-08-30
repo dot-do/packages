@@ -12,7 +12,7 @@ keywords:
   - github
   - repoProviders
 downloads:
-  monthly: 9
+  monthly: 18
 published: "2021-11-07T08:56:28.442Z"
 updated: "2021-11-07T09:05:25.160Z"
 ---

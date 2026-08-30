@@ -14,7 +14,7 @@ keywords:
   - schema
   - typescript
 downloads:
-  monthly: 11
+  monthly: 15
 published: "2026-01-22T14:38:53.120Z"
 updated: "2026-02-03T11:24:55.350Z"
 ---

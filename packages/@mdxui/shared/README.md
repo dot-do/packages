@@ -12,7 +12,7 @@ keywords:
   - layouts
   - utilities
 downloads:
-  monthly: 11
+  monthly: 12
 published: "2024-12-24T13:33:55.887Z"
 updated: "2024-12-27T17:38:56.050Z"
 ---

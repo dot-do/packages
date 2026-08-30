@@ -4,7 +4,7 @@ version: 0.2.15
 description: "**SaaS**kit.js from [SaaS.Dev](https://saas.dev) is a highly opinionated framework and abstraction layer for rapidly  creating, launching, and iterating on SaaS products like Apps, APIs, and Marketplaces."
 license: MIT
 downloads:
-  monthly: 10093
+  monthly: 10119
 published: "2021-08-14T13:31:10.943Z"
 updated: "2021-11-08T17:04:28.918Z"
 ---
