@@ -19,7 +19,7 @@ keywords:
   - plain-text
   - renderer
 downloads:
-  monthly: 0
+  monthly: 100
 published: "2026-09-09T11:37:54.573Z"
 updated: "2026-09-09T11:37:54.860Z"
 ---
