@@ -14,7 +14,7 @@ keywords:
   - ai-agents
   - serverless
 downloads:
-  monthly: 46
+  monthly: 47
 published: "2026-01-07T01:52:44.142Z"
 updated: "2026-01-12T16:59:50.822Z"
 ---

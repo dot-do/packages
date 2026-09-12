@@ -13,7 +13,7 @@ keywords:
   - scheduling
   - alarms
 downloads:
-  monthly: 7
+  monthly: 8
 published: "2025-04-14T08:25:17.855Z"
 updated: "2025-04-14T08:25:18.124Z"
 ---
