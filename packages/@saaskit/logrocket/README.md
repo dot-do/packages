@@ -12,7 +12,7 @@ keywords:
   - logrocket
   - monitoring
 downloads:
-  monthly: 19
+  monthly: 20
 published: "2021-11-07T08:56:31.035Z"
 updated: "2021-11-07T09:05:27.486Z"
 ---

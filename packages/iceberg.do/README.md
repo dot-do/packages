@@ -14,7 +14,7 @@ keywords:
   - r2
   - rest-api
 downloads:
-  monthly: 7
+  monthly: 8
 published: "2026-02-03T14:39:55.276Z"
 updated: "2026-02-03T14:39:55.568Z"
 ---
