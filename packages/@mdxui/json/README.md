@@ -12,7 +12,7 @@ keywords:
   - mdxld
   - schema
 downloads:
-  monthly: 103
+  monthly: 104
 published: "2026-09-09T11:38:12.778Z"
 updated: "2026-09-09T11:38:13.083Z"
 ---
