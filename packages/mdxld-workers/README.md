@@ -13,7 +13,7 @@ keywords:
   - compiler
   - deployment
 downloads:
-  monthly: 11
+  monthly: 12
 published: "2024-12-21T09:55:30.921Z"
 updated: "2024-12-21T21:04:12.196Z"
 ---
