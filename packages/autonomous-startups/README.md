@@ -17,7 +17,7 @@ keywords:
   - authority
   - capstone
 downloads:
-  monthly: 18
+  monthly: 15
 published: "2026-07-16T15:20:26.544Z"
 updated: "2026-07-16T15:20:26.881Z"
 ---
