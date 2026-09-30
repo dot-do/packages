@@ -8,7 +8,7 @@ keywords:
   - cloudflare
   - durable-objects
 downloads:
-  monthly: 13
+  monthly: 15
 published: "2026-01-22T11:02:53.960Z"
 updated: "2026-01-22T11:02:54.169Z"
 ---

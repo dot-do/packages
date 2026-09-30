@@ -10,7 +10,7 @@ keywords:
   - domains
   - business
 downloads:
-  monthly: 9
+  monthly: 11
 published: "2025-12-17T20:54:11.360Z"
 updated: "2025-12-17T20:54:11.607Z"
 ---
