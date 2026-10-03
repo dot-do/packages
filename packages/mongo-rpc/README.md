@@ -13,7 +13,7 @@ keywords:
   - cache
   - db
 downloads:
-  monthly: 16
+  monthly: 15
 published: "2023-10-07T09:22:57.486Z"
 updated: "2023-10-07T09:22:57.740Z"
 ---

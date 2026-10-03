@@ -14,7 +14,7 @@ keywords:
   - typescript
   - ast
 downloads:
-  monthly: 11
+  monthly: 10
 published: "2025-12-20T13:49:17.871Z"
 updated: "2025-12-20T13:49:18.107Z"
 ---
