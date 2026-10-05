@@ -15,7 +15,7 @@ keywords:
   - github
   - terminal
 downloads:
-  monthly: 14
+  monthly: 13
 published: "2026-03-03T18:39:58.113Z"
 updated: "2026-03-03T18:39:58.382Z"
 ---

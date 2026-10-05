@@ -11,7 +11,7 @@ keywords:
   - agents
   - primitives
 downloads:
-  monthly: 155
+  monthly: 147
 published: "2025-12-23T02:31:54.536Z"
 updated: "2026-05-26T14:47:02.544Z"
 ---
