@@ -12,7 +12,7 @@ keywords:
   - insidevault
   - analytics
 downloads:
-  monthly: 14
+  monthly: 15
 published: "2021-11-05T07:07:57.501Z"
 updated: "2021-11-07T09:05:26.333Z"
 ---
