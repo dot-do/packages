@@ -11,7 +11,7 @@ keywords:
   - primitives
   - mcp
 downloads:
-  monthly: 739
+  monthly: 698
 published: "2025-12-23T02:31:58.139Z"
 updated: "2026-05-26T14:47:06.058Z"
 ---

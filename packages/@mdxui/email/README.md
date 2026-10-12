@@ -12,7 +12,7 @@ keywords:
   - mdxld
   - render
 downloads:
-  monthly: 53
+  monthly: 41
 published: "2026-09-09T11:38:28.636Z"
 updated: "2026-09-09T11:38:28.985Z"
 ---
