@@ -12,7 +12,7 @@ keywords:
   - contentful
   - cms
 downloads:
-  monthly: 15
+  monthly: 13
 published: "2021-11-07T08:56:25.734Z"
 updated: "2021-11-07T09:05:21.997Z"
 ---
