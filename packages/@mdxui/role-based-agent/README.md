@@ -15,7 +15,7 @@ keywords:
   - components
   - templates
 downloads:
-  monthly: 17
+  monthly: 15
 published: "2026-05-28T14:36:00.398Z"
 updated: "2026-06-10T17:03:32.499Z"
 ---
