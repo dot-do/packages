@@ -1,13 +1,13 @@
 ---
 name: services.dev
-version: 0.1.0
+version: 0.2.0
 description: "The Services-as-Software framework: write one Service(), AI delivers every job, and people or their agents pay when it's done. A person is one more line, wherever you want or need one."
 license: UNLICENSED
 homepage: "https://services.dev"
 downloads:
   monthly: 0
 published: "2026-10-24T18:45:48.436Z"
-updated: "2026-10-24T22:53:01.047Z"
+updated: "2026-10-26T12:27:36.805Z"
 ---
 
 # services.dev
@@ -38,10 +38,11 @@ $ npx services.dev
   wrote   package.json · services/translation.ts · services/translation.md · AGENTS.md
 lingua · AI delivers every job.
   site    http://localhost:8787/translation
-  api     POST http://localhost:8787/translation
-  mcp     http://localhost:8787/mcp
-  cli     npx services.dev order translation
-  sdk     connect('http://localhost:8787').order('translation', input)
+  api     POST http://localhost:8787/jobs {"service":"translation"}
+  key     sk_test_7Hq2 · a call with no key uses it, on localhost only
+  mcp     http://localhost:8787/mcp · stdio: npx services.dev mcp
+  cli     npx services.dev translation k=v …
+  sdk     connect({ origin: 'http://localhost:8787' }).translation.order(input)
   docs    http://localhost:8787/llms.txt
   buyers  http://localhost:8787/jobs
   you     http://localhost:8787/owner
@@ -59,17 +60,19 @@ job_7Hq2 · accepted · document.fr-CA.pdf · $49.00 final
 $ npx services.dev check
 services/translation.ts · 4 lines · $49 per job, within 48 hours, charged on delivery.
   who     AI delivers every job.
+  steps   draft · ai → review · ai · adversarial
   agent   order_translation · 24 of 30 words · bought job_7Hq2 · $49.00 · no person
   ledger  +$49.00 · AI $0.84 (example) · you $48.16
   margin  at least $39.20 a job (80%) · a job that stops costs you at most $9.80
-  apps    buyers · you
+  apps    customer portal · owner console
 
+mcp     11 buyer tools · 3,761 of 8,000 tokens · 4 more with ?toolset=sandbox
 ✓ ready to sell · 1 Service · AI delivers it alone · it keeps at least 80% of every job
   next    npx services.dev dev
 
 AI and money are simulated until you wire them. $0.42 a call is an example.
 
-(an empty folder to a delivered job: 0.5 s)
+(an empty folder to a delivered job: 0.4 s)
 ```
 
 ## Agents
@@ -81,10 +84,10 @@ An agent reads this in `tools/list`, orders, waits and accepts with no person on
 → GET /.well-known/agents.json
 ← 200 · lingua · mcp http://localhost:8787/mcp
 → initialize
-← lingua · "Without max_usd, or below the price, it answers an OFFER: the price and the exact next call."
+← lingua · "Without max_usd you get an OFFER: send its next call unchanged to order."
 → tools/list
 ← order_translation  "Translation: send a document and a language; get a document back. $49 per job, within 48 hours, charged on delivery. AI delivers every job."
-  get_job · accept_job · send_back_job · cancel_job
+  get_job · accept_job · send_back_job · cancel_job · and 6 more
 → order_translation {document: document.pdf, to: "fr-CA", key: "lease-fr-CA"}
 ← OFFER · $49 per job, within 48 hours, charged on delivery.
   next: order_translation {document: document.pdf, to: "fr-CA", max_usd: 49, key: "lease-fr-CA"}
@@ -92,7 +95,7 @@ An agent reads this in `tools/list`, orders, waits and accepts with no person on
 ← job_7Hq2 · working · $49.00 held
 → get_job {id: "job_7Hq2", wait: 50}
 ← job_7Hq2 · delivered · document.fr-CA.pdf · $49.00 charged
-  record: draft · ai | review · ai · pass
+  stage: review · payment: charged $49
 → accept_job {id: "job_7Hq2"}
 ← job_7Hq2 · accepted · document.fr-CA.pdf · $49.00 final
 ```

@@ -15,7 +15,7 @@ keywords:
   - workers
   - edge
 downloads:
-  monthly: 41
+  monthly: 96
 published: "2025-12-14T18:50:54.699Z"
 updated: "2025-12-30T15:10:59.044Z"
 ---

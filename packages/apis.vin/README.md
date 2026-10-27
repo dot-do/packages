@@ -17,7 +17,7 @@ keywords:
   - answer
   - gate-law
 downloads:
-  monthly: 23
+  monthly: 0
 published: "2026-08-09T09:20:15.312Z"
 updated: "2026-08-10T09:59:00.888Z"
 ---
