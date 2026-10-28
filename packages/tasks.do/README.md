@@ -14,7 +14,7 @@ keywords:
   - slack
   - blocks
 downloads:
-  monthly: 348
+  monthly: 143
 published: "2025-04-14T08:22:11.604Z"
 updated: "2025-04-14T08:22:11.854Z"
 ---

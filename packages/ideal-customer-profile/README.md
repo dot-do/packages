@@ -10,7 +10,7 @@ keywords:
   - marketing
   - buyer-persona
 downloads:
-  monthly: 36
+  monthly: 5
 published: "2025-12-17T20:53:18.686Z"
 updated: "2025-12-17T20:54:01.645Z"
 ---

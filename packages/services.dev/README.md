@@ -1,13 +1,13 @@
 ---
 name: services.dev
-version: 0.2.0
+version: 0.3.0
 description: "The Services-as-Software framework: write one Service(), AI delivers every job, and people or their agents pay when it's done. A person is one more line, wherever you want or need one."
 license: UNLICENSED
 homepage: "https://services.dev"
 downloads:
-  monthly: 0
+  monthly: 619
 published: "2026-10-24T18:45:48.436Z"
-updated: "2026-10-26T12:27:36.805Z"
+updated: "2026-10-27T12:30:30.160Z"
 ---
 
 # services.dev
@@ -44,8 +44,8 @@ lingua · AI delivers every job.
   cli     npx services.dev translation k=v …
   sdk     connect({ origin: 'http://localhost:8787' }).translation.order(input)
   docs    http://localhost:8787/llms.txt
-  buyers  http://localhost:8787/jobs
-  you     http://localhost:8787/owner
+  buyers  http://localhost:8787/portal
+  you     http://localhost:8787/console
   AI and money are simulated until you wire them. $0.42 a call is an example.
 
 an agent ordered Translation at $49
@@ -66,13 +66,13 @@ services/translation.ts · 4 lines · $49 per job, within 48 hours, charged on d
   margin  at least $39.20 a job (80%) · a job that stops costs you at most $9.80
   apps    customer portal · owner console
 
-mcp     11 buyer tools · 3,761 of 8,000 tokens · 4 more with ?toolset=sandbox
+mcp     13 buyer tools · 4,482 of 8,000 tokens · 4 more with ?toolset=sandbox
 ✓ ready to sell · 1 Service · AI delivers it alone · it keeps at least 80% of every job
   next    npx services.dev dev
 
 AI and money are simulated until you wire them. $0.42 a call is an example.
 
-(an empty folder to a delivered job: 0.4 s)
+(an empty folder to a delivered job: 0.6 s)
 ```
 
 ## Agents
@@ -87,7 +87,7 @@ An agent reads this in `tools/list`, orders, waits and accepts with no person on
 ← lingua · "Without max_usd you get an OFFER: send its next call unchanged to order."
 → tools/list
 ← order_translation  "Translation: send a document and a language; get a document back. $49 per job, within 48 hours, charged on delivery. AI delivers every job."
-  get_job · accept_job · send_back_job · cancel_job · and 6 more
+  get_job · accept_job · send_back_job · cancel_job · and 8 more
 → order_translation {document: document.pdf, to: "fr-CA", key: "lease-fr-CA"}
 ← OFFER · $49 per job, within 48 hours, charged on delivery.
   next: order_translation {document: document.pdf, to: "fr-CA", max_usd: 49, key: "lease-fr-CA"}
