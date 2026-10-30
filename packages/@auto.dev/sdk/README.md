@@ -13,7 +13,7 @@ keywords:
   - mcp
   - cli
 downloads:
-  monthly: 315
+  monthly: 330
 published: "2026-03-31T14:29:41.522Z"
 updated: "2026-10-19T17:33:29.623Z"
 ---
