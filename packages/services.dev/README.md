@@ -5,7 +5,7 @@ description: "The Services-as-Software framework: write one Service(), AI delive
 license: UNLICENSED
 homepage: "https://services.dev"
 downloads:
-  monthly: 823
+  monthly: 833
 published: "2026-10-24T18:45:48.436Z"
 updated: "2026-10-27T12:30:30.160Z"
 ---
