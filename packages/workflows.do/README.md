@@ -14,7 +14,7 @@ keywords:
   - serverless
   - event-driven
 downloads:
-  monthly: 337
+  monthly: 348
 published: "2025-03-27T08:59:35.226Z"
 updated: "2025-03-27T08:59:35.408Z"
 ---

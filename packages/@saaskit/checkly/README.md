@@ -12,7 +12,7 @@ keywords:
   - checkly
   - monitoring
 downloads:
-  monthly: 11
+  monthly: 10
 published: "2021-11-07T08:56:25.001Z"
 updated: "2021-11-07T09:05:21.609Z"
 ---
