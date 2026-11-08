@@ -13,7 +13,7 @@ keywords:
   - serverless
   - mdx
 downloads:
-  monthly: 14
+  monthly: 15
 published: "2025-12-20T12:30:13.975Z"
 updated: "2025-12-20T12:30:14.221Z"
 ---
