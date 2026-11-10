@@ -10,7 +10,7 @@ keywords:
   - digital
   - primitives
 downloads:
-  monthly: 96
+  monthly: 103
 published: "2025-12-23T02:31:50.630Z"
 updated: "2026-05-26T14:46:59.740Z"
 ---

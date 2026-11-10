@@ -13,7 +13,7 @@ keywords:
   - llms.txt
   - attestation
 downloads:
-  monthly: 50
+  monthly: 53
 published: "2026-07-19T11:08:21.091Z"
 updated: "2026-07-19T11:08:21.462Z"
 ---
