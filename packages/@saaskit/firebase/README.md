@@ -12,7 +12,7 @@ keywords:
   - firebase
   - data
 downloads:
-  monthly: 13
+  monthly: 14
 published: "2021-11-07T08:56:27.459Z"
 updated: "2021-11-07T09:05:24.556Z"
 ---
