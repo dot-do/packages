@@ -12,7 +12,7 @@ keywords:
   - mojn
   - analytics
 downloads:
-  monthly: 36
+  monthly: 37
 published: "2021-11-05T07:07:59.233Z"
 updated: "2021-11-07T09:05:29.135Z"
 ---
