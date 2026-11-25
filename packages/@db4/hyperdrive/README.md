@@ -14,7 +14,7 @@ keywords:
   - workers
   - connection-pooling
 downloads:
-  monthly: 18
+  monthly: 19
 published: "2026-01-20T11:28:55.702Z"
 updated: "2026-01-23T17:21:10.081Z"
 ---
