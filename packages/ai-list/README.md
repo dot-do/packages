@@ -12,7 +12,7 @@ keywords:
   - gpt
   - list
 downloads:
-  monthly: 67
+  monthly: 71
 published: "2023-11-03T21:23:49.529Z"
 updated: "2023-11-03T22:16:28.131Z"
 ---
