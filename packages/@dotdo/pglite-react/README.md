@@ -14,7 +14,7 @@ keywords:
   - pglite
   - react
 downloads:
-  monthly: 12
+  monthly: 13
 published: "2026-01-24T15:50:10.012Z"
 updated: "2026-01-24T15:50:10.211Z"
 ---
