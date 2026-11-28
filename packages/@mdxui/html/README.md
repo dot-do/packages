@@ -12,7 +12,7 @@ keywords:
   - render
   - ssr
 downloads:
-  monthly: 22
+  monthly: 23
 published: "2026-09-09T11:38:04.541Z"
 updated: "2026-09-09T11:38:04.807Z"
 ---
